@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ismail UI Framework</title>
+  <!-- Standard Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/icons/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon-32.png" />
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/icons/favicon-180.png" />
+
+  <!-- Android / PWA Icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/icons/favicon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/icons/favicon-512.png" />
+
+  <!-- Manifest (für PWA) -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Core Framework -->
+  <link rel="stylesheet" href="../assets/css/core.css" />
+  <link rel="stylesheet" href="../assets/css/core-theme.css" />
+  <link rel="stylesheet" href="../assets/css/core-ui.css" />
+  <link rel="stylesheet" href="../assets/css/ui-kit.css" />
+
+  <!-- Layout -->
+  <link rel="stylesheet" href="layout.css" />
+</head>
+
+<body class="dark-mode">
+  <!-- PREMIUM SIDEBAR -->
+  <aside class="sidebar">
+    <h1>Framework</h1>
+    <p class="badge">Dokumentation</p>
+
+    <nav>
+      <a href="#intro">📘 Einführung</a>
+      <a href="#modules">📦 Framework‑Module</a>
+      <a href="#components">🧩 Komponenten‑Demo</a>
+      <a href="#philosophy">✨ Design‑Philosophie</a>
+    </nav>
+
+    <hr class="sidebar-separator" />
+
+    <p class="sidebar-description">
+      Übersicht über alle Kernmodule, Komponenten und Prinzipien des
+      Frameworks.
+    </p>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- TOPBAR -->
+    <div class="topbar topbar-large">
+      <div class="topbar-left">
+        <div class="ismail-logo-mark">
+          <span class="dot dot-1"></span>
+          <span class="dot dot-2"></span>
+          <span class="dot dot-3"></span>
+        </div>
+
+        <div class="topbar-text">
+          <span class="topbar-brand">Ismail UI</span>
+          <span class="topbar-tagline">clean · modular · consistent</span>
+        </div>
+
+        <nav class="topbar-nav">
+          <a href="framework.html" class="active" aria-current="page">Framework</a>
+          <a href="ui.html">UI‑Kit</a>
+          <a href="ui-components.html">Components</a>
+          <a href="branding.html">Branding</a>
+        </nav>
+      </div>
+
+      <label class="ios-switch topbar-switch">
+        <input type="checkbox" id="themeToggle" aria-label="Theme umschalten" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="intro">
+      <h1>Ismail UI Framework</h1>
+      <p>
+        Ein modulares, leichtgewichtiges und elegantes UI‑Framework für
+        moderne Web‑Apps. Entwickelt für Klarheit, Geschwindigkeit und
+        Wiederverwendbarkeit — perfekt für Dashboard, Journal, Tools und
+        zukünftige Projekte.
+      </p>
+    </section>
+
+    <!-- MODULES -->
+    <section id="modules" class="section">
+      <h2>📦 Framework‑Module</h2>
+      <p class="text-muted">
+        Alle Kernmodule des Ismail UI Systems — CSS, Theme, UI‑Komponenten,
+        Utilities.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>core.css</h3>
+          <p>
+            Globales CSS‑Toolkit: Reset, Spacing, Flex, Grid, Radius, Shadows,
+            Utilities.
+          </p>
+          <a href="../assets/css/core.css">Datei öffnen</a>
+        </div>
+
+        <div class="card">
+          <h3>core-theme.css</h3>
+          <p>
+            Globales Theme‑System: Dark/Light Mode, Variablen, Transitions.
+          </p>
+          <a href="../assets/css/core-theme.css">Datei öffnen</a>
+        </div>
+
+        <div class="card">
+          <h3>core-ui.css</h3>
+          <p>UI‑Komponenten: Modals, Toasts, Tabs, Dropdowns, Switches.</p>
+          <a href="../assets/css/core-ui.css">Datei öffnen</a>
+        </div>
+
+        <div class="card">
+          <h3>core-ui.js</h3>
+          <p>
+            Interaktive Komponenten: Modal‑Engine, Toast‑System, Tabs,
+            Dropdowns, Switch‑Events.
+          </p>
+          <a href="ui-components.html">Live‑Demo</a>
+        </div>
+
+        <div class="card">
+          <h3>ui-kit.css</h3>
+          <p>
+            Ismail UI‑Kit: Panels, Buttons, Inputs, Tabellen,
+            Widgets.
+          </p>
+          <a href="ui.html">UI‑Kit Dokumentation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTS -->
+    <section id="components" class="section">
+      <h2>🧩 Komponenten‑Demo</h2>
+      <p class="text-muted">Alle UI‑Komponenten live testen.</p>
+
+      <div class="card">
+        <h3>UI Components Demo</h3>
+        <p>Modals, Toasts, Tabs, Dropdowns, Switches.</p>
+        <a href="ui-components.html">Zur Demo</a>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section id="philosophy" class="section">
+      <h2>✨ Design‑Philosophie</h2>
+      <p class="text-muted">
+        Ismail UI basiert auf Klarheit, Modularität und Wiederverwendbarkeit.
+        Jede Komponente ist:
+      </p>
+
+      <ul class="text-muted philosophy-list">
+        <li>leichtgewichtig und ohne Abhängigkeiten</li>
+        <li>perfekt kompatibel mit Dark/Light Mode</li>
+        <li>modular aufgebaut und erweiterbar</li>
+        <li>visuell konsistent über alle Projekte hinweg</li>
+        <li>optimiert für Dashboards, Tools und Web‑Apps</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

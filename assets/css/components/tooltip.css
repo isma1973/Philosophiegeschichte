@@ -1,0 +1,45 @@
+/* assets/css/components/tooltip.css */
+
+/* Tooltip Base */
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+}
+
+/* Tooltip Content (Pseudo-element) */
+[data-tooltip]::before {
+  content: attr(data-tooltip-text);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0); /* Start position */
+  
+  /* Visuals using Core Variables */
+  background: var(--bg-secondary, #1a1d21); /* Fallback */
+  border: 1px solid var(--border, #333);
+  color: var(--text, #eee);
+  padding: var(--space-2, 8px) var(--space-3, 12px);
+  border-radius: var(--radius-sm, 4px);
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.2));
+  z-index: 1000;
+  
+  /* State: Hidden */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  
+  /* Animation */
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+/* Tooltip Arrow (Optional - simplified here without extra pseudo-element for now) */
+
+/* Hover State */
+[data-tooltip]:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-8px); /* Move up slightly */
+}

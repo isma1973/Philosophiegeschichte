@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Components – Ismail UI</title>
+  <!-- Standard Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/icons/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon-32.png">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/icons/favicon-180.png">
+  <!-- Android / PWA Icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/icons/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/icons/favicon-512.png">
+
+  <!-- Manifest (für PWA) -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Core Framework -->
+  <link rel="stylesheet" href="../assets/css/core.css">
+  <link rel="stylesheet" href="../assets/css/core-theme.css">
+  <link rel="stylesheet" href="../assets/css/core-ui.css">
+  <link rel="stylesheet" href="../assets/css/ui-kit.css">
+  <link rel="stylesheet" href="../assets/css/components/tooltip.css">
+
+  <!-- Layout -->
+  <link rel="stylesheet" href="layout.css">
+</head>
+
+<body class="dark-mode">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <h1>Components</h1>
+    <p class="badge">Interaktive Elemente</p>
+
+    <nav>
+      <a href="#modals">🪟 Modals</a>
+      <a href="#toasts">🔔 Toasts</a>
+      <a href="#tabs">📑 Tabs</a>
+      <a href="#dropdowns">⬇️ Dropdowns</a>
+      <a href="#switches">🎚 Switches</a>
+    </nav>
+
+    <hr class="sidebar-separator">
+
+    <p class="sidebar-description">
+      Live‑Demos aller interaktiven UI‑Komponenten.
+    </p>
+
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <div class="topbar topbar-large">
+
+      <div class="topbar-left">
+        <div class="ismail-logo-mark">
+          <span class="dot dot-1"></span>
+          <span class="dot dot-2"></span>
+          <span class="dot dot-3"></span>
+        </div>
+
+        <div class="topbar-text">
+          <span class="topbar-brand">Ismail UI</span>
+          <span class="topbar-tagline">clean · modular · consistent</span>
+        </div>
+
+        <nav class="topbar-nav">
+          <a href="framework.html">Framework</a>
+          <a href="ui.html">UI‑Kit</a>
+          <a href="ui-components.html" class="active" aria-current="page">Components</a>
+          <a href="branding.html">Branding</a>
+        </nav>
+      </div>
+
+      <label class="ios-switch topbar-switch">
+        <input type="checkbox" id="themeToggle" aria-label="Theme umschalten">
+        <span class="slider"></span>
+      </label>
+
+    </div>
+
+    <h1>UI Components</h1>
+    <p class="text-muted">Live‑Demo aller globalen UI‑Elemente</p>
+
+    <!-- MODALS -->
+    <section id="modals" class="section">
+      <h2>🪟 Modals</h2>
+
+      <div class="example">
+        <button class="btn" data-modal-open="demoModal">Modal öffnen</button>
+      </div>
+
+      <div class="code">
+        &lt;button data-modal-open="demoModal"&gt;Modal öffnen&lt;/button&gt;
+      </div>
+
+      <!-- Modal -->
+      <div id="demoModal" class="modal">
+        <div class="modal-content">
+          <h3>Hallo!</h3>
+          <p>Dies ist ein globales Modal.</p>
+          <button class="btn" data-modal-close="demoModal">Schließen</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOASTS -->
+    <section id="toasts" class="section">
+      <h2>🔔 Toasts</h2>
+
+      <div class="example flex gap-2">
+        <button class="btn" onclick="Toast.show('Info Nachricht', 'info')">Info</button>
+        <button class="btn" onclick="Toast.show('Erfolg!', 'success')">Success</button>
+        <button class="btn" onclick="Toast.show('Warnung!', 'warning')">Warning</button>
+        <button class="btn" onclick="Toast.show('Fehler!', 'danger')">Danger</button>
+      </div>
+
+      <div class="code">
+        Toast.show("Erfolg!", "success")
+      </div>
+    </section>
+
+    <!-- TABS -->
+    <section id="tabs" class="section">
+      <h2>📑 Tabs</h2>
+
+      <div class="example" data-tabs>
+        <div class="tab-buttons">
+          <button data-tab="a" class="active">Tab A</button>
+          <button data-tab="b">Tab B</button>
+        </div>
+
+        <div data-tab-panel="a">Inhalt von Tab A</div>
+        <div data-tab-panel="b" class="hidden">Inhalt von Tab B</div>
+      </div>
+
+      <div class="code">
+        &lt;div data-tabs&gt;
+        &lt;button data-tab="a"&gt;Tab A&lt;/button&gt;
+        &lt;button data-tab="b"&gt;Tab B&lt;/button&gt;
+        &lt;/div&gt;
+      </div>
+    </section>
+
+    <!-- DROPDOWNS -->
+    <section id="dropdowns" class="section">
+      <h2>⬇️ Dropdowns</h2>
+
+      <div class="example">
+        <div data-dropdown>
+          <button class="btn" data-dropdown-toggle>Menü</button>
+          <div class="dropdown-menu" data-dropdown-menu>
+            <button>Option 1</button>
+            <button>Option 2</button>
+            <button>Option 3</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="code">
+        &lt;div data-dropdown&gt;
+        &lt;button data-dropdown-toggle&gt;Menü&lt;/button&gt;
+        &lt;div data-dropdown-menu&gt;...&lt;/div&gt;
+        &lt;/div&gt;
+      </div>
+    </section>
+
+    <!-- SWITCHES -->
+    <section id="switches" class="section">
+      <h2>🎚 Switches</h2>
+
+      <div class="example">
+        <label class="switch">
+          <input type="checkbox" data-switch id="demoSwitch" aria-label="Demo Switch">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="code">
+        &lt;label class="switch"&gt;
+        &lt;input type="checkbox" data-switch&gt;
+        &lt;span class="slider"&gt;&lt;/span&gt;
+        &lt;/label&gt;
+      </div>
+    </section>
+
+    <!-- TOOLTIPS -->
+    <section id="tooltips" class="ui-section">
+      <h2>💡 Tooltips</h2>
+
+      <div class="example">
+        <button class="btn" data-tooltip data-tooltip-text="Ich bin ein Tooltip!">
+          Hover mich
+        </button>
+        <button class="btn btn-primary" data-tooltip data-tooltip-text="Wichtige Info">
+          Primary
+        </button>
+      </div>
+
+      <div class="code">
+        &lt;button data-tooltip data-tooltip-text="Info Text"&gt;Hover mich&lt;/button&gt;
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- JS (ALLE FEHLER KORRIGIERT) -->
+  <script src="../assets/js/toast.js"></script>
+  <script src="../assets/js/modal.js"></script>
+  <script src="../assets/js/tabs.js"></script>
+  <script src="../assets/js/dropdown.js"></script>
+  <script src="../assets/js/switches.js"></script>
+  <script src="../assets/js/tooltip.js"></script>
+  <script src="../assets/js/core-ui.js"></script>
+
+  <script>
+    initUI();
+  </script>
+  <script src="../assets/js/theme.js"></script>
+
+</body>
+
+</html>

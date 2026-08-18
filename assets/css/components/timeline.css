@@ -1,0 +1,77 @@
+/* ---------------------------------------------------
+   TIMELINE-V COMPONENT (Ismail UI Style)
+--------------------------------------------------- */
+
+.timeline-v {
+    position: relative;
+    padding-left: 45px;
+    margin: var(--space-6) 0;
+}
+
+.timeline-v::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background: var(--border);
+    opacity: 0.5;
+}
+
+.timeline-v-item {
+    position: relative;
+    margin-bottom: var(--space-6);
+}
+
+.timeline-v-marker {
+    position: absolute;
+    left: -45px;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-v-dot {
+    width: 14px;
+    height: 14px;
+    background: var(--bg-secondary);
+    border: 3px solid var(--accent);
+    border-radius: 50%;
+    z-index: 1;
+    transition: transform var(--transition), background var(--transition);
+}
+
+.timeline-v-item:hover .timeline-v-dot {
+    transform: scale(1.4);
+    background: var(--accent);
+}
+
+.timeline-v-date {
+    display: block;
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: var(--space-1);
+    letter-spacing: 0.05em;
+}
+
+.timeline-v-content {
+    cursor: pointer;
+    transition: border-color var(--transition), transform var(--transition);
+}
+
+.timeline-v-content:hover {
+    border-color: var(--accent);
+    transform: translateX(5px);
+}
+
+.timeline-v-detail {
+    border-top: 1px solid var(--border);
+    margin-top: var(--space-3);
+    padding-top: var(--space-3);
+    animation: uiFadeIn 0.3s ease;
+}

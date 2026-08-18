@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texte lesen – Philosophiegeschichte</title>
+    <meta name="description" content="Ausgewählte Texte zur Philosophiegeschichte – von Platon bis heute.">
+    <link rel="icon" href="data:,">
+
+    <!-- Ismail UI Framework Core -->
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/core-theme.css">
+    <link rel="stylesheet" href="assets/css/core-ui.css">
+    <link rel="stylesheet" href="assets/css/ui-kit.css">
+
+
+    <!-- Self-contained Markdown parser — no CDN, no fetch, works from file:// -->
+    <script>
+    const marked = {
+        parse(md) {
+            const lines = md.split('\n');
+            let html = '';
+            let inList = false;
+
+            const inline = s => s
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                .replace(/__(.+?)__/g, '<strong>$1</strong>')
+                .replace(/\*(.+?)\*/g, '<em>$1</em>')
+                .replace(/_(.+?)_/g, '<em>$1</em>')
+                .replace(/`(.+?)`/g, '<code>$1</code>');
+
+            const closeList = () => { if (inList) { html += '</ul>\n'; inList = false; } };
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i];
+                const trimmed = line.trim();
+
+                // Headings
+                const hm = trimmed.match(/^(#{1,6})\s+(.+)$/);
+                if (hm) {
+                    closeList();
+                    const lvl = hm[1].length;
+                    html += `<h${lvl}>${inline(hm[2])}</h${lvl}>\n`;
+                    continue;
+                }
+
+                // Horizontal rule
+                if (/^(-{3,}|\*{3,}|_{3,})$/.test(trimmed)) {
+                    closeList();
+                    html += '<hr>\n';
+                    continue;
+                }
+
+                // Unordered list item
+                const lm = trimmed.match(/^[-*]\s+(.+)$/);
+                if (lm) {
+                    if (!inList) { html += '<ul>\n'; inList = true; }
+                    html += `<li>${inline(lm[1])}</li>\n`;
+                    continue;
+                }
+
+                // Blank line
+                if (trimmed === '') {
+                    closeList();
+                    continue;
+                }
+
+                // Paragraph
+                closeList();
+                html += `<p>${inline(trimmed)}</p>\n`;
+            }
+
+            closeList();
+            return html;
+        }
+    };
+    </script>
+
+    <style>
+        /* ── Base (replaces layout.css body rules) ──── */
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font, 'Inter', sans-serif);
+            line-height: 1.5;
+            display: block;
+        }
+
+        /* ── Topbar ─────────────────────────────────── */
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-2) var(--space-4);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--bg);
+        }
+        .topbar-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .topbar-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .topbar-brand { font-size: 18px; font-weight: 600; }
+        .topbar-tagline { font-size: 13px; color: var(--text-light); }
+
+        /* ── Reader Layout ─────────────────────────── */
+        .reader-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: calc(100vh - 64px);
+        }
+
+        /* ── Doc List Sidebar ──────────────────────── */
+        .doc-list {
+            padding: var(--space-5) var(--space-4);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+            position: sticky;
+            top: 64px;
+            height: calc(100vh - 64px);
+            overflow-y: auto;
+        }
+        .doc-list-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: var(--space-2);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+            color: var(--text-light);
+            text-decoration: none;
+            margin-bottom: var(--space-3);
+            transition: color var(--transition-fast);
+        }
+        .back-link:hover { color: var(--accent); }
+
+        .doc-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-2);
+            padding: var(--space-3);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+            border: 1px solid transparent;
+            background: none;
+            text-align: left;
+            color: var(--text);
+            width: 100%;
+            font-family: inherit;
+        }
+        .doc-item:hover {
+            background: rgba(255,255,255,0.04);
+            border-color: var(--border);
+        }
+        .doc-item.active {
+            background: rgba(99,102,241,0.13);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .doc-item-icon { font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+        .doc-item-label { font-size: 0.84rem; font-weight: 500; line-height: 1.4; }
+
+        /* ── Content Area ──────────────────────────── */
+        .reader-content {
+            padding: var(--space-8) clamp(var(--space-5), 6vw, 80px);
+        }
+        .reader-inner { max-width: 760px; }
+
+        /* ── Empty State ───────────────────────────── */
+        .reader-empty {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-4);
+            min-height: 55vh;
+            color: var(--text-light);
+            text-align: center;
+        }
+        .reader-empty-icon { font-size: 3rem; opacity: 0.35; }
+        .reader-empty h2 { font-size: 1.1rem; font-weight: 500; color: var(--text-light); margin: 0; }
+        .reader-empty p { margin: 0; }
+
+        /* ── Rendered Markdown ─────────────────────── */
+        #md-output { animation: fadeUp 0.3s ease forwards; }
+
+        #md-output h1 {
+            font-size: clamp(1.5rem, 4vw, 2.1rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-5);
+            color: var(--text);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: var(--space-3);
+        }
+        #md-output h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: var(--space-7);
+            margin-bottom: var(--space-3);
+            color: var(--text);
+        }
+        #md-output h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: var(--space-5);
+            margin-bottom: var(--space-2);
+            color: var(--accent);
+        }
+        #md-output p {
+            font-size: 1rem;
+            line-height: 1.85;
+            color: var(--text-light);
+            margin-bottom: var(--space-4);
+        }
+        #md-output ul, #md-output ol {
+            padding-left: var(--space-5);
+            margin-bottom: var(--space-4);
+        }
+        #md-output li {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            color: var(--text-light);
+            margin-bottom: calc(var(--space-1) / 2);
+        }
+        #md-output strong { color: var(--text); font-weight: 600; }
+        #md-output em { color: var(--accent); font-style: italic; }
+        #md-output blockquote {
+            border-left: 3px solid var(--accent);
+            padding: var(--space-3) var(--space-4);
+            margin: var(--space-5) 0;
+            color: var(--text-light);
+            font-style: italic;
+            background: rgba(255,255,255,0.03);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+        #md-output hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: var(--space-6) 0;
+        }
+        #md-output code {
+            background: rgba(255,255,255,0.07);
+            padding: 0.15em 0.4em;
+            border-radius: var(--radius-sm);
+            font-size: 0.875em;
+            font-family: ui-monospace, monospace;
+            color: var(--accent);
+        }
+
+        /* ── Progress Bar ──────────────────────────── */
+        #read-progress {
+            position: fixed;
+            top: 0; left: 0;
+            height: 2px;
+            background: var(--accent, #6366f1);
+            width: 0%;
+            transition: width 0.1s linear;
+            z-index: 1000;
+        }
+
+        /* ── Responsive ────────────────────────────── */
+        @media (max-width: 768px) {
+            .reader-layout { grid-template-columns: 1fr; }
+            .doc-list {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+                flex-direction: row;
+                flex-wrap: wrap;
+                overflow-x: auto;
+                padding: var(--space-3) var(--space-4);
+            }
+            .doc-list-title { display: none; }
+            .back-link { display: none; }
+            .reader-content { padding: var(--space-5) var(--space-4); }
+        }
+    </style>
+</head>
+<body class="dark-mode">
+
+    <div id="read-progress" role="progressbar" aria-label="Lesefortschritt"></div>
+
+    <!-- TOPBAR -->
+    <header class="topbar topbar-large">
+        <div class="topbar-left">
+            <div class="ismail-logo-mark">
+                <span class="dot dot-1"></span>
+                <span class="dot dot-2"></span>
+                <span class="dot dot-3"></span>
+            </div>
+            <div class="topbar-text">
+                <strong class="topbar-brand">Ismail UI</strong>
+                <span class="topbar-tagline">clean · modular · consistent</span>
+            </div>
+        </div>
+        <label class="ios-switch topbar-switch" for="themeToggle">
+            <span class="sr-only">Dark Mode umschalten</span>
+            <input type="checkbox" id="themeToggle" checked>
+            <span class="slider"></span>
+        </label>
+    </header>
+
+    <!-- READER -->
+    <div class="reader-layout">
+
+        <!-- Sidebar -->
+        <nav class="doc-list" aria-label="Texte auswählen">
+            <p class="doc-list-title">📚 Texte</p>
+            <a href="index.html" class="back-link">← Übersicht</a>
+
+            <button class="doc-item" id="btn-0" aria-pressed="false">
+                <span class="doc-item-icon">🧵</span>
+                <span class="doc-item-label">Der große Faden der Philosophie</span>
+            </button>
+            <button class="doc-item" id="btn-1" aria-pressed="false">
+                <span class="doc-item-icon">🎓</span>
+                <span class="doc-item-label">Akademischer Überblick</span>
+            </button>
+            <button class="doc-item" id="btn-2" aria-pressed="false">
+                <span class="doc-item-icon">📊</span>
+                <span class="doc-item-label">Visuelle Timeline</span>
+            </button>
+            <button class="doc-item" id="btn-3" aria-pressed="false">
+                <span class="doc-item-icon">📘</span>
+                <span class="doc-item-label">Die 40 prägendsten Philosophen</span>
+            </button>
+            <button class="doc-item" id="btn-4" aria-pressed="false">
+                <span class="doc-item-icon">📄</span>
+                <span class="doc-item-label">Zitierfähige Version</span>
+            </button>
+        </nav>
+
+        <!-- Content -->
+        <main class="reader-content" id="reader-main">
+            <div class="reader-inner">
+                <div class="reader-empty" id="empty-state">
+                    <span class="reader-empty-icon">📖</span>
+                    <h2>Wähle einen Text aus der Liste</h2>
+                    <p>Klicke links auf einen Titel, um ihn zu lesen.</p>
+                    <button class="btn btn-primary" id="first-doc-btn">Zum ersten Text →</button>
+                </div>
+                <div id="md-output" hidden></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Framework JS -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/core-ui.js"></script>
+
+    <script>
+    // ── All markdown content inlined — no fetch, works offline / file:// ──────
+
+    const DOCS = [
+      {
+        title: "Der große Faden der Philosophie",
+        content: `## 🧵 Der große Faden der Philosophie: Von Platon bis heute
+
+**Was den Menschen beschäftigt hat — wie wir vorwärtsgekommen sind — wo wir heute stehen**
+
+### 1) **Die Frage nach Wahrheit und Wissen (Platon, Aristoteles)**
+
+Die Philosophie beginnt mit der Frage: **Was ist wahr? Was kann der Mensch wissen?**
+
+- **Platon**: Die Welt ist unvollkommen, die Wahrheit liegt in Ideen.
+
+- **Aristoteles**: Die Wahrheit liegt in der Welt selbst, durch Beobachtung und Logik.
+
+➡️ Grundstein für Wissenschaft, Logik, Politik, Ethik.
+
+### 2) **Die Frage nach Gott und dem Sinn (Augustinus, Thomas von Aquin)**
+
+Im Mittelalter verschiebt sich der Fokus: **Wie passt menschliche Vernunft zu Glauben und Religion?**
+
+- **Augustinus**: Der Mensch sucht Sinn in Gott.
+
+- **Aquin**: Vernunft und Glaube widersprechen sich nicht.
+
+➡️ Die Philosophie wird zum Fundament europäischer Kultur und Moral.
+
+### 3) **Die Geburt des modernen Denkens (Descartes, Hobbes, Locke)**
+
+Ab dem 17. Jahrhundert explodiert etwas Neues: **Der Mensch vertraut wieder auf sich selbst.**
+
+- **Descartes**: „Ich denke, also bin ich" — Vernunft als Basis.
+
+- **Hobbes**: Der Mensch braucht einen starken Staat.
+
+- **Locke**: Freiheit, Eigentum, Menschenrechte.
+
+➡️ Beginn der modernen Wissenschaft, Demokratie, Individualität.
+
+### 4) **Die Aufklärung: Freiheit, Vernunft, Gesellschaft (Hume, Rousseau, Kant)**
+
+Die großen Fragen werden politisch und moralisch:
+
+- **Hume**: Der Mensch ist ein Gewohnheitstier.
+
+- **Rousseau**: Gesellschaft macht uns unfrei.
+
+- **Kant**: Moral entsteht aus Vernunft und Freiheit.
+
+➡️ Grundlage für moderne Ethik, Rechtsstaat, Menschenwürde.
+
+### 5) **Die Frage nach Geschichte, Macht und Gesellschaft (Hegel, Marx, Nietzsche)**
+
+Im 19. Jahrhundert wird Philosophie explosiv:
+
+- **Hegel**: Geschichte folgt einem logischen Prozess.
+
+- **Marx**: Gesellschaft ist von Wirtschaft und Macht geprägt.
+
+- **Nietzsche**: Moral ist menschengemacht — der Mensch muss sich selbst erfinden.
+
+➡️ Moderne Politik, Kapitalismuskritik, Existenzialismus.
+
+### 6) **Der Mensch im 20. Jahrhundert: Freiheit, Sprache, Verantwortung (Arendt, Sartre, Wittgenstein)**
+
+Nach zwei Weltkriegen wird die Frage existenziell:
+
+- **Sartre**: Der Mensch ist frei und verantwortlich.
+
+- **Arendt**: Das Böse entsteht durch Gedankenlosigkeit.
+
+- **Wittgenstein**: Sprache bestimmt, wie wir die Welt verstehen.
+
+➡️ Moderne Ethik, politische Theorie, Sprachphilosophie.
+
+### 7) **Heute: Technologie, Bewusstsein, Identität (Foucault, Habermas, moderne Denker)**
+
+Die Gegenwart fragt:
+
+- **Wie formen Medien und Macht unser Denken?** (Foucault)
+
+- **Wie kommunizieren wir sinnvoll?** (Habermas)
+
+- **Was ist Bewusstsein? KI? Freiheit in der digitalen Welt?**
+
+➡️ Wir stehen an einem Punkt, an dem Philosophie wieder extrem wichtig wird.
+
+## 🎯 Fazit: Der Faden in einem Satz
+
+**Die Philosophie ist die Geschichte der Fragen, die den Menschen ausmachen: Wahrheit, Freiheit, Moral, Macht, Identität — und heute Technologie.**`
+      },
+      {
+        title: "Von Platon bis heute — ein akademischer Überblick",
+        content: `# 🧵 *Der große Faden der Philosophie*
+
+### *Von Platon bis heute — ein akademischer Überblick*
+
+## **Einleitung**
+
+Die Geschichte der Philosophie ist die Geschichte der Fragen, die den Menschen ausmachen: **Was ist wahr? Was ist gut? Was ist der Mensch? Wie sollen wir leben?** Von der Antike bis zur Gegenwart bildet sich ein kontinuierlicher Denkstrom, der Wissenschaft, Politik, Ethik, Gesellschaft und Identität geprägt hat. Dieser Text zeichnet einen klaren, akademisch fundierten Faden durch 2.500 Jahre Philosophiegeschichte.
+
+## **1. Die Antike: Die Geburt des rationalen Denkens**
+
+Mit den Vorsokratikern beginnt die Abkehr vom Mythos hin zur rationalen Erklärung der Welt. **Sokrates** etabliert die kritische Selbstprüfung, **Platon** die Theorie der Ideen, **Aristoteles** die systematische Wissenschaft. Die Antike legt die Grundlagen für Logik, Ethik, Politik und Erkenntnistheorie.
+
+**Zentrale Frage:** *Was ist Wahrheit, und wie kann der Mensch sie erkennen?*
+
+## **2. Mittelalter: Synthese von Glauben und Vernunft**
+
+Philosophie wird in den Dienst der Theologie gestellt. **Augustinus** interpretiert die menschliche Seele religiös, **Thomas von Aquin** verbindet Aristoteles mit dem Christentum. Arabische Denker wie **Avicenna** und **Averroes** bewahren und erweitern das antike Wissen.
+
+**Zentrale Frage:** *Wie lässt sich göttliche Offenbarung mit menschlicher Vernunft vereinbaren?*
+
+## **3. Frühe Neuzeit: Der Mensch entdeckt sich selbst**
+
+Mit der Renaissance und dem wissenschaftlichen Aufbruch verschiebt sich der Fokus. **Descartes** begründet den Rationalismus, **Hobbes** entwickelt eine frühe Staatsphilosophie, **Locke** und **Hume** formen den Empirismus. **Rousseau** stellt die Gesellschaft radikal infrage.
+
+**Zentrale Frage:** *Wie kann der Mensch autonom denken und politisch frei sein?*
+
+## **4. Klassische Moderne: Freiheit, Vernunft und Geschichte**
+
+Die Philosophie erreicht eine neue systematische Tiefe. **Kant** definiert Moral als Ausdruck der Freiheit. **Hegel** interpretiert Geschichte als dialektischen Prozess. **Marx** analysiert Gesellschaft als Produkt ökonomischer Machtverhältnisse. **Nietzsche** kritisiert Moral, Wahrheit und Religion fundamental.
+
+**Zentrale Frage:** *Wie entsteht Freiheit — individuell, moralisch, historisch?*
+
+## **5. 20. Jahrhundert: Existenz, Sprache, Macht**
+
+Nach den Katastrophen der Moderne wird die Philosophie existenziell. **Sartre** und **Camus** betonen Verantwortung und Absurdität. **Wittgenstein** zeigt, dass Sprache die Grenzen des Denkens bestimmt. **Arendt** analysiert Totalitarismus und die „Banalität des Bösen". **Foucault** untersucht Machtstrukturen in modernen Gesellschaften.
+
+**Zentrale Frage:** *Wie verstehen wir uns selbst in einer komplexen, technologischen Welt?*
+
+## **6. Gegenwart: Bewusstsein, Identität, Technologie**
+
+Heute stehen neue Themen im Zentrum: Künstliche Intelligenz, digitale Identität, globale Ethik, Körper und Geschlecht, Bewusstsein und Neurophilosophie. Denker wie **Nussbaum**, **Dennett**, **Butler** und **Byung-Chul Han** prägen die Debatten.
+
+**Zentrale Frage:** *Wie bleibt der Mensch handlungsfähig in einer Welt, die sich schneller verändert als je zuvor?*
+
+# **Schluss: Wo wir heute stehen**
+
+Die Philosophie ist kein abgeschlossenes Kapitel, sondern ein offener Prozess. Sie begleitet den Menschen bei der Suche nach Orientierung — von Platon bis zur KI. Die großen Fragen bleiben dieselben, doch die Antworten verändern sich mit jeder Epoche.
+
+Philosophie ist damit nicht nur Geschichte, sondern **ein Werkzeug, um die Gegenwart zu verstehen und die Zukunft zu gestalten**.`
+      },
+      {
+        title: "Visuelle Timeline der Philosophiegeschichte",
+        content: `# 📊 **Visuelle Timeline der Philosophiegeschichte**
+
+### *Jahrhundert → Philosoph → Kernidee*
+
+## 🏛️ **Antike (6. Jh. v. Chr. – 4. Jh. n. Chr.)**
+
+**6. Jh. v. Chr.**
+
+- **Thales** — Natur als rational erklärbar
+- **Heraklit** — Wandel als Grundprinzip
+- **Parmenides** — Sein als unveränderlich
+
+**5. Jh. v. Chr.**
+
+- **Sokrates** — Ethik durch kritische Selbstprüfung
+
+**4. Jh. v. Chr.**
+
+- **Platon** — Ideenlehre, Erkenntnis als Erinnerung
+- **Aristoteles** — Logik, Wissenschaft, Ethik der Mitte
+
+**3.–1. Jh. v. Chr.**
+
+- **Epikur** — Lust als Maßstab des guten Lebens
+- **Zenon (Stoa)** — Tugend, Vernunft, Gelassenheit
+
+## ✝️ **Mittelalter (4. – 15. Jh.)**
+
+**4.–5. Jh.**
+
+- **Augustinus** — Innerlichkeit, Zeit, Gottesbezug
+
+**6. Jh.**
+
+- **Boethius** — Glück, Vorsehung, Trost der Philosophie
+
+**10.–12. Jh.**
+
+- **Avicenna** — Metaphysik, Seele, islamische Rationalität
+- **Averroes** — Aristoteles-Rezeption, Vernunft vs. Offenbarung
+
+**13. Jh.**
+
+- **Thomas von Aquin** — Synthese von Aristoteles und Christentum
+
+**14. Jh.**
+
+- **Meister Eckhart** — Mystik, Sein, innere Freiheit
+
+## 🌅 **Frühe Neuzeit (15. – 18. Jh.)**
+
+**15.–16. Jh.**
+
+- **Machiavelli** — Realistische politische Theorie
+
+**17. Jh.**
+
+- **Descartes** — Rationalismus, „cogito"
+- **Hobbes** — Gesellschaftsvertrag, Staat als Leviathan
+- **Spinoza** — Monismus, Ethik der Vernunft
+- **Locke** — Empirismus, Eigentum, Liberalismus
+- **Leibniz** — Monaden, Harmonie
+- **Hume** — Skeptizismus, Kausalität als Gewohnheit
+
+**18. Jh.**
+
+- **Rousseau** — Freiheit, Naturzustand, Gesellschaftskritik
+
+## ⚙️ **Klassische Moderne (18. – 19. Jh.)**
+
+**18. Jh.**
+
+- **Kant** — Autonomie, Pflichtethik, Erkenntnistheorie
+
+**19. Jh.**
+
+- **Fichte** — Ich-Philosophie
+- **Schelling** — Naturphilosophie
+- **Hegel** — Dialektik, Geschichtsphilosophie
+- **Schopenhauer** — Wille, Pessimismus
+- **Mill** — Utilitarismus, Freiheit
+- **Marx** — Kapitalismuskritik, Materialismus
+- **Kierkegaard** — Existenz, Subjektivität
+- **Nietzsche** — Moral-Kritik, Wille zur Macht
+
+## 🧩 **20. Jahrhundert (1900–2000)**
+
+**Frühes 20. Jh.**
+
+- **Wittgenstein** — Sprache als Grenze der Welt
+- **Heidegger** — Sein, Existenz, Zeitlichkeit
+
+**Mitte 20. Jh.**
+
+- **Sartre** — Existenzialismus, Freiheit
+- **Camus** — Absurdität, Revolte
+- **Hannah Arendt** — Totalitarismus, Verantwortung
+- **Simone de Beauvoir** — Feminismus, Existenz
+
+**Spätes 20. Jh.**
+
+- **Foucault** — Macht, Diskurse, Institutionen
+- **Habermas** — Kommunikation, Öffentlichkeit
+
+## 🌐 **Gegenwart (2000–heute)**
+
+- **Daniel Dennett** — Bewusstsein, KI, Kognition
+- **Martha Nussbaum** — Fähigkeitenansatz, Ethik
+- **Judith Butler** — Identität, Performativität
+- **Byung-Chul Han** — Digitalisierung, Müdigkeitsgesellschaft`
+      },
+      {
+        title: "Die 40 prägendsten Philosophen der Menschheitsgeschichte",
+        content: `# 📘 *Die 40 prägendsten Philosophen der Menschheitsgeschichte*
+
+### (Kuratierte Liste für einen klaren historischen Faden)
+
+### **Antike (Grundlagen des Denkens)**
+
+- Thales
+- Heraklit
+- Parmenides
+- Sokrates
+- Platon
+- Aristoteles
+- Epikur
+- Zenon (Stoa)
+
+### **Mittelalter (Glaube, Vernunft, Ordnung)**
+
+- Augustinus
+- Boethius
+- Avicenna
+- Averroes
+- Thomas von Aquin
+- Meister Eckhart
+
+### **Frühe Neuzeit (Geburt der Moderne)**
+
+- Machiavelli
+- Descartes
+- Hobbes
+- Spinoza
+- Locke
+- Leibniz
+- Hume
+- Rousseau
+
+### **Klassische Moderne (Vernunft, Freiheit, Gesellschaft)**
+
+- Kant
+- Fichte
+- Schelling
+- Hegel
+- Schopenhauer
+- Mill
+- Marx
+- Kierkegaard
+- Nietzsche
+
+### **20. Jahrhundert (Sprache, Existenz, Macht, Gesellschaft)**
+
+- Wittgenstein
+- Heidegger
+- Sartre
+- Camus
+- Hannah Arendt
+- Simone de Beauvoir
+- Foucault
+- Habermas
+
+### **Gegenwart (Bewusstsein, Technologie, Identität)**
+
+- Daniel Dennett
+- Martha Nussbaum
+- Judith Butler
+- Byung-Chul Han
+
+➡️ Das ergibt **40 Philosophen**, die den roten Faden der westlichen Philosophiegeschichte tragen und bis heute gesellschaftlich prägen.`
+      },
+      {
+        title: "Wissenschaftlich zitierfähige Version",
+        content: `# 📚 **Wissenschaftlich zitierfähige Version**
+
+### *Akademischer Stil, neutral, präzise, ohne Vereinfachung*
+
+## **Einleitung**
+
+Die Philosophiegeschichte lässt sich als kontinuierlicher Prozess der Problemformulierung und -bearbeitung verstehen. Jede Epoche entwickelt Antworten auf grundlegende Fragen nach Wahrheit, Moral, Freiheit, Macht und Identität. Die folgende Darstellung bietet eine systematische Übersicht über zentrale Denkerinnen und Denker sowie ihre wesentlichen Beiträge.
+
+## **1. Antike**
+
+Die antike Philosophie markiert den Übergang vom mythologischen zum rationalen Weltverständnis. Die Vorsokratiker (Thales, Heraklit, Parmenides) begründen metaphysische und naturphilosophische Fragestellungen. Mit **Sokrates** entsteht eine dialogische Ethik, während **Platon** eine idealistische Erkenntnistheorie und **Aristoteles** eine systematische Wissenschaftstheorie entwickeln. Hellenistische Schulen wie Epikureismus und Stoa prägen Ethik und Anthropologie nachhaltig.
+
+## **2. Mittelalter**
+
+Die mittelalterliche Philosophie ist durch die Integration antiker Rationalität in religiöse Weltbilder gekennzeichnet. **Augustinus** verbindet platonische Motive mit christlicher Theologie. Arabische Philosophen wie **Avicenna** und **Averroes** vermitteln aristotelisches Denken in den lateinischen Westen. **Thomas von Aquin** formuliert eine umfassende Synthese von Vernunft und Offenbarung. Mystische Strömungen (Eckhart) erweitern die Diskussion um subjektive Erfahrung.
+
+## **3. Frühe Neuzeit**
+
+Die Neuzeit beginnt mit einer epistemologischen Neuorientierung. **Descartes** begründet den Rationalismus, während **Locke**, **Berkeley** und **Hume** den Empirismus ausarbeiten. Politische Philosophie entwickelt sich bei **Hobbes** und **Rousseau** zu modernen Theorien des Gesellschaftsvertrags. **Spinoza** und **Leibniz** entwerfen systematische metaphysische Modelle.
+
+## **4. Klassische Moderne**
+
+Die klassische deutsche Philosophie (Kant, Fichte, Schelling, Hegel) stellt Vernunft, Freiheit und Geschichte in den Mittelpunkt. **Kant** entwickelt eine transzendentale Erkenntnistheorie und eine deontologische Ethik. **Hegel** interpretiert Geschichte als dialektischen Prozess. **Marx** transformiert Hegels Dialektik in eine materialistische Gesellschaftstheorie. **Nietzsche** kritisiert Moral, Religion und Wahrheit radikal und eröffnet postmoderne Perspektiven.
+
+## **5. 20. Jahrhundert**
+
+Das 20. Jahrhundert ist geprägt von Sprachphilosophie, Existenzialismus und Gesellschaftskritik. **Wittgenstein** begrenzt Erkenntnis durch Sprachstrukturen. **Heidegger** analysiert das Sein aus existenzialontologischer Perspektive. **Sartre** und **Camus** thematisieren Freiheit und Absurdität. **Arendt** untersucht Totalitarismus und politische Verantwortung. **Foucault** analysiert Macht- und Wissensordnungen, während **Habermas** eine Theorie kommunikativer Rationalität entwickelt.
+
+## **6. Gegenwart**
+
+Zeitgenössische Philosophie befasst sich mit Bewusstsein, Technologie, Identität und globaler Gerechtigkeit. **Dennett** untersucht Bewusstsein und künstliche Intelligenz. **Nussbaum** entwickelt den Fähigkeitenansatz als normative Theorie. **Butler** analysiert Geschlecht als performative Praxis. **Byung-Chul Han** beschreibt die Pathologien spätmoderner Gesellschaften.
+
+## **Schluss**
+
+Die Philosophiegeschichte zeigt, dass zentrale Fragen bestehen bleiben, während ihre Antworten sich verändern. Philosophie ist daher weniger ein abgeschlossenes Wissenssystem als ein fortlaufender Prozess kritischer Selbstverständigung.`
+      }
+    ];
+
+    // ── Render ───────────────────────────────────────────
+    const buttons   = document.querySelectorAll('.doc-item');
+    const mdOutput  = document.getElementById('md-output');
+    const emptyState = document.getElementById('empty-state');
+
+    function showDoc(index) {
+        const doc = DOCS[index];
+        if (!doc) return;
+
+        // Active state
+        buttons.forEach((b, i) => {
+            b.classList.toggle('active', i === index);
+            b.setAttribute('aria-pressed', i === index ? 'true' : 'false');
+        });
+
+        // Render
+        emptyState.hidden = true;
+        mdOutput.hidden = false;
+        mdOutput.innerHTML = marked.parse(doc.content);
+        document.title = doc.title + ' – Philosophiegeschichte';
+        history.replaceState(null, '', '#' + index);
+
+        // Scroll to top of content area
+        mdOutput.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    buttons.forEach((btn, i) => btn.addEventListener('click', () => showDoc(i)));
+    document.getElementById('first-doc-btn').addEventListener('click', () => showDoc(0));
+
+    // ── Progress bar ─────────────────────────────────────
+    window.addEventListener('scroll', () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        document.getElementById('read-progress').style.width =
+            (max > 0 ? (window.scrollY / max) * 100 : 0) + '%';
+    }, { passive: true });
+
+    // ── Restore from URL hash ────────────────────────────
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typeof initUI === 'function') initUI();
+        const idx = parseInt(location.hash.replace('#', ''), 10);
+        if (!isNaN(idx) && DOCS[idx]) showDoc(idx);
+    });
+    </script>
+</body>
+</html>

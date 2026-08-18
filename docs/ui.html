@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI‑Kit Dokumentation – Ismail UI</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/icons/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/icons/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/icons/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/icons/favicon-512.png">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Core Framework -->
+  <link rel="stylesheet" href="../assets/css/core.css" />
+  <link rel="stylesheet" href="../assets/css/core-theme.css" />
+  <link rel="stylesheet" href="../assets/css/core-ui.css" />
+  <link rel="stylesheet" href="../assets/css/ui-kit.css" />
+
+  <!-- Layout -->
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="ui-kit-docs.css" />
+</head>
+
+<body class="dark-mode">
+  <!-- Sidebar -->
+  <aside class="sidebar" aria-label="Sidebar Navigation">
+    <h2 class="sidebar-title">UI‑Kit</h2>
+    <p class="badge">Dokumentation</p>
+
+    <nav aria-label="UI‑Kit Inhaltsverzeichnis">
+      <a href="#buttons" aria-label="Buttons">🔘 Buttons</a>
+      <a href="#inputs" aria-label="Inputs">⌨️ Inputs</a>
+      <a href="#panels" aria-label="Panels">📦 Panels</a>
+      <a href="#tables" aria-label="Tabellen">📋 Tabellen</a>
+      <a href="#widgets" aria-label="Widgets">📊 Widgets</a>
+      <a href="#switch" aria-label="Theme Switch">🌗 Theme Switch</a>
+      <a href="#feedback" aria-label="Status und Feedback">💬 Status & Feedback</a>
+      <a href="#theme" aria-label="Theme und Layout">🧩 Theme & Layout</a>
+    </nav>
+
+    <hr class="sidebar-separator" />
+
+    <p class="sidebar-description">
+      Diese Seite zeigt alle globalen Komponenten Ismail UI‑Kits.
+    </p>
+  </aside>
+
+  <!-- Main -->
+  <main class="ui-main">
+    <!-- TOPBAR -->
+    <header class="topbar topbar-large" aria-label="Hauptnavigation">
+      <div class="topbar-left">
+        <div class="ismail-logo-mark" aria-hidden="true">
+          <span class="dot dot-1"></span>
+          <span class="dot dot-2"></span>
+          <span class="dot dot-3"></span>
+        </div>
+
+        <div class="topbar-text">
+          <strong class="topbar-brand">Ismail UI</strong>
+          <span class="topbar-tagline">clean · modular · consistent</span>
+        </div>
+
+        <nav class="topbar-nav" aria-label="Topbar Navigation">
+          <a href="framework.html">Framework</a>
+          <a href="ui.html" class="active" aria-current="page">UI‑Kit</a>
+          <a href="ui-components.html">Components</a>
+          <a href="branding.html">Branding</a>
+        </nav>
+      </div>
+
+      <label class="ios-switch topbar-switch">
+        <input type="checkbox" id="themeToggle" role="switch" aria-label="Theme umschalten" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <!-- HERO -->
+    <section class="ui-hero">
+      <h1 class="ui-hero-title">UI‑Kit Dokumentation</h1>
+      <p class="ui-hero-subtitle">
+        Alle globalen UI‑Elemente – Buttons, Inputs, Panels, Tabellen, Widgets.
+      </p>
+    </section>
+    <!-- BUTTONS -->
+    <section id="buttons" class="ui-section">
+      <h2>🔘 Buttons</h2>
+      <p>
+        Buttons sind zentrale Interaktionselemente und nutzen Akzent‑ und
+        Text‑Tokens.
+      </p>
+
+      <div class="component-demo">
+        <button class="btn">Standard Button</button>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-ghost">Ghost Button</button>
+        <button class="btn" disabled>Disabled</button>
+      </div>
+    </section>
+
+
+    <!-- INPUTS -->
+    <section id="inputs" class="ui-section">
+      <h2>⌨️ Inputs</h2>
+      <p>Text‑ und Number‑Inputs mit Fokus‑Styles.</p>
+      <div class="ui-example">
+        <div class="ui-row">
+          <label class="sr-only" for="inputText">Text Input</label>
+          <input id="inputText" placeholder="Text Input" />
+
+          <label class="sr-only" for="inputNumber">Number Input</label>
+          <input id="inputNumber" type="number" placeholder="Number Input" />
+
+          <label class="sr-only" for="inputDate">Datum wählen</label>
+          <input id="inputDate" type="date" aria-label="Datum wählen" />
+        </div>
+      </div>
+
+      <div class="component-demo form-demo">
+        <label class="field">
+          <span class="field-label">E-Mail</span>
+          <input type="email" placeholder="name@domain.com" />
+        </label>
+
+        <label class="field">
+          <span class="field-label">Passwort</span>
+          <input type="password" placeholder="••••••••" />
+        </label>
+
+        <label class="field">
+          <span class="field-label">Nachricht</span>
+          <textarea rows="3" placeholder="Deine Nachricht..."></textarea>
+        </label>
+      </div>
+    </section>
+
+    <!-- PANELS -->
+    <section id="panels" class="ui-section">
+      <h2>📦 Panels & Cards</h2>
+      <p>
+        Panels strukturieren Inhalte und nutzen sekundäre Hintergründe und
+        Schatten.
+      </p>
+
+      <div class="ui-example">
+        <section class="panel">
+          <h3>Panel Titel</h3>
+          <p class="panel-text">
+            Das ist ein Beispiel‑Panel mit globalen Panel‑Style.
+          </p>
+        </section>
+      </div>
+
+      <div class="component-demo panel-grid">
+        <article class="panel">
+          <h3>Standard Panel</h3>
+          <p>Ideal für Settings, Infos oder kompakte Inhalte.</p>
+        </article>
+
+        <article class="panel panel-accent">
+          <h3>Accent Panel</h3>
+          <p>Für wichtige Hinweise oder hervorgehobene Bereiche.</p>
+        </article>
+      </div>
+
+
+    </section>
+
+    <!-- TABLES -->
+    <section id="tables" class="ui-section">
+      <h2>📋 Tabellen</h2>
+      <p>Tabellen nutzen dezente Linien und Hintergrund‑Abstufungen.</p>
+
+      <div class="ui-example">
+        <table>
+          <thead>
+            <tr>
+              <th>Spalte A</th>
+              <th>Spalte B</th>
+              <th>Spalte C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wert 1</td>
+              <td>Wert 2</td>
+              <td>Wert 3</td>
+            </tr>
+            <tr>
+              <td>Wert 4</td>
+              <td>Wert 5</td>
+              <td>Wert 6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- WIDGETS -->
+    <section id="widgets" class="ui-section">
+      <h2>📊 Widgets</h2>
+      <p>Mini‑Widgets wie in Journal Statistik‑Ansicht.</p>
+      <div class="ui-example">
+        <div class="ui-row">
+          <div class="widget">
+            <div class="widget-title">Gesamtwert</div>
+            <div class="widget-value">123'456.78</div>
+          </div>
+          <div class="widget">
+            <div class="widget-title">G/V</div>
+            <div class="widget-value">+12.34%</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SWITCH -->
+    <section id="switch" class="ui-section">
+      <h2>🌗 Theme Switch</h2>
+      <p>iOS‑Switch, steuert globales Theme.</p>
+      <div class="ui-example">
+        <label class="ios-switch">
+          <input type="checkbox" id="themeToggleDemo" aria-label="Theme umschalten (Demo)" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+    </section>
+
+    <!-- STATUS & FEEDBACK -->
+    <section id="feedback" class="ui-section">
+      <h2>💬 Status & Feedback</h2>
+      <p>Hinweise, Fehler und Erfolgsmeldungen nutzen Status‑Tokens.</p>
+
+      <div class="component-demo feedback-grid">
+        <div class="alert alert-success">
+          <strong>Erfolg:</strong> Aktion wurde erfolgreich gespeichert.
+        </div>
+        <div class="alert alert-warning">
+          <strong>Hinweis:</strong> Bitte überprüfe deine Eingaben.
+        </div>
+        <div class="alert alert-danger">
+          <strong>Fehler:</strong> Etwas ist schiefgelaufen.
+        </div>
+      </div>
+
+    </section>
+
+    <!-- THEME -->
+    <section id="theme" class="ui-section">
+      <h2>🧩 Theme & Layout</h2>
+      <p>
+        Mein Theme‑System basiert auf <code>:root</code> für Dark‑Mode und
+        <code>body:not(.dark-mode)</code> für Light‑Mode. Der Switch toggelt
+        einfach die Klasse <code>.dark-mode</code> auf dem
+        <code>&lt;body&gt;</code>.
+      </p>
+
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

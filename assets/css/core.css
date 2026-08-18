@@ -1,0 +1,238 @@
+/* ---------------------------------------------------
+   CORE.CSS – Globales Toolkit für alle Projekte
+   Version 1.0 – by Ismail
+--------------------------------------------------- */
+/* -------------------------------------------------- Global Imports (immer ganz oben) -------------------------------------------------- */ 
+@import url("typography.css");
+/* ---------------------------------------------------
+   RESET
+--------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------------------------------------------------
+   GLOBAL VARIABLES (werden von variables.css überschrieben)
+--------------------------------------------------- */
+:root {
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.08);
+  --shadow-md: 0 6px 18px rgba(0,0,0,0.12);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.18);
+
+  --transition-fast: 0.15s ease;
+  --transition: 0.25s ease;
+  --transition-slow: 0.45s ease;
+/* ---------------------------------------------------
+   SPACING (8px Grid)
+--------------------------------------------------- */
+--space-1: 4px;  /* XS */
+--space-2: 8px;  /* S */
+--space-3: 12px; /* M */
+--space-4: 16px; /* L */
+--space-5: 24px; /* XL */
+--space-6: 32px; /* XXL */
+--space-7: 48px; /* XXXL */
+--space-8: 64px; /* Huge */
+--space-fluid: clamp(8px, 1vw + 4px, 16px);
+}
+/* ---------------------------------------------------
+   Mobile (unter 600px)
+--------------------------------------------------- */
+@media (max-width: 600px) {
+  :root {
+    --space-1: 3px;
+    --space-2: 6px;
+    --space-3: 10px;
+    --space-4: 14px;
+    --space-5: 20px;
+    --space-6: 28px;
+    --space-7: 40px;
+    --space-8: 56px;
+  }
+}
+/* ---------------------------------------------------
+   Tablet (600–1024px)
+--------------------------------------------------- */
+@media (min-width: 600px) and (max-width: 1024px) {
+  :root {
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 22px;
+    --space-6: 30px;
+    --space-7: 44px;
+    --space-8: 60px;
+  }
+}
+/* ---------------------------------------------------
+   Tablet (600–1024px)
+--------------------------------------------------- */
+@media (min-width: 600px) and (max-width: 1024px) {
+  :root {
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 22px;
+    --space-6: 30px;
+    --space-7: 44px;
+    --space-8: 60px;
+  }
+}
+/* ---------------------------------------------------
+   Desktop (ab 1024px)
+--------------------------------------------------- */
+@media (min-width: 1024px) {
+  :root {
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+  }
+}
+
+/* ---------------------------------------------------
+   TYPOGRAPHY
+--------------------------------------------------- */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-muted { color: var(--text-light); }
+
+/* ---------------------------------------------------
+   SPACING UTILITIES
+--------------------------------------------------- */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+
+.pt-1 { padding-top: 0.5rem; }
+.pt-2 { padding-top: 1rem; }
+.pt-3 { padding-top: 1.5rem; }
+
+.pb-1 { padding-bottom: 0.5rem; }
+.pb-2 { padding-bottom: 1rem; }
+.pb-3 { padding-bottom: 1.5rem; }
+
+/* ---------------------------------------------------
+   FLEX UTILITIES
+--------------------------------------------------- */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+
+.flex-center { display: flex; justify-content: center; align-items: center; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.flex-around { display: flex; justify-content: space-around; align-items: center; }
+
+.gap-1 { gap: 0.5rem; }
+.gap-2 { gap: 1rem; }
+.gap-3 { gap: 1.5rem; }
+
+/* ---------------------------------------------------
+   GRID UTILITIES
+--------------------------------------------------- */
+.grid { display: grid; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.grid-4 { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+
+/* ---------------------------------------------------
+   RADIUS UTILITIES
+--------------------------------------------------- */
+.round-sm { border-radius: var(--radius-sm); }
+.round-md { border-radius: var(--radius-md); }
+.round-lg { border-radius: var(--radius-lg); }
+
+/* ---------------------------------------------------
+   SHADOW UTILITIES
+--------------------------------------------------- */
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+
+/* ---------------------------------------------------
+   WIDTH UTILITIES
+--------------------------------------------------- */
+.w-100 { width: 100%; }
+.w-50 { width: 50%; }
+.w-33 { width: 33.33%; }
+.w-25 { width: 25%; }
+
+/* ---------------------------------------------------
+   DISPLAY UTILITIES
+--------------------------------------------------- */
+.hidden { display: none !important; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+/* ---------------------------------------------------
+   ANIMATIONS
+--------------------------------------------------- */
+.fade-in {
+  animation: fadeIn 0.35s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fadeUp 0.45s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------------------------------------------
+   UTILITY HELPERS
+--------------------------------------------------- */
+.clickable { cursor: pointer; }
+.no-select { -webkit-user-select: none; user-select: none; }
+.nowrap { white-space: nowrap; }
+
+/* Screen-reader only – visually hidden but accessible */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

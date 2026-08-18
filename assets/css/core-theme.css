@@ -1,0 +1,93 @@
+/* ---------------------------------------------------
+   CORE-THEME.CSS – Globales Theme-System
+   Version 1.0 – by Ismail
+--------------------------------------------------- */
+
+/* ---------------------------------------------------
+   DARK MODE (Standard)
+--------------------------------------------------- */
+:root {
+  /* Backgrounds */
+  --bg: #181a1d;
+  --bg-secondary: #131722;
+  --bg-tertiary: #1c2333;
+
+  /* Text */
+  --text: #d1d4dc;
+  --text-light: #9aa0a6;
+
+  /* Accent */
+  --accent: #2962ff;
+  --accent-hover: #3d73ff;
+
+  /* Borders */
+  --border: #2a2e39;
+  --border-light: #404555;
+
+  /* Status Colors */
+  --success: #26a69a;
+  --danger: #ef5350;
+  --warning: #ffb300;
+
+  /* Shadows */
+  --shadow-soft: 0 8px 25px rgba(0,0,0,0.25);
+  --shadow-strong: 0 12px 40px rgba(0,0,0,0.35);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Transitions */
+  --theme-transition: 0.35s ease;
+}
+
+/* ---------------------------------------------------
+   LIGHT MODE (Override)
+--------------------------------------------------- */
+body:not(.dark-mode) {
+  --bg: #dde6ee;               /* weiches, modernes Grau */
+  --bg-secondary: #cfd4e2;     /* Panels */
+  --bg-tertiary: #bbc0c9;      /* Inputs, leichte Abgrenzung */
+
+  --text: #1A1C1E;             /* dunkler, aber nicht schwarz */
+  --text-light: #4A4D50;
+
+  --accent: #2962ff;
+  --accent-hover: #3d73ff;
+
+  --border: #C8CCD3;
+  --border-light: #D8DCE2;
+
+  --success: #1b8f7a;
+  --danger: #d64545;
+  --warning: #e6a100;
+
+  --shadow-soft: 0 8px 25px rgba(0,0,0,0.06);
+  --shadow-strong: 0 12px 40px rgba(0,0,0,0.10);
+}
+
+
+/* ---------------------------------------------------
+   GLOBAL THEME TRANSITIONS
+--------------------------------------------------- */
+* {
+  transition:
+    background-color var(--theme-transition),
+    color var(--theme-transition),
+    border-color var(--theme-transition),
+    box-shadow var(--theme-transition);
+}
+
+/* ---------------------------------------------------
+   THEME DEBUG UTILITIES
+--------------------------------------------------- */
+.theme-debug * {
+  outline: 1px dashed rgba(255,0,0,0.25);
+}
+
+.theme-dark-only { display: none; }
+body.dark-mode .theme-dark-only { display: block; }
+
+.theme-light-only { display: none; }
+body:not(.dark-mode) .theme-light-only { display: block; }

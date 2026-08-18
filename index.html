@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophiegeschichte – Der große Faden</title>
+
+    <!-- Ismail UI Framework Core -->
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/core-theme.css">
+    <link rel="stylesheet" href="assets/css/core-ui.css">
+    <link rel="stylesheet" href="assets/css/ui-kit.css">
+    <link rel="stylesheet" href="assets/css/components/timeline.css">
+    
+    <!-- Layout Styles (basierend auf deinen Docs) -->
+    <link rel="stylesheet" href="docs/layout.css">
+    <style>
+        .epoch-card { margin-bottom: var(--space-4); }
+        .timeline-mark { font-weight: 600; color: var(--accent); margin-right: 0.5rem; }
+        .hero-visual { padding: var(--space-8) 0; text-align: center; }
+
+        /* ── Widget cards ── */
+        .ui-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+            margin-top: var(--space-4);
+        }
+        .widget {
+            flex: 1 1 140px;
+            background: var(--bg-secondary, rgba(255,255,255,0.04));
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: var(--space-4) var(--space-4);
+            text-align: center;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .widget:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        .widget-title {
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: var(--space-2);
+        }
+        .widget-value {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="sidebar-title">Philosophie</h2>
+        <p class="badge">Von Platon bis heute</p>
+        <nav aria-label="Epochen Navigation">
+            <a href="#visual-timeline">📊 Visuelle Timeline</a>
+            <a href="#antike">🏛️ Antike</a>
+            <a href="#mittelalter">✝️ Mittelalter</a>
+            <a href="#neuzeit">🌅 Frühe Neuzeit</a>
+            <a href="#moderne">⚙️ Klassische Moderne</a>
+            <a href="#20jh">🧩 20. Jahrhundert</a>
+            <a href="#gegenwart">🌐 Gegenwart</a>
+            <a href="lesen.html">📖 Texte lesen</a>
+        </nav>
+        <hr class="sidebar-separator">
+        <p class="sidebar-description">
+            Ein Werkzeug, um die Gegenwart zu verstehen und die Zukunft zu gestalten.
+        </p>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <!-- TOPBAR -->
+        <header class="topbar topbar-large">
+            <div class="topbar-left">
+                <div class="ismail-logo-mark">
+                    <span class="dot dot-1"></span>
+                    <span class="dot dot-2"></span>
+                    <span class="dot dot-3"></span>
+                </div>
+                <div class="topbar-text">
+                    <strong class="topbar-brand">Ismail UI</strong>
+                    <span class="topbar-tagline">clean · modular · consistent</span>
+                </div>
+            </div>
+            <label class="ios-switch topbar-switch" for="themeToggle">
+                <span class="sr-only">Dark Mode umschalten</span>
+                <input type="checkbox" id="themeToggle" checked>
+                <span class="slider"></span>
+            </label>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <h1>Der große Faden der Philosophie</h1>
+            <p>
+                Was den Menschen beschäftigt hat — wie wir vorwärtsgekommen sind — wo wir heute stehen. 
+                Entdecke die Geschichte der Fragen, die uns ausmachen.
+            </p>
+        </section>
+
+        <!-- VISUAL TIMELINE -->
+        <section id="visual-timeline" class="section">
+            <h2>📊 Visuelle Zeitreise</h2>
+            <p class="text-muted">Klicke auf eine Epoche, um tiefer in die Details einzutauchen.</p>
+            <div id="timelineContainer"></div>
+        </section>
+
+        <!-- CONTENT SECTIONS (DETAIL) -->
+        <section id="antike" class="section">
+            <h2>🏛️ Die Antike: Die Geburt des Denkens</h2>
+            <div class="panel">
+                <h3>Die Frage nach Wahrheit und Wissen</h3>
+                <p><strong>Platon:</strong> Die Welt ist unvollkommen, die Wahrheit liegt in Ideen.</p>
+                <p><strong>Aristoteles:</strong> Die Wahrheit liegt in der Welt selbst, durch Beobachtung und Logik.</p>
+                <div class="alert alert-warning">Grundstein für Wissenschaft, Logik und Politik.</div>
+            </div>
+        </section>
+
+        <section id="mittelalter" class="section">
+            <h2>✝️ Mittelalter: Glaube und Vernunft</h2>
+            <div class="panel">
+                <p>Im Mittelalter verschiebt sich der Fokus: Wie passt menschliche Vernunft zu Glauben und Religion?</p>
+                <ul>
+                    <li><span class="timeline-mark">Augustinus:</span> Der Mensch sucht Sinn in Gott.</li>
+                    <li><span class="timeline-mark">Aquin:</span> Vernunft und Glaube widersprechen sich nicht.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="neuzeit" class="section">
+            <h2>🌅 Frühe Neuzeit: Der autonome Mensch</h2>
+            <div class="card-grid">
+                <div class="panel">
+                    <h3>Rationalismus</h3>
+                    <p><strong>Descartes:</strong> „Ich denke, also bin ich“ — Die Vernunft als unumstößliche Basis.</p>
+                </div>
+                <div class="panel">
+                    <h3>Liberalismus</h3>
+                    <p><strong>Locke:</strong> Freiheit, Eigentum und die Wurzeln der Menschenrechte.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="moderne" class="section">
+            <h2>⚙️ Klassische Moderne: Freiheit & Macht</h2>
+            <div class="panel panel-accent">
+                <h3>Immanuel Kant</h3>
+                <p>Moral entsteht aus Vernunft und Freiheit. Der kategorische Imperativ als Kompass.</p>
+            </div>
+            <div class="panel">
+                <h3>Nietzsche & Marx</h3>
+                <p>Kritik an Moral, Religion und Wirtschaft. Der Mensch muss sich selbst erfinden oder die Verhältnisse umstürzen.</p>
+            </div>
+        </section>
+
+        <section id="20jh" class="section">
+            <h2>🧩 20. Jahrhundert: Existenz & Sprache</h2>
+            <div class="panel">
+                <p>Nach zwei Weltkriegen wird die Philosophie existenziell:</p>
+                <div class="ui-row">
+                    <div class="widget">
+                        <div class="widget-title">Sartre</div>
+                        <div class="widget-value">Freiheit</div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-title">Arendt</div>
+                        <div class="widget-value">Verantwortung</div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-title">Wittgenstein</div>
+                        <div class="widget-value">Sprache</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gegenwart" class="section">
+            <h2>🌐 Heute: Technologie & Identität</h2>
+            <div class="panel">
+                <p>Wie formen Medien und Macht unser Denken? Was ist Bewusstsein in Zeiten von KI?</p>
+                <p class="text-muted">Denker wie Foucault, Habermas und Byung-Chul Han prägen die aktuelle Debatte.</p>
+                <button class="btn btn-primary" onclick="Toast.show('KI-Modul wird geladen...', 'info')">Mehr erfahren</button>
+            </div>
+        </section>
+
+        <footer class="section">
+            <div class="alert alert-success">
+                <strong>Fazit:</strong> Die Philosophie ist ein Werkzeug, um die Zukunft zu gestalten.
+            </div>
+        </footer>
+    </main>
+
+    <!-- Framework JS -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/timeline.js"></script>
+    <script src="assets/js/core-ui.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { 
+            if(typeof initUI === 'function') initUI(); 
+            
+            // Timeline Daten – alle 6 Epochen
+            const philosophyData = [
+                {
+                    era: "6. Jh. v. Chr. – 4. Jh. n. Chr.",
+                    title: "🏛️ Antike",
+                    summary: "Die Geburt des rationalen Denkens.",
+                    thinkers: "Thales, Heraklit, Parmenides, Sokrates, Platon, Aristoteles, Epikur, Zenon (Stoa)",
+                    description: "Übergang vom Mythos zum Logos. Sokrates begründet die kritische Selbstprüfung, Platon die Ideenlehre, Aristoteles die systematische Wissenschaft. Grundstein für Logik, Ethik, Politik und Erkenntnistheorie."
+                },
+                {
+                    era: "4. – 15. Jahrhundert",
+                    title: "✝️ Mittelalter",
+                    summary: "Synthese von Glauben und Vernunft.",
+                    thinkers: "Augustinus, Boethius, Avicenna, Averroes, Thomas von Aquin, Meister Eckhart",
+                    description: "Philosophie wird in den Dienst der Theologie gestellt. Augustinus verbindet platonische Motive mit christlicher Theologie. Arabische Denker bewahren das antike Erbe. Thomas von Aquin formuliert die große Synthese von Vernunft und Offenbarung."
+                },
+                {
+                    era: "15. – 18. Jahrhundert",
+                    title: "🌅 Frühe Neuzeit",
+                    summary: "Der autonome, denkende Mensch.",
+                    thinkers: "Machiavelli, Descartes, Hobbes, Spinoza, Locke, Leibniz, Hume, Rousseau",
+                    description: "Descartes begründet den Rationalismus (\u201eIch denke, also bin ich\u201c). Locke und Hume formen den Empirismus. Hobbes und Rousseau entwickeln moderne Staatstheorien. Beginn der wissenschaftlichen Revolution, Demokratie und Individualität."
+                },
+                {
+                    era: "18. – 19. Jahrhundert",
+                    title: "⚙️ Klassische Moderne",
+                    summary: "Freiheit, Vernunft und Geschichte.",
+                    thinkers: "Kant, Fichte, Schelling, Hegel, Schopenhauer, Mill, Marx, Kierkegaard, Nietzsche",
+                    description: "Kant definiert Moral als Ausdruck der Freiheit (kategorischer Imperativ). Hegel interpretiert Geschichte als dialektischen Prozess. Marx transformiert Dialektik in Gesellschaftskritik. Nietzsche kritisiert Moral, Religion und Wahrheit radikal."
+                },
+                {
+                    era: "1900 – 2000",
+                    title: "🧩 20. Jahrhundert",
+                    summary: "Existenz, Sprache und Macht.",
+                    thinkers: "Wittgenstein, Heidegger, Sartre, Camus, Hannah Arendt, Simone de Beauvoir, Foucault, Habermas",
+                    description: "Nach zwei Weltkriegen wird Philosophie existenziell. Wittgenstein zeigt, dass Sprache die Grenzen des Denkens bestimmt. Sartre und Camus betonen Freiheit und Absurdität. Arendt analysiert Totalitarismus. Foucault untersucht Macht- und Wissensordnungen."
+                },
+                {
+                    era: "2000 – heute",
+                    title: "🌐 Gegenwart",
+                    summary: "Bewusstsein, Identität und Technologie.",
+                    thinkers: "Daniel Dennett, Martha Nussbaum, Judith Butler, Byung-Chul Han",
+                    description: "Neue Fragen: Künstliche Intelligenz, digitale Identität, globale Ethik, Bewusstsein und Neurophilosophie. Byung-Chul Han beschreibt die Pathologien der Leistungsgesellschaft. Die großen Fragen bleiben – die Antworten verändern sich."
+                }
+            ];
+
+            Timeline.init('timelineContainer', philosophyData);
+        });
+    </script>
+</body>
+</html>
