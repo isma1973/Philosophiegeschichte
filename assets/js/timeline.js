@@ -11,7 +11,7 @@ window.Timeline = {
         container.innerHTML = `
             <div class="timeline-v">
                 ${data.map(item => `
-                    <div class="timeline-v-item">
+                    <div class="timeline-v-item philosophy-card" data-themes="${item.themes || ''}">
                         <div class="timeline-v-marker">
                             <div class="timeline-v-dot"></div>
                         </div>
@@ -19,7 +19,7 @@ window.Timeline = {
                             <span class="timeline-v-date">${item.era}</span>
                             <h3>${item.title}</h3>
                             <p class="text-muted">${item.summary}</p>
-                            <div class="timeline-v-detail hidden">
+                            <button class="btn btn-primary" style="margin-top: var(--space-2);" onclick="window.location.href='quiz.html?era=${encodeURIComponent(item.title)}'">Quiz starten</button>>Quiz starten</button>
                                 <p><strong>Wichtige Denker:</strong> ${item.thinkers}</p>
                                 <p>${item.description}</p>
                             </div>

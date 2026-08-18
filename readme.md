@@ -206,8 +206,6 @@ PWA‑Support
 
 ❤️ Autor
 Ismail Karaduz  
-Design‑System‑Architekt, UI‑Framework‑Entwickler, Creator von Ismail UI.
 
 📄 Lizenz
-Dieses Framework ist privat und für persönliche Projekte bestimmt.
 Eine öffentliche Lizenz kann später hinzugefügt werden.

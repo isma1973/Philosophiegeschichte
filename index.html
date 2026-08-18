@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philosophiegeschichte – Der große Faden</title>
+    <title>Philosophiegeschichte – Überblick</title>
+    <meta name="description" content="Interaktive Timeline zur Geschichte der Philosophie von der Antike bis zur Gegenwart. Entdecken Sie wichtige Denker, Epochen und zentrale Ideen.">
+    <meta property="og:title" content="Philosophiegeschichte – Überblick">
+    <meta property="og:description" content="Interaktive Timeline zur Geschichte der Philosophie von der Antike bis zur Gegenwart.">
+    <meta property="og:image" content="assets/img/antike.jpg">
+    <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- Ismail UI Framework Core -->
     <link rel="stylesheet" href="assets/css/core.css">
@@ -105,6 +110,16 @@
                 Entdecke die Geschichte der Fragen, die uns ausmachen.
             </p>
         </section>
+        <div class="filter-bar">
+          <label for="themeFilter">Thema filtern:</label>
+          <select id="themeFilter" onchange="filterPhilosophy()">
+            <option value="">Alle</option>
+            <option value="Logik">Logik</option>
+            <option value="Ethik">Ethik</option>
+            <option value="Metaphysik">Metaphysik</option>
+            <option value="Politik">Politik</option>
+          </select>
+        </div>
 
         <!-- VISUAL TIMELINE -->
         <section id="visual-timeline" class="section">
@@ -187,7 +202,7 @@
             <div class="panel">
                 <p>Wie formen Medien und Macht unser Denken? Was ist Bewusstsein in Zeiten von KI?</p>
                 <p class="text-muted">Denker wie Foucault, Habermas und Byung-Chul Han prägen die aktuelle Debatte.</p>
-                <button class="btn btn-primary" onclick="Toast.show('KI-Modul wird geladen...', 'info')">Mehr erfahren</button>
+                <button class="btn btn-primary" onclick="alert('KI-Modul wird geladen...')">Mehr erfahren</button>
             </div>
         </section>
 
@@ -203,7 +218,21 @@
     <script src="assets/js/timeline.js"></script>
     <script src="assets/js/core-ui.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => { 
+        document.addEventListener('DOMContentLoaded', () => {
+    // Filter function for philosophy cards
+    window.filterPhilosophy = function() {
+        const filter = document.getElementById('themeFilter').value.toLowerCase();
+        const cards = document.querySelectorAll('.philosophy-card');
+        cards.forEach(card => {
+            const tags = (card.dataset.themes || '').toLowerCase();
+            if (!filter || tags.includes(filter)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    };
+ 
             if(typeof initUI === 'function') initUI(); 
             
             // Timeline Daten – alle 6 Epochen
@@ -213,42 +242,60 @@
                     title: "🏛️ Antike",
                     summary: "Die Geburt des rationalen Denkens.",
                     thinkers: "Thales, Heraklit, Parmenides, Sokrates, Platon, Aristoteles, Epikur, Zenon (Stoa)",
-                    description: "Übergang vom Mythos zum Logos. Sokrates begründet die kritische Selbstprüfung, Platon die Ideenlehre, Aristoteles die systematische Wissenschaft. Grundstein für Logik, Ethik, Politik und Erkenntnistheorie."
+                    description: "Übergang vom Mythos zum Logos. Sokrates begründet die kritische Selbstprüfung, Platon die Ideenlehre, Aristoteles die systematische Wissenschaft. Grundstein für Logik, Ethik, Politik und Erkenntnistheorie.",
+                    image: "assets/img/antike.jpg",
+                    link: "philosophen/antike.html",
+                    themes: "Logik,Ethik,Metaphysik,Politik"
                 },
                 {
                     era: "4. – 15. Jahrhundert",
                     title: "✝️ Mittelalter",
                     summary: "Synthese von Glauben und Vernunft.",
                     thinkers: "Augustinus, Boethius, Avicenna, Averroes, Thomas von Aquin, Meister Eckhart",
-                    description: "Philosophie wird in den Dienst der Theologie gestellt. Augustinus verbindet platonische Motive mit christlicher Theologie. Arabische Denker bewahren das antike Erbe. Thomas von Aquin formuliert die große Synthese von Vernunft und Offenbarung."
+                    description: "Philosophie wird in den Dienst der Theologie gestellt. Augustinus verbindet platonische Motive mit christlicher Theologie. Arabische Denker bewahren das antike Erbe. Thomas von Aquin formuliert die große Synthese von Vernunft und Offenbarung.",
+                    image: "assets/img/mittelalter.jpg",
+                    link: "philosophen/mittelalter.html",
+                    themes: "Metaphysik,Politik,Ethik"
                 },
                 {
                     era: "15. – 18. Jahrhundert",
                     title: "🌅 Frühe Neuzeit",
                     summary: "Der autonome, denkende Mensch.",
                     thinkers: "Machiavelli, Descartes, Hobbes, Spinoza, Locke, Leibniz, Hume, Rousseau",
-                    description: "Descartes begründet den Rationalismus (\u201eIch denke, also bin ich\u201c). Locke und Hume formen den Empirismus. Hobbes und Rousseau entwickeln moderne Staatstheorien. Beginn der wissenschaftlichen Revolution, Demokratie und Individualität."
+                    description: "Descartes begründet den Rationalismus (\"Ich denke, also bin ich\"). Locke und Hume formen den Empirismus. Hobbes und Rousseau entwickeln moderne Staatstheorien. Beginn der wissenschaftlichen Revolution, Demokratie und Individualität.",
+                    image: "assets/img/neuzeit.jpg",
+                    link: "philosophen/neuzeit.html",
+                    themes: "Logik,Ethik,Politik"
                 },
                 {
                     era: "18. – 19. Jahrhundert",
                     title: "⚙️ Klassische Moderne",
                     summary: "Freiheit, Vernunft und Geschichte.",
                     thinkers: "Kant, Fichte, Schelling, Hegel, Schopenhauer, Mill, Marx, Kierkegaard, Nietzsche",
-                    description: "Kant definiert Moral als Ausdruck der Freiheit (kategorischer Imperativ). Hegel interpretiert Geschichte als dialektischen Prozess. Marx transformiert Dialektik in Gesellschaftskritik. Nietzsche kritisiert Moral, Religion und Wahrheit radikal."
+                    description: "Kant definiert Moral als Ausdruck der Freiheit (kategorischer Imperativ). Hegel interpretiert Geschichte als dialektischen Prozess. Marx transformiert Dialektik in Gesellschaftskritik. Nietzsche kritisiert Moral, Religion und Wahrheit radikal.",
+                    image: "assets/img/moderne.jpg",
+                    link: "philosophen/moderne.html",
+                    themes: "Ethik,Politik,Metaphysik"
                 },
                 {
                     era: "1900 – 2000",
                     title: "🧩 20. Jahrhundert",
                     summary: "Existenz, Sprache und Macht.",
                     thinkers: "Wittgenstein, Heidegger, Sartre, Camus, Hannah Arendt, Simone de Beauvoir, Foucault, Habermas",
-                    description: "Nach zwei Weltkriegen wird Philosophie existenziell. Wittgenstein zeigt, dass Sprache die Grenzen des Denkens bestimmt. Sartre und Camus betonen Freiheit und Absurdität. Arendt analysiert Totalitarismus. Foucault untersucht Macht- und Wissensordnungen."
+                    description: "Nach zwei Weltkriegen wird Philosophie existenziell. Wittgenstein zeigt, dass Sprache die Grenzen des Denkens bestimmt. Sartre und Camus betonen Freiheit und Absurdität. Arendt analysiert Totalitarismus. Foucault untersucht Macht- und Wissensordnungen.",
+                    image: "assets/img/20jh.jpg",
+                    link: "philosophen/20jh.html",
+                    themes: "Logik,Ethik,Politik"
                 },
                 {
-                    era: "2000 – heute",
-                    title: "🌐 Gegenwart",
-                    summary: "Bewusstsein, Identität und Technologie.",
-                    thinkers: "Daniel Dennett, Martha Nussbaum, Judith Butler, Byung-Chul Han",
-                    description: "Neue Fragen: Künstliche Intelligenz, digitale Identität, globale Ethik, Bewusstsein und Neurophilosophie. Byung-Chul Han beschreibt die Pathologien der Leistungsgesellschaft. Die großen Fragen bleiben – die Antworten verändern sich."
+                    era: "20. – 21. Jahrhundert",
+                    title: "🚀 Gegenwart & Zukunft",
+                    summary: "Digitale Ethik und KI.",
+                    thinkers: "Foucault, Habermas, Byung‑Chul Han, Donna Haraway",
+                    description: "Analyse von Macht, Kommunikation und digitaler Identität. KI, Netzwerke, Bio‑Politik und post‑humanistische Perspektiven prägen aktuelle Diskurse.",
+                    image: "assets/img/gegenwart.jpg",
+                    link: "philosophen/gegenwart.html",
+                    themes: "Ethik,Politik,Metaphysik"
                 }
             ];
 
