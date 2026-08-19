@@ -27,12 +27,12 @@
         <p class="badge">Von Platon bis heute</p>
         <nav aria-label="Epochen Navigation">
             <a href="#visual-timeline">📊 Visuelle Timeline</a>
-            <a href="#antike">🏛️ Antike</a>
-            <a href="#mittelalter">✝️ Mittelalter</a>
-            <a href="#neuzeit">🌅 Frühe Neuzeit</a>
-            <a href="#moderne">⚙️ Klassische Moderne</a>
-            <a href="#20jh">🧩 20. Jahrhundert</a>
-            <a href="#gegenwart">🌐 Gegenwart</a>
+            <a href="philosophen/antike.html">🏛️ Antike</a>
+            <a href="philosophen/mittelalter.html">✝️ Mittelalter</a>
+            <a href="philosophen/neuzeit.html">🌅 Frühe Neuzeit</a>
+            <a href="philosophen/moderne.html">⚙️ Klassische Moderne</a>
+            <a href="philosophen/20jh.html">🧩 20. Jahrhundert</a>
+            <a href="philosophen/gegenwart.html">🌐 Gegenwart</a>
             <a href="lesen.html">📖 Texte lesen</a>
         </nav>
         <hr class="sidebar-separator">
@@ -45,17 +45,7 @@
     <main class="main">
         <!-- TOPBAR -->
         <header class="topbar topbar-large">
-            <div class="topbar-left">
-                <div class="ismail-logo-mark">
-                    <span class="dot dot-1"></span>
-                    <span class="dot dot-2"></span>
-                    <span class="dot dot-3"></span>
-                </div>
-                <div class="topbar-text">
-                    <strong class="topbar-brand">Ismail UI</strong>
-                    <span class="topbar-tagline">clean · modular · consistent</span>
-                </div>
-            </div>
+            <div class="topbar-left"></div>
             <label class="ios-switch topbar-switch" for="themeToggle">
                 <span class="sr-only">Dark Mode umschalten</span>
                 <input type="checkbox" id="themeToggle" checked>
@@ -89,87 +79,18 @@
             <div id="timelineContainer"></div>
         </section>
 
-        <!-- CONTENT SECTIONS (DETAIL) -->
-        <section id="antike" class="section">
-            <h2>🏛️ Die Antike: Die Geburt des Denkens</h2>
-            <div class="panel">
-                <h3>Die Frage nach Wahrheit und Wissen</h3>
-                <p><strong>Platon:</strong> Die Welt ist unvollkommen, die Wahrheit liegt in Ideen.</p>
-                <p><strong>Aristoteles:</strong> Die Wahrheit liegt in der Welt selbst, durch Beobachtung und Logik.</p>
-                <div class="alert alert-warning">Grundstein für Wissenschaft, Logik und Politik.</div>
-            </div>
-        </section>
-
-        <section id="mittelalter" class="section">
-            <h2>✝️ Mittelalter: Glaube und Vernunft</h2>
-            <div class="panel">
-                <p>Im Mittelalter verschiebt sich der Fokus: Wie passt menschliche Vernunft zu Glauben und Religion?</p>
-                <ul>
-                    <li><span class="timeline-mark">Augustinus:</span> Der Mensch sucht Sinn in Gott.</li>
-                    <li><span class="timeline-mark">Aquin:</span> Vernunft und Glaube widersprechen sich nicht.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="neuzeit" class="section">
-            <h2>🌅 Frühe Neuzeit: Der autonome Mensch</h2>
-            <div class="card-grid">
-                <div class="panel">
-                    <h3>Rationalismus</h3>
-                    <p><strong>Descartes:</strong> „Ich denke, also bin ich“ — Die Vernunft als unumstößliche Basis.</p>
-                </div>
-                <div class="panel">
-                    <h3>Liberalismus</h3>
-                    <p><strong>Locke:</strong> Freiheit, Eigentum und die Wurzeln der Menschenrechte.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="moderne" class="section">
-            <h2>⚙️ Klassische Moderne: Freiheit & Macht</h2>
-            <div class="panel panel-accent">
-                <h3>Immanuel Kant</h3>
-                <p>Moral entsteht aus Vernunft und Freiheit. Der kategorische Imperativ als Kompass.</p>
-            </div>
-            <div class="panel">
-                <h3>Nietzsche & Marx</h3>
-                <p>Kritik an Moral, Religion und Wirtschaft. Der Mensch muss sich selbst erfinden oder die Verhältnisse umstürzen.</p>
-            </div>
-        </section>
-
-        <section id="20jh" class="section">
-            <h2>🧩 20. Jahrhundert: Existenz & Sprache</h2>
-            <div class="panel">
-                <p>Nach zwei Weltkriegen wird die Philosophie existenziell:</p>
-                <div class="ui-row">
-                    <div class="widget">
-                        <div class="widget-title">Sartre</div>
-                        <div class="widget-value">Freiheit</div>
-                    </div>
-                    <div class="widget">
-                        <div class="widget-title">Arendt</div>
-                        <div class="widget-value">Verantwortung</div>
-                    </div>
-                    <div class="widget">
-                        <div class="widget-title">Wittgenstein</div>
-                        <div class="widget-value">Sprache</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="gegenwart" class="section">
-            <h2>🌐 Heute: Technologie & Identität</h2>
-            <div class="panel">
-                <p>Wie formen Medien und Macht unser Denken? Was ist Bewusstsein in Zeiten von KI?</p>
-                <p class="text-muted">Denker wie Foucault, Habermas und Byung-Chul Han prägen die aktuelle Debatte.</p>
-                <button class="btn btn-primary" onclick="alert('KI-Modul wird geladen...')">Mehr erfahren</button>
-            </div>
-        </section>
-
         <footer class="section">
             <div class="alert alert-success">
                 <strong>Fazit:</strong> Die Philosophie ist ein Werkzeug, um die Zukunft zu gestalten.
+            </div>
+            <div class="ismail-logo-mark">
+                <span class="dot dot-1"></span>
+                <span class="dot dot-2"></span>
+                <span class="dot dot-3"></span>
+            </div>
+            <div class="topbar-text">
+                <strong class="topbar-brand">Ismail UI</strong>
+                <span class="topbar-tagline">clean · modular · consistent</span>
             </div>
         </footer>
     </main>
