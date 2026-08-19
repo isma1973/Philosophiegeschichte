@@ -19,9 +19,11 @@ window.Timeline = {
                             <span class="timeline-v-date">${item.era}</span>
                             <h3>${item.title}</h3>
                             <p class="text-muted">${item.summary}</p>
-                            <button class="btn btn-primary" style="margin-top: var(--space-2);" onclick="window.location.href='quiz.html?era=${encodeURIComponent(item.title)}'">Quiz starten</button>>Quiz starten</button>
+                            <div class="timeline-v-detail hidden">
                                 <p><strong>Wichtige Denker:</strong> ${item.thinkers}</p>
                                 <p>${item.description}</p>
+                                <a href="${item.link || '#'}" class="btn btn-outline" style="margin-top:var(--space-2); margin-right:var(--space-2);" onclick="event.stopPropagation()">Mehr lesen →</a>
+                                <button class="btn btn-primary" style="margin-top:var(--space-2);" onclick="event.stopPropagation(); window.location.href='quiz.html?era=${encodeURIComponent(item.title)}'">Quiz starten</button>
                             </div>
                         </div>
                     </div>

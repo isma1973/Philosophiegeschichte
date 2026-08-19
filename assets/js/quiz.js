@@ -87,7 +87,7 @@
       btn.onclick = () => handleAnswer(idx, btn);
       aBlock.appendChild(btn);
     });
-    nextBtn.style.display = 'none';
+    nextBtn.classList.add('hidden');
   };
 
   const handleAnswer = (selectedIdx, btn) => {
@@ -103,7 +103,7 @@
     }
     const buttons = aBlock.querySelectorAll('button');
     buttons.forEach(b => b.disabled = true);
-    nextBtn.style.display = 'inline-block';
+    nextBtn.classList.remove('hidden');
   };
 
   nextBtn.onclick = () => {
@@ -113,7 +113,7 @@
     } else {
       qBlock.textContent = '';
       aBlock.innerHTML = '';
-      nextBtn.style.display = 'none';
+      nextBtn.classList.add('hidden');
       resultBlock.textContent = `Du hast ${score} von ${questions.length} richtig beantwortet.`;
     }
   };
