@@ -41,6 +41,16 @@ window.Timeline = {
                                 aria-labelledby="${triggerId}"
                                 hidden
                             >
+                                ${item.image ? `
+                                    <div class="timeline-v-media">
+                                        <img
+                                            src="${item.image}"
+                                            alt="Illustration zur Epoche ${item.title}"
+                                            class="timeline-v-image"
+                                            decoding="async"
+                                        >
+                                    </div>
+                                ` : ''}
                                 <p><strong>Wichtige Denker:</strong> ${item.thinkers}</p>
                                 <p>${item.description}</p>
                                 <div class="timeline-v-actions">
