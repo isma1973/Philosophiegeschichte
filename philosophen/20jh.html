@@ -14,11 +14,23 @@
     <link rel="stylesheet" href="../assets/css/ui-kit.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
-<body class="dark-mode">
-    <header class="topbar topbar-large">
-        <h1>20. Jahrhundert – Existenz, Sprache & Macht</h1>
+<body class="epoch-page dark-mode">
+    <header class="epoch-header">
+        <div class="epoch-toolbar">
+            <nav class="epoch-nav" aria-label="Epochen-Navigation">
+                <a class="epoch-nav-link" href="moderne.html">← Klassische Moderne</a>
+                <a class="epoch-nav-link epoch-nav-home" href="../index.html">Übersicht</a>
+                <a class="epoch-nav-link" href="gegenwart.html">Gegenwart →</a>
+            </nav>
+            <label class="ios-switch" for="themeToggle">
+                <span class="sr-only">Dark Mode umschalten</span>
+                <input type="checkbox" id="themeToggle" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <h1 class="epoch-title">20. Jahrhundert – Existenz, Sprache & Macht</h1>
     </header>
-    <main class="section">
+    <main class="epoch-content">
         <div class="img-zoom-wrapper">
             <img src="../assets/img/20jh.jpg" alt="20. Jahrhundert Illustration" class="zoomable-img"/>
             <span class="zoom-hint">🔍 Zoom</span>
@@ -40,6 +52,7 @@
             <p>Das 20. Jahrhundert fokussiert auf Existenz, Sprache und Macht. Philosophen hinterfragen die Grenzen des Wissens, die Bedingungen menschlicher Freiheit und die Strukturen gesellschaftlicher Herrschaft.</p>
         </section>
     </main>
+    <script src="../assets/js/theme.js"></script>
     <script src="../assets/js/lightbox.js"></script>
 </body>
 </html>

@@ -1,211 +1,148 @@
-# Ismail UI Framework  
-**clean · modular · consistent**
+# Philosophiegeschichte
 
-Ismail UI ist ein leichtgewichtiges, modulares und elegantes UI‑Framework für moderne Web‑Apps, Dashboards und Tools.  
-Es kombiniert ein globales CSS‑Toolkit, ein Theme‑System, interaktive UI‑Komponenten und ein vollständiges Design‑System.
+Eine statische, interaktive Lernwebsite zur Geschichte der Philosophie von der Antike bis zur Gegenwart. Das Projekt verbindet eine chronologische Timeline, Epochenartikel, längere Lesetexte und ein Quiz in einer responsiven Oberfläche.
 
-Dieses Framework wurde entwickelt, um **schnell**, **klar** und **wiederverwendbar** zu sein – perfekt für produktive Projekte.
+Die Website benötigt keinen Build-Schritt und keinen Webserver. Sie funktioniert vollständig offline direkt über `index.html`.
 
----
+## Funktionen
 
-## 🚀 Features
+- Chronologische Timeline mit sechs philosophischen Epochen
+- Zugängliches Akkordeon mit Tastaturbedienung und ARIA-Zuständen
+- Filterung nach Logik, Ethik, Metaphysik und Politik
+- Epochenartikel mit Bildern und vergrößerbarer Bildansicht
+- Offline-Textleser für fünf längere Dokumente
+- Markdown-Darstellung mit Listen, Links, Zitaten, Codeblöcken und Tabellen
+- Quiz mit fünf zufällig ausgewählten Fragen
+- Helles und dunkles Farbschema mit lokaler Speicherung
+- Responsive Darstellung für Desktop, Tablet und Mobilgeräte
 
-### 🎨 Design‑System
-- Globales CSS‑Toolkit (`core.css`)
-- Theme‑System mit Dark/Light Mode (`core-theme.css`)
-- UI‑Komponenten‑Styles (`core-ui.css`)
-- UI‑Kit für Buttons, Panels, Inputs, Tabellen (`ui-kit.css`)
+## Start
 
-### 🧩 Interaktive Komponenten
-- Modals  
-- Toasts  
-- Tabs  
-- Dropdowns  
-- Switches  
-- Theme‑Toggle  
+### Direkt öffnen
 
-### 🧠 Utility‑Funktionen
-- Datum‑Formatierung  
-- Zahlen‑Formatierung  
-- Currency/Percent  
-- Storage‑System  
-- Math‑Tools  
-- Helper‑Funktionen  
+`index.html` im Datei-Explorer oder in VS Code im Browser öffnen.
 
-### 📚 Dokumentation
-- Framework‑Startseite  
-- UI‑Komponenten‑Demo  
-- UI‑Kit‑Dokumentation  
-- Branding‑Seite  
+Unter Windows kann die Startseite auch über PowerShell geöffnet werden:
 
----
+```powershell
+Start-Process .\index.html
+```
 
-## 📂 Projektstruktur
+Die Anwendung verwendet nur lokale Dateien und funktioniert daher auch über `file://` ohne Internetverbindung.
 
-/assets
-/css
-core.css
-core-theme.css
-core-ui.css
-ui-kit.css
-variables.css
-/js
-core.js
-core-ui.js
-theme.js
-trading.js
-journal.js
-/img
-favicon/
-logo/
-icons/
+## Seiten
 
-/docs
-framework.html
-ui-components.html
-ui.html
-branding.html
+| Datei | Inhalt |
+| --- | --- |
+| `index.html` | Startseite mit Navigation, Themenfilter und interaktiver Timeline |
+| `lesen.html` | Offline-Leser für die eingebetteten Markdown-Texte |
+| `quiz.html` | Quiz; die Epoche wird über den Parameter `?era=` übergeben |
+| `philosophen/antike.html` | Antike |
+| `philosophen/mittelalter.html` | Mittelalter |
+| `philosophen/neuzeit.html` | Frühe Neuzeit |
+| `philosophen/moderne.html` | Klassische Moderne |
+| `philosophen/20jh.html` | Philosophie des 20. Jahrhunderts |
+| `philosophen/gegenwart.html` | Gegenwartsphilosophie |
 
-/app
-dev-dashboard.html
+## Projektstruktur
 
-Code
+```text
+Philosophiegeschichte/
+├── index.html
+├── lesen.html
+├── quiz.html
+├── *.md                         # Quelltexte zur Philosophiegeschichte
+├── philosophen/                 # Artikel zu den sechs Epochen
+│   ├── antike.html
+│   ├── mittelalter.html
+│   ├── neuzeit.html
+│   ├── moderne.html
+│   ├── 20jh.html
+│   └── gegenwart.html
+├── assets/
+│   ├── css/
+│   │   ├── components/timeline.css
+│   │   ├── core.css
+│   │   ├── core-theme.css
+│   │   ├── core-ui.css
+│   │   ├── custom.css
+│   │   └── ui-kit.css
+│   ├── img/                     # Bilder der Epochen
+│   └── js/
+│       ├── lightbox.js
+│       ├── quiz.js
+│       ├── theme.js
+│       ├── timeline.js
+│       └── vendor/marked.umd.js
+└── docs/                        # Dokumentation des verwendeten UI-Systems
+```
 
----
+## Zentrale Module
 
-## 🧱 Module
+### Timeline
 
-### **core.css**
-Globales CSS‑Toolkit:
-- Reset  
-- Spacing  
-- Flex/Grid  
-- Shadows  
-- Radius  
-- Utilities  
+Die Timeline-Daten stehen in `index.html`. `assets/js/timeline.js` erzeugt daraus die zugänglichen Akkordeon-Karten. Die Darstellung befindet sich in `assets/css/components/timeline.css`.
 
-### **core-theme.css**
-Globales Theme‑System:
-- Dark/Light Mode  
-- Farbvariablen  
-- Theme‑Transitions  
+Jeder Datensatz enthält:
 
-### **core-ui.css**
-Styles für UI‑Komponenten:
-- Modals  
-- Toasts  
-- Tabs  
-- Dropdowns  
-- Switches  
+- Zeitraum und Titel
+- Kurzfassung und Beschreibung
+- wichtige Denkerinnen und Denker
+- Themen für den Filter
+- Bild, Detailseite und Quiz-Verweis
 
-### **core-ui.js**
-Interaktive Komponenten:
-- Modal‑Engine  
-- Toast‑System  
-- Tabs  
-- Dropdowns  
-- Switch‑Events  
+### Textleser
 
-### **core.js**
-Utility‑Toolkit:
-- formatDate()  
-- formatNumber()  
-- formatCurrency()  
-- Storage‑System  
-- Math‑Tools  
-- Helpers  
+`lesen.html` enthält fünf eingebettete Dokumente und kann deshalb ohne `fetch()` direkt über `file://` verwendet werden. Markdown wird lokal mit `marked 18.0.11` aus `assets/js/vendor/marked.umd.js` gerendert. Es besteht keine CDN-Abhängigkeit.
 
----
+Die eigenständigen Markdown-Dateien im Projekt dienen als lesbare Quell- und Arbeitsfassungen. Änderungen an diesen Dateien werden derzeit nicht automatisch in `lesen.html` übernommen.
 
-## 🎨 Branding
+### Quiz
 
-### Logo
-Das Logo besteht aus einem abgerundeten Quadrat mit drei Punkten – ein Symbol für Modularität und Systematik.
+`assets/js/quiz.js` enthält den Fragenkatalog und die Auswertungslogik. Ein Quiz wird beispielsweise so aufgerufen:
 
-### Farben
-- **Primary:** `#2962ff`  
-- **Gradient:** `#2962ff → #8e5cff`  
-- **Dark Backgrounds:** `#0e1114`, `#131722`, `#1c2333`  
-- **Status:** Success, Danger, Warning  
+```text
+quiz.html?era=Antike
+```
 
-### Typografie
-- **Inter**  
-- Überschriften: 600  
-- Buttons: 500  
-- Body: 400  
+### Gestaltung
 
----
+Die Oberfläche basiert auf dem lokalen Ismail-UI-System:
 
-## 🧪 Demo‑Seiten
+- `core.css`: Reset, Variablen und Hilfsklassen
+- `core-theme.css`: Farbthemen und Dark Mode
+- `core-ui.css`: gemeinsame Komponenten
+- `ui-kit.css`: Panels, Buttons und Formularelemente
+- `custom.css`: projektspezifische Ergänzungen
+- `docs/layout.css`: Layout der Startseite
 
-| Seite | Beschreibung |
-|-------|--------------|
-| `/docs/framework.html` | Startseite des Frameworks |
-| `/docs/ui-components.html` | Demo aller UI‑Komponenten |
-| `/docs/ui.html` | UI‑Kit Dokumentation |
-| `/docs/branding.html` | Branding‑Richtlinien |
+Die Seiten unter `docs/` dokumentieren und demonstrieren dieses UI-System. Sie sind nicht der Haupteinstieg der Philosophie-Website.
 
----
+## Bedienung der Timeline
 
-## 🛠 Installation
+- `Tab`: nächsten interaktiven Eintrag fokussieren
+- `Enter` oder `Leertaste`: Epoche öffnen oder schließen
+- `Tab` im geöffneten Eintrag: „Mehr lesen“ und „Quiz starten“ erreichen
 
-Einfach die CSS‑ und JS‑Dateien einbinden:
+Es ist immer höchstens eine Epoche geöffnet. Das zugehörige Vorschaubild erscheint erst im geöffneten Bereich.
 
-```html
-<link rel="stylesheet" href="assets/css/core.css">
-<link rel="stylesheet" href="assets/css/core-theme.css">
-<link rel="stylesheet" href="assets/css/core-ui.css">
-<link rel="stylesheet" href="assets/css/ui-kit.css">
+## Inhalte pflegen
 
-<script type="module">
-  import { initUI } from "./assets/js/core-ui.js";
-  import "./assets/js/theme.js";
-  initUI();
-</script>
+- Timeline-Epochen und Filterthemen: `index.html`
+- Timeline-Komponente: `assets/js/timeline.js`
+- Quizfragen: `assets/js/quiz.js`
+- Epochenartikel: `philosophen/*.html`
+- Texte im Offline-Leser: `DOCS` in `lesen.html`
+- Bilder: `assets/img/`
 
-🧩 Beispiel: Modal öffnen
-html
-<button data-modal-open="demoModal">Modal öffnen</button>
+## Technische Hinweise
 
-<div id="demoModal" class="modal">
-  <div class="modal-content">
-    <h3>Hallo!</h3>
-    <button data-modal-close="demoModal">Schließen</button>
-  </div>
-</div>
+- Reines HTML, CSS und JavaScript
+- Keine Paketinstallation erforderlich
+- Kein Build-Prozess erforderlich
+- Keine externen Laufzeitabhängigkeiten
+- `marked 18.0.11` ist lokal eingebunden und steht unter der MIT-Lizenz
 
-🧭 Philosophie
-Ismail UI basiert auf fünf Kernwerten:
+## Projektlizenz
 
-Klarheit – keine unnötigen Elemente
-
-Modularität – alles ist wiederverwendbar
-
-Konsistenz – einheitliche Farben, Abstände, Typo
-
-Produktivität – für echte Tools gebaut
-
-Dark‑First Design – optimiert für moderne Dashboards
-
-📌 Roadmap
-v1.1
-
-
-Komponenten‑Erweiterungen
-
-Neue Widgets
-
-v2.0
-Layout‑System
-
-Form‑Komponenten
-
-Chart‑Styles
-
-PWA‑Support
-
-❤️ Autor
-Ismail Karaduz  
-
-📄 Lizenz
-Eine öffentliche Lizenz kann später hinzugefügt werden.
+Für das Gesamtprojekt ist derzeit keine öffentliche Lizenz angegeben.

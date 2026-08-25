@@ -14,11 +14,23 @@
     <link rel="stylesheet" href="../assets/css/ui-kit.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
-<body class="dark-mode">
-    <header class="topbar topbar-large">
-        <h1>Mittelalter – Glaube und Vernunft</h1>
+<body class="epoch-page dark-mode">
+    <header class="epoch-header">
+        <div class="epoch-toolbar">
+            <nav class="epoch-nav" aria-label="Epochen-Navigation">
+                <a class="epoch-nav-link" href="antike.html">← Antike</a>
+                <a class="epoch-nav-link epoch-nav-home" href="../index.html">Übersicht</a>
+                <a class="epoch-nav-link" href="neuzeit.html">Frühe Neuzeit →</a>
+            </nav>
+            <label class="ios-switch" for="themeToggle">
+                <span class="sr-only">Dark Mode umschalten</span>
+                <input type="checkbox" id="themeToggle" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <h1 class="epoch-title">Mittelalter – Glaube und Vernunft</h1>
     </header>
-    <main class="section">
+    <main class="epoch-content">
         <div class="img-zoom-wrapper">
             <img src="../assets/img/mittelalter.jpg" alt="Mittelalter Illustration" class="zoomable-img"/>
             <span class="zoom-hint">🔍 Zoom</span>
@@ -40,6 +52,7 @@
             <p>Das Mittelalter verbindet Theologie und Philosophie. Die Suche nach einem harmonischen Verhältnis zwischen göttlicher Offenbarung und rationaler Erkenntnis prägt die Epoche.</p>
         </section>
     </main>
+    <script src="../assets/js/theme.js"></script>
     <script src="../assets/js/lightbox.js"></script>
 </body>
 </html>

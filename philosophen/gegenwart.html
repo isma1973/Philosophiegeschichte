@@ -14,11 +14,22 @@
     <link rel="stylesheet" href="../assets/css/ui-kit.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
-<body class="dark-mode">
-    <header class="topbar topbar-large">
-        <h1>Gegenwart – Technologie & Identität</h1>
+<body class="epoch-page dark-mode">
+    <header class="epoch-header">
+        <div class="epoch-toolbar">
+            <nav class="epoch-nav" aria-label="Epochen-Navigation">
+                <a class="epoch-nav-link" href="20jh.html">← 20. Jahrhundert</a>
+                <a class="epoch-nav-link epoch-nav-home" href="../index.html">Übersicht</a>
+            </nav>
+            <label class="ios-switch" for="themeToggle">
+                <span class="sr-only">Dark Mode umschalten</span>
+                <input type="checkbox" id="themeToggle" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <h1 class="epoch-title">Gegenwart – Technologie & Identität</h1>
     </header>
-    <main class="section">
+    <main class="epoch-content">
         <div class="img-zoom-wrapper">
             <img src="../assets/img/gegenwart.jpg" alt="Gegenwart Illustration" class="zoomable-img"/>
             <span class="zoom-hint">🔍 Zoom</span>
@@ -37,6 +48,7 @@
             <p>Die Gegenwart stellt Fragen nach künstlicher Intelligenz, digitaler Identität, globaler Ethik und dem Verhältnis von Bewusstsein zu Technologie in den Mittelpunkt philosophischer Reflexion.</p>
         </section>
     </main>
+    <script src="../assets/js/theme.js"></script>
     <script src="../assets/js/lightbox.js"></script>
 </body>
 </html>

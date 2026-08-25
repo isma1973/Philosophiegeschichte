@@ -20,7 +20,7 @@ html, body {
 }
 
 /* ---------------------------------------------------
-   GLOBAL VARIABLES (werden von variables.css überschrieben)
+   GLOBAL VARIABLES
 --------------------------------------------------- */
 :root {
   --radius-sm: 6px;
@@ -60,21 +60,6 @@ html, body {
     --space-6: 28px;
     --space-7: 40px;
     --space-8: 56px;
-  }
-}
-/* ---------------------------------------------------
-   Tablet (600–1024px)
---------------------------------------------------- */
-@media (min-width: 600px) and (max-width: 1024px) {
-  :root {
-    --space-1: 4px;
-    --space-2: 8px;
-    --space-3: 12px;
-    --space-4: 16px;
-    --space-5: 22px;
-    --space-6: 30px;
-    --space-7: 44px;
-    --space-8: 60px;
   }
 }
 /* ---------------------------------------------------

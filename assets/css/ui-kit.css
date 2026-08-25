@@ -1,13 +1,6 @@
 /* ---------------------------------------------------
-   UI-KIT – Shared Components for Journal & Dashboard
+  UI-KIT – Shared Components for Journal & Dashboard
 --------------------------------------------------- */
-
-* {
-  transition: background-color 0.35s ease,
-              color 0.35s ease,
-              border-color 0.35s ease,
-              box-shadow 0.35s ease;
-}
 
 body {
   background: var(--bg);

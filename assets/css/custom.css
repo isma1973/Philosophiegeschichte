@@ -1,83 +1,92 @@
 /* Custom UI Enhancements */
 
-/* ── Epoch / Timeline helpers ── */
-.epoch-card { margin-bottom: var(--space-4); }
-.timeline-mark { font-weight: 600; color: var(--accent); margin-right: 0.5rem; }
-.hero-visual { padding: var(--space-8) 0; text-align: center; }
-
-/* ── Widget row ── */
-.ui-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-3);
-    margin-top: var(--space-4);
-}
-.widget {
-    flex: 1 1 140px;
-    background: var(--bg-secondary, rgba(255,255,255,0.04));
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    padding: var(--space-4);
-    text-align: center;
-    transition: border-color 0.2s ease, transform 0.2s ease;
-}
-.widget-title {
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-light);
-    margin-bottom: var(--space-2);
-}
-.widget-value {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--accent);
-}
-
-/* Hover effects for widgets and timeline items */
-.widget:hover,
-.timeline-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--accent);
-    transform: translateY(-2px);
-    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
-}
-
-/* Glass‑morphism card style for philosopher detail cards */
-.philosopher-card {
-    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    padding: var(--space-4);
-    margin: var(--space-4) 0;
-    color: var(--text);
-}
-
 /* Focus outline for accessibility */
 :focus {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
 }
 
-/* Smooth transitions for interactive elements */
-.button,
-.button-primary,
-.nav-link {
-    transition: background-color 0.2s ease, color 0.2s ease;
+/* ── Epoch detail navigation ───────────────────────── */
+.epoch-page {
+    min-height: 100vh;
 }
 
-/* Responsive image helper – ersetzt inline style="max-width:100%;height:auto;" */
-.responsive-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: var(--space-2);
+.epoch-header,
+.epoch-content {
+    width: min(100% - 2 * var(--space-5), 960px);
+    margin-inline: auto;
 }
 
-/* Utility: Element verstecken */
-.hidden {
-    display: none !important;
+.epoch-header {
+    padding-top: var(--space-4);
+}
+
+.epoch-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border);
+}
+
+.epoch-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.epoch-nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.epoch-nav-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.epoch-nav-home {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.epoch-title {
+    margin: var(--space-6) 0 var(--space-5);
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    line-height: 1.2;
+}
+
+.epoch-content {
+    padding-bottom: var(--space-7);
+}
+
+@media (max-width: 600px) {
+    .epoch-header,
+    .epoch-content {
+        width: min(100% - 2 * var(--space-4), 960px);
+    }
+
+    .epoch-toolbar {
+        align-items: flex-start;
+    }
+
+    .epoch-nav {
+        align-items: stretch;
+    }
+
+    .epoch-nav-link {
+        min-height: 36px;
+        padding: var(--space-2);
+        font-size: 0.85rem;
+    }
 }
 
 /* ── Quiz-Seite ─────────────────────────────────────── */

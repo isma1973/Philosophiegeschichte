@@ -13,69 +13,8 @@
     <link rel="stylesheet" href="assets/css/core-ui.css">
     <link rel="stylesheet" href="assets/css/ui-kit.css">
 
-
-    <!-- Self-contained Markdown parser — no CDN, no fetch, works from file:// -->
-    <script>
-    const marked = {
-        parse(md) {
-            const lines = md.split('\n');
-            let html = '';
-            let inList = false;
-
-            const inline = s => s
-                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-                .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-                .replace(/__(.+?)__/g, '<strong>$1</strong>')
-                .replace(/\*(.+?)\*/g, '<em>$1</em>')
-                .replace(/_(.+?)_/g, '<em>$1</em>')
-                .replace(/`(.+?)`/g, '<code>$1</code>');
-
-            const closeList = () => { if (inList) { html += '</ul>\n'; inList = false; } };
-
-            for (let i = 0; i < lines.length; i++) {
-                const line = lines[i];
-                const trimmed = line.trim();
-
-                // Headings
-                const hm = trimmed.match(/^(#{1,6})\s+(.+)$/);
-                if (hm) {
-                    closeList();
-                    const lvl = hm[1].length;
-                    html += `<h${lvl}>${inline(hm[2])}</h${lvl}>\n`;
-                    continue;
-                }
-
-                // Horizontal rule
-                if (/^(-{3,}|\*{3,}|_{3,})$/.test(trimmed)) {
-                    closeList();
-                    html += '<hr>\n';
-                    continue;
-                }
-
-                // Unordered list item
-                const lm = trimmed.match(/^[-*]\s+(.+)$/);
-                if (lm) {
-                    if (!inList) { html += '<ul>\n'; inList = true; }
-                    html += `<li>${inline(lm[1])}</li>\n`;
-                    continue;
-                }
-
-                // Blank line
-                if (trimmed === '') {
-                    closeList();
-                    continue;
-                }
-
-                // Paragraph
-                closeList();
-                html += `<p>${inline(trimmed)}</p>\n`;
-            }
-
-            closeList();
-            return html;
-        }
-    };
-    </script>
+    <!-- Local Markdown parser: offline and file:// compatible -->
+    <script src="assets/js/vendor/marked.umd.js"></script>
 
     <style>
         /* ── Base (replaces layout.css body rules) ──── */
@@ -181,8 +120,12 @@
         /* ── Content Area ──────────────────────────── */
         .reader-content {
             padding: var(--space-8) clamp(var(--space-5), 6vw, 80px);
+            min-width: 0;
         }
-        .reader-inner { max-width: 760px; }
+        .reader-inner {
+            max-width: 760px;
+            min-width: 0;
+        }
 
         /* ── Empty State ───────────────────────────── */
         .reader-empty {
@@ -200,7 +143,12 @@
         .reader-empty p { margin: 0; }
 
         /* ── Rendered Markdown ─────────────────────── */
-        #md-output { animation: fadeUp 0.3s ease forwards; }
+        #md-output {
+            min-width: 0;
+            max-width: 100%;
+            overflow: hidden;
+            animation: fadeUp 0.3s ease forwards;
+        }
 
         #md-output h1 {
             font-size: clamp(1.5rem, 4vw, 2.1rem);
@@ -235,6 +183,13 @@
             padding-left: var(--space-5);
             margin-bottom: var(--space-4);
         }
+        #md-output ul { list-style: disc; }
+        #md-output ol { list-style: decimal; }
+        #md-output li > ul,
+        #md-output li > ol {
+            margin-top: var(--space-1);
+            margin-bottom: var(--space-1);
+        }
         #md-output li {
             font-size: 0.95rem;
             line-height: 1.75;
@@ -243,6 +198,11 @@
         }
         #md-output strong { color: var(--text); font-weight: 600; }
         #md-output em { color: var(--accent); font-style: italic; }
+        #md-output a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.2em;
+        }
         #md-output blockquote {
             border-left: 3px solid var(--accent);
             padding: var(--space-3) var(--space-4);
@@ -252,6 +212,7 @@
             background: rgba(255,255,255,0.03);
             border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
         }
+        #md-output blockquote p:last-child { margin-bottom: 0; }
         #md-output hr {
             border: none;
             border-top: 1px solid var(--border);
@@ -264,6 +225,42 @@
             font-size: 0.875em;
             font-family: ui-monospace, monospace;
             color: var(--accent);
+        }
+        #md-output pre {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+            margin-bottom: var(--space-4);
+            padding: var(--space-4);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: rgba(255,255,255,0.04);
+        }
+        #md-output pre code {
+            padding: 0;
+            background: transparent;
+            color: var(--text-light);
+        }
+        #md-output table {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+            margin-bottom: var(--space-5);
+            border-collapse: collapse;
+            font-size: 0.92rem;
+        }
+        #md-output th,
+        #md-output td {
+            padding: var(--space-2) var(--space-3);
+            border: 1px solid var(--border);
+            text-align: left;
+            vertical-align: top;
+            overflow-wrap: anywhere;
+        }
+        #md-output th {
+            background: var(--bg-secondary);
+            color: var(--text);
         }
 
         /* ── Progress Bar ──────────────────────────── */
@@ -366,7 +363,6 @@
 
     <!-- Framework JS -->
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/core-ui.js"></script>
 
     <script>
     // ── All markdown content inlined — no fetch, works offline / file:// ──────
@@ -774,7 +770,6 @@ Die Philosophiegeschichte zeigt, dass zentrale Fragen bestehen bleiben, während
 
     // ── Restore from URL hash ────────────────────────────
     document.addEventListener('DOMContentLoaded', () => {
-        if (typeof initUI === 'function') initUI();
         const idx = parseInt(location.hash.replace('#', ''), 10);
         if (!isNaN(idx) && DOCS[idx]) showDoc(idx);
     });

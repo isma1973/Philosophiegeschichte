@@ -14,11 +14,23 @@
     <link rel="stylesheet" href="../assets/css/ui-kit.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
-<body class="dark-mode">
-    <header class="topbar topbar-large">
-        <h1>Frühe Neuzeit – Der autonome Mensch</h1>
+<body class="epoch-page dark-mode">
+    <header class="epoch-header">
+        <div class="epoch-toolbar">
+            <nav class="epoch-nav" aria-label="Epochen-Navigation">
+                <a class="epoch-nav-link" href="mittelalter.html">← Mittelalter</a>
+                <a class="epoch-nav-link epoch-nav-home" href="../index.html">Übersicht</a>
+                <a class="epoch-nav-link" href="moderne.html">Klassische Moderne →</a>
+            </nav>
+            <label class="ios-switch" for="themeToggle">
+                <span class="sr-only">Dark Mode umschalten</span>
+                <input type="checkbox" id="themeToggle" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <h1 class="epoch-title">Frühe Neuzeit – Der autonome Mensch</h1>
     </header>
-    <main class="section">
+    <main class="epoch-content">
         <div class="img-zoom-wrapper">
             <img src="../assets/img/neuzeit.jpg" alt="Frühe Neuzeit Illustration" class="zoomable-img"/>
             <span class="zoom-hint">🔍 Zoom</span>
@@ -39,6 +51,7 @@
             <p>Die Frühe Neuzeit stellt den autonomen, denkenden Menschen in den Mittelpunkt. Rationalität, Individualität und die Grundlagen moderner Staats- und Gesellschaftstheorien prägen diese Epoche.</p>
         </section>
     </main>
+    <script src="../assets/js/theme.js"></script>
     <script src="../assets/js/lightbox.js"></script>
 </body>
 </html>
