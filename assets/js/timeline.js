@@ -10,34 +10,68 @@ window.Timeline = {
     render(container, data) {
         container.innerHTML = `
             <div class="timeline-v">
-                ${data.map(item => `
+                ${data.map((item, index) => {
+                    const triggerId = `${container.id}-timeline-trigger-${index}`;
+                    const panelId = `${container.id}-timeline-panel-${index}`;
+
+                    return `
                     <div class="timeline-v-item philosophy-card" data-themes="${item.themes || ''}">
                         <div class="timeline-v-marker">
                             <div class="timeline-v-dot"></div>
                         </div>
-                        <div class="timeline-v-content panel" onclick="Timeline.toggleDetail(this)">
+                        <div class="timeline-v-content panel">
                             <span class="timeline-v-date">${item.era}</span>
-                            <h3>${item.title}</h3>
+                            <h3 class="timeline-v-heading">
+                                <button
+                                    type="button"
+                                    class="timeline-v-trigger"
+                                    id="${triggerId}"
+                                    aria-expanded="false"
+                                    aria-controls="${panelId}"
+                                >
+                                    <span>${item.title}</span>
+                                    <span class="timeline-v-indicator" aria-hidden="true"></span>
+                                </button>
+                            </h3>
                             <p class="text-muted">${item.summary}</p>
-                            <div class="timeline-v-detail hidden">
+                            <div
+                                class="timeline-v-detail"
+                                id="${panelId}"
+                                role="region"
+                                aria-labelledby="${triggerId}"
+                                hidden
+                            >
                                 <p><strong>Wichtige Denker:</strong> ${item.thinkers}</p>
                                 <p>${item.description}</p>
-                                <a href="${item.link || '#'}" class="btn btn-outline" style="margin-top:var(--space-2); margin-right:var(--space-2);" onclick="event.stopPropagation()">Mehr lesen →</a>
-                                <button class="btn btn-primary" style="margin-top:var(--space-2);" onclick="event.stopPropagation(); window.location.href='quiz.html?era=${encodeURIComponent(item.title)}'">Quiz starten</button>
+                                <div class="timeline-v-actions">
+                                    <a href="${item.link || '#'}" class="btn btn-outline">Mehr lesen →</a>
+                                    <a href="quiz.html?era=${encodeURIComponent(item.title)}" class="btn btn-primary">Quiz starten</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                `).join('')}
+                `}).join('')}
             </div>
         `;
+
+        container.querySelectorAll('.timeline-v-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => this.toggleDetail(trigger, container));
+        });
     },
 
-    toggleDetail(element) {
-        const detail = element.querySelector('.timeline-v-detail');
-        if (detail) {
-            const isHidden = detail.classList.contains('hidden');
-            // Schließe andere (optional)
-            detail.classList.toggle('hidden');
+    toggleDetail(trigger, container) {
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+        container.querySelectorAll('.timeline-v-trigger').forEach(otherTrigger => {
+            const panel = document.getElementById(otherTrigger.getAttribute('aria-controls'));
+            otherTrigger.setAttribute('aria-expanded', 'false');
+            if (panel) panel.hidden = true;
+        });
+
+        if (!isExpanded) {
+            const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+            trigger.setAttribute('aria-expanded', 'true');
+            if (panel) panel.hidden = false;
         }
     }
 };
