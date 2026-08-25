@@ -10,6 +10,7 @@ Die Website benötigt keinen Build-Schritt und keinen Webserver. Sie funktionier
 - Zugängliches Akkordeon mit Tastaturbedienung und ARIA-Zuständen
 - Filterung nach Logik, Ethik, Metaphysik und Politik
 - Epochenartikel mit Bildern und vergrößerbarer Bildansicht
+- 43 eigene Philosophenprofile mit Kernideen, Werken und historischer Einordnung
 - Offline-Textleser für fünf längere Dokumente
 - Markdown-Darstellung mit Listen, Links, Zitaten, Codeblöcken und Tabellen
 - Quiz mit fünf zufällig ausgewählten Fragen
@@ -43,6 +44,7 @@ Die Anwendung verwendet nur lokale Dateien und funktioniert daher auch über `fi
 | `philosophen/moderne.html` | Klassische Moderne |
 | `philosophen/20jh.html` | Philosophie des 20. Jahrhunderts |
 | `philosophen/gegenwart.html` | Gegenwartsphilosophie |
+| `philosophen/[name].html` | Eigenständiges Profil einer Philosophin oder eines Philosophen |
 
 ## Projektstruktur
 
@@ -52,13 +54,14 @@ Philosophiegeschichte/
 ├── lesen.html
 ├── quiz.html
 ├── *.md                         # Quelltexte zur Philosophiegeschichte
-├── philosophen/                 # Artikel zu den sechs Epochen
+├── philosophen/                 # Sechs Epochenartikel und 43 Einzelprofile
 │   ├── antike.html
 │   ├── mittelalter.html
 │   ├── neuzeit.html
 │   ├── moderne.html
 │   ├── 20jh.html
-│   └── gegenwart.html
+│   ├── gegenwart.html
+│   └── [name].html             # Einzelne Philosophenprofile
 ├── assets/
 │   ├── css/
 │   │   ├── components/timeline.css
@@ -70,6 +73,7 @@ Philosophiegeschichte/
 │   ├── img/                     # Bilder der Epochen
 │   └── js/
 │       ├── lightbox.js
+│       ├── philosopher-profile.js
 │       ├── quiz.js
 │       ├── theme.js
 │       ├── timeline.js
@@ -105,6 +109,10 @@ Die eigenständigen Markdown-Dateien im Projekt dienen als lesbare Quell- und Ar
 quiz.html?era=Antike
 ```
 
+### Philosophenprofile
+
+Jede der 43 Personen besitzt eine direkt aufrufbare HTML-Seite unter `philosophen/`. Die sechs Epochenartikel verlinken alle Profile. `assets/js/philosopher-profile.js` enthält die zentral gepflegten biografischen Daten und rendert Inhalt sowie Vor-/Zurück-Navigation offline in die jeweilige HTML-Seite.
+
 ### Gestaltung
 
 Die Oberfläche basiert auf dem lokalen Ismail-UI-System:
@@ -132,6 +140,7 @@ Es ist immer höchstens eine Epoche geöffnet. Das zugehörige Vorschaubild ersc
 - Timeline-Komponente: `assets/js/timeline.js`
 - Quizfragen: `assets/js/quiz.js`
 - Epochenartikel: `philosophen/*.html`
+- Profildaten und Reihenfolge: `assets/js/philosopher-profile.js`
 - Texte im Offline-Leser: `DOCS` in `lesen.html`
 - Bilder: `assets/img/`
 

@@ -1,4 +1,4 @@
-# 📘 _Die 40 prägendsten Philosophen der Menschheitsgeschichte_
+# 📘 _Die 43 prägendsten Philosophen der Menschheitsgeschichte_
 
 ### (Kuratierte Liste für einen klaren historischen Faden)
 
@@ -106,4 +106,4 @@
 - Byung-Chul Han
     
 
-➡️ Das ergibt **40 Philosophen**, die den roten Faden der westlichen Philosophiegeschichte tragen und bis heute gesellschaftlich prägen.
+➡️ Das ergibt **43 Philosophinnen und Philosophen**, die den roten Faden der westlichen Philosophiegeschichte tragen und bis heute gesellschaftlich prägen.

@@ -260,3 +260,161 @@
     color: #ccc;
     font-size: 0.9rem;
 }
+
+/* ── Philosopher profiles ───────────────────────────── */
+.profile-content {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.philosopher-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2) var(--space-5);
+    padding: 0;
+    list-style: none;
+}
+
+.philosopher-list a {
+    display: block;
+    height: 100%;
+    padding: var(--space-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    text-decoration: none;
+}
+
+.philosopher-list a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.philosopher-list strong {
+    display: block;
+    margin-bottom: var(--space-1);
+}
+
+.philosopher-list span {
+    color: var(--text-light);
+}
+
+.profile-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 200px;
+    align-items: center;
+    gap: var(--space-6);
+    padding: var(--space-7) 0 var(--space-3);
+}
+
+.profile-hero .epoch-title {
+    margin: var(--space-2) 0;
+}
+
+.profile-kicker,
+.profile-years {
+    color: var(--text-light);
+}
+
+.profile-kicker {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.profile-years {
+    margin: 0 0 var(--space-4);
+}
+
+.profile-thesis {
+    max-width: 680px;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.profile-image {
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.profile-grid,
+.profile-facts {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.profile-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.profile-facts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: var(--space-5);
+}
+
+.profile-facts div {
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--border);
+}
+
+.profile-facts dt {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.profile-facts dd {
+    margin: var(--space-1) 0 0;
+}
+
+.profile-pagination {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+}
+
+.profile-pagination > :nth-child(2) {
+    justify-self: center;
+}
+
+.profile-pagination > :last-child {
+    justify-self: end;
+}
+
+@media (max-width: 650px) {
+    .profile-hero,
+    .profile-grid,
+    .profile-facts,
+    .philosopher-list {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-hero {
+        padding-top: var(--space-5);
+    }
+
+    .profile-image {
+        grid-row: 1;
+        width: 112px;
+    }
+
+    .profile-pagination {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-pagination > * {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .profile-pagination > :nth-child(2),
+    .profile-pagination > :last-child {
+        justify-self: stretch;
+    }
+}

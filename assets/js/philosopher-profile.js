@@ -1,0 +1,728 @@
+const PHILOSOPHERS = [
+    {
+        slug: "thales",
+        name: "Thales von Milet",
+        shortName: "Thales",
+        years: "ca. 624–546 v. Chr.",
+        era: "Antike",
+        eraLink: "antike.html",
+        field: "Naturphilosophie",
+        thesis: "Die Natur lässt sich aus natürlichen Ursachen erklären.",
+        portrait: "../assets/img/antike.jpg",
+        intro: "Thales gilt in der europäischen Überlieferung als einer der ersten Denker, der Naturphänomene nicht ausschließlich mythisch, sondern durch ein einheitliches Prinzip zu erklären versuchte.",
+        ideas: [
+            "Wasser als Ursprung und Grundstoff aller Dinge",
+            "Suche nach natürlichen statt rein mythischen Erklärungen",
+            "Verbindung von Philosophie, Mathematik und Himmelsbeobachtung"
+        ],
+        significance: "Mit der Frage nach einem gemeinsamen Ursprung der Welt eröffnete Thales einen neuen Typ des Erklärens. Entscheidend ist weniger seine konkrete Antwort als der Versuch, Vielfalt rational auf ein Grundprinzip zurückzuführen.",
+        works: "Von Thales sind keine eigenen Schriften erhalten. Seine Positionen sind nur durch spätere Autoren, besonders Aristoteles, überliefert.",
+        context: "Thales wirkte in der ionischen Hafenstadt Milet. Handel, kultureller Austausch und praktische Kenntnisse in Geometrie und Astronomie bildeten den Hintergrund der frühen griechischen Naturphilosophie."
+    }
+,
+{
+    "slug": "heraklit",
+    "name": "Heraklit",
+    "shortName": "Heraklit",
+    "years": "ca. 540–480 v. Chr.",
+    "era": "Antike",
+    "eraLink": "antike.html",
+    "field": "Kosmologie, Logoslehre",
+    "thesis": "Alles fließt; die Welt ist ein Prozess ständiger Veränderung.",
+    "intro": "Heraklit betonte Wandel und Gegensätze als Grundlage der Wirklichkeit. Er prägte das Bild des Logos als ordnendes Prinzip.",
+    "ideas": ["Wandel als Grundstruktur der Welt", "Einheit der Gegensätze", "Logos als Maß und Ordnung"],
+    "significance": "Sein Denken setzte Akzente gegen statische Ontologien und beeinflusste spätere Dialektik. Viele Fragmente bleiben hermeneutisch herausfordernd.",
+    "works": "Fragmente überliefert in antiken Kommentaren",
+    "context": "Lebte in Ephesos in einer Zeit politischer Umschichtungen. Seine aphoristische Schrifttradition machte ihn später schwer fassbar."
+  },
+  {
+    "slug": "parmenides",
+    "name": "Parmenides",
+    "shortName": "Parmenides",
+    "years": "ca. 515–445 v. Chr.",
+    "era": "Antike",
+    "eraLink": "antike.html",
+    "field": "Ontologie, Metaphysik",
+    "thesis": "Sein ist; wirkliche Veränderung ist eine Illusion oder muss philosophisch erklärt werden.",
+    "intro": "Parmenides formulierte eine ontologische Gegenthese zum Wandel. Er unterscheidet zwischen der Weise des Seins und der Meinung der Sinneswelt.",
+    "ideas": ["Ontologische Priorität des Seins", "Ablehnung realer Entstehung und Vergehen", "Rationaler Erkenntniszugang über Sinneswahrnehmung"],
+    "significance": "Begründete eine streng ontologische Perspektive, die die abendländische Metaphysik prägte. Seine Position provozierte Reaktionen wie jene der pluralistischen Schulen.",
+    "works": "Lehrgedicht (Fragment überliefert)",
+    "context": "Wirkte in Elea; sein Denken reagiert auf frühe naturphilosophische Spekulationen. Viele Texte nur fragmentarisch erhalten."
+  },
+  {
+    "slug": "sokrates",
+    "name": "Sokrates",
+    "shortName": "Sokrates",
+    "years": "ca. 470–399 v. Chr.",
+    "era": "Antike",
+    "eraLink": "antike.html",
+    "field": "Ethik, Dialektik",
+    "thesis": "Das gute Leben erfordert Untersuchung und moralische Selbstkenntnis.",
+    "intro": "Sokrates praktizierte dialogische Prüfung moralischer Begriffe. Er schrieb selbst nichts; unser Bild stammt aus Schülerberichten.",
+    "ideas": ["Praktische Ethik durch Prüfung", "Sokratische Ironie und elenktische Methode", "Konnektivität von Wissen und Tugend"],
+    "significance": "Legte Grundsteine für ethische Reflexion und die philosophische Dialogform. Seine Hinrichtung markiert einen Wendepunkt für attische Politik und Philosophie.",
+    "works": "Keine eigenen Schriften; Darstellungen bei Platon, Xenophon und Aristophanes",
+    "context": "Athen des 5. Jahrhunderts v. Chr., an der Schwelle politischer Umwälzungen. Sokrates' Verfahren wurde politisch und philosophisch kontrovers angesehen."
+  },
+  {
+    "slug": "platon",
+    "name": "Platon",
+    "shortName": "Platon",
+    "years": "ca. 427–347 v. Chr.",
+    "era": "Antike",
+    "eraLink": "antike.html",
+    "field": "Metaphysik, Erkenntnistheorie, Politik",
+    "thesis": "Wirklichkeit unterscheidet sich zwischen sinnlich Wahrnehmbarem und unveränderlichen Ideenformen.",
+    "intro": "Platon entwickelte die Theorie der Ideen und idealtypische Erkenntnismodelle. Er verfasste Dialoge, in denen philosophische Probleme dramatisch entfaltet werden.",
+    "ideas": ["Theorie der Ideen/Formen", "Erkenntnis als Erinnerung/Anamnesis", "Philosophenherrschaft im Staat"],
+    "significance": "Eine der einflussreichsten Gestalten der abendländischen Philosophie mit umfassender Systematik. Seine Texte prägten Ethik, Metaphysik und politische Theorie über Jahrhunderte.",
+    "works": "Dialoge wie Staat, Phaidon, Timaios",
+    "context": "Gründete die Akademie in Athen; reagierte auf Sokrates und die ionische Naturphilosophie. Sein Werk war sowohl philosophisch als auch politisch wirkmächtig."
+  },
+  {
+    "slug": "aristoteles",
+    "name": "Aristoteles",
+    "shortName": "Aristoteles",
+    "years": "384–322 v. Chr.",
+    "era": "Antike",
+    "eraLink": "antike.html",
+    "field": "Logik, Metaphysik, Naturwissenschaft, Ethik",
+    "thesis": "Wesen und Ursachen der Dinge lassen sich durch systematische Begriffe und vier Ursachen erklären.",
+    "intro": "Aristoteles systematisierte Logik, Natur- und Geisteswissenschaften in umfassenden Lehrwerken. Er setzte gegen Platon stärker auf Erfahrung und Kausalitätsbegriffe.",
+    "ideas": ["Vier Ursachen (Form, Materie, Wirkursache, Zweck)", "Syllogistische Logik", "Teleologische Erklärung in Biologie und Ethik"],
+    "significance": "Sein umfangreiches Werk bildete über die Antike und das Mittelalter hinweg die Grundlage vieler Wissenschaften. Aristotelische Kategorien prägten Scholastik und Naturphilosophie.",
+    "works": "Organon, Metaphysik, Nikomachische Ethik, Politik, Physik",
+    "context": "Lehrte u. a. am Hof von Makedonien; gründete eigene Schule (Lykeion). Sein Einfluss wurde in unterschiedlichen Epochen sehr unterschiedlich rezipiert."
+  },
+  {
+    "slug": "epikur",
+    "name": "Epikur",
+    "shortName": "Epikur",
+    "years": "341–270 v. Chr.",
+    "era": "Antike",
+    "eraLink": "antike.html",
+    "field": "Ethik, Naturphilosophie",
+    "thesis": "Glück besteht in einfacher, schmerzfreier Lebensführung und seelischer Ruhe (ataraxia).",
+    "intro": "Epikur betonte Genussvernunft, Angstfreiheit vor Göttern und Tod. Seine Schule (Der Garten) war praxisorientiert und materialistisch.",
+    "ideas": ["Hedonistische Ethik mit Maß", "Atomistische Naturlehre", "Befreiung von Todes- und Götterängsten"],
+    "significance": "Praktische Ethik mit starkem Einfluss auf spätere hedonistische und materialistische Strömungen. Vieles überliefert in Briefen und Fragmenten.",
+    "works": "Briefe und Gnomai (Fragmente), Lehre durch spätere Überlieferung",
+    "context": "Wirkte in Hellenistisch-Romischer Zeit; reagierte auf Ängste seiner Zeit mit einer Lebenskunst. Viele Lehren wurden später polemisiert."
+  },
+  {
+    "slug": "zenon-von-kition",
+    "name": "Zenon von Kition",
+    "shortName": "Zenon von Kition",
+    "years": "ca. 334–262 v. Chr.",
+    "era": "Antike",
+    "eraLink": "antike.html",
+    "field": "Ethik, Stoa",
+    "thesis": "Tugend ist das einzige Gute; seelische Unerschütterlichkeit entsteht durch Leben gemäß der Natur und Vernunft.",
+    "intro": "Zenon begründete die Stoa und betonte Rationalität und Selbstbeherrschung. Sein Programm verband Ethik mit einer kosmisch-rationalen Weltordnung.",
+    "ideas": ["Tugendethik und innere Gelassenheit", "Kosmischer Logos", "Apathie gegenüber äußeren Gütern"],
+    "significance": "Stoa wurde eine langlebige Lebens- und Ethikschule, einflussreich bis in römische Philosophie und später. Zenons Lehre wurde oft adaptiert und systematisiert.",
+    "works": "Überliefert fragmentarisch durch Nachfolger",
+    "context": "Entstand in hellenistischer Ära mit politischer Unsicherheit; suchte praktische Lebenshilfe. Viele ursprüngliche Schriften verloren."
+  },
+  {
+    "slug": "augustinus",
+    "name": "Augustinus",
+    "shortName": "Augustinus",
+    "years": "354–430",
+    "era": "Mittelalter",
+    "eraLink": "mittelalter.html",
+    "field": "Theologie, Philosophie der Religion",
+    "thesis": "Gnade, Gotteserkenntnis und die innere Bekehrung sind zentral für das christliche Heil.",
+    "intro": "Augustinus verband christliche Theologie mit neuplatonischer Philosophie. Sein Denken prägt christliche Lehre und europäische Selbstverständnisse.",
+    "ideas": ["Erbsünde und göttliche Gnade", "Bekenntnis als Erkenntnismodus", "Zeit- und Gottesrelationen (Confessiones)"],
+    "significance": "Wesentliche Figur der westlichen Christentumsgeschichte; Einfluss auf Theologie, Ethik und politische Theorie. Viele seiner Begriffe bestimmen theologische Debatten bis heute.",
+    "works": "Bekenntnisse, De civitate Dei, De Trinitate",
+    "context": "Lebte in spätantiker Spätphase von Rom und Nordafrika; Reaktionen auf heidnische und kirchliche Konflikte. Seine Synthese prägte die mittelalterliche Scholastik."
+  },
+  {
+    "slug": "boethius",
+    "name": "Boethius",
+    "shortName": "Boethius",
+    "years": "ca. 477–524",
+    "era": "Mittelalter",
+    "eraLink": "mittelalter.html",
+    "field": "Philosophie, Theologie, Logik",
+    "thesis": "Wahre Weisheit verbindet göttliche Vorsehung und menschliches Glück in philosophischer Prüfung.",
+    "intro": "Boethius übertrug antike Philosophie ins spätantike/christliche Umfeld. Sein Gefängnisbrief 'Trost der Philosophie' wurde mittelalterlich breit rezipiert.",
+    "ideas": ["Vorsehung und freier Wille", "Übersetzung und Vermittlung antiker Logik", "Philosophie als Trost in Leid"],
+    "significance": "Schlüsselgestalt für die Vermittlung Aristoteles' und Platons in Mittelalter. Seine Texte waren bis in die Renaissance einflussreich.",
+    "works": "De consolatione philosophiae; Übersetzungen und Kommentare zu Aristoteles",
+    "context": "Wirkte in oströmisch-italienischem Machtgefüge; politisch verstrickt und schließlich hingerichtet. Seine Schriften wurden zu mittelalterlichen Lehrtexten."
+  },
+  {
+    "slug": "avicenna",
+    "name": "Avicenna",
+    "shortName": "Avicenna",
+    "years": "980–1037",
+    "era": "Mittelalter",
+    "eraLink": "mittelalter.html",
+    "field": "Metaphysik, Medizin",
+    "thesis": "Vernunftliche Metaphysik kann das Verhältnis von Wesen und Existenz sowie Gottesbegriff systematisch behandeln.",
+    "intro": "Ibn Sīnā (Avicenna) verband arabisch-islamische Gelehrsamkeit mit aristotelisch-neuplatonischer Metaphysik. Er war bedeutender Mediziner und Philosoph.",
+    "ideas": ["Unterscheidung von Wesen und Existenz", "Rationalistische Gottesargumente", "Systematische Heilkunde und Ontologie"],
+    "significance": "Prägende Figur für Philosophie und Medizin in islamischer und später europäischer Tradition. Seine metaphysischen Unterscheidungen beeinflussten Scholastiker.",
+    "works": "Al-Qanun fi al-Tibb (Kanon der Medizin), Al-Shifa' (Die Heilung)",
+    "context": "Wirkung im mittelalterlich-islamischen Wissensraum; Vermittler antiker Texte. Seine Werke wurden später ins Lateinische übersetzt."
+  },
+  {
+    "slug": "averroes",
+    "name": "Averroes",
+    "shortName": "Averroes",
+    "years": "1126–1198",
+    "era": "Mittelalter",
+    "eraLink": "mittelalter.html",
+    "field": "Philosophie, Rechtswissenschaft",
+    "thesis": "Philosophische Vernunft und religiöse Schrift sind zu prüfen und können zusammenwirken, teils unterschiedlich zu verstehen.",
+    "intro": "Ibn Rušd (Averroes) war Kommentator Aristoteles' und suchte Harmonie zwischen Vernunft und Offenbarung. Seine Interpretationen wurden in Europa und im islamischen Umfeld intensiv diskutiert.",
+    "ideas": ["Aristotelische Kommentierung", "Unterscheidung verschiedener Lesarten religiöser Texte", "Universalität der Vernunft"],
+    "significance": "Wesentlich für die Wiederentdeckung Aristoteles’ im mittelalterlichen Europa. Seine Thesen führten zu breit geführten Debatten über Vernunft und Religion.",
+    "works": "Kommentare zu Aristoteles, Tahafut al-Tahafut (Widerlegung der Widerlegung)",
+    "context": "Wirkte im al-Andalus sowie marokkanisch-arabischem Kulturraum. Seine Schriften reisten nach Europa durch Übersetzungen."
+  },
+  {
+    "slug": "thomas-von-aquin",
+    "name": "Thomas von Aquin",
+    "shortName": "Thomas von Aquin",
+    "years": "1225–1274",
+    "era": "Mittelalter",
+    "eraLink": "mittelalter.html",
+    "field": "Scholastik, Theologie",
+    "thesis": "Glaube und Vernunft sind kompatibel; natürliche Theologie kann Grundwahrheiten über Gott erschließen.",
+    "intro": "Thomas integrierte aristotelische Philosophie in christliche Theologie. Seine Summa-Theologie ist ein systematisches Lehrwerk der Scholastik.",
+    "ideas": ["Fünf Wege Gottesbeweis", "Naturgesetzethik", "Synthese von Glaube und Vernunft"],
+    "significance": "Prägte katholische Theologie und universitäre Lehre nachhaltig. Seine scholastische Methode dominierte europäische Theologie lange Zeit.",
+    "works": "Summa Theologiae, Summa contra Gentiles",
+    "context": "Werk in Rahmen mittelalterlicher Universitätskultur; Auseinandersetzung mit Aristoteles via arabische Vermittlung. Wurde von der Kirche hoch rezipiert."
+  },
+  {
+    "slug": "meister-eckhart",
+    "name": "Meister Eckhart",
+    "shortName": "Meister Eckhart",
+    "years": "ca. 1260–1328",
+    "era": "Mittelalter",
+    "eraLink": "mittelalter.html",
+    "field": "Mystik, Theologie",
+    "thesis": "Gottesschau kann in innerer Vereinigung des Geistes erreicht werden; die tiefste Wirklichkeit ist jenseits von Konzepten.",
+    "intro": "Eckhart war Dominikaner und einflussreicher Mystiker mit philosophischer Sensibilität. Seine Predigten betonten innere Erfahrung göttlicher Gegenwart.",
+    "ideas": ["Innere Gottesnähe und Gelassenheit", "Auslöschung des Ich in Gotteslicht", "Sprachkritik gegenüber theologisch-exzessiver Rede"],
+    "significance": "Seine mystische Sprache beeinflusste christliche Spiritualität und spätere Mystikforschung. Teile seiner Lehre wurden kirchlich kritisiert, teils rehabilitiert.",
+    "works": "Predigten und Traktate; viele Fragmente erhalten",
+    "context": "Wirkte in spätmittelalterlichem Deutschland und Frankreich. Mystik stand in Spannung zu scholastischer Rationalität und kirchlicher Kontrolle."
+  },
+  {
+    "slug": "niccolo-machiavelli",
+    "name": "Niccolò Machiavelli",
+    "shortName": "Machiavelli",
+    "years": "1469–1527",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Politische Theorie",
+    "thesis": "Politische Wirklichkeit muss pragmatisch und oft jenseits idealer Moral analysiert werden.",
+    "intro": "Machiavelli untersuchte Macht und Staatsführung unideologisch und empirisch. Sein Werk prägte moderne Staatsraison und Realpolitikdebatten.",
+    "ideas": ["Realpolitik und Machtanalyse", "Trennung von Moral und Staatsräson", "Stabilisierungsprinzipien für den Staat"],
+    "significance": "Schlüsselfigur der modernen politischen Theorie mit nachhaltiger Kontroverse. Sein Name steht für nüchterne Machtbetrachtung und politische Praxisorientierung.",
+    "works": "Il Principe (Der Fürst), Discorsi (Discorsi sopra la prima deca di Tito Livio)",
+    "context": "Italien der Renaissance, zersplittert in Stadtstaaten; Erfahrungen als Diplomat und Beamter prägten seine Perspektive. Werk wurde als Handbuch und Warnung gelesen."
+  },
+  {
+    "slug": "rene-descartes",
+    "name": "René Descartes",
+    "shortName": "Descartes",
+    "years": "1596–1650",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Erkenntnistheorie, Metaphysik, Mathematik",
+    "thesis": "Methodischer Zweifel führt zu unbezweifelbarer Gewissheit des denkenden Subjekts: cogito ergo sum.",
+    "intro": "Descartes suchte unerschütterliche Grundlagen der Erkenntnis durch methodischen Zweifel. Er verband philosophische Fragen mit mathematischer Methode.",
+    "ideas": ["Methodischer Zweifel", "Substanzdualismus (Res cogitans / Res extensa)", "Rationalistische Gewissheitssuche"],
+    "significance": "Begründer des neuzeitlichen Rationalismus; beeinflusste Wissenschaftsbild und Philosophie. Seine Trennung von Geist und Körper löste lange Debatten aus.",
+    "works": "Meditationes de prima philosophia, Discours de la méthode",
+    "context": "Lebte im Übergang von Renaissance zur Wissenschaftlichen Revolution; suchte sichere Erkenntnis in einer Zeit religiöser Spannungen. Naturwissenschaftliche Erfolge inspirierten seine Methode."
+  },
+  {
+    "slug": "thomas-hobbes",
+    "name": "Thomas Hobbes",
+    "shortName": "Hobbes",
+    "years": "1588–1679",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Politische Philosophie, Anthropologie",
+    "thesis": "Ohne politische Ordnung führt der Naturzustand zu Gewalt; Souveränität ist Grundlage Frieden sicherzustellen.",
+    "intro": "Hobbes entwarf einen Vertragstheorie-artigen Staatsbegriff mit starkem Souverän. Sein Menschenbild ist materialistisch und sicherheitsorientiert.",
+    "ideas": ["Naturzustand und Furcht als Motor politischer Ordnung", "Gesellschaftsvertrag zur Sicherung von Frieden", "Starker Souverän zur Verhinderung Konflikte"],
+    "significance": "Begründer moderner Vertragstheorie mit erheblicher Wirkung auf Staats- und Rechtslehre. Seine pessimistischen Anthropologie bleibt kontrovers.",
+    "works": "Leviathan",
+    "context": "Wirkte im England des Bürgerkriegs; politisch und intellektuell reagierte er auf soziale Unruhen. Seine Theorie reflektiert Praxis- und Stabilitätsbedenken."
+  },
+  {
+    "slug": "baruch-de-spinoza",
+    "name": "Baruch de Spinoza",
+    "shortName": "Spinoza",
+    "years": "1632–1677",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Metaphysik, Ethik",
+    "thesis": "Gott oder Natur ist die einzige Substanz; Freiheit ist Einsicht in notwendige Naturzusammenhänge.",
+    "intro": "Spinoza formulierte ein monistisches System, das Gott mit Natur gleichsetzt. Seine Ethik knüpft an Erkenntnis und seelische Befreiung an.",
+    "ideas": ["Monismus: Gott oder Natur als Substanz", "Determinismus und Erkenntnis als Freiheit", "Ethik der Affekte durch Vernunftformung"],
+    "significance": "Radikaler Neuansatz zur Metaphysik und Religionskritik, einflussreich für Aufklärung und moderne Philosophie. Seine Schriften waren oft verboten oder umstritten.",
+    "works": "Ethica, Tractatus Theologico-Politicus",
+    "context": "Wirkung im niederländischen Umfeld der frühen Moderne; jüdische Herkunft und Exkommunikation prägten seine Position. Reaktionen reichten von Verurteilung bis Bewunderung."
+  },
+  {
+    "slug": "john-locke",
+    "name": "John Locke",
+    "shortName": "Locke",
+    "years": "1632–1704",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Erkenntnistheorie, Politische Philosophie",
+    "thesis": "Geist als Tabula rasa; legitime politische Autorität gründet in Zustimmung und Schutz natürlicher Rechte.",
+    "intro": "Locke betonte Erfahrung als Quelle des Wissens und entwickelte liberalpolitische Grundsätze. Seine Theorie der Toleranz und Eigentumsbegründung war wegweisend.",
+    "ideas": ["Empirismus (Tabula rasa)", "Gesellschaftsvertrag und Regierung durch Zustimmung", "Recht auf Leben, Freiheit, Eigentum"],
+    "significance": "Wesentliche Grundlage liberaler politischer Theorie und moderner Erkenntnistheorie. Beeinflusste Verfassungsdenken und Aufklärung stark.",
+    "works": "An Essay Concerning Human Understanding, Two Treatises of Government",
+    "context": "Englische Revolution und Aufklärungskontexte formten seine Gedanken. Locke war praktischer Technokrat und politischer Denker zugleich."
+  },
+  {
+    "slug": "gottfried-wilhelm-leibniz",
+    "name": "Gottfried Wilhelm Leibniz",
+    "shortName": "Leibniz",
+    "years": "1646–1716",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Metaphysik, Mathematik, Logik",
+    "thesis": "Die Welt besteht aus monadenhaften Substanzen; Gott wählte die beste aller möglichen Welten.",
+    "intro": "Leibniz verband metaphysische Systembildung mit mathematischer Erfindungslust. Seine Monadologie bietet eine alternative Ontologie zur Mechanik.",
+    "ideas": ["Monaden: einfache, individuelle Substanzen", "Präkordination/Harmonie der Monaden", "Optimismus (beste mögliche Welt)"],
+    "significance": "Wichtiger Systemdenker der Aufklärung und Mitbegründer der modernen Mathematik. Seine Ideen lieferten Impulse für Metaphysik und Theodizeedebatten.",
+    "works": "Monadologie, Theodizee, mathematische Schriften",
+    "context": "Arbeitete als Universalgelehrter in europäischen Fürstenhöfen; Vernetzung von Wissenschaft, Diplomatie und Philosophie. Seine Schriften sind oft notizartig und fragmentarisch."
+  },
+  {
+    "slug": "david-hume",
+    "name": "David Hume",
+    "shortName": "Hume",
+    "years": "1711–1776",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Erkenntnistheorie, Moralpsychologie",
+    "thesis": "Erfahrung begrenzt Gewissheit; Kausalität ist Gewohnheitserwartung, nicht rational demonstrierbar.",
+    "intro": "Hume kritisierte rationale Sicherheiten und legte eine empirische Psychologie der Moral vor. Seine Skepsis betrifft Wissen von Kausalzusammenhängen und Selbstidentität.",
+    "ideas": ["Skeptizismus gegenüber Kausalität", "Empirische Grundlage der Moral (Gefühl)", "Kritik an metaphysischen Gewissheiten"],
+    "significance": "Entfachte zentrale Debatten der Aufklärung und beeinflusste Kants kritische Wende. Humes empirische Psychologie prägt bis heute Philosophie und Wissenschaftstheorie.",
+    "works": "A Treatise of Human Nature, An Enquiry Concerning Human Understanding",
+    "context": "Aufklärungsschottland; Rezeption in Europa war breit und kontrovers. Sein Werk provozierte Reaktionen in Ethik, Erkenntnistheorie und Religionskritik."
+  },
+  {
+    "slug": "jean-jacques-rousseau",
+    "name": "Jean-Jacques Rousseau",
+    "shortName": "Rousseau",
+    "years": "1712–1778",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Politische Philosophie, Erziehungsphilosophie",
+    "thesis": "Gesellschaftsvertrag kann die natürliche Freiheit wiederherstellen und Legitimität politischer Ordnung stiften.",
+    "intro": "Rousseau kombinierte kulturkritische Anthropologie mit normativer Polittheorie. Er setzte Impulse für Pädagogik und demokratische Vorstellungen.",
+    "ideas": ["Allgemeiner Wille als Legitimationsgrund", "Kritik der Zivilisation", "Erziehung zur Freiheit (Emile)"],
+    "significance": "Wichtiger Wegbereiter moderner Demokratie- und Bildungsideale; ambivalente Rezeption in Revolution und Konservatismus. Seine Begriffe bleiben politisch einflussreich.",
+    "works": "Du contrat social, Émile",
+    "context": "Aufklärungskonflikte und soziale Spannungen prägen seine Kritik. Sein Denken wurde in französischer Revolution instrumentalisiert und kontrovers interpretiert."
+  },
+  {
+    "slug": "immanuel-kant",
+    "name": "Immanuel Kant",
+    "shortName": "Kant",
+    "years": "1724–1804",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Erkenntnistheorie, Ethik",
+    "thesis": "Erkenntnis entsteht aus Wechselspiel von Sinnesgabe und kategorischer Struktur des Verstandes; Moral beruht auf kategorischem Imperativ.",
+    "intro": "Kant revolutionierte epistemologische und ethische Fragestellungen mit seiner kritischen Philosophie. Er versuchte Grenzen der Vernunft zu klären und Prinzipien praktischer Vernunft zu formulieren.",
+    "ideas": ["Kritik der reinen Vernunft (transzendentale Bedingungen)", "Kategorischer Imperativ", "Autonomie der praktischen Vernunft"],
+    "significance": "Begründer der kritischen Philosophie mit immensen Folgen für Metaphysik, Ethik und Ästhetik. Kant prägte die moderne Philosophie Europas grundlegend.",
+    "works": "Kritik der reinen Vernunft, Kritik der praktischen Vernunft, Kritik der Urteilskraft",
+    "context": "Wirkung in preußischer Aufklärung und akademischem Leben; reagierte auf Rationalismus und Empirismus. Kants System versucht ein programmatisches Ende metaphysischer Zweifel."
+  },
+  {
+    "slug": "johann-gottlieb-fichte",
+    "name": "Johann Gottlieb Fichte",
+    "shortName": "Fichte",
+    "years": "1762–1814",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Transzendentalphilosophie, Ethik",
+    "thesis": "Subjektive Ich-Aktivität ist die Grundlage aller erkenntnistheoretischen Setzungen und Freiheit.",
+    "intro": "Fichte baute auf Kant auf und radikalisierte die Idee des Ich als aktives Setzungsprinzip. Er entwickelte daraus eine idealistische Theorie von Freiheit und Sittlichkeit.",
+    "ideas": ["Ich-Setzung als transzendentale Grundlage", "Praktische Freiheit als ethische Grundlage", "Philosophie als lebendige Selbstbesinnung"],
+    "significance": "Schlüsselfigur des deutschen Idealismus; beeinflusste politische und philosophische Debatten um Autonomie und Nation. Seine Betonung des Subjekts prägte nachfolgende Denker.",
+    "works": "Wissenschaftslehre (verschiedene Fassungen)",
+    "context": "Wirkte in der Umbruchszeit um Französische Revolution und Preußische Reformen. Fichtes Arbeit ist stark normativ-pädagogisch ausgerichtet."
+  },
+  {
+    "slug": "friedrich-wilhelm-joseph-schelling",
+    "name": "Friedrich Wilhelm Joseph Schelling",
+    "shortName": "Schelling",
+    "years": "1775–1854",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Naturphilosophie, Idealismus",
+    "thesis": "Natur und Geist gehören zu einem dynamischen Ganzen, das sich in Freiheit und naturphilosophischer Entwicklung entfaltet.",
+    "intro": "Schelling versuchte eine Einheit von Natur- und Geistesphilosophie zu entwerfen. Seine Systeme variierten zwischen spekulativer Metaphysik und späterer existenzieller Wendung.",
+    "ideas": ["Identitätsphilosophie von Natur und Geist", "Philosophie als systematische Entwicklung", "Spätere Betonung des Existentiellen und des Ursprungs"],
+    "significance": "Wichtiger Vertreter des deutschen Idealismus mit komplexer Entwicklung; beeinflusste Romantik, Idealismus und spätere Existenzdeutungen. Seine Wandlungen machten ihn schwer einzuordnen.",
+    "works": "Philosophie der Natur, System des transzendentalen Idealismus",
+    "context": "Entstand in der deutschen Aufbruchszeit nach Revolution und Aufklärung. Schelling bewegte sich in intellektuellen Netzwerken mit Fichte und Hegel."
+  },
+  {
+    "slug": "georg-wilhelm-friedrich-hegel",
+    "name": "Georg Wilhelm Friedrich Hegel",
+    "shortName": "Hegel",
+    "years": "1770–1831",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Dialektik, Systemphilosophie",
+    "thesis": "Die Wirklichkeit ist Prozess und Vernunft; Geist entfaltet sich historisch in Formen der Freiheit und Selbstbewusstsein.",
+    "intro": "Hegel entwickelte eine umfassende Systemphilosophie mit dialektischer Methode. Geschichte ist bei ihm Ausdruck des fortschreitenden Geistes zur Freiheit.",
+    "ideas": ["Dialektische Entwicklung durch innere Widersprüche", "Geschichtsphilosophie als Vernunftprozess", "Systematischer Zusammenhang von Logik, Natur und Geist"],
+    "significance": "Extrem einflussreicher Denker für Politik, Geschichte und Philosophie; Hegels System löste vielfältige Interpretationen aus. Sein Begriff von Freiheit prägte moderne Theoriebildung.",
+    "works": "Phänomenologie des Geistes, Wissenschaft der Logik, Rechtsphilosophie",
+    "context": "Wirkte in Nachrevolutionärem Europa; Rezeption war politisch und akademisch stark umstritten. Seine Philosophie beansprucht umfassende systematische Erklärungen."
+  },
+  {
+    "slug": "arthur-schopenhauer",
+    "name": "Arthur Schopenhauer",
+    "shortName": "Schopenhauer",
+    "years": "1788–1860",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Metaphysik, Pessimismus, Ästhetik",
+    "thesis": "Wille ist die fundamentale, irrational-expressive Kraft der Welt; Leiden ist zentrale Bedingung des Lebens.",
+    "intro": "Schopenhauer entwarf eine metaphysisch-pessimistische Sicht mit Betonung des Willens. Er suchte ästhetische und ethische Wege, dem Leiden zu begegnen.",
+    "ideas": ["Wille als Ding an sich", "Pessimistische Deutung menschlicher Existenz", "Rettung durch Kunst, Mitleid und Askese"],
+    "significance": "Seine Philosophie beeinflusste Literatur, Psychologie und spätere Existenzphilosophie. Oft rezipiert als Gegenmodell zum optimistischen Fortschrittsdenken.",
+    "works": "Die Welt als Wille und Vorstellung",
+    "context": "19. Jahrhundert der Industrialisierung und Romantik; reagierte auf Optimismus und wissenschaftlichen Fortschritt. Seine Haltung war provokativ und konträr."
+  },
+  {
+    "slug": "john-stuart-mill",
+    "name": "John Stuart Mill",
+    "shortName": "J. S. Mill",
+    "years": "1806–1873",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Ethik, Politische Philosophie",
+    "thesis": "Utilitarismus: Moral bewertet nach Förderung von Glück als allgemeinem Wohl; individuelle Freiheit ist zentral solange sie anderen nicht schadet.",
+    "intro": "Mill entwickelte und verfeinerte utilitaristische Ethik und verteidigte individuelle Freiheiten. Sein Werk kombiniert normative Theorie mit liberaler Politik.",
+    "ideas": ["Utilitaristische Nutzenabwägung", "Verteidigung der Meinungsfreiheit", "Gleichberechtigung und Erziehung zur Autonomie"],
+    "significance": "Wichtiger Theoretiker des Liberalismus und der Moderne; beeinflusste Menschenrechte und politische Reformen. Seine Kombination aus Nutzen- und Freiheitsprinzipien blieb einflussreich.",
+    "works": "Utilitarianism, On Liberty, The Subjection of Women",
+    "context": "Industrielle Revolution und politische Reformbewegungen in Großbritannien prägten seine Anliegen. Mill war sowohl Philosoph als auch politischer Aktivist."
+  },
+  {
+    "slug": "karl-marx",
+    "name": "Karl Marx",
+    "shortName": "Karl Marx",
+    "years": "1818–1883",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Politische Ökonomie, Gesellschaftstheorie",
+    "thesis": "Gesellschaftliche Widersprüche des kapitalistischen Produktionsverhältnisses führen zu Klassenkonflikten; ökonomische Strukturen prägen soziale Formationen.",
+    "intro": "Marx analysierte Kapitalismus als historisches System und formulierte Kritik an Ausbeutung und Entfremdung. Seine Materialistische Geschichtsauffassung beeinflusste Sozialwissenschaften und Politik.",
+    "ideas": ["Historischer Materialismus", "Mehrwert- und Ausbeutungsanalyse", "Klassenkampf als Motor sozialer Veränderung"],
+    "significance": "Begründer einer einflussreichen kritischen Theorie, die Politik und Wissenschaft weltweit prägte. Marx' Analysen blieben zentral für Sozial- und Wirtschaftstheorie.",
+    "works": "Das Kapital, Manifest der Kommunistischen Partei (mit Engels)",
+    "context": "Industrialisierung und soziale Ungleichheit des 19. Jahrhunderts bildeten den Hintergrund. Marx arbeitete als Theoretiker und politischer Aktivist."
+  },
+  {
+    "slug": "soren-kierkegaard",
+    "name": "Søren Kierkegaard",
+    "shortName": "Kierkegaard",
+    "years": "1813–1855",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Existenzphilosophie, Theologie",
+    "thesis": "Individuelle Existenz, Entscheidung und subjektive Beziehung zu Gott sind vorrangig gegenüber abstrakten Systemen.",
+    "intro": "Kierkegaard betonte persönliche Existenz und die existentielle Entscheidung; er kritisierte abstrakte Systemphilosophie. Seine Schriften sind oft pseudonym und literarisch gestaltet.",
+    "ideas": ["Subjektivität als Wahrheitskategorie", "Stufen auf dem Lebensweg (Ästhetisch, Ethisch, Religiös)", "Kritik an Institutionenreligion"],
+    "significance": "Wegbereiter der Existenzphilosophie und späterer theologischer Reflexionen. Seine Betonung von Individualität und Angst prägte moderne Existenzdeutungen.",
+    "works": "Entweder – Oder, Furcht und Zittern, Die Krankheit zum Tode",
+    "context": "Dänemark im 19. Jahrhundert; persönliche Auseinandersetzung mit Glaube und Gesellschaft beeinflusste sein Denken. Stilistisch provokant und persönlich."
+  },
+  {
+    "slug": "friedrich-nietzsche",
+    "name": "Friedrich Nietzsche",
+    "shortName": "Nietzsche",
+    "years": "1844–1900",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Kulturkritik, Wertephilosophie",
+    "thesis": "Traditionelle Werte sind historisch bedingt; Neuorientierung erfordert kritische Umwertung von Werten.",
+    "intro": "Nietzsche kritisierte Moral, Religion und die moderne Kultur mit radikaler Stilistik. Er forderte neue Perspektiven auf Macht, Kunst und Selbstwerdung.",
+    "ideas": ["Umwertung aller Werte", "Wille zur Macht (als interpretatives Konzept)", "Ewige Wiederkehr als Prüfstein"],
+    "significance": "Enorm einflussreicher Denker der Moderne, rezipiert in Philosophie, Literatur und Politik; oft kontrovers gelesen. Seine aphoristische Form fördert vielfältige Interpretationen.",
+    "works": "Also sprach Zarathustra, Jenseits von Gut und Böse, Zur Genealogie der Moral",
+    "context": "19. Jahrhundert mit kulturellem Wandel, Nationalismus und Wissenschaftsoptimismus; Nietzsche reagierte mit kulturkritischer Perspektive. Krankheit und Rezeption komplizierten sein Erbe."
+  },
+  {
+    "slug": "ludwig-wittgenstein",
+    "name": "Ludwig Wittgenstein",
+    "shortName": "Wittgenstein",
+    "years": "1889–1951",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Sprachphilosophie, Logik",
+    "thesis": "Sinn und Grenzen des Denkens werden durch die Struktur und den Gebrauch der Sprache bestimmt.",
+    "intro": "Wittgenstein prägte Sprach- und Logikphilosophie mit unterschiedlichen Phasen: logischer Atomismus und spätsprachliche Gebrauchsanalyse. Sein Werk ist stilistisch dicht und praxisorientiert.",
+    "ideas": ["Bildtheorie der Sprache (frühe Phase)", "Sprachspiele und Gebrauchstheorie (späte Phase)", "Grenzen der Sprache bestimmen das Sagbare"],
+    "significance": "Einer der zentralen Philosophen des 20. Jahrhunderts; beeinflusste Analytische Philosophie und Geisteswissenschaften. Seine Zäsur zwischen früher und später Philosophie ist methodisch richtungsweisend.",
+    "works": "Tractatus logico-philosophicus, Philosophische Untersuchungen",
+    "context": "Wiener Kreis, Cambridge und Entstehung moderner Sprachkritik prägen die Rezeption; Leben zwischen Wissenschaft und persönlicher Reflexion.",
+    "works_note": ""
+  },
+  {
+    "slug": "martin-heidegger",
+    "name": "Martin Heidegger",
+    "shortName": "Heidegger",
+    "years": "1889–1976",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Existenzphilosophie, Ontologie",
+    "thesis": "Sein ist die grundlegendste Frage; menschliches Dasein eröffnet das Verständnis von Sein durch Sorge und Zeitlichkeit.",
+    "intro": "Heidegger untersuchte die Frage nach dem Sein mit existenzialer Phänomenologie. Sein Hauptwerk analysiert menschliche Existenz (Dasein) in Bezug auf Zeitlichkeit und Geworfenheit.",
+    "ideas": ["Daseinsanalyse und Sorge", "Ontologische Differenz (Sein vs. Seiendes)", "Zeitlichkeit als Struktur des Verstehens"],
+    "significance": "Prägender Einfluss auf Kontinentalphilosophie, Hermeneutik und Existenzphilosophie. Seine politische Haltung bleibt kontrovers und beeinträchtigt die Rezeption.",
+    "works": "Sein und Zeit, Spätere Schriften",
+    "context": "Wirkung in der deutschen Geistesgeschichte des 20. Jahrhunderts; Debatten um Politik und Philosophie begleiteten sein Werk."
+  },
+  {
+    "slug": "jean-paul-sartre",
+    "name": "Jean-Paul Sartre",
+    "shortName": "Sartre",
+    "years": "1905–1980",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Existentialismus, Literatur",
+    "thesis": "Existenz geht der Essenz voraus; der Mensch ist zu radikaler Freiheit und Verantwortung verurteilt.",
+    "intro": "Sartre verband philosophische Theorie mit literarischer Praxis und politischem Engagement. Seine Existenzphilosophie betont Freiheit, Verantwortung und Engagement in der Welt.",
+    "ideas": ["Existenz vor Essenz", "Radikale Freiheit und Verantwortung", "Engagement (engagement) als ethisches Prinzip"],
+    "significance": "Hauptvertreter des Existentialismus; beeinflusste Philosophie, Literatur und politische Praxis in Europa. Seine Betonung individueller Freiheit prägte Debatten der Moderne.",
+    "works": "Das Sein und das Nichts, Existenzielles Theater und Romane",
+    "context": "Zwischen Weltkriegen und Nachkriegszeit entstanden seine Werke; politisches Engagement beeinflusste öffentliches Ansehen und Rezeption."
+  },
+  {
+    "slug": "albert-camus",
+    "name": "Albert Camus",
+    "shortName": "Camus",
+    "years": "1913–1960",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Existentialismus, Literatur",
+    "thesis": "Das Absurde entsteht aus der Spannung zwischen Menschenverlangen nach Sinn und einer indifferenten Welt; Ethik folgt aus Auflehnung gegen das Absurde.",
+    "intro": "Camus formulierte philosophisch-literarisch das Problem des Absurden und die Haltung des Aufbegehrens. Er war zugleich Autor und politischer Kommentator.",
+    "ideas": ["Absurdität des Lebens", "Revolte als ethische Antwort", "Solidarität gegen Gewalt und Resignation"],
+    "significance": "Einflussreicher Denker der Moderne, besonders in Ethik und politischer Praxis; literarische Formen machten seine Philosophie zugänglich. Distanz zu einigen existentialistischen Positionen kennzeichnete ihn.",
+    "works": "Der Mythos des Sisyphos, Der Fremde",
+    "context": "Algerische Herkunft und französische Kolonialgeschichte prägen seine Perspektive; Nachkriegskontexte formten sein politisches Engagement."
+  },
+  {
+    "slug": "hannah-arendt",
+    "name": "Hannah Arendt",
+    "shortName": "Arendt",
+    "years": "1906–1975",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Politische Theorie, Philosophie der Geschichte",
+    "thesis": "Totalitarismus ist eine neue Form politischer Herrschaft; Urteilskraft und öffentliches Handeln sind zentrale Bedingungen politischer Freiheit.",
+    "intro": "Arendt analysierte Totalitarismus, Urteilsvermögen und das politische Handeln als Grunddimensionen moderner Politik. Ihre Arbeiten verbinden philosophische Analyse mit politischer Beobachtung.",
+    "ideas": ["Analyse des Totalitarismus", "Bedeutung von Urteil und Öffentlichkeit", "Politisches Handeln und Pluralität"],
+    "significance": "Schlüsselwerkzeuge für Verständnis moderner politischer Verbrechen und demokratischer Praxis. Ihre Unterscheidungen prägen politische Theorie und Geschichtsinterpretation.",
+    "works": "Elemente und Ursprünge totaler Herrschaft, Vita activa",
+    "context": "Flucht vor dem Nationalsozialismus und Emigration prägten ihr Denken. Ihre Arbeit entstand im Kontext des 20. Jahrhunderts mit totalitären Erfahrungen."
+  },
+  {
+    "slug": "simone-de-beauvoir",
+    "name": "Simone de Beauvoir",
+    "shortName": "de Beauvoir",
+    "years": "1908–1986",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Existenzphilosophie, Feministische Theorie",
+    "thesis": "Frauen werden kulturell zur 'Anderen' gemacht; Freiheit und Existenzanalyse sind Grundlage für Emanzipation.",
+    "intro": "De Beauvoir verband existenzialistische Philosophie mit feministischer Analyse. Sie untersuchte soziale Konstruktionen von Geschlecht und die Bedingungen weiblicher Freiheit.",
+    "ideas": ["Geschlecht als soziale Konstruktion", "Existenzialistische Freiheit und Verantwortung", "Kritik an klischeehaften Geschlechterrollen"],
+    "significance": "Einflussreiche Vordenkerin des Feminismus der Moderne; ihr Werk inspirierte politische und theoretische Bewegungen. Verbindung von Philosophie und biografischem Erzählen macht ihre Texte nachwirkend.",
+    "works": "Das andere Geschlecht (Le Deuxième Sexe)",
+    "context": "Nachkriegsfrankreich und existenzialistische Intellektuellenszene bildeten Rahmen. Ihre Analysen decken soziale, politische und ökonomische Dimensionen auf."
+  },
+  {
+    "slug": "michel-foucault",
+    "name": "Michel Foucault",
+    "shortName": "Foucault",
+    "years": "1926–1984",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Macht- und Wissensanalysen",
+    "thesis": "Macht ist überall und wirkt durch Wissensformationen; Subjektivität wird durch historische Diskurse geformt.",
+    "intro": "Foucault untersuchte Archive, Institutionen und Diskurse als produktive Machtfelder. Seine Archäologie und Genealogie historisieren Wissen und Herrschaftsformen.",
+    "ideas": ["Macht-Wissen-Zusammenhang", "Dispositive und Disziplinarsysteme", "Historisierung des Subjekts"],
+    "significance": "Prägende Methode für Diskurstheorie, Kultur- und Sozialwissenschaften; beeinflusste Kritik an Institutionen und Wissenschaft. Seine Arbeiten sind interdisziplinär rezipiert.",
+    "works": "Wahnsinn und Gesellschaft, Überwachen und Strafen, Sexualität und Wahrheit",
+    "context": "Aufwachsen in Frankreich der Nachkriegszeit; engagierte Forschung in Gefängnis-, Klinik- und Sexualitätsgeschichte. Politische Aktivitäten begleiteten seine Arbeit."
+  },
+  {
+    "slug": "juergen-habermas",
+    "name": "Jürgen Habermas",
+    "shortName": "Habermas",
+    "years": "geb. 1929",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Sozialtheorie, Kommunikation",
+    "thesis": "Kommunikative Rationalität und Diskursethik ermöglichen legitime soziale Integration und demokratische Verständigung.",
+    "intro": "Habermas entwickelte Theorie der kommunikativen Handlung und Diskursethik als Grundlage demokratischer Legitimation. Er verbindet kritische Theorie mit normativer Sozialphilosophie.",
+    "ideas": ["Kommunikative Rationalität", "Diskursethik und Öffentlichkeit", "Kritik der instrumentellen Vernunft"],
+    "significance": "Einflussreiche Stimme in kritischer Theorie und Demokratieforschung; seine Theorie bietet normative Maßstäbe für öffentliche Rationalität. Weitreichende Interdisziplinarität.",
+    "works": "Theorie des kommunikativen Handelns, Strukturwandel der Öffentlichkeit",
+    "context": "Aufgewachsen in Deutschland des 20. Jahrhunderts; Rekonstruktion demokratischer Diskurse nach NS-Vergangenheit prägt sein Anliegen. Aktiv in politischen Debatten."
+  },
+  {
+    "slug": "daniel-dennett",
+    "name": "Daniel Dennett",
+    "shortName": "Dennett",
+    "years": "1942–2024",
+    "era": "Gegenwart",
+    "eraLink": "gegenwart.html",
+    "field": "Philosophie des Geistes, Kognitionswissenschaft",
+    "thesis": "Bewusstsein und Geist lassen sich naturalistisch erklären; Funktionen und Evolution liefern Erklärungsansätze.",
+    "intro": "Dennett vertritt eine naturalistische, funktionsorientierte Philosophie des Geistes. Er verbindet Philosophie mit Kognitionswissenschaft und Evolutionsbiologie.",
+    "ideas": ["Intentionales Gestell als nützliches Erklärungsmodell", "Bewusstsein als evolvierte Funktion", "Argumente gegen mystische Bewusstseinsmodelle"],
+    "significance": "Zentrale Figur der analytischen Philosophie des Geistes und populäre Vermittler wissenschaftlicher Perspektiven. Seine Modelle sind in Debatten über KI und Bewusstsein präsent.",
+    "works": "Consciousness Explained, Darwin's Dangerous Idea",
+    "context": "Arbeit in US-amerikanischen akademischen Kontexten der späten 20. und 21. Jahrhunderts; Interdisziplinarität prägt seine Forschung."
+  },
+  {
+    "slug": "martha-nussbaum",
+    "name": "Martha Nussbaum",
+    "shortName": "Nussbaum",
+    "years": "geb. 1947",
+    "era": "Gegenwart",
+    "eraLink": "gegenwart.html",
+    "field": "Ethik, Politische Philosophie",
+    "thesis": "Fähigkeitenansatz: Politische Gerechtigkeit muss konkrete menschliche Fähigkeiten und Würde ins Zentrum stellen.",
+    "intro": "Nussbaum kombiniert antike Ethik mit zeitgenössischer politischer Theorie und Menschenrechtsarbeit. Sie legt Wert auf Emphase konkreter menschlicher Entwicklungsmöglichkeiten.",
+    "ideas": ["Capabilities-Ansatz zur Gerechtigkeit", "Ethische Bedeutung von Emotionen", "Verbindung von Theorie und Praxis (Menschenrechte)"],
+    "significance": "Wichtige Stimme in Global Justice-Debatten und Entwicklungsethik; ihr Ansatz beeinflusst Politik und internationale normative Diskussionen. Interdisziplinär rezipiert.",
+    "works": "Frontiers of Justice, Creating Capabilities",
+    "context": "Entstand in der Nachkriegs- und Globalisierungsära; Nussbaum arbeitet an Schnittstellen von Philosophie, Recht und Politik."
+  },
+  {
+    "slug": "judith-butler",
+    "name": "Judith Butler",
+    "shortName": "Butler",
+    "years": "geb. 1956",
+    "era": "Gegenwart",
+    "eraLink": "gegenwart.html",
+    "field": "Gender-Theorie, Politische Philosophie",
+    "thesis": "Geschlecht ist performativ; Identität wird durch wiederholte kulturelle Praktiken hergestellt.",
+    "intro": "Butler argumentiert, dass Geschlechtsidentität nicht primär naturgegeben, sondern durch Performanz konstituiert wird. Ihre Theorie verbindet philosophische, feministische und queer-theoretische Perspektiven.",
+    "ideas": ["Performativität des Geschlechts", "Konstruktion von Identität durch Sprache und Praxis", "Politische Implikationen von Normativität"],
+    "significance": "Zentrale Figur der Gender- und Queer-Theorie mit breitem Einfluss in Geistes- und Sozialwissenschaften. Ihre Konzepte beeinflussen zeitgenössische Debatten zu Identität und Politik.",
+    "works": "Gender Trouble, Bodies That Matter",
+    "context": "Entstand in akademischen Debatten über Feminismus, Poststrukturalismus und Queer-Theorie. Butler arbeitet transdisziplinär zwischen Philosophie und Kulturkritik."
+  },
+  {
+    "slug": "byung-chul-han",
+    "name": "Byung-Chul Han",
+    "shortName": "Byung-Chul Han",
+    "years": "geb. 1959",
+    "era": "Gegenwart",
+    "eraLink": "gegenwart.html",
+    "field": "Kulturkritik, Philosophie",
+    "thesis": "Moderne Gesellschaft ist von Beschleunigung, Ermüdung und Leistungskult geprägt; digitale Vernetzung verändert Subjektivität.",
+    "intro": "Han analysiert zeitgenössische Kulturphänomene in knappen, aphoristischen Texten. Er verbindet philosophische Tradition mit medienkritischer Diagnostik.",
+    "ideas": ["Leistungsgesellschaft und Erschöpfung", "Digitale Beschleunigung und Verlust von Öffentlichkeit", "Kritik der Transparenzgesellschaft"],
+    "significance": "Bekannter Kulturkritiker in deutschsprachigem Diskurs; seine pointierten Thesen prägen öffentliche Debatten zu Medien und Subjektivität. Wirkung vor allem in Popularphilosophie.",
+    "works": "Müdigkeitsgesellschaft, Psychopolitik",
+    "context": "Arbeitet in globalisierten mediellen Kontexten; reagiert auf Digitalisierung, Kapitalismus und Veränderung sozialer Beziehungen."
+  }
+
+];
+
+function renderPhilosopherProfile() {
+    const root = document.getElementById("philosopher-profile");
+    const slug = document.body.dataset.philosopher;
+    const philosopher = PHILOSOPHERS.find(item => item.slug === slug);
+
+    if (!root || !philosopher) return;
+
+    const currentIndex = PHILOSOPHERS.indexOf(philosopher);
+    const previous = PHILOSOPHERS[currentIndex - 1];
+    const next = PHILOSOPHERS[currentIndex + 1];
+    const eraImages = {
+      "Antike": "antike.jpg",
+      "Mittelalter": "mittelalter.jpg",
+      "Frühe Neuzeit": "neuzeit.jpg",
+      "Klassische Moderne": "moderne.jpg",
+      "20. Jahrhundert": "20jh.jpg",
+      "Gegenwart": "gegenwart.jpg"
+    };
+    const portrait = philosopher.portrait || `../assets/img/${eraImages[philosopher.era]}`;
+    const eraBackLink = document.querySelector(".epoch-nav a:first-child");
+
+    if (eraBackLink) {
+      eraBackLink.href = philosopher.eraLink;
+      eraBackLink.textContent = `← ${philosopher.era}`;
+    }
+
+    root.innerHTML = `
+        <header class="profile-hero">
+            <div>
+                <p class="profile-kicker">${philosopher.era} · ${philosopher.field}</p>
+                <h1 class="epoch-title">${philosopher.name}</h1>
+                <p class="profile-years">${philosopher.years}</p>
+                <p class="profile-thesis">${philosopher.thesis}</p>
+            </div>
+            <img class="profile-image" src="${portrait}" alt="Illustration zur Epoche ${philosopher.era}">
+        </header>
+        <section class="panel profile-intro" aria-labelledby="profile-intro-title">
+            <h2 id="profile-intro-title">Auf einen Blick</h2>
+            <p>${philosopher.intro}</p>
+            <dl class="profile-facts">
+                <div><dt>Epoche</dt><dd>${philosopher.era}</dd></div>
+                <div><dt>Schwerpunkt</dt><dd>${philosopher.field}</dd></div>
+                <div><dt>Lebenszeit</dt><dd>${philosopher.years}</dd></div>
+            </dl>
+        </section>
+        <div class="profile-grid">
+            <section class="panel" aria-labelledby="profile-ideas-title">
+                <h2 id="profile-ideas-title">Zentrale Gedanken</h2>
+                <ul>${philosopher.ideas.map(idea => `<li>${idea}</li>`).join("")}</ul>
+            </section>
+            <section class="panel" aria-labelledby="profile-context-title">
+                <h2 id="profile-context-title">Historischer Kontext</h2>
+                <p>${philosopher.context}</p>
+            </section>
+        </div>
+        <section class="panel" aria-labelledby="profile-significance-title">
+            <h2 id="profile-significance-title">Bedeutung und Wirkung</h2>
+            <p>${philosopher.significance}</p>
+        </section>
+        <section class="panel" aria-labelledby="profile-works-title">
+            <h2 id="profile-works-title">Werke und Überlieferung</h2>
+            <p>${philosopher.works}</p>
+        </section>
+        <nav class="profile-pagination" aria-label="Philosophen-Navigation">
+            ${previous ? `<a class="epoch-nav-link" href="${previous.slug}.html">← ${previous.shortName}</a>` : "<span></span>"}
+            <a class="epoch-nav-link epoch-nav-home" href="${philosopher.eraLink}">${philosopher.era}</a>
+            ${next ? `<a class="epoch-nav-link" href="${next.slug}.html">${next.shortName} →</a>` : "<span></span>"}
+        </nav>
+    `;
+}
+
+document.addEventListener("DOMContentLoaded", renderPhilosopherProfile);
