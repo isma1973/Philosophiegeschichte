@@ -19,6 +19,14 @@
         { q: 'Welche Lehre beeinflusste Epikurs Naturphilosophie?', options: ['Der Atomismus', 'Der Idealismus', 'Die Scholastik', 'Der Existenzialismus'], answer: 'Der Atomismus' },
         { q: 'Wer gründete das Lykeion in Athen?', options: ['Aristoteles', 'Platon', 'Zenon von Kition', 'Thales'], answer: 'Aristoteles' },
         { q: 'Was gilt in der stoischen Ethik als höchstes Gut?', options: ['Tugend', 'Reichtum', 'Ruhm', 'Sinnlicher Genuss'], answer: 'Tugend' },
+        { q: 'Wer sagte sinngemäß, man könne nicht zweimal in denselben Fluss steigen (Panta rhei)?', options: ['Heraklit', 'Thales', 'Parmenides', 'Sokrates'], answer: 'Heraklit' },
+        { q: 'Wer sah in der "Ideenlehre" die wahre Realität jenseits der Sinnenwelt?', options: ['Platon', 'Aristoteles', 'Epikur', 'Zenon'], answer: 'Platon' },
+        { q: 'Welcher antike Denker trank aus dem Schierlingsbecher, statt seine Überzeugungen zu widerrufen?', options: ['Sokrates', 'Thales', 'Parmenides', 'Heraklit'], answer: 'Sokrates' },
+        { q: 'Welcher Philosoph lehrte, dass man das Streben nach Lust auf einfache, ungestörte Freuden beschränken sollte?', options: ['Epikur', 'Platon', 'Zenon', 'Aristoteles'], answer: 'Epikur' },
+        { q: 'Welcher Denker argumentierte streng logisch, dass Veränderung und Bewegung nur eine Illusion sind?', options: ['Parmenides', 'Heraklit', 'Thales', 'Sokrates'], answer: 'Parmenides' },
+        { q: 'Wer verfasste die "Nikomachische Ethik"?', options: ['Aristoteles', 'Platon', 'Sokrates', 'Epikur'], answer: 'Aristoteles' },
+        { q: 'Von wem stammt die Einteilung der Naturdinge in Form und Materie (Hylemorphismus)?', options: ['Aristoteles', 'Zenon', 'Thales', 'Parmenides'], answer: 'Aristoteles' },
+        { q: 'Wer war der Lehrer von Platon?', options: ['Sokrates', 'Aristoteles', 'Heraklit', 'Thales'], answer: 'Sokrates' }
       ],
     },
     mittelalter: {
@@ -36,6 +44,14 @@
         { q: 'Welche antike Philosophie prägte Augustinus besonders?', options: ['Der Neuplatonismus', 'Der Epikureismus', 'Der Skeptizismus', 'Der Kynismus'], answer: 'Der Neuplatonismus' },
         { q: 'Welchen Philosophen integrierte Thomas von Aquin umfassend in die christliche Theologie?', options: ['Aristoteles', 'Epikur', 'Heraklit', 'Sokrates'], answer: 'Aristoteles' },
         { q: 'Was bezeichnet „Scholastik“?', options: ['Eine mittelalterliche Lehr- und Argumentationsmethode', 'Eine antike Staatsform', 'Eine moderne Kunstbewegung', 'Eine naturwissenschaftliche Messmethode'], answer: 'Eine mittelalterliche Lehr- und Argumentationsmethode' },
+        { q: 'Welcher Begriff steht bei Meister Eckhart für den tiefsten, göttlichen Kern des Menschen?', options: ['Seelengrund', 'Cogito', 'Übermensch', 'Dasein'], answer: 'Seelengrund' },
+        { q: 'Wie heißt Augustinus\' berühmtes Werk über das himmlische und irdische Reich auf Latein?', options: ['De civitate Dei', 'Summa Theologiae', 'Tractatus logico-philosophicus', 'Leviathan'], answer: 'De civitate Dei' },
+        { q: 'Welcher Philosoph wurde in der mittelalterlichen Scholastik schlicht als „Der Kommentator“ bezeichnet?', options: ['Averroes', 'Avicenna', 'Boethius', 'Augustinus'], answer: 'Averroes' },
+        { q: 'Welcher antike Denker wurde im Mittelalter oft einfach nur als „Der Philosoph“ zitiert?', options: ['Aristoteles', 'Platon', 'Sokrates', 'Epikur'], answer: 'Aristoteles' },
+        { q: 'Was meint Thomas von Aquin mit „natürlicher Theologie“?', options: ['Gotteserkenntnis durch Vernunft ohne göttliche Offenbarung', 'Ein Leben im Kloster in der Natur', 'Die Leugnung jeglicher göttlichen Kraft', 'Die mystische Erfahrung im Wald'], answer: 'Gotteserkenntnis durch Vernunft ohne göttliche Offenbarung' },
+        { q: 'Von wem stammt das berühmte Gedankenexperiment vom „fliegenden Menschen“, um die Unabhängigkeit der Seele vom Körper zu beweisen?', options: ['Avicenna', 'Meister Eckhart', 'Boethius', 'Thomas von Aquin'], answer: 'Avicenna' },
+        { q: 'Welchem religiösen Orden gehörte Thomas von Aquin an?', options: ['Dominikaner', 'Franziskaner', 'Jesuiten', 'Benediktiner'], answer: 'Dominikaner' },
+        { q: 'Mit welchem Bild beschreibt Boethius in seinem Werk die Unbeständigkeit des irdischen Glücks?', options: ['Das Rad der Fortuna', 'Die Höhle', 'Der unsichtbare Faden', 'Die Maschine'], answer: 'Das Rad der Fortuna' }
       ],
     },
     neuzeit: {
@@ -53,6 +69,14 @@
         { q: 'Von wem stammt die Idee des „allgemeinen Willens“?', options: ['Jean-Jacques Rousseau', 'Thomas Hobbes', 'David Hume', 'Niccolò Machiavelli'], answer: 'Jean-Jacques Rousseau' },
         { q: 'Welche Erkenntnisquelle betont der Empirismus?', options: ['Erfahrung', 'Angeborene Ideen allein', 'Offenbarung allein', 'Mathematische Deduktion allein'], answer: 'Erfahrung' },
         { q: 'Wie nennt Leibniz die einfachen geistartigen Einheiten der Wirklichkeit?', options: ['Monaden', 'Ideen', 'Atome', 'Kategorien'], answer: 'Monaden' },
+        { q: 'Wer riet politischen Herrschern, eher gefürchtet als geliebt zu werden?', options: ['Niccolò Machiavelli', 'Thomas Hobbes', 'John Locke', 'Jean-Jacques Rousseau'], answer: 'Niccolò Machiavelli' },
+        { q: 'Wer verfasste das einflussreiche Werk „Emile oder Über die Erziehung“?', options: ['Jean-Jacques Rousseau', 'John Locke', 'David Hume', 'René Descartes'], answer: 'Jean-Jacques Rousseau' },
+        { q: 'Welcher Denker vertrat die Ansicht, dass der menschliche Geist bei der Geburt ein „unbeschriebenes Blatt“ (Tabula rasa) sei?', options: ['John Locke', 'Baruch de Spinoza', 'Gottfried Wilhelm Leibniz', 'Thomas Hobbes'], answer: 'John Locke' },
+        { q: 'Wer behauptete optimistisch, wir leben in der „besten aller möglichen Welten“?', options: ['Gottfried Wilhelm Leibniz', 'David Hume', 'Niccolò Machiavelli', 'René Descartes'], answer: 'Gottfried Wilhelm Leibniz' },
+        { q: 'Welcher Philosoph erregte Aufsehen mit der These, dass Gott und Natur dasselbe seien („Deus sive Natura“)?', options: ['Baruch de Spinoza', 'Thomas Hobbes', 'John Locke', 'Jean-Jacques Rousseau'], answer: 'Baruch de Spinoza' },
+        { q: 'Von wem stammt der Satz „Der Mensch ist dem Menschen ein Wolf“ (Homo homini lupus)?', options: ['Thomas Hobbes', 'David Hume', 'Niccolò Machiavelli', 'Baruch de Spinoza'], answer: 'Thomas Hobbes' },
+        { q: 'Welcher skeptische Philosoph weckte Immanuel Kant sprichwörtlich aus seinem „dogmatischen Schlummer“?', options: ['David Hume', 'John Locke', 'René Descartes', 'Gottfried Wilhelm Leibniz'], answer: 'David Hume' },
+        { q: 'Wer entwickelte die Erkenntnismethode des „methodischen Zweifels“?', options: ['René Descartes', 'Baruch de Spinoza', 'Thomas Hobbes', 'Niccolò Machiavelli'], answer: 'René Descartes' }
       ],
     },
     moderne: {
@@ -70,6 +94,14 @@
         { q: 'Was schützt Mills Freiheitsprinzip?', options: ['Individuelle Freiheit, solange anderen nicht geschadet wird', 'Unbegrenzte staatliche Herrschaft', 'Nur wirtschaftliches Eigentum', 'Die Herrschaft einer einzigen Religion'], answer: 'Individuelle Freiheit, solange anderen nicht geschadet wird' },
         { q: 'Welcher Begriff ist zentral für Schopenhauers Ethik?', options: ['Mitleid', 'Pflicht', 'Klassenkampf', 'Kommunikative Vernunft'], answer: 'Mitleid' },
         { q: 'Welche philosophische Bewegung bereitete Kierkegaard wesentlich vor?', options: ['Existenzphilosophie', 'Positivismus', 'Strukturalismus', 'Stoa'], answer: 'Existenzphilosophie' },
+        { q: 'Wer unterschied fundamental zwischen dem „Ding an sich“ und der Erscheinung?', options: ['Immanuel Kant', 'Georg Wilhelm Friedrich Hegel', 'Arthur Schopenhauer', 'Karl Marx'], answer: 'Immanuel Kant' },
+        { q: 'Wer prägte im 19. Jahrhundert den Begriff des „Übermenschen“?', options: ['Friedrich Nietzsche', 'Arthur Schopenhauer', 'Søren Kierkegaard', 'John Stuart Mill'], answer: 'Friedrich Nietzsche' },
+        { q: 'Welcher Denker beschrieb das Universum als angetrieben von einem blinden, unvernünftigen „Willen“?', options: ['Arthur Schopenhauer', 'Georg Wilhelm Friedrich Hegel', 'Immanuel Kant', 'Johann Gottlieb Fichte'], answer: 'Arthur Schopenhauer' },
+        { q: 'Wer verfasste die „Kritik der reinen Vernunft“?', options: ['Immanuel Kant', 'Friedrich Schelling', 'John Stuart Mill', 'Karl Marx'], answer: 'Immanuel Kant' },
+        { q: 'Wer interpretierte die Geschichte als einen dialektischen Prozess von These, Antithese und Synthese?', options: ['Georg Wilhelm Friedrich Hegel', 'Immanuel Kant', 'Arthur Schopenhauer', 'Søren Kierkegaard'], answer: 'Georg Wilhelm Friedrich Hegel' },
+        { q: 'Wer gilt als Vater der Existenzphilosophie und stellte den einzelnen „Glaubensritter“ ins Zentrum?', options: ['Søren Kierkegaard', 'Friedrich Nietzsche', 'Johann Gottlieb Fichte', 'John Stuart Mill'], answer: 'Søren Kierkegaard' },
+        { q: 'Wer erweiterte den Utilitarismus um die Qualität von Freuden (besser ein unzufriedener Sokrates als ein zufriedener Narr)?', options: ['John Stuart Mill', 'Karl Marx', 'Immanuel Kant', 'Friedrich Schelling'], answer: 'John Stuart Mill' },
+        { q: 'Welcher Aufklärer und Idealist formulierte das Konzept des „absoluten Ichs“?', options: ['Johann Gottlieb Fichte', 'Georg Wilhelm Friedrich Hegel', 'Arthur Schopenhauer', 'Friedrich Nietzsche'], answer: 'Johann Gottlieb Fichte' }
       ],
     },
     '20jh': {
@@ -87,6 +119,14 @@
         { q: 'Welcher Begriff bezeichnet bei Heidegger die menschliche Existenzweise?', options: ['Dasein', 'Monade', 'Habitus', 'Eudaimonia'], answer: 'Dasein' },
         { q: 'Welche politische Herrschaftsform untersuchte Hannah Arendt besonders?', options: ['Totalitarismus', 'Feudalismus', 'Absolutismus', 'Merkantilismus'], answer: 'Totalitarismus' },
         { q: 'Welche Methode ist besonders mit Foucault verbunden?', options: ['Genealogie', 'Syllogistik', 'Transzendentale Deduktion', 'Sokratische Maieutik'], answer: 'Genealogie' },
+        { q: 'Wer analysierte das Panoptikum als Sinnbild für die moderne Überwachungs- und Disziplinargesellschaft?', options: ['Michel Foucault', 'Jürgen Habermas', 'Jean-Paul Sartre', 'Hannah Arendt'], answer: 'Michel Foucault' },
+        { q: 'Welcher Denker unterschied zwischen der „Zuhandenheit“ und „Vorhandenheit“ von Dingen?', options: ['Martin Heidegger', 'Ludwig Wittgenstein', 'Albert Camus', 'Simone de Beauvoir'], answer: 'Martin Heidegger' },
+        { q: 'Von wem stammt das berühmte Zitat: „Man wird nicht als Frau geboren, man wird es“?', options: ['Simone de Beauvoir', 'Hannah Arendt', 'Judith Butler', 'Martha Nussbaum'], answer: 'Simone de Beauvoir' },
+        { q: 'Wer forderte: „Wovon man nicht sprechen kann, darüber muss man schweigen“?', options: ['Ludwig Wittgenstein', 'Martin Heidegger', 'Jean-Paul Sartre', 'Michel Foucault'], answer: 'Ludwig Wittgenstein' },
+        { q: 'Welcher Philosoph prägte im Stück Geschlossene Gesellschaft den Satz „Die Hölle, das sind die anderen“?', options: ['Jean-Paul Sartre', 'Albert Camus', 'Martin Heidegger', 'Jürgen Habermas'], answer: 'Jean-Paul Sartre' },
+        { q: 'Welcher Frankfurter Denker prägte die „Theorie des kommunikativen Handelns“?', options: ['Jürgen Habermas', 'Michel Foucault', 'Ludwig Wittgenstein', 'Hannah Arendt'], answer: 'Jürgen Habermas' },
+        { q: 'Wer verglich das absurde menschliche Leben mit Sisyphos, der ewig einen Stein den Berg hinaufrollt?', options: ['Albert Camus', 'Jean-Paul Sartre', 'Martin Heidegger', 'Simone de Beauvoir'], answer: 'Albert Camus' },
+        { q: 'Wer analysierte nach dem Zweiten Weltkrieg tiefgründig das Konzept der „Vita activa“?', options: ['Hannah Arendt', 'Simone de Beauvoir', 'Ludwig Wittgenstein', 'Jürgen Habermas'], answer: 'Hannah Arendt' }
       ],
     },
     gegenwart: {
@@ -104,6 +144,14 @@
         { q: 'Was kritisiert Byung-Chul Han an der Leistungsgesellschaft?', options: ['Selbstausbeutung und Erschöpfung', 'Mangelnde Industrialisierung', 'Zu wenig staatliche Zensur', 'Die antike Tugendlehre'], answer: 'Selbstausbeutung und Erschöpfung' },
         { q: 'Welche Frage gehört zur digitalen Ethik?', options: ['Wie algorithmische Entscheidungen fair gestaltet werden', 'Wie Monaden miteinander sprechen', 'Wie ein Lehnswesen organisiert wird', 'Wie die Planeten auf Kristallsphären kreisen'], answer: 'Wie algorithmische Entscheidungen fair gestaltet werden' },
         { q: 'Welches Problem untersucht die gegenwärtige Identitätsphilosophie?', options: ['Wie soziale Normen Selbstbilder prägen', 'Wie viele Elemente das Periodensystem hat', 'Wie Burgen befestigt wurden', 'Wie Dampfmaschinen konstruiert sind'], answer: 'Wie soziale Normen Selbstbilder prägen' },
+        { q: 'Welche Philosophin beschrieb das Geschlecht (Gender) als etwas, das durch soziale Wiederholung „performiert“ wird?', options: ['Judith Butler', 'Martha Nussbaum', 'Simone de Beauvoir', 'Hannah Arendt'], answer: 'Judith Butler' },
+        { q: 'Welcher Denker prägte die Gegenwartsbegriffe „Müdigkeitsgesellschaft“ und „Transparenzgesellschaft“?', options: ['Byung-Chul Han', 'Daniel Dennett', 'Jürgen Habermas', 'Michel Foucault'], answer: 'Byung-Chul Han' },
+        { q: 'Wer hat den „Fähigkeitenansatz“ (Capability Approach) für eine globale Gerechtigkeitstheorie stark mitentwickelt?', options: ['Martha Nussbaum', 'Judith Butler', 'Hannah Arendt', 'Simone de Beauvoir'], answer: 'Martha Nussbaum' },
+        { q: 'Welcher amerikanische Denker erklärt das menschliche Bewusstsein als komplexes informationelles Konstrukt („Multiple Drafts Model“)?', options: ['Daniel Dennett', 'Byung-Chul Han', 'Jürgen Habermas', 'Michel Foucault'], answer: 'Daniel Dennett' },
+        { q: 'Welche Autorin des Buches „Das Unbehagen der Geschlechter“ revolutionierte die Queer-Theorie?', options: ['Judith Butler', 'Martha Nussbaum', 'Simone de Beauvoir', 'Hannah Arendt'], answer: 'Judith Butler' },
+        { q: 'Wer kritisiert die Erosion des Anderen durch die permanente digitale Vernetzung (z. B. in „Die Austreibung des Anderen“)?', options: ['Byung-Chul Han', 'Daniel Dennett', 'Judith Butler', 'Martha Nussbaum'], answer: 'Byung-Chul Han' },
+        { q: 'Wer verteidigt vehement die Bedeutung der Geisteswissenschaften in der modernen Demokratie („Nicht für den Profit“)?', options: ['Martha Nussbaum', 'Judith Butler', 'Simone de Beauvoir', 'Byung-Chul Han'], answer: 'Martha Nussbaum' },
+        { q: 'Welcher Denker ist als prominenter Vertreter des sogenannten „Neuen Atheismus“ und der naturalistischen Philosophie bekannt?', options: ['Daniel Dennett', 'Byung-Chul Han', 'Martin Heidegger', 'Jean-Paul Sartre'], answer: 'Daniel Dennett' }
       ],
     },
   };
