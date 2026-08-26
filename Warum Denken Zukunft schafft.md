@@ -1,6 +1,5 @@
-# 🧵 _Der große Faden der Philosophie_
+# 🧵 _Der große Faden der Philosophie
 
-### _Von Platon bis heute — ein akademischer Überblick für deine Website_
 
 ## **Einleitung**
 

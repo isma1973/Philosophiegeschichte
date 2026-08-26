@@ -460,9 +460,24 @@
 }
 
 /* ── Index Page Layout ──────────────────────────────── */
-.index-topbar-title {
+h1.topbar-brand.index-topbar-title {
     margin-bottom: 0;
-    font-size: 22px;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 700;  /* Etwas zurückgenommen (700 statt 800), damit es nicht so wuchtig wirkt */
+    letter-spacing: -0.02em; 
+    color: var(--text-light); /* Ein weicheres Grau/abgeschwächte Farbe statt dem tiefsten Schwarz/Weiß */
+    line-height: 1.2;
+}
+
+.index-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-5);
+    margin-top: var(--space-7);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--border);
 }
 
 .index-hero {
