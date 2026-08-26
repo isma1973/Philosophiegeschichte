@@ -13,7 +13,7 @@ Die Website benötigt keinen Build-Schritt und keinen Webserver. Sie funktionier
 - 43 eigene Philosophenprofile mit Kernideen, Werken und historischer Einordnung
 - Offline-Textleser für fünf längere Dokumente
 - Markdown-Darstellung mit Listen, Links, Zitaten, Codeblöcken und Tabellen
-- Quiz mit fünf zufällig ausgewählten Fragen
+- Epochenquiz mit sieben zufällig ausgewählten und gemischten Fragen
 - Helles und dunkles Farbschema mit lokaler Speicherung
 - Responsive Darstellung für Desktop, Tablet und Mobilgeräte
 
@@ -103,7 +103,7 @@ Die eigenständigen Markdown-Dateien im Projekt dienen als lesbare Quell- und Ar
 
 ### Quiz
 
-`assets/js/quiz.js` enthält den Fragenkatalog und die Auswertungslogik. Ein Quiz wird beispielsweise so aufgerufen:
+`assets/js/quiz.js` enthält zwölf Fragen für jede der sechs Epochen und die Auswertungslogik. Pro Durchlauf werden sieben Fragen ausgewählt. Fragen und Antwortoptionen werden unabhängig gemischt; der korrekte Antwortindex wird danach neu bestimmt. Ein Quiz wird beispielsweise so aufgerufen:
 
 ```text
 quiz.html?era=Antike

@@ -11,11 +11,10 @@ if (toggle) {
     toggle.addEventListener("change", () => {
         // Smooth Fade
         document.body.classList.add("theme-fade");
+        document.body.classList.toggle("dark-mode", toggle.checked);
+        localStorage.setItem("theme", toggle.checked ? "dark" : "light");
 
         setTimeout(() => {
-            document.body.classList.toggle("dark-mode", toggle.checked);
-            localStorage.setItem("theme", toggle.checked ? "dark" : "light");
-
             document.body.classList.remove("theme-fade");
         }, 200);
     });

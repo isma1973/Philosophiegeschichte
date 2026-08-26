@@ -15,12 +15,23 @@
 </head>
 <body>
     <div class="quiz-container" id="quizContainer">
-        <h1 id="quizTitle">Quiz</h1>
+        <header class="quiz-toolbar">
+            <div>
+                <a class="quiz-home-link" href="index.html">← Übersicht</a>
+                <h1 id="quizTitle">Quiz</h1>
+            </div>
+            <label class="ios-switch" for="themeToggle">
+                <span class="sr-only">Dark Mode umschalten</span>
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+        </header>
         <div id="questionBlock"></div>
         <div class="answers" id="answersBlock"></div>
         <button id="nextBtn" class="btn btn-primary hidden">Nächste Frage</button>
         <div class="result" id="resultBlock"></div>
     </div>
+    <script src="assets/js/theme.js"></script>
     <script src="assets/js/quiz.js"></script>
 </body>
 </html>
