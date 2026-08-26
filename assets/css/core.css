@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Verhindert, dass verlinkte Anker (z.B. in der Sidebar) zu weit oben unterm Rand oder einer Topbar kleben */
+}
+
 html, body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;

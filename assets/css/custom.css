@@ -458,3 +458,25 @@
         justify-self: stretch;
     }
 }
+
+/* ── Index Page Layout ──────────────────────────────── */
+.index-topbar-title {
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.index-hero {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.index-hero-text {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 700px;
+    line-height: 1.7;
+}
+
+.index-hero-strong {
+    color: var(--text);
+}

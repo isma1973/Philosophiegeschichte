@@ -1,9 +1,15 @@
 # Philosophiegeschichte
 
+*Read this in [English](readme-en.md).*
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](#) <!-- Füge hier deinen GitHub Pages Link ein -->
+
+> **[Screenshot einfügen]**
+> *Tipp: Füge hier ein schickes Bild (z. B. `assets/img/screenshot.png`) ein, das deine Website im Browser (am besten im Dark Mode) zeigt. Markdown-Syntax: `![Screenshot der Philosophiegeschichte](assets/img/screenshot.png)`*
+
 Eine statische, interaktive Lernwebsite zur Geschichte der Philosophie von der Antike bis zur Gegenwart. Das Projekt verbindet eine chronologische Timeline, Epochenartikel, längere Lesetexte und ein Quiz in einer responsiven Oberfläche.
 
 Die Website benötigt keinen Build-Schritt und keinen Webserver. Sie funktioniert vollständig offline direkt über `index.html`.
-
 ## Funktionen
 
 - Chronologische Timeline mit sechs philosophischen Epochen
@@ -154,4 +160,4 @@ Es ist immer höchstens eine Epoche geöffnet. Das zugehörige Vorschaubild ersc
 
 ## Projektlizenz
 
-Für das Gesamtprojekt ist derzeit keine öffentliche Lizenz angegeben.
+Das Projekt steht unter der [MIT-Lizenz](LICENSE). Du kannst es frei verwenden, verändern und verbreiten.
