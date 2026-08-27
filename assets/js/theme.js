@@ -19,3 +19,13 @@ if (toggle) {
         }, 200);
     });
 }
+
+// Mobile Menu Toggle
+const menuToggleBtn = document.getElementById("menuToggle");
+const sidebar = document.getElementById("sidebar");
+
+if (menuToggleBtn && sidebar) {
+    menuToggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("menu-open");
+    });
+}
