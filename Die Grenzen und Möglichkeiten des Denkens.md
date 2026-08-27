@@ -1,6 +1,6 @@
-# 📘 _Die 43 prägendsten Philosophen der Menschheitsgeschichte_
+# 📘 _Die prägendsten Philosophen der Menschheitsgeschichte (Global)_
 
-### (Kuratierte Liste für einen klaren historischen Faden)
+### (Kuratierte Liste für einen umfassenden historischen Faden)
 
 ### **Antike (Grundlagen des Denkens)**
 
@@ -26,10 +26,6 @@
 - Augustinus
     
 - Boethius
-    
-- Avicenna
-    
-- Averroes
     
 - Thomas von Aquin
     
@@ -107,3 +103,32 @@
     
 
 ➡️ Das ergibt **43 Philosophinnen und Philosophen**, die den roten Faden der westlichen Philosophiegeschichte tragen und bis heute gesellschaftlich prägen.
+### **�stliche & Islamische Philosophie (Globale Perspektive)**
+
+#### Indien (Buddhismus, Vedanta, Logik)
+- Buddha
+- Nagarjuna
+- Shankara
+- Chanakya
+- Sri Aurobindo
+- Rabindranath Tagore
+
+#### China (Ethik, Ordnung, Dao)
+- Konfuzius
+- Laozi
+- Zhuangzi
+- Mozi
+- Mencius
+- Zhu Xi
+
+#### Japan (Zen, �sthetik, Kyoto-Schule)
+- Dogen
+- Nishida Kitaro
+- Watsuji Tetsuro
+
+#### Islamische Welt (Logik, Wissenschaft, Metaphysik)
+- Al-Farabi
+- Avicenna
+- Averroes
+- Al-Ghazali
+- Ibn Khaldun

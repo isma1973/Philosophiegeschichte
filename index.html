@@ -26,16 +26,20 @@
         <div class="sidebar-header">
             <div>
                 <h2 class="sidebar-title">Philosophie</h2>
-                <p class="badge">Von Platon bis heute</p>
+                <p class="badge">Eine globale Reise</p>
             </div>
             <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü umschalten">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
         </div>
-        <nav aria-label="Epochen Navigation">
+        <nav aria-label="Epochen Navigation" id="sidebarNav">
             <a href="#visual-timeline">📊 Visuelle Timeline</a>
+            <a href="philosophen/indien.html">🪷 Indien</a>
+            <a href="philosophen/china.html">🐉 China</a>
             <a href="philosophen/antike.html">🏛️ Antike</a>
             <a href="philosophen/mittelalter.html">✝️ Mittelalter</a>
+            <a href="philosophen/islam.html">🌙 Islamische Welt</a>
+            <a href="philosophen/japan.html">🗻 Japan</a>
             <a href="philosophen/neuzeit.html">🌅 Frühe Neuzeit</a>
             <a href="philosophen/moderne.html">⚙️ Klassische Moderne</a>
             <a href="philosophen/20jh.html">🧩 20. Jahrhundert</a>
@@ -126,6 +130,26 @@
             // Timeline Daten – alle 6 Epochen
             const philosophyData = [
                 {
+                    era: "1500 v. Chr. – Gegenwart",
+                    title: "🪷 Indien",
+                    summary: "Bewusstsein, Leid und Befreiung.",
+                    thinkers: "Buddha, Nagarjuna, Shankara, Chanakya, Sri Aurobindo",
+                    description: "Die indische Philosophie erforscht tiefgründig die Natur des Bewusstseins, die Überwindung des Leids und die Illusion der Dualität.",
+                    image: "assets/img/indien.jpg",
+                    link: "philosophen/indien.html",
+                    themes: "Metaphysik,Ethik,Logik"
+                },
+                {
+                    era: "6. Jh. v. Chr. – Gegenwart",
+                    title: "🐉 China",
+                    summary: "Harmonie, Ordnung und Dao.",
+                    thinkers: "Konfuzius, Laozi, Zhuangzi, Mozi, Mencius, Zhu Xi",
+                    description: "Im Zentrum steht die Frage nach dem richtigen Handeln (Tugend), der kosmischen Harmonie (Dao) und der gerechten, stabilen Gesellschaft.",
+                    image: "assets/img/china.jpg",
+                    link: "philosophen/china.html",
+                    themes: "Ethik,Politik"
+                },
+                {
                     era: "6. Jh. v. Chr. – 4. Jh. n. Chr.",
                     title: "🏛️ Antike",
                     summary: "Die Geburt des rationalen Denkens.",
@@ -139,11 +163,31 @@
                     era: "4. – 15. Jahrhundert",
                     title: "✝️ Mittelalter",
                     summary: "Synthese von Glauben und Vernunft.",
-                    thinkers: "Augustinus, Boethius, Avicenna, Averroes, Thomas von Aquin, Meister Eckhart",
-                    description: "Philosophie wird in den Dienst der Theologie gestellt. Augustinus verbindet platonische Motive mit christlicher Theologie. Arabische Denker bewahren das antike Erbe. Thomas von Aquin formuliert die große Synthese von Vernunft und Offenbarung.",
+                    thinkers: "Augustinus, Boethius, Thomas von Aquin, Meister Eckhart",
+                    description: "Philosophie wird in den Dienst der Theologie gestellt. Augustinus verbindet platonische Motive mit christlicher Theologie. Thomas von Aquin formuliert die große Synthese.",
                     image: "assets/img/mittelalter.jpg",
                     link: "philosophen/mittelalter.html",
                     themes: "Metaphysik,Politik,Ethik"
+                },
+                {
+                    era: "8. – 14. Jahrhundert",
+                    title: "🌙 Islamische Welt",
+                    summary: "Wissenschaft, Logik und Offenbarung.",
+                    thinkers: "Al-Farabi, Avicenna, Averroes, Al-Ghazali, Ibn Khaldun",
+                    description: "Die Blütezeit der islamischen Philosophie bewahrte nicht nur das antike Erbe, sondern trieb Logik, Medizin und Geschichtstheorie massiv voran.",
+                    image: "assets/img/islam.jpg",
+                    link: "philosophen/islam.html",
+                    themes: "Logik,Metaphysik,Politik"
+                },
+                {
+                    era: "12. Jh. – Gegenwart",
+                    title: "🗻 Japan",
+                    summary: "Präsenz, Leere und Ästhetik.",
+                    thinkers: "Dōgen, Nishida Kitarō, Watsuji Tetsurō",
+                    description: "Die japanische Philosophie verbindet buddhistische Leere mit existenziellem Erleben, radikaler Präsenz im Moment (Zen) und tiefer Naturästhetik.",
+                    image: "assets/img/japan.jpg",
+                    link: "philosophen/japan.html",
+                    themes: "Metaphysik,Ethik"
                 },
                 {
                     era: "15. – 18. Jahrhundert",

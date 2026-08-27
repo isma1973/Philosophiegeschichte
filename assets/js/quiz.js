@@ -4,6 +4,58 @@
   const QUESTIONS_PER_QUIZ = 7;
 
   const questionBanks = {
+    indien: {
+      title: 'Indien',
+      questions: [
+        { q: 'Wer gilt als Begründer des Buddhismus?', options: ['Siddhartha Gautama', 'Shankara', 'Chanakya', 'Patanjali'], answer: 'Siddhartha Gautama' },
+        { q: 'Was bedeutet das Konzept der Leere (Śūnyatā) bei Nagarjuna?', options: ['Dass Dinge keine unabhängige Eigennatur haben', 'Dass das Universum sinnlos ist', 'Dass physische Materie nicht existiert', 'Dass Gedanken Illusionen sind'], answer: 'Dass Dinge keine unabhängige Eigennatur haben' },
+        { q: 'Welche Lehre vertritt Advaita Vedanta?', options: ['Nicht-Dualität (Brahman und Atman sind eins)', 'Vollständiger Nihilismus', 'Polytheistischer Götzendienst', 'Die Trennung von Körper und Geist'], answer: 'Nicht-Dualität (Brahman und Atman sind eins)' },
+        { q: 'Wer war Shankara?', options: ['Ein zentraler Denker des Advaita Vedanta', 'Der Gründer des Jainismus', 'Ein früher indischer Astronom', 'Der Lehrer des Buddha'], answer: 'Ein zentraler Denker des Advaita Vedanta' },
+        { q: 'Wofür ist Chanakya bekannt?', options: ['Für frühe politische Philosophie und Realpolitik', 'Für Liebeslyrik', 'Für die erste Grammatik', 'Für asketische Mystik'], answer: 'Für frühe politische Philosophie und Realpolitik' },
+        { q: 'Wer entwickelte die Philosophie der "Evolution des Bewusstseins"?', options: ['Sri Aurobindo', 'Tagore', 'Nagarjuna', 'Buddha'], answer: 'Sri Aurobindo' },
+        { q: 'Wer gewann als erster asiatischer Autor den Literaturnobelpreis und verband östlichen Humanismus mit universaler Ethik?', options: ['Rabindranath Tagore', 'Sri Aurobindo', 'Chanakya', 'Shankara'], answer: 'Rabindranath Tagore' },
+        { q: 'Welches Ziel hat die Überwindung des Leids (Dukkha) im Buddhismus?', options: ['Nirvana', 'Karma', 'Samsara', 'Maya'], answer: 'Nirvana' }
+      ]
+    },
+    china: {
+      title: 'China',
+      questions: [
+        { q: 'Welcher Begriff steht im Konfuzianismus zentral für menschliche Güte?', options: ['Ren', 'Wu Wei', 'Qi', 'Yin'], answer: 'Ren' },
+        { q: 'Wer gilt als Verfasser des Daodejing?', options: ['Laozi', 'Konfuzius', 'Zhuangzi', 'Mozi'], answer: 'Laozi' },
+        { q: 'Was bedeutet Wu Wei im Daoismus?', options: ['Nicht-Handeln (im Einklang mit dem Dao)', 'Strikter Gehorsam', 'Aggressive Expansion', 'Absolutes Schweigen'], answer: 'Nicht-Handeln (im Einklang mit dem Dao)' },
+        { q: 'Welcher Denker vertrat einen strikten Universalismus (allgemeine Menschenliebe)?', options: ['Mozi', 'Mencius', 'Zhuangzi', 'Laozi'], answer: 'Mozi' },
+        { q: 'Wer betonte, dass die menschliche Natur von Grund auf gut sei?', options: ['Mencius', 'Xunzi', 'Han Feizi', 'Konfuzius'], answer: 'Mencius' },
+        { q: 'Wer ist ein Meister des daoistischen Relativismus und Humors?', options: ['Zhuangzi', 'Konfuzius', 'Zhu Xi', 'Mozi'], answer: 'Zhuangzi' },
+        { q: 'Welcher Denker schuf die große Synthese des Neo-Konfuzianismus?', options: ['Zhu Xi', 'Laozi', 'Mencius', 'Konfuzius'], answer: 'Zhu Xi' },
+        { q: 'Was beschreibt das Dao am besten?', options: ['Das unergründliche, alles durchdringende Prinzip', 'Ein persönlicher Schöpfergott', 'Eine strenge Gesetzessammlung', 'Der Herrscher der Erde'], answer: 'Das unergründliche, alles durchdringende Prinzip' }
+      ]
+    },
+    japan: {
+      title: 'Japan',
+      questions: [
+        { q: 'Wer brachte den Soto-Zen nach Japan und schrieb das Shobogenzo?', options: ['Dōgen', 'Nishida Kitarō', 'Watsuji Tetsurō', 'Suzuki'], answer: 'Dōgen' },
+        { q: 'Welcher Philosoph begründete die Kyoto-Schule?', options: ['Nishida Kitarō', 'Watsuji Tetsurō', 'Dōgen', 'Yukio Mishima'], answer: 'Nishida Kitarō' },
+        { q: 'Was analysierte Watsuji Tetsurō in seinem Hauptwerk "Fudo"?', options: ['Den Zusammenhang von Klima und Kultur (Ethik)', 'Die Struktur der japanischen Sprache', 'Die Logik des reinen Erlebens', 'Zen-Meditation'], answer: 'Den Zusammenhang von Klima und Kultur (Ethik)' },
+        { q: 'Was bezeichnet der Begriff "Ma" in der japanischen Ästhetik?', options: ['Den leeren, aber wirkungsvollen Zwischenraum', 'Den Samurai-Kodex', 'Die Teezeremonie', 'Das absolute Nichts'], answer: 'Den leeren, aber wirkungsvollen Zwischenraum' },
+        { q: 'Wie nennt Nishida Kitarō die Erfahrung vor der Trennung in Subjekt und Objekt?', options: ['Reines Erleben', 'Dialektik', 'Satori', 'Karma'], answer: 'Reines Erleben' },
+        { q: 'Was ist Zazen?', options: ['Die Sitzmeditation im Zen-Buddhismus', 'Eine Kampfsportart', 'Die Kunst des Bogenschießens', 'Ein Ritualschwert'], answer: 'Die Sitzmeditation im Zen-Buddhismus' },
+        { q: 'Welches Konzept verbindet bei Dōgen Sein und Zeit untrennbar miteinander?', options: ['Uji (Sein-Zeit)', 'Samsara', 'Bushido', 'Wabi-Sabi'], answer: 'Uji (Sein-Zeit)' },
+        { q: 'Welche ethische Dimension steht bei Watsuji Tetsurō im Zentrum?', options: ['Die Zwischenmenschlichkeit (Rinri)', 'Der Egoismus', 'Der Utilitarismus', 'Der Kategorische Imperativ'], answer: 'Die Zwischenmenschlichkeit (Rinri)' }
+      ]
+    },
+    islam: {
+      title: 'Islamische Welt',
+      questions: [
+        { q: 'Wer ist als der "Zweite Lehrer" (nach Aristoteles) bekannt?', options: ['Al-Farabi', 'Avicenna', 'Averroes', 'Al-Ghazali'], answer: 'Al-Farabi' },
+        { q: 'Welcher Denker prägte die Medizin Europas für Jahrhunderte mit dem "Kanon der Medizin"?', options: ['Avicenna (Ibn Sina)', 'Averroes (Ibn Rushd)', 'Ibn Khaldun', 'Al-Kindi'], answer: 'Avicenna (Ibn Sina)' },
+        { q: 'Wer verfasste die berühmten Aristoteles-Kommentare?', options: ['Averroes (Ibn Rushd)', 'Al-Farabi', 'Avicenna', 'Al-Ghazali'], answer: 'Averroes (Ibn Rushd)' },
+        { q: 'Welches Buch verfasste Al-Ghazali als radikale Kritik an den Philosophen?', options: ['Die Inkohärenz der Philosophen', 'Der Kanon der Medizin', 'Die Muqaddima', 'Der Musterstaat'], answer: 'Die Inkohärenz der Philosophen' },
+        { q: 'Wer gilt als Pionier der Soziologie und Geschichtstheorie (Muqaddima)?', options: ['Ibn Khaldun', 'Avicenna', 'Al-Farabi', 'Averroes'], answer: 'Ibn Khaldun' },
+        { q: 'Wie versuchte Averroes den Konflikt zwischen Philosophie und Religion zu lösen?', options: ['Beide drücken dieselbe Wahrheit in unterschiedlicher Form aus', 'Religion ist reine Illusion', 'Philosophie muss verboten werden', 'Nur Mystik bringt Erkenntnis'], answer: 'Beide drücken dieselbe Wahrheit in unterschiedlicher Form aus' },
+        { q: 'Welches Gedankenexperiment von Avicenna demonstriert die Existenz der Seele unabhängig vom Körper?', options: ['Der fliegende Mensch', 'Das Höhlengleichnis', 'Buridans Esel', 'Das Gehirn im Tank'], answer: 'Der fliegende Mensch' },
+        { q: 'Welche theologische Strömung kritisierte Al-Ghazali besonders stark zugunsten mystischer Erkenntnis?', options: ['Den strengen Rationalismus', 'Den Polytheismus', 'Den Daoismus', 'Den Empirismus'], answer: 'Den strengen Rationalismus' }
+      ]
+    },
     antike: {
       title: 'Antike',
       questions: [
@@ -168,6 +220,10 @@
   const normalizeEra = (value) => {
     const normalized = (value || '').toLocaleLowerCase('de-DE');
     if (normalized.includes('antike')) return 'antike';
+    if (normalized.includes('indien')) return 'indien';
+    if (normalized.includes('china')) return 'china';
+    if (normalized.includes('japan')) return 'japan';
+    if (normalized.includes('islam')) return 'islam';
     if (normalized.includes('mittelalter')) return 'mittelalter';
     if (normalized.includes('frühe neuzeit') || normalized.includes('fruehe neuzeit')) return 'neuzeit';
     if (normalized.includes('klassische moderne')) return 'moderne';
