@@ -24,6 +24,16 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Listen-Reset Korrektur (Marker sichtbar machen) */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
 /* ---------------------------------------------------
    GLOBAL VARIABLES
 --------------------------------------------------- */
