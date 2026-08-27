@@ -354,6 +354,10 @@
     gap: var(--space-4);
 }
 
+.dark-mode .philosophy-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
 .philosopher-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -541,4 +545,155 @@ h1.topbar-brand.index-topbar-title {
 
 .index-hero-strong {
     color: var(--text);
+}
+
+/* =========================================
+   UI PREMIUM UPGRADES
+========================================= */
+
+
+/* =========================================
+   UI PREMIUM UPGRADES
+========================================= */
+
+.hero-premium {
+    position: relative;
+    padding: var(--space-6) var(--space-4);
+    text-align: center;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--space-5);
+    background: var(--bg-secondary);
+    color: var(--text);
+}
+
+.hero-premium-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+    z-index: 1;
+}
+
+.dark-mode .hero-premium-bg {
+    background: linear-gradient(135deg, rgba(20, 20, 30, 0.8), rgba(10, 10, 15, 0.9));
+}
+
+.hero-premium-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-premium-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+    letter-spacing: -0.02em;
+}
+
+.hero-premium-subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    color: var(--accent);
+    margin-bottom: var(--space-4);
+    font-weight: 500;
+}
+
+.hero-premium-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+.philosophy-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .philosophy-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.philosopher-list {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)) !important;
+    gap: var(--space-3) !important;
+    margin-top: var(--space-4) !important;
+}
+
+.philosopher-list li {
+    display: flex;
+}
+
+.philosopher-list a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: var(--space-3);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.philosopher-list a:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.philosopher-list strong {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.philosopher-list span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.quiz-cta-panel {
+    text-align: center;
+    padding: var(--space-6) var(--space-4) !important;
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-6);
+}
+
+.quiz-cta-panel h2 {
+    margin-bottom: var(--space-2);
+}
+
+.quiz-cta-panel p {
+    color: var(--text-light);
+    margin-bottom: var(--space-4);
+}
+
+.footer-premium {
+    text-align: center;
+    padding: var(--space-6) 0;
+    margin-top: var(--space-8);
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: var(--border);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto var(--space-4);
+}
+
+.footer-premium-text {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--text-light);
+    margin-bottom: var(--space-4);
 }

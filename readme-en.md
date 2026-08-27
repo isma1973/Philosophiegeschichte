@@ -7,157 +7,79 @@
 > **[Insert Screenshot]**
 > *Tip: Insert a nice picture here (e.g., `assets/img/screenshot.png`) that shows your website in the browser (preferably in Dark Mode). Markdown syntax: `![Screenshot of History of Philosophy](assets/img/screenshot.png)`*
 
-A static, interactive educational website on the history of philosophy from antiquity to the present. The project combines a chronological timeline, era articles, longer reading texts, and a quiz within a responsive interface.
+A static, interactive educational website on the global history of philosophy – from the wisdom traditions of Asia to postmodernism. The project combines a chronological visual timeline, in-depth era articles, over 60 philosopher profiles, and interactive quizzes within a responsive, puristic premium interface.
 
 The website does not require a build step or a web server. It works completely offline directly via `index.html`.
 
 ## Features
 
-- Chronological timeline featuring six philosophical eras
-- Accessible accordion with keyboard navigation and ARIA states
-- Filtering by Logic, Ethics, Metaphysics, and Politics
-- Era articles with images and zoomable image view
-- 43 custom philosopher profiles including core ideas, works, and historical context
-- Offline text reader for five longer documents
-- Markdown rendering with lists, links, quotes, code blocks, and tables
-- Era quiz with seven randomly selected and shuffled questions
-- Light and dark theme with local storage support
-- Responsive design for desktop, tablet, and mobile devices
+- **Global Timeline:** 10 historical eras (including India, China, Islamic World, Japan).
+- **Philosophical Filters:** Thematic filtering by Ontology, Epistemology, Ethics, Aesthetics, Logic, Metaphysics, Language, Power, Mind, and Being.
+- **Era Articles & Profiles:** 10 detailed era overviews and over 60 individual philosopher profiles detailing core ideas and context.
+- **Interactive Learning:** Randomized quizzes to test your knowledge of specific eras.
+- **Premium Design:** Immersive single-column layouts, native Dark/Light mode (with local storage), typographically optimized, and accessible (ARIA).
+- **Performance:** Modern `.webp` image formats and an extremely lean CSS Grid architecture.
 
 ## Getting Started
 
 ### Open Directly
 
 Open `index.html` in your file explorer or via VS Code in your browser.
-
-On Windows, the homepage can also be opened via PowerShell:
-
-```powershell
-Start-Process .\index.html
-```
-
 The application only uses local files and therefore works via `file://` without an internet connection.
-
-## Pages
-
-| File | Content |
-| --- | --- |
-| `index.html` | Homepage with navigation, topic filter, and interactive timeline |
-| `lesen.html` | Offline reader for embedded Markdown texts |
-| `quiz.html` | Quiz; the era is passed via the `?era=` parameter |
-| `philosophen/antike.html` | Antiquity |
-| `philosophen/mittelalter.html` | Middle Ages |
-| `philosophen/neuzeit.html` | Early Modern Period |
-| `philosophen/moderne.html` | Classical Modernity |
-| `philosophen/20jh.html` | 20th Century Philosophy |
-| `philosophen/gegenwart.html` | Contemporary Philosophy |
-| `philosophen/[name].html` | Individual profile of a philosopher |
 
 ## Project Structure
 
 ```text
 Philosophiegeschichte/
-├── index.html
-├── lesen.html
-├── quiz.html
-├── *.md                         # Source texts on the history of philosophy
-├── philosophen/                 # Six era articles and 43 individual profiles
+├── index.html                   # Homepage (Timeline & Filters)
+├── quiz.html                    # Interactive Quiz Module
+├── philosophen/                 # 10 era articles and >60 individual profiles
 │   ├── antike.html
+│   ├── china.html
+│   ├── indien.html
+│   ├── islam.html
+│   ├── japan.html
 │   ├── mittelalter.html
 │   ├── neuzeit.html
 │   ├── moderne.html
 │   ├── 20jh.html
 │   ├── gegenwart.html
-│   └── [name].html             # Individual philosopher profiles
+│   └── [name].html              # Individual philosopher profiles
 ├── assets/
-│   ├── css/
-│   │   ├── components/timeline.css
+│   ├── css/                     # Modular UI system
 │   │   ├── core.css
 │   │   ├── core-theme.css
 │   │   ├── core-ui.css
-│   │   ├── custom.css
+│   │   ├── custom.css           # Premium UI Overrides
 │   │   └── ui-kit.css
-│   ├── img/                     # Era images
-│   └── js/
-│       ├── lightbox.js
-│       ├── philosopher-profile.js
+│   ├── img/                     # .webp Era images
+│   └── js/                      # App Logic (Vanilla JS)
+│       ├── philosopher-profile.js # Global database & templating
 │       ├── quiz.js
 │       ├── theme.js
-│       ├── timeline.js
-│       └── vendor/marked.umd.js
-└── docs/                        # Documentation of the UI system used
+│       └── timeline.js
+└── docs/                        # Documentation of the UI system
 ```
 
 ## Core Modules
 
-### Timeline
+### Visual Timeline (`index.html`)
+Timeline data is embedded directly in the homepage script. `assets/js/timeline.js` generates accessible accordion cards from this data. The filter allows users to sort eras based on core philosophical themes.
 
-Timeline data is located in `index.html`. `assets/js/timeline.js` generates the accessible accordion cards from this data. The styling is found in `assets/css/components/timeline.css`.
+### Data-Driven Profiles (`philosopher-profile.js`)
+Instead of static HTML repetition, all biographical and bibliographical data of the 60+ philosophers is centrally maintained in the `PHILOSOPHERS` array. The script dynamically renders the content into the empty HTML containers of the profile pages.
 
-Each record contains:
+### Quiz Engine (`quiz.js`)
+A lightweight module that generates random questions for each era, shuffles answer options, and displays an immediate evaluation including a score.
 
-- Time period and title
-- Summary and description
-- Important thinkers
-- Themes for the filter
-- Image, detail page, and quiz link
-
-### Text Reader
-
-`lesen.html` contains five embedded documents and can therefore be used directly via `file://` without `fetch()`. Markdown is rendered locally using `marked 18.0.11` from `assets/js/vendor/marked.umd.js`. There is no CDN dependency.
-
-The standalone Markdown files in the project serve as readable source and working drafts. Changes to these files are currently not automatically transferred to `lesen.html`.
-
-### Quiz
-
-`assets/js/quiz.js` contains twelve questions for each of the six eras and the evaluation logic. Seven questions are selected per run. Questions and answer options are shuffled independently; the correct answer index is redetermined afterwards. For example, a quiz is called like this:
-
-```text
-quiz.html?era=Antike
-```
-
-### Philosopher Profiles
-
-Each of the 43 individuals has a directly accessible HTML page under `philosophen/`. The six era articles link to all profiles. `assets/js/philosopher-profile.js` contains the centrally maintained biographical data and renders the content as well as the previous/next navigation offline into the respective HTML page.
-
-### Design
-
-The interface is based on the local Ismail-UI system:
-
-- `core.css`: Reset, variables, and helper classes
-- `core-theme.css`: Color themes and Dark Mode
-- `core-ui.css`: Shared components
-- `ui-kit.css`: Panels, buttons, and form elements
-- `custom.css`: Project-specific additions
-- `docs/layout.css`: Homepage layout
-
-The pages under `docs/` document and demonstrate this UI system. They are not the main entry point for the philosophy website.
-
-## Operating the Timeline
-
-- `Tab`: Focus on the next interactive entry
-- `Enter` or `Space`: Open or close era
-- `Tab` inside opened entry: Reach "Read more" and "Start Quiz"
-
-Only one era is opened at most. The corresponding preview image only appears in the opened section.
-
-## Maintaining Content
-
-- Timeline eras and filter themes: `index.html`
-- Timeline component: `assets/js/timeline.js`
-- Quiz questions: `assets/js/quiz.js`
-- Era articles: `philosophen/*.html`
-- Profile data and order: `assets/js/philosopher-profile.js`
-- Texts in the offline reader: `DOCS` in `lesen.html`
-- Images: `assets/img/`
+### Design (`custom.css`)
+The design focuses on an academically precise, minimalist aesthetic. Featuring a native Dark Mode, soft gradients, and hover micro-interactions, the UI provides a premium reading experience inspired by modern museum websites.
 
 ## Technical Notes
 
-- Pure HTML, CSS, and JavaScript
-- No package installation required
-- No build process required
-- No external runtime dependencies
-- `marked 18.0.11` is included locally and is licensed under the MIT License
+- **Pure HTML, CSS, and Vanilla JavaScript:** No React/Vue dependencies.
+- **No Build Process:** No NPM, Webpack, or Vite required.
+- **Extreme Performance:** Tiny file sizes and highly optimized `.webp` graphics.
 
 ## Project License
 

@@ -7,157 +7,80 @@
 > **[Screenshot einfügen]**
 > *Tipp: Füge hier ein schickes Bild (z. B. `assets/img/screenshot.png`) ein, das deine Website im Browser (am besten im Dark Mode) zeigt. Markdown-Syntax: `![Screenshot der Philosophiegeschichte](assets/img/screenshot.png)`*
 
-Eine statische, interaktive Lernwebsite zur Geschichte der Philosophie von der Antike bis zur Gegenwart. Das Projekt verbindet eine chronologische Timeline, Epochenartikel, längere Lesetexte und ein Quiz in einer responsiven Oberfläche.
+Eine statische, interaktive Lernwebsite zur globalen Geschichte der Philosophie – von den Weisheitslehren Asiens bis zur Postmoderne. Das Projekt verbindet eine chronologische visuelle Timeline, fundierte Epochenartikel, über 60 Philosophenprofile und interaktive Epochen-Quizzes in einer responsiven, puristischen Premium-Oberfläche.
 
 Die Website benötigt keinen Build-Schritt und keinen Webserver. Sie funktioniert vollständig offline direkt über `index.html`.
+
 ## Funktionen
 
-- Chronologische Timeline mit sechs philosophischen Epochen
-- Zugängliches Akkordeon mit Tastaturbedienung und ARIA-Zuständen
-- Filterung nach Logik, Ethik, Metaphysik und Politik
-- Epochenartikel mit Bildern und vergrößerbarer Bildansicht
-- 43 eigene Philosophenprofile mit Kernideen, Werken und historischer Einordnung
-- Offline-Textleser für fünf längere Dokumente
-- Markdown-Darstellung mit Listen, Links, Zitaten, Codeblöcken und Tabellen
-- Epochenquiz mit sieben zufällig ausgewählten und gemischten Fragen
-- Helles und dunkles Farbschema mit lokaler Speicherung
-- Responsive Darstellung für Desktop, Tablet und Mobilgeräte
+- **Globale Timeline:** 10 Epochen (inklusive Indien, China, Islamische Welt, Japan).
+- **Philosophische Filter:** Thematische Filterung nach Ontologie, Epistemologie, Ethik, Ästhetik, Logik, Metaphysik, Sprache, Macht, Geist und Sein.
+- **Epochenartikel & Profile:** 10 detaillierte Epochen-Überblicke und über 60 Philosophenprofile mit Kernideen und historischer Einordnung.
+- **Interaktives Lernen:** Zufallsgeneriertes Epochenquiz zur Überprüfung des eigenen Wissens.
+- **Premium Design:** Immersive Single-Column-Layouts, Dark/Light-Mode (mit lokaler Speicherung), typografisch optimiert und barrierefrei (ARIA).
+- **Performance:** Moderne `.webp`-Bildformate und ein extrem schlanker CSS-Grid-Ansatz.
 
 ## Start
 
 ### Direkt öffnen
 
 `index.html` im Datei-Explorer oder in VS Code im Browser öffnen.
-
-Unter Windows kann die Startseite auch über PowerShell geöffnet werden:
-
-```powershell
-Start-Process .\index.html
-```
-
 Die Anwendung verwendet nur lokale Dateien und funktioniert daher auch über `file://` ohne Internetverbindung.
-
-## Seiten
-
-| Datei | Inhalt |
-| --- | --- |
-| `index.html` | Startseite mit Navigation, Themenfilter und interaktiver Timeline |
-| `lesen.html` | Offline-Leser für die eingebetteten Markdown-Texte |
-| `quiz.html` | Quiz; die Epoche wird über den Parameter `?era=` übergeben |
-| `philosophen/antike.html` | Antike |
-| `philosophen/mittelalter.html` | Mittelalter |
-| `philosophen/neuzeit.html` | Frühe Neuzeit |
-| `philosophen/moderne.html` | Klassische Moderne |
-| `philosophen/20jh.html` | Philosophie des 20. Jahrhunderts |
-| `philosophen/gegenwart.html` | Gegenwartsphilosophie |
-| `philosophen/[name].html` | Eigenständiges Profil einer Philosophin oder eines Philosophen |
 
 ## Projektstruktur
 
 ```text
 Philosophiegeschichte/
-├── index.html
-├── lesen.html
-├── quiz.html
-├── *.md                         # Quelltexte zur Philosophiegeschichte
-├── philosophen/                 # Sechs Epochenartikel und 43 Einzelprofile
+├── index.html                   # Startseite (Timeline & Filter)
+├── quiz.html                    # Interaktives Quiz-Modul
+├── philosophen/                 # 10 Epochenartikel und über 60 Einzelprofile
 │   ├── antike.html
+│   ├── china.html
+│   ├── indien.html
+│   ├── islam.html
+│   ├── japan.html
 │   ├── mittelalter.html
 │   ├── neuzeit.html
 │   ├── moderne.html
 │   ├── 20jh.html
 │   ├── gegenwart.html
-│   └── [name].html             # Einzelne Philosophenprofile
+│   └── [name].html              # Einzelne Philosophenprofile
 ├── assets/
-│   ├── css/
-│   │   ├── components/timeline.css
+│   ├── css/                     # Modulares UI-System
 │   │   ├── core.css
 │   │   ├── core-theme.css
 │   │   ├── core-ui.css
-│   │   ├── custom.css
+│   │   ├── custom.css           # Premium UI Overrides
 │   │   └── ui-kit.css
-│   ├── img/                     # Bilder der Epochen
-│   └── js/
-│       ├── lightbox.js
-│       ├── philosopher-profile.js
+│   ├── img/                     # .webp Epochen-Bilder
+│   └── js/                      # App-Logik (Vanilla JS)
+│       ├── philosopher-profile.js # Globale Datenbank & Templating
 │       ├── quiz.js
 │       ├── theme.js
-│       ├── timeline.js
-│       └── vendor/marked.umd.js
+│       └── timeline.js
 └── docs/                        # Dokumentation des verwendeten UI-Systems
 ```
 
 ## Zentrale Module
 
-### Timeline
+### Visuelle Timeline (`index.html`)
+Die Timeline-Daten stehen direkt im Skript der Startseite. `assets/js/timeline.js` erzeugt daraus zugängliche Akkordeon-Karten. Über den Filter lassen sich die Epochen nach philosophischen Kernthemen sortieren.
 
-Die Timeline-Daten stehen in `index.html`. `assets/js/timeline.js` erzeugt daraus die zugänglichen Akkordeon-Karten. Die Darstellung befindet sich in `assets/css/components/timeline.css`.
+### Daten-getriebene Profile (`philosopher-profile.js`)
+Statt statischer HTML-Wiederholung werden alle biografischen und bibliografischen Daten der über 60 Philosophen zentral im Array `PHILOSOPHERS` gepflegt. Das Skript rendert den Inhalt dynamisch in die leeren HTML-Container der Profilseiten.
 
-Jeder Datensatz enthält:
+### Quiz-Engine (`quiz.js`)
+Ein leichtgewichtiges Modul, das für jede Epoche zufällige Fragen generiert, Antwortoptionen mischt und eine direkte Auswertung inklusive Score anzeigt.
 
-- Zeitraum und Titel
-- Kurzfassung und Beschreibung
-- wichtige Denkerinnen und Denker
-- Themen für den Filter
-- Bild, Detailseite und Quiz-Verweis
-
-### Textleser
-
-`lesen.html` enthält fünf eingebettete Dokumente und kann deshalb ohne `fetch()` direkt über `file://` verwendet werden. Markdown wird lokal mit `marked 18.0.11` aus `assets/js/vendor/marked.umd.js` gerendert. Es besteht keine CDN-Abhängigkeit.
-
-Die eigenständigen Markdown-Dateien im Projekt dienen als lesbare Quell- und Arbeitsfassungen. Änderungen an diesen Dateien werden derzeit nicht automatisch in `lesen.html` übernommen.
-
-### Quiz
-
-`assets/js/quiz.js` enthält zwölf Fragen für jede der sechs Epochen und die Auswertungslogik. Pro Durchlauf werden sieben Fragen ausgewählt. Fragen und Antwortoptionen werden unabhängig gemischt; der korrekte Antwortindex wird danach neu bestimmt. Ein Quiz wird beispielsweise so aufgerufen:
-
-```text
-quiz.html?era=Antike
-```
-
-### Philosophenprofile
-
-Jede der 43 Personen besitzt eine direkt aufrufbare HTML-Seite unter `philosophen/`. Die sechs Epochenartikel verlinken alle Profile. `assets/js/philosopher-profile.js` enthält die zentral gepflegten biografischen Daten und rendert Inhalt sowie Vor-/Zurück-Navigation offline in die jeweilige HTML-Seite.
-
-### Gestaltung
-
-Die Oberfläche basiert auf dem lokalen Ismail-UI-System:
-
-- `core.css`: Reset, Variablen und Hilfsklassen
-- `core-theme.css`: Farbthemen und Dark Mode
-- `core-ui.css`: gemeinsame Komponenten
-- `ui-kit.css`: Panels, Buttons und Formularelemente
-- `custom.css`: projektspezifische Ergänzungen
-- `docs/layout.css`: Layout der Startseite
-
-Die Seiten unter `docs/` dokumentieren und demonstrieren dieses UI-System. Sie sind nicht der Haupteinstieg der Philosophie-Website.
-
-## Bedienung der Timeline
-
-- `Tab`: nächsten interaktiven Eintrag fokussieren
-- `Enter` oder `Leertaste`: Epoche öffnen oder schließen
-- `Tab` im geöffneten Eintrag: „Mehr lesen“ und „Quiz starten“ erreichen
-
-Es ist immer höchstens eine Epoche geöffnet. Das zugehörige Vorschaubild erscheint erst im geöffneten Bereich.
-
-## Inhalte pflegen
-
-- Timeline-Epochen und Filterthemen: `index.html`
-- Timeline-Komponente: `assets/js/timeline.js`
-- Quizfragen: `assets/js/quiz.js`
-- Epochenartikel: `philosophen/*.html`
-- Profildaten und Reihenfolge: `assets/js/philosopher-profile.js`
-- Texte im Offline-Leser: `DOCS` in `lesen.html`
-- Bilder: `assets/img/`
+### Gestaltung (`custom.css`)
+Das Design fokussiert sich auf eine akademisch-präzise, minimalistische Ästhetik. Mit einem nativen Dark Mode, sanften Gradienten und Hover-Micro-Interaktionen bietet die UI ein hochwertiges Leseerlebnis, inspiriert von modernen Museums-Websites.
 
 ## Technische Hinweise
 
-- Reines HTML, CSS und JavaScript
-- Keine Paketinstallation erforderlich
-- Kein Build-Prozess erforderlich
-- Keine externen Laufzeitabhängigkeiten
-- `marked 18.0.11` ist lokal eingebunden und steht unter der MIT-Lizenz
+- **Reines HTML, CSS und Vanilla JavaScript:** Keine React/Vue-Abhängigkeit.
+- **Kein Build-Prozess:** Kein NPM, Webpack oder Vite erforderlich.
+- **Extreme Performance:** Sehr kleine Dateigrößen und optimierte `.webp`-Grafiken.
 
 ## Projektlizenz
 
-Das Projekt steht unter der [MIT-Lizenz](LICENSE). Du kannst es frei verwenden, verändern und verbreiten.
+Das Projekt steht unter [MIT-Lizenz](LICENSE). Du kannst es frei verwenden, verändern und verbreiten.

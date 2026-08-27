@@ -7,7 +7,7 @@
     <meta name="description" content="Interaktive Timeline zur Geschichte der Philosophie von der Antike bis zur Gegenwart. Entdecken Sie wichtige Denker, Epochen und zentrale Ideen.">
     <meta property="og:title" content="Philosophiegeschichte – Überblick">
     <meta property="og:description" content="Interaktive Timeline zur Geschichte der Philosophie von der Antike bis zur Gegenwart.">
-    <meta property="og:image" content="assets/img/antike.jpg">
+    <meta property="og:image" content="assets/img/antike.webp">
     <!-- Ismail UI Framework Core -->
     <link rel="stylesheet" href="assets/css/core.css">
     <link rel="stylesheet" href="assets/css/core-theme.css">
@@ -21,37 +21,6 @@
 
 </head>
 <body class="dark-mode">
-    <!-- SIDEBAR -->
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <div>
-                <h2 class="sidebar-title">Philosophie</h2>
-                <p class="badge">Eine globale Reise</p>
-            </div>
-            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü umschalten">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-            </button>
-        </div>
-        <nav aria-label="Epochen Navigation" id="sidebarNav">
-            <a href="#visual-timeline">📊 Visuelle Timeline</a>
-            <a href="philosophen/indien.html">🪷 Indien</a>
-            <a href="philosophen/china.html">🐉 China</a>
-            <a href="philosophen/antike.html">🏛️ Antike</a>
-            <a href="philosophen/mittelalter.html">✝️ Mittelalter</a>
-            <a href="philosophen/islam.html">🌙 Islamische Welt</a>
-            <a href="philosophen/japan.html">🗻 Japan</a>
-            <a href="philosophen/neuzeit.html">🌅 Frühe Neuzeit</a>
-            <a href="philosophen/moderne.html">⚙️ Klassische Moderne</a>
-            <a href="philosophen/20jh.html">🧩 20. Jahrhundert</a>
-            <a href="philosophen/gegenwart.html">🌐 Gegenwart</a>
-            <a href="lesen.html">📖 Texte lesen</a>
-        </nav>
-        <hr class="sidebar-separator">
-        <p class="sidebar-description">
-            Ein Werkzeug, um die Gegenwart zu verstehen und die Zukunft zu gestalten.
-        </p>
-    </aside>
-
     <!-- MAIN CONTENT -->
     <main class="main">
         <!-- TOPBAR -->
@@ -67,21 +36,30 @@
         </header>
 
         <!-- INTRO -->
-        <div class="hero index-hero">
-            <p class="index-hero-text">
-                <strong class="index-hero-strong">Der große Faden der Philosophie:</strong> 
-                Was den Menschen beschäftigt hat — wie wir vorwärtsgekommen sind — wo wir heute stehen. 
-                Entdecke die Geschichte der Fragen, die uns ausmachen.
-            </p>
+        <div class="hero hero-premium">
+            <div class="hero-premium-bg"></div>
+            <div class="hero-premium-content">
+                <h1 class="hero-premium-title">Der große Faden der Philosophie</h1>
+                <p class="hero-premium-subtitle">Warum diese Geschichte auch deine ist.</p>
+                <p class="hero-premium-text">
+                    Was den Menschen seit Jahrtausenden beschäftigt – wie wir vorwärtsgekommen sind und wo wir heute stehen. Entdecke die universellen Fragen, die uns ausmachen.
+                </p>
+            </div>
         </div>
         <div class="filter-bar">
           <label for="themeFilter">Thema filtern:</label>
           <select id="themeFilter" onchange="filterPhilosophy()">
             <option value="">Alle</option>
-            <option value="Logik">Logik</option>
+            <option value="Ontologie">Ontologie</option>
+            <option value="Epistemologie">Epistemologie</option>
             <option value="Ethik">Ethik</option>
+            <option value="Ästhetik">Ästhetik</option>
+            <option value="Logik">Logik</option>
             <option value="Metaphysik">Metaphysik</option>
-            <option value="Politik">Politik</option>
+            <option value="Sprache">Sprache</option>
+            <option value="Macht">Macht</option>
+            <option value="Geist">Geist</option>
+            <option value="Sein">Sein</option>
           </select>
         </div>
 
@@ -92,10 +70,10 @@
             <div id="timelineContainer"></div>
         </section>
 
-        <footer class="section index-footer">
-            <div class="alert alert-success">
-                <strong>Fazit:</strong> Die Philosophie ist ein Werkzeug, um die Zukunft zu gestalten.
-            </div>
+        <footer class="section footer-premium">
+            <hr class="footer-divider">
+            <p class="footer-premium-text">Die Philosophie ist ein Werkzeug, um die Zukunft zu gestalten.</p>
+            <hr class="footer-divider">
             <div class="ismail-logo-mark">
                 <span class="dot dot-1"></span>
                 <span class="dot dot-2"></span>
@@ -135,9 +113,9 @@
                     summary: "Bewusstsein, Leid und Befreiung.",
                     thinkers: "Buddha, Nagarjuna, Shankara, Chanakya, Sri Aurobindo",
                     description: "Die indische Philosophie erforscht tiefgründig die Natur des Bewusstseins, die Überwindung des Leids und die Illusion der Dualität.",
-                    image: "assets/img/indien.jpg",
+                    image: "assets/img/indien.webp",
                     link: "philosophen/indien.html",
-                    themes: "Metaphysik,Ethik,Logik"
+                    themes: "Metaphysik,Geist,Sein,Ethik"
                 },
                 {
                     era: "6. Jh. v. Chr. – Gegenwart",
@@ -145,9 +123,9 @@
                     summary: "Harmonie, Ordnung und Dao.",
                     thinkers: "Konfuzius, Laozi, Zhuangzi, Mozi, Mencius, Zhu Xi",
                     description: "Im Zentrum steht die Frage nach dem richtigen Handeln (Tugend), der kosmischen Harmonie (Dao) und der gerechten, stabilen Gesellschaft.",
-                    image: "assets/img/china.jpg",
+                    image: "assets/img/china.webp",
                     link: "philosophen/china.html",
-                    themes: "Ethik,Politik"
+                    themes: "Ethik,Macht,Geist"
                 },
                 {
                     era: "6. Jh. v. Chr. – 4. Jh. n. Chr.",
@@ -155,9 +133,9 @@
                     summary: "Die Geburt des rationalen Denkens.",
                     thinkers: "Thales, Heraklit, Parmenides, Sokrates, Platon, Aristoteles, Epikur, Zenon (Stoa)",
                     description: "Übergang vom Mythos zum Logos. Sokrates begründet die kritische Selbstprüfung, Platon die Ideenlehre, Aristoteles die systematische Wissenschaft. Grundstein für Logik, Ethik, Politik und Erkenntnistheorie.",
-                    image: "assets/img/antike.jpg",
+                    image: "assets/img/antike.webp",
                     link: "philosophen/antike.html",
-                    themes: "Logik,Ethik,Metaphysik,Politik"
+                    themes: "Ontologie,Epistemologie,Ethik,Logik,Metaphysik,Macht"
                 },
                 {
                     era: "4. – 15. Jahrhundert",
@@ -165,9 +143,9 @@
                     summary: "Synthese von Glauben und Vernunft.",
                     thinkers: "Augustinus, Boethius, Thomas von Aquin, Meister Eckhart",
                     description: "Philosophie wird in den Dienst der Theologie gestellt. Augustinus verbindet platonische Motive mit christlicher Theologie. Thomas von Aquin formuliert die große Synthese.",
-                    image: "assets/img/mittelalter.jpg",
+                    image: "assets/img/mittelalter.webp",
                     link: "philosophen/mittelalter.html",
-                    themes: "Metaphysik,Politik,Ethik"
+                    themes: "Ontologie,Metaphysik,Geist,Sein"
                 },
                 {
                     era: "8. – 14. Jahrhundert",
@@ -175,9 +153,9 @@
                     summary: "Wissenschaft, Logik und Offenbarung.",
                     thinkers: "Al-Farabi, Avicenna, Averroes, Al-Ghazali, Ibn Khaldun",
                     description: "Die Blütezeit der islamischen Philosophie bewahrte nicht nur das antike Erbe, sondern trieb Logik, Medizin und Geschichtstheorie massiv voran.",
-                    image: "assets/img/islam.jpg",
+                    image: "assets/img/islam.webp",
                     link: "philosophen/islam.html",
-                    themes: "Logik,Metaphysik,Politik"
+                    themes: "Logik,Epistemologie,Metaphysik"
                 },
                 {
                     era: "12. Jh. – Gegenwart",
@@ -185,9 +163,9 @@
                     summary: "Präsenz, Leere und Ästhetik.",
                     thinkers: "Dōgen, Nishida Kitarō, Watsuji Tetsurō",
                     description: "Die japanische Philosophie verbindet buddhistische Leere mit existenziellem Erleben, radikaler Präsenz im Moment (Zen) und tiefer Naturästhetik.",
-                    image: "assets/img/japan.jpg",
+                    image: "assets/img/japan.webp",
                     link: "philosophen/japan.html",
-                    themes: "Metaphysik,Ethik"
+                    themes: "Ästhetik,Sein,Geist"
                 },
                 {
                     era: "15. – 18. Jahrhundert",
@@ -195,9 +173,9 @@
                     summary: "Der autonome, denkende Mensch.",
                     thinkers: "Machiavelli, Descartes, Hobbes, Spinoza, Locke, Leibniz, Hume, Rousseau",
                     description: "Descartes begründet den Rationalismus (\"Ich denke, also bin ich\"). Locke und Hume formen den Empirismus. Hobbes und Rousseau entwickeln moderne Staatstheorien. Beginn der wissenschaftlichen Revolution, Demokratie und Individualität.",
-                    image: "assets/img/neuzeit.jpg",
+                    image: "assets/img/neuzeit.webp",
                     link: "philosophen/neuzeit.html",
-                    themes: "Logik,Ethik,Politik"
+                    themes: "Epistemologie,Geist,Ontologie,Macht,Metaphysik"
                 },
                 {
                     era: "18. – 19. Jahrhundert",
@@ -205,9 +183,9 @@
                     summary: "Freiheit, Vernunft und Geschichte.",
                     thinkers: "Kant, Fichte, Schelling, Hegel, Schopenhauer, Mill, Marx, Kierkegaard, Nietzsche",
                     description: "Kant definiert Moral als Ausdruck der Freiheit (kategorischer Imperativ). Hegel interpretiert Geschichte als dialektischen Prozess. Marx transformiert Dialektik in Gesellschaftskritik. Nietzsche kritisiert Moral, Religion und Wahrheit radikal.",
-                    image: "assets/img/moderne.jpg",
+                    image: "assets/img/moderne.webp",
                     link: "philosophen/moderne.html",
-                    themes: "Ethik,Politik,Metaphysik"
+                    themes: "Ethik,Epistemologie,Macht,Ästhetik,Geist"
                 },
                 {
                     era: "1900 – 2000",
@@ -215,9 +193,9 @@
                     summary: "Existenz, Sprache und Macht.",
                     thinkers: "Wittgenstein, Heidegger, Sartre, Camus, Hannah Arendt, Simone de Beauvoir, Foucault, Habermas",
                     description: "Nach zwei Weltkriegen wird Philosophie existenziell. Wittgenstein zeigt, dass Sprache die Grenzen des Denkens bestimmt. Sartre und Camus betonen Freiheit und Absurdität. Arendt analysiert Totalitarismus. Foucault untersucht Macht- und Wissensordnungen.",
-                    image: "assets/img/20jh.jpg",
+                    image: "assets/img/20jh.webp",
                     link: "philosophen/20jh.html",
-                    themes: "Logik,Ethik,Politik"
+                    themes: "Sprache,Sein,Macht,Ethik"
                 },
                 {
                     era: "20. – 21. Jahrhundert",
@@ -225,9 +203,9 @@
                     summary: "Digitale Ethik und KI.",
                     thinkers: "Foucault, Habermas, Byung‑Chul Han, Donna Haraway",
                     description: "Analyse von Macht, Kommunikation und digitaler Identität. KI, Netzwerke, Bio‑Politik und post‑humanistische Perspektiven prägen aktuelle Diskurse.",
-                    image: "assets/img/gegenwart.jpg",
+                    image: "assets/img/gegenwart.webp",
                     link: "philosophen/gegenwart.html",
-                    themes: "Ethik,Politik,Metaphysik"
+                    themes: "Macht,Geist,Ästhetik,Sprache,Epistemologie"
                 }
             ];
 

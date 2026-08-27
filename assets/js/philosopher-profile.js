@@ -8,7 +8,7 @@ const PHILOSOPHERS = [
         eraLink: "antike.html",
         field: "Naturphilosophie",
         thesis: "Die Natur lässt sich aus natürlichen Ursachen erklären.",
-        portrait: "../assets/img/antike.jpg",
+        portrait: "../assets/img/antike.webp",
         intro: "Thales gilt in der europäischen Überlieferung als einer der ersten Denker, der Naturphänomene nicht ausschließlich mythisch, sondern durch ein einheitliches Prinzip zu erklären versuchte.",
         ideas: [
             "Wasser als Ursprung und Grundstoff aller Dinge",
@@ -934,17 +934,17 @@ function renderPhilosopherProfile() {
     const previous = PHILOSOPHERS[currentIndex - 1];
     const next = PHILOSOPHERS[currentIndex + 1];
     const eraImages = {
-      "Antike": "antike.jpg",
-      "Indien": "indien.jpg",
-      "China": "china.jpg",
-      "Japan": "japan.jpg",
-      "Islamische Welt": "islam.jpg",
-      "Mittelalter": "mittelalter.jpg",
-      "Frühe Neuzeit": "neuzeit.jpg",
-      "Klassische Moderne": "moderne.jpg",
-      "20. Jahrhundert": "20jh.jpg",
-      "Gegenwart": "gegenwart.jpg",
-      "Gegenwart & Zukunft": "gegenwart.jpg"
+      "Antike": "antike.webp",
+      "Indien": "indien.webp",
+      "China": "china.webp",
+      "Japan": "japan.webp",
+      "Islamische Welt": "islam.webp",
+      "Mittelalter": "mittelalter.webp",
+      "Frühe Neuzeit": "neuzeit.webp",
+      "Klassische Moderne": "moderne.webp",
+      "20. Jahrhundert": "20jh.webp",
+      "Gegenwart": "gegenwart.webp",
+      "Gegenwart & Zukunft": "gegenwart.webp"
     };
     const portrait = philosopher.portrait || `../assets/img/${eraImages[philosopher.era]}`;
     const eraBackLink = document.querySelector(".epoch-nav a:first-child");
