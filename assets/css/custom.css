@@ -513,21 +513,15 @@
 /* ── Index Page Layout ──────────────────────────────── */
 h1.topbar-brand.index-topbar-title {
     margin-bottom: 0;
-    font-size: clamp(1rem, 3vw, 1.6rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-size: clamp(0.8rem, 2.5vw, 1.25rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
     color: var(--text-light);
     line-height: 1.2;
-}
-
-@media (max-width: 480px) {
-    h1.topbar-brand.index-topbar-title {
-        font-size: 0.95rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: calc(100vw - 80px); /* Platz für den Toggle lassen */
-    }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 90px);
 }
 
 .index-footer {
