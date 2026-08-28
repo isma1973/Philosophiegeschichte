@@ -26,6 +26,15 @@ komplett offline nutzbar und ohne Build‑Prozess.
 - **ARIA‑optimiert:** Barrierefreie Attribute auf allen interaktiven Elementen.
 - **Performance:** `.webp`‑Bildformat, modulares CSS‑Grid‑System.
 
+## ⚡ Performance
+
+Im geprüften Stand erreicht die Plattform in Lighthouse durchgehend **100/100** in allen Kernkategorien:
+
+- Performance
+- Barrierefreiheit
+- Best Practices
+- SEO
+
 ## Start
 
 ### Direkt öffnen
