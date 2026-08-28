@@ -61,7 +61,7 @@ const PHILOSOPHERS = [
     "thesis": "Das gute Leben erfordert Untersuchung und moralische Selbstkenntnis.",
     "intro": "Sokrates praktizierte dialogische Prüfung moralischer Begriffe. Er schrieb selbst nichts; unser Bild stammt aus Schülerberichten.",
     "ideas": ["Praktische Ethik durch Prüfung", "Sokratische Ironie und elenktische Methode", "Konnektivität von Wissen und Tugend"],
-    "significance": "Legte Grundsteine für ethische Reflexion und die philosophische Dialogform. Seine Hinrichtung markiert einen Wendepunkt für attische Politik und Philosophie.",
+    "significance": "Legte Grundsteine für ethische Reflexion und die philosophische Dialogform. Im Jahr 399 v. Chr. wurde er in Athen zum Tode verurteilt; das Urteil wurde durch das Trinken des Schierlingsbechers vollstreckt.",
     "works": "Keine eigenen Schriften; Darstellungen bei Platon, Xenophon und Aristophanes",
     "context": "Athen des 5. Jahrhunderts v. Chr., an der Schwelle politischer Umwälzungen. Sokrates' Verfahren wurde politisch und philosophisch kontrovers angesehen."
   },
