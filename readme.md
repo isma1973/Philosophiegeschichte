@@ -4,7 +4,7 @@
 
 *Read this in [English](readme-en.md).*
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](#)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://isma1973.github.io/Philosophiegeschichte/)
 
 ![Screenshot der Philosophiegeschichte im Dark Mode](assets/img/screenshot-dark.png)
 
