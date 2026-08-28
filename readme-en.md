@@ -26,6 +26,15 @@ fully usable offline and without a build process.
 - **ARIA-Optimized:** Accessible attributes on all interactive elements.
 - **Performance:** `.webp` image format, modular CSS Grid system.
 
+## ⚡ Performance
+
+In the tested version, the platform consistently achieves **100/100** in all Lighthouse core categories:
+
+- Performance
+- Accessibility
+- Best Practices
+- SEO
+
 ## Getting Started
 
 ### Open Directly
