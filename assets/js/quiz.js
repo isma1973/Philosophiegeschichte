@@ -14,7 +14,19 @@
         { q: 'Wofür ist Chanakya bekannt?', options: ['Für frühe politische Philosophie und Realpolitik', 'Für Liebeslyrik', 'Für die erste Grammatik', 'Für asketische Mystik'], answer: 'Für frühe politische Philosophie und Realpolitik' },
         { q: 'Wer entwickelte die Philosophie der "Evolution des Bewusstseins"?', options: ['Sri Aurobindo', 'Tagore', 'Nagarjuna', 'Buddha'], answer: 'Sri Aurobindo' },
         { q: 'Wer gewann als erster asiatischer Autor den Literaturnobelpreis und verband östlichen Humanismus mit universaler Ethik?', options: ['Rabindranath Tagore', 'Sri Aurobindo', 'Chanakya', 'Shankara'], answer: 'Rabindranath Tagore' },
-        { q: 'Welches Ziel hat die Überwindung des Leids (Dukkha) im Buddhismus?', options: ['Nirvana', 'Karma', 'Samsara', 'Maya'], answer: 'Nirvana' }
+        { q: 'Welches Ziel hat die Überwindung des Leids (Dukkha) im Buddhismus?', options: ['Nirvana', 'Karma', 'Samsara', 'Maya'], answer: 'Nirvana' },
+        { q: 'Welche Lehre beschreibt im Buddhismus das Fehlen eines unveränderlichen Selbst?', options: ['Anatta', 'Brahman', 'Maya', 'Dharmaśāstra'], answer: 'Anatta' },
+        { q: 'Welcher Weg gehört zur buddhistischen Lehre von der Überwindung des Leids?', options: ['Der Edle Achtfache Pfad', 'Die sieben Säulen des Staates', 'Der kategorische Imperativ', 'Wu Wei'], answer: 'Der Edle Achtfache Pfad' },
+        { q: 'Welche Schule begründete Nagarjuna?', options: ['Madhyamaka', 'Advaita Vedanta', 'Soto-Zen', 'Mohismus'], answer: 'Madhyamaka' },
+        { q: 'Wie heißt Nagarjunas Lehre vom Entstehen aller Dinge in wechselseitiger Abhängigkeit?', options: ['Abhängiges Entstehen', 'Reines Erleben', 'Universale Liebe', 'Prästabilierte Harmonie'], answer: 'Abhängiges Entstehen' },
+        { q: 'Welcher Begriff bezeichnet bei Shankara die kosmische Illusion der Vielheit?', options: ['Maya', 'Nirvana', 'Ren', 'Asabiyya'], answer: 'Maya' },
+        { q: 'Wodurch wird im Advaita Vedanta Befreiung erlangt?', options: ['Durch Erkenntnis der Nicht-Dualität', 'Durch politische Herrschaft', 'Durch sinnlichen Genuss', 'Durch Angriffskriege'], answer: 'Durch Erkenntnis der Nicht-Dualität' },
+        { q: 'Welches Werk wird Chanakya zugeschrieben?', options: ['Arthashastra', 'Gitanjali', 'Daodejing', 'Shōbōgenzō'], answer: 'Arthashastra' },
+        { q: 'Mit welchem Reich war Chanakya politisch verbunden?', options: ['Mit dem Maurya-Reich', 'Mit dem Römischen Reich', 'Mit der Song-Dynastie', 'Mit dem Osmanischen Reich'], answer: 'Mit dem Maurya-Reich' },
+        { q: 'Wie nennt Sri Aurobindo seine Verbindung spiritueller Entwicklung mit dem gesamten Leben?', options: ['Integraler Yoga', 'Wu Wei', 'Zazen', 'Scholastik'], answer: 'Integraler Yoga' },
+        { q: 'Welches Werk stammt von Sri Aurobindo?', options: ['The Life Divine', 'Die Analekten', 'Muqaddima', 'Summa Theologiae'], answer: 'The Life Divine' },
+        { q: 'Welches Werk machte Rabindranath Tagore international besonders bekannt?', options: ['Gitanjali', 'Arthashastra', 'Brahmasutra-Bhashya', 'Mūlamadhyamakakārikā'], answer: 'Gitanjali' },
+        { q: 'Welche Haltung kritisierte Tagore besonders?', options: ['Blinden Nationalismus', 'Universalen Humanismus', 'Künstlerische Bildung', 'Interkulturellen Austausch'], answer: 'Blinden Nationalismus' }
       ]
     },
     china: {
@@ -27,7 +39,19 @@
         { q: 'Wer betonte, dass die menschliche Natur von Grund auf gut sei?', options: ['Mencius', 'Xunzi', 'Han Feizi', 'Konfuzius'], answer: 'Mencius' },
         { q: 'Wer ist ein Meister des daoistischen Relativismus und Humors?', options: ['Zhuangzi', 'Konfuzius', 'Zhu Xi', 'Mozi'], answer: 'Zhuangzi' },
         { q: 'Welcher Denker schuf die große Synthese des Neo-Konfuzianismus?', options: ['Zhu Xi', 'Laozi', 'Mencius', 'Konfuzius'], answer: 'Zhu Xi' },
-        { q: 'Was beschreibt das Dao am besten?', options: ['Das unergründliche, alles durchdringende Prinzip', 'Ein persönlicher Schöpfergott', 'Eine strenge Gesetzessammlung', 'Der Herrscher der Erde'], answer: 'Das unergründliche, alles durchdringende Prinzip' }
+        { q: 'Was beschreibt das Dao am besten?', options: ['Das unergründliche, alles durchdringende Prinzip', 'Ein persönlicher Schöpfergott', 'Eine strenge Gesetzessammlung', 'Der Herrscher der Erde'], answer: 'Das unergründliche, alles durchdringende Prinzip' },
+        { q: 'Wie heißt die Sammlung der Konfuzius zugeschriebenen Gespräche?', options: ['Analekten', 'Daodejing', 'Mengzi', 'Shōbōgenzō'], answer: 'Analekten' },
+        { q: 'Welcher konfuzianische Begriff bezeichnet Ritual und angemessenes Verhalten?', options: ['Li', 'Ren', 'Dao', 'Qi'], answer: 'Li' },
+        { q: 'Welche Haltung empfiehlt Laozi gegenüber erzwungenem Handeln?', options: ['Natürlichkeit und Zurückhaltung', 'Aggressive Durchsetzung', 'Starre Ritualpflicht', 'Militärische Expansion'], answer: 'Natürlichkeit und Zurückhaltung' },
+        { q: 'Welches berühmte Gleichnis stammt von Zhuangzi?', options: ['Der Schmetterlingstraum', 'Das Höhlengleichnis', 'Der fliegende Mensch', 'Das Rad der Fortuna'], answer: 'Der Schmetterlingstraum' },
+        { q: 'Warum lehnte Zhuangzi der Überlieferung nach Regierungsämter ab?', options: ['Um seine Unabhängigkeit zu bewahren', 'Um eine Armee aufzubauen', 'Um Kaufmann zu werden', 'Um die Rituale zu verbieten'], answer: 'Um seine Unabhängigkeit zu bewahren' },
+        { q: 'Wie heißt Mozis Lehre der allgemeinen Menschenliebe?', options: ['Jian’ai', 'Wu Wei', 'Anatta', 'Asabiyya'], answer: 'Jian’ai' },
+        { q: 'Welche politische Praxis verurteilte Mozi ausdrücklich?', options: ['Angriffskriege', 'Friedliche Diplomatie', 'Sparsame Verwaltung', 'Allgemeine Fürsorge'], answer: 'Angriffskriege' },
+        { q: 'Was sind bei Mencius die „vier Keime“?', options: ['Anlagen moralischer Tugenden', 'Vier politische Ämter', 'Vier Naturstoffe', 'Vier Meditationsstufen'], answer: 'Anlagen moralischer Tugenden' },
+        { q: 'Was kann ein tyrannischer Herrscher nach Mencius verlieren?', options: ['Das Mandat des Himmels', 'Das Dao der Natur', 'Die Buddha-Natur', 'Die prästabilierte Harmonie'], answer: 'Das Mandat des Himmels' },
+        { q: 'Welche zwei Grundbegriffe verbindet Zhu Xi in seiner Ontologie?', options: ['Li und Qi', 'Ren und Wu Wei', 'Yin und Nirvana', 'Atman und Anatta'], answer: 'Li und Qi' },
+        { q: 'Welche Texte kommentierte Zhu Xi besonders einflussreich?', options: ['Die Vier Bücher', 'Die Veden', 'Platons Dialoge', 'Den Palikanon'], answer: 'Die Vier Bücher' },
+        { q: 'In welcher Dynastie wirkte Zhu Xi?', options: ['Song-Dynastie', 'Qin-Dynastie', 'Maurya-Dynastie', 'Tokugawa-Dynastie'], answer: 'Song-Dynastie' }
       ]
     },
     japan: {
@@ -40,7 +64,19 @@
         { q: 'Wie nennt Nishida Kitarō die Erfahrung vor der Trennung in Subjekt und Objekt?', options: ['Reines Erleben', 'Dialektik', 'Satori', 'Karma'], answer: 'Reines Erleben' },
         { q: 'Was ist Zazen?', options: ['Die Sitzmeditation im Zen-Buddhismus', 'Eine Kampfsportart', 'Die Kunst des Bogenschießens', 'Ein Ritualschwert'], answer: 'Die Sitzmeditation im Zen-Buddhismus' },
         { q: 'Welches Konzept verbindet bei Dōgen Sein und Zeit untrennbar miteinander?', options: ['Uji (Sein-Zeit)', 'Samsara', 'Bushido', 'Wabi-Sabi'], answer: 'Uji (Sein-Zeit)' },
-        { q: 'Welche ethische Dimension steht bei Watsuji Tetsurō im Zentrum?', options: ['Die Zwischenmenschlichkeit (Rinri)', 'Der Egoismus', 'Der Utilitarismus', 'Der Kategorische Imperativ'], answer: 'Die Zwischenmenschlichkeit (Rinri)' }
+        { q: 'Welche ethische Dimension steht bei Watsuji Tetsurō im Zentrum?', options: ['Die Zwischenmenschlichkeit (Rinri)', 'Der Egoismus', 'Der Utilitarismus', 'Der Kategorische Imperativ'], answer: 'Die Zwischenmenschlichkeit (Rinri)' },
+        { q: 'Was bedeutet Shikantaza in Dōgens Zen-Praxis?', options: ['Nur-Sitzen', 'Schriftstudium', 'Ritueller Tanz', 'Logische Widerlegung'], answer: 'Nur-Sitzen' },
+        { q: 'Wie versteht Dōgen das Verhältnis von Übung und Erleuchtung?', options: ['Die Übung ist selbst Ausdruck der Erleuchtung', 'Erleuchtung macht jede Übung überflüssig', 'Übung und Erleuchtung widersprechen sich', 'Erleuchtung ist nur theoretisches Wissen'], answer: 'Die Übung ist selbst Ausdruck der Erleuchtung' },
+        { q: 'Welches Kloster gründete Dōgen?', options: ['Eihei-ji', 'Shaolin', 'Nalanda', 'Visva-Bharati'], answer: 'Eihei-ji' },
+        { q: 'In welcher historischen Epoche wirkte Dōgen?', options: ['Kamakura-Zeit', 'Meiji-Zeit', 'Song-Dynastie', 'Renaissance'], answer: 'Kamakura-Zeit' },
+        { q: 'Was bezeichnet Nishidas Begriff Basho?', options: ['Den Ort, der alles Sein ermöglicht', 'Ein politisches Gesetz', 'Eine Form der Sitzhaltung', 'Ein klimatisches Gebiet'], answer: 'Den Ort, der alles Sein ermöglicht' },
+        { q: 'Welcher Begriff steht bei Nishida für den Grund, der alles Sein ermöglicht?', options: ['Absolutes Nichts', 'Absolute Materie', 'Gesellschaftsvertrag', 'Kategorischer Imperativ'], answer: 'Absolutes Nichts' },
+        { q: 'Welches Werk stammt von Nishida Kitarō?', options: ['Über das Gute', 'Das andere Geschlecht', 'Der Fürst', 'Die Analekten'], answer: 'Über das Gute' },
+        { q: 'Welche Tradition verband Nishida mit Kant, Hegel und Husserl?', options: ['Zen-buddhistische Erfahrung', 'Römische Stoa', 'Islamische Scholastik', 'Britischen Empirismus'], answer: 'Zen-buddhistische Erfahrung' },
+        { q: 'Was bedeutet Fūdo bei Watsuji?', options: ['Klima und Kultur', 'Sein und Zeit', 'Ritual und Sitte', 'Leere und Form'], answer: 'Klima und Kultur' },
+        { q: 'Welche westliche Position kritisierte Watsuji als zu einseitig?', options: ['Den abstrakten Individualismus', 'Den Universalismus', 'Die Umweltethik', 'Die Zwischenmenschlichkeit'], answer: 'Den abstrakten Individualismus' },
+        { q: 'Welche Dimension ergänzte Watsuji gegenüber Heideggers Betonung der Zeit?', options: ['Raum und Klima', 'Mathematik und Logik', 'Sprache und Grammatik', 'Technik und Industrie'], answer: 'Raum und Klima' },
+        { q: 'Welche Aussage gehört zu Dōgens Buddha-Natur-Lehre?', options: ['Alle Dinge sind Buddha-Natur', 'Nur Menschen besitzen Buddha-Natur', 'Buddha-Natur ist ein politisches Amt', 'Buddha-Natur entsteht durch Reichtum'], answer: 'Alle Dinge sind Buddha-Natur' }
       ]
     },
     islam: {
@@ -53,7 +89,19 @@
         { q: 'Wer gilt als Pionier der Soziologie und Geschichtstheorie (Muqaddima)?', options: ['Ibn Khaldun', 'Avicenna', 'Al-Farabi', 'Averroes'], answer: 'Ibn Khaldun' },
         { q: 'Wie versuchte Averroes den Konflikt zwischen Philosophie und Religion zu lösen?', options: ['Beide drücken dieselbe Wahrheit in unterschiedlicher Form aus', 'Religion ist reine Illusion', 'Philosophie muss verboten werden', 'Nur Mystik bringt Erkenntnis'], answer: 'Beide drücken dieselbe Wahrheit in unterschiedlicher Form aus' },
         { q: 'Welches Gedankenexperiment von Avicenna demonstriert die Existenz der Seele unabhängig vom Körper?', options: ['Der fliegende Mensch', 'Das Höhlengleichnis', 'Buridans Esel', 'Das Gehirn im Tank'], answer: 'Der fliegende Mensch' },
-        { q: 'Welche theologische Strömung kritisierte Al-Ghazali besonders stark zugunsten mystischer Erkenntnis?', options: ['Den strengen Rationalismus', 'Den Polytheismus', 'Den Daoismus', 'Den Empirismus'], answer: 'Den strengen Rationalismus' }
+        { q: 'Welche theologische Strömung kritisierte Al-Ghazali besonders stark zugunsten mystischer Erkenntnis?', options: ['Den strengen Rationalismus', 'Den Polytheismus', 'Den Daoismus', 'Den Empirismus'], answer: 'Den strengen Rationalismus' },
+        { q: 'Wie heißt Al-Farabis politisches Hauptwerk?', options: ['Der Musterstaat', 'Die Muqaddima', 'Der Kanon der Medizin', 'Die Inkohärenz der Philosophen'], answer: 'Der Musterstaat' },
+        { q: 'Welche antike Disziplin entwickelte Al-Farabi in der islamischen Philosophie weiter?', options: ['Logik', 'Stoische Askese', 'Epikureische Lustlehre', 'Kynische Lebenskunst'], answer: 'Logik' },
+        { q: 'Welche Unterscheidung ist zentral für Avicennas Metaphysik?', options: ['Wesen und Existenz', 'These und Antithese', 'Ren und Li', 'Sein und Zeit'], answer: 'Wesen und Existenz' },
+        { q: 'Wie heißt Avicennas umfassendes philosophisches Werk?', options: ['Das Buch der Heilung', 'Der Musterstaat', 'Die Muqaddima', 'Die Wiederbelebung der religiösen Wissenschaften'], answer: 'Das Buch der Heilung' },
+        { q: 'Unter welchem Namen ist Ibn Rushd im lateinischen Westen bekannt?', options: ['Averroes', 'Avicenna', 'Al-Farabi', 'Ibn Khaldun'], answer: 'Averroes' },
+        { q: 'Welches Werk schrieb Averroes als Antwort auf Al-Ghazalis Kritik?', options: ['Die Widerlegung der Widerlegung', 'Der Kanon der Medizin', 'Der Musterstaat', 'Die Wiederbelebung der religiösen Wissenschaften'], answer: 'Die Widerlegung der Widerlegung' },
+        { q: 'Welcher mystischen Tradition wandte sich Al-Ghazali zu?', options: ['Dem Sufismus', 'Dem Daoismus', 'Dem Stoizismus', 'Dem Zen-Buddhismus'], answer: 'Dem Sufismus' },
+        { q: 'Welche philosophische Annahme kritisierte Al-Ghazali besonders?', options: ['Die notwendige Kausalität', 'Die Existenz moralischer Regeln', 'Die Bedeutung religiöser Praxis', 'Die Möglichkeit innerer Erfahrung'], answer: 'Die notwendige Kausalität' },
+        { q: 'Was bedeutet Asabiyya bei Ibn Khaldun?', options: ['Sozialer Zusammenhalt', 'Individuelle Meditation', 'Göttliche Offenbarung', 'Logische Deduktion'], answer: 'Sozialer Zusammenhalt' },
+        { q: 'Wie erklärt Ibn Khaldun den Wandel von Zivilisationen?', options: ['Durch zyklischen Aufstieg und Niedergang', 'Durch unveränderliche Herrschaft', 'Nur durch Naturkatastrophen', 'Durch vollständigen Zufall'], answer: 'Durch zyklischen Aufstieg und Niedergang' },
+        { q: 'In welchem Werk entwickelte Ibn Khaldun seine Geschichts- und Gesellschaftstheorie?', options: ['Muqaddima', 'Daodejing', 'Gitanjali', 'Summa contra Gentiles'], answer: 'Muqaddima' },
+        { q: 'Welche Tätigkeit übte Ibn Khaldun neben seiner Gelehrsamkeit aus?', options: ['Diplomat und Richter', 'Klostergründer in Japan', 'Lehrer an Platons Akademie', 'Dichter am Maurya-Hof'], answer: 'Diplomat und Richter' }
       ]
     },
     antike: {
