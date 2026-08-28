@@ -1,24 +1,30 @@
 # History of Philosophy (Philosophiegeschichte)
 
+**Version 1.2 – 2026‑08‑28**
+
 *Read this in [German](readme.md).*
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](#) <!-- Insert your GitHub Pages link here -->
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](#)
 
-> **[Insert Screenshot]**
-> *Tip: Insert a nice picture here (e.g., `assets/img/screenshot.png`) that shows your website in the browser (preferably in Dark Mode). Markdown syntax: `![Screenshot of History of Philosophy](assets/img/screenshot.png)`*
+![Screenshot of the History of Philosophy in Dark Mode](assets/img/screenshot-dark.png)
 
-A static, interactive educational website on the global history of philosophy – from the wisdom traditions of Asia to postmodernism. The project combines a chronological visual timeline, in-depth era articles, over 60 philosopher profiles, and interactive quizzes within a responsive, puristic premium interface.
-
-The website does not require a build step or a web server. It works completely offline directly via `index.html`.
+A fully modular, data-driven learning platform for the global history of philosophy –
+from the wisdom traditions of Asia to the present day.
+With **61 dynamically rendered philosopher profiles**, 10 era modules, an interactive
+timeline, quiz engine, theme system and ARIA-optimized UI —
+fully usable offline and without a build process.
 
 ## Features
 
-- **Global Timeline:** 10 historical eras (including India, China, Islamic World, Japan).
+- **Global Timeline:** 10 historical eras (India, China, Islamic World, Japan, Antiquity, Middle Ages, Early Modern, Modern, 20th Century, Contemporary) as an accessible accordion structure.
 - **Philosophical Filters:** Thematic filtering by Ontology, Epistemology, Ethics, Aesthetics, Logic, Metaphysics, Language, Power, Mind, and Being.
-- **Era Articles & Profiles:** 10 detailed era overviews and over 60 individual philosopher profiles detailing core ideas and context.
-- **Interactive Learning:** Randomized quizzes to test your knowledge of specific eras.
-- **Premium Design:** Immersive single-column layouts, native Dark/Light mode (with local storage), typographically optimized, and accessible (ARIA).
-- **Performance:** Modern `.webp` image formats and an extremely lean CSS Grid architecture.
+- **Data-Driven Profiles:** 61 philosopher profiles, centrally maintained in `PHILOSOPHERS[]`. Each profile page identifies the philosopher via URL and renders content dynamically into empty HTML containers.
+- **Quiz Engine:** Randomized questions, answer shuffling, and direct score calculation per era.
+- **Theme Engine:** Native Dark/Light Mode with persistent state via `localStorage`.
+- **UI Components:** Lightbox, Modal, Tooltip, Toast, Tabs, Dropdown — all in independent Vanilla JS modules.
+- **Zero-Build:** Pure HTML/CSS/JS, works offline directly via `file://`.
+- **ARIA-Optimized:** Accessible attributes on all interactive elements.
+- **Performance:** `.webp` image format, modular CSS Grid system.
 
 ## Getting Started
 
@@ -33,7 +39,7 @@ The application only uses local files and therefore works via `file://` without 
 Philosophiegeschichte/
 ├── index.html                   # Homepage (Timeline & Filters)
 ├── quiz.html                    # Interactive Quiz Module
-├── philosophen/                 # 10 era articles and >60 individual profiles
+├── philosophen/                 # 10 era articles + 61 individual profiles
 │   ├── antike.html
 │   ├── china.html
 │   ├── indien.html
@@ -44,42 +50,60 @@ Philosophiegeschichte/
 │   ├── moderne.html
 │   ├── 20jh.html
 │   ├── gegenwart.html
-│   └── [name].html              # Individual philosopher profiles
+│   └── [name].html              # Individual philosopher profiles (61 files)
 ├── assets/
-│   ├── css/                     # Modular UI system
-│   │   ├── core.css
-│   │   ├── core-theme.css
-│   │   ├── core-ui.css
-│   │   ├── custom.css           # Premium UI Overrides
-│   │   └── ui-kit.css
-│   ├── img/                     # .webp Era images
-│   └── js/                      # App Logic (Vanilla JS)
-│       ├── philosopher-profile.js # Global database & templating
-│       ├── quiz.js
-│       ├── theme.js
-│       └── timeline.js
-└── docs/                        # Documentation of the UI system
+│   ├── css/                     # Modular UI system (5 layers)
+│   │   ├── core.css             # Design Tokens & Reset
+│   │   ├── core-theme.css       # Dark/Light-Mode variables
+│   │   ├── core-ui.css          # Base components
+│   │   ├── custom.css           # Project-specific overrides
+│   │   └── ui-kit.css           # Reusable UI building blocks
+│   ├── img/                     # .webp era images
+│   └── js/                      # 12 Vanilla JS modules
+│       ├── philosopher-profile.js  # Central database (61 profiles) & templating (68 KB)
+│       ├── quiz.js                 # Quiz engine with shuffling & scoring (36 KB)
+│       ├── theme.js                # Dark/Light Mode via localStorage
+│       ├── timeline.js             # Accordion timeline with ARIA
+│       ├── lightbox.js             # Image lightbox
+│       ├── modal.js                # Modal dialog
+│       ├── tooltip.js              # Tooltip component
+│       ├── toast.js                # Toast notifications
+│       ├── tabs.js                 # Tab navigation
+│       ├── dropdown.js             # Dropdown menu
+│       ├── switches.js             # Toggle switches
+│       └── core-ui.js              # UI bootstrap
+└── docs/                        # Documentation of the modular UI system
 ```
 
 ## Core Modules
 
-### Visual Timeline (`index.html`)
-Timeline data is embedded directly in the homepage script. `assets/js/timeline.js` generates accessible accordion cards from this data. The filter allows users to sort eras based on core philosophical themes.
+### Visual Timeline (`timeline.js`)
+Reads era data from the page source and renders accessible accordion cards with ARIA attributes (`aria-expanded`, `aria-controls`). The filter dropdown sorts eras by core philosophical themes in real time — without page reload.
 
-### Data-Driven Profiles (`philosopher-profile.js`)
-Instead of static HTML repetition, all biographical and bibliographical data of the 60+ philosophers is centrally maintained in the `PHILOSOPHERS` array. The script dynamically renders the content into the empty HTML containers of the profile pages.
+### Database & Templating (`philosopher-profile.js`)
+The heart of the project: **68 KB** central database with all 61 philosopher profiles in the `PHILOSOPHERS[]` array. Each profile page is an empty HTML shell. On load, the module identifies the matching entry via filename and fills all fields dynamically — no duplicated HTML code.
 
 ### Quiz Engine (`quiz.js`)
-A lightweight module that generates random questions for each era, shuffles answer options, and displays an immediate evaluation including a score.
+**36 KB** lightweight module: pulls random questions per era from the dataset, shuffles answer options, shows direct feedback per question and calculates the final score.
 
-### Design (`custom.css`)
-The design focuses on an academically precise, minimalist aesthetic. Featuring a native Dark Mode, soft gradients, and hover micro-interactions, the UI provides a premium reading experience inspired by modern museum websites.
+### Theme Engine (`theme.js`)
+Toggles between Dark and Light Mode via class switching on the `<html>` element. The chosen mode is saved in `localStorage` and automatically restored on next visit.
+
+### Modular CSS System (`assets/css/`)
+Five-layer architecture:
+1. `core.css` — Design Tokens (colors, spacing, fonts) & CSS Reset
+2. `core-theme.css` — CSS Custom Properties for Dark/Light Mode
+3. `core-ui.css` — Base typography, layout primitives
+4. `ui-kit.css` — Reusable components (cards, buttons, badges)
+5. `custom.css` — Project-specific aesthetics & overrides
 
 ## Technical Notes
 
-- **Pure HTML, CSS, and Vanilla JavaScript:** No React/Vue dependencies.
+- **Stack:** Pure HTML5, CSS3, and Vanilla JavaScript — no React, Vue, or Angular dependency.
 - **No Build Process:** No NPM, Webpack, or Vite required.
-- **Extreme Performance:** Tiny file sizes and highly optimized `.webp` graphics.
+- **Offline-capable:** Works fully via `file://` without a web server.
+- **Data Architecture:** One central JS array as data source for all 61 profiles — no duplicated HTML code.
+- **Accessibility:** ARIA attributes on all interactive elements (accordion, filter, quiz).
 
 ## Project License
 

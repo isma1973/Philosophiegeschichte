@@ -1,30 +1,36 @@
 # Philosophiegeschichte
 
+**Version 1.2 – 2026‑08‑28**
+
 *Read this in [English](readme-en.md).*
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](#) <!-- Füge hier deinen GitHub Pages Link ein -->
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](#)
 
-> **[Screenshot einfügen]**
-> *Tipp: Füge hier ein schickes Bild (z. B. `assets/img/screenshot.png`) ein, das deine Website im Browser (am besten im Dark Mode) zeigt. Markdown-Syntax: `![Screenshot der Philosophiegeschichte](assets/img/screenshot.png)`*
+![Screenshot der Philosophiegeschichte im Dark Mode](assets/img/screenshot-dark.png)
 
-Eine statische, interaktive Lernwebsite zur globalen Geschichte der Philosophie – von den Weisheitslehren Asiens bis zur Postmoderne. Das Projekt verbindet eine chronologische visuelle Timeline, fundierte Epochenartikel, über 60 Philosophenprofile und interaktive Epochen-Quizzes in einer responsiven, puristischen Premium-Oberfläche.
-
-Die Website benötigt keinen Build-Schritt und keinen Webserver. Sie funktioniert vollständig offline direkt über `index.html`.
+Eine vollständig modulare, datengetriebene Lernplattform zur globalen Philosophiegeschichte –
+von den Weisheitslehren Asiens bis zur Gegenwart.
+Mit **61 dynamisch gerenderten Philosophenprofilen**, 10 Epochenmodulen, einer interaktiven
+Timeline, Quiz‑Engine, Theme‑System und ARIA‑optimierter UI —
+komplett offline nutzbar und ohne Build‑Prozess.
 
 ## Funktionen
 
-- **Globale Timeline:** 10 Epochen (inklusive Indien, China, Islamische Welt, Japan).
+- **Globale Timeline:** 10 Epochen (Indien, China, Islamische Welt, Japan, Antike, Mittelalter, Neuzeit, Moderne, 20. Jh., Gegenwart) als zugängliche Akkordeon‑Struktur.
 - **Philosophische Filter:** Thematische Filterung nach Ontologie, Epistemologie, Ethik, Ästhetik, Logik, Metaphysik, Sprache, Macht, Geist und Sein.
-- **Epochenartikel & Profile:** 10 detaillierte Epochen-Überblicke und über 60 Philosophenprofile mit Kernideen und historischer Einordnung.
-- **Interaktives Lernen:** Zufallsgeneriertes Epochenquiz zur Überprüfung des eigenen Wissens.
-- **Premium Design:** Immersive Single-Column-Layouts, Dark/Light-Mode (mit lokaler Speicherung), typografisch optimiert und barrierefrei (ARIA).
-- **Performance:** Moderne `.webp`-Bildformate und ein extrem schlanker CSS-Grid-Ansatz.
+- **Datengetriebene Profile:** 61 Philosophenprofile, zentral in `PHILOSOPHERS[]` gepflegt. Jede Profilseite identifiziert den Philosophen per URL und rendert den Inhalt dynamisch in leere HTML‑Container.
+- **Quiz‑Engine:** Zufallsgenerierte Fragen, Antwort‑Shuffling und direkte Score‑Berechnung pro Epoche.
+- **Theme‑Engine:** Nativer Dark/Light‑Mode mit persistentem Zustand via `localStorage`.
+- **UI‑Komponenten:** Lightbox, Modal, Tooltip, Toast, Tabs, Dropdown — alles in eigenständigen Vanilla‑JS‑Modulen.
+- **Zero‑Build:** Reines HTML/CSS/JS, funktioniert offline direkt über `file://`.
+- **ARIA‑optimiert:** Barrierefreie Attribute auf allen interaktiven Elementen.
+- **Performance:** `.webp`‑Bildformat, modulares CSS‑Grid‑System.
 
 ## Start
 
 ### Direkt öffnen
 
-`index.html` im Datei-Explorer oder in VS Code im Browser öffnen.
+`index.html` im Datei‑Explorer oder in VS Code im Browser öffnen.
 Die Anwendung verwendet nur lokale Dateien und funktioniert daher auch über `file://` ohne Internetverbindung.
 
 ## Projektstruktur
@@ -33,7 +39,7 @@ Die Anwendung verwendet nur lokale Dateien und funktioniert daher auch über `fi
 Philosophiegeschichte/
 ├── index.html                   # Startseite (Timeline & Filter)
 ├── quiz.html                    # Interaktives Quiz-Modul
-├── philosophen/                 # 10 Epochenartikel und über 60 Einzelprofile
+├── philosophen/                 # 10 Epochenartikel + 61 Einzelprofile
 │   ├── antike.html
 │   ├── china.html
 │   ├── indien.html
@@ -44,43 +50,61 @@ Philosophiegeschichte/
 │   ├── moderne.html
 │   ├── 20jh.html
 │   ├── gegenwart.html
-│   └── [name].html              # Einzelne Philosophenprofile
+│   └── [name].html              # Einzelne Philosophenprofile (61 Dateien)
 ├── assets/
-│   ├── css/                     # Modulares UI-System
-│   │   ├── core.css
-│   │   ├── core-theme.css
-│   │   ├── core-ui.css
-│   │   ├── custom.css           # Premium UI Overrides
-│   │   └── ui-kit.css
+│   ├── css/                     # Modulares UI-System (5 Schichten)
+│   │   ├── core.css             # Design Tokens & Reset
+│   │   ├── core-theme.css       # Dark/Light-Mode Variablen
+│   │   ├── core-ui.css          # Basis-Komponenten
+│   │   ├── custom.css           # Projekt-spezifische Overrides
+│   │   └── ui-kit.css           # Wiederverwendbare UI-Bausteine
 │   ├── img/                     # .webp Epochen-Bilder
-│   └── js/                      # App-Logik (Vanilla JS)
-│       ├── philosopher-profile.js # Globale Datenbank & Templating
-│       ├── quiz.js
-│       ├── theme.js
-│       └── timeline.js
-└── docs/                        # Dokumentation des verwendeten UI-Systems
+│   └── js/                      # 12 Vanilla-JS-Module
+│       ├── philosopher-profile.js  # Zentrale Datenbank (61 Profile) & Templating (68 KB)
+│       ├── quiz.js                 # Quiz-Engine mit Shuffling & Scoring (36 KB)
+│       ├── theme.js                # Dark/Light-Mode via localStorage
+│       ├── timeline.js             # Akkordeon-Timeline mit ARIA
+│       ├── lightbox.js             # Bild-Lightbox
+│       ├── modal.js                # Modal-Dialog
+│       ├── tooltip.js              # Tooltip-Komponente
+│       ├── toast.js                # Toast-Benachrichtigungen
+│       ├── tabs.js                 # Tab-Navigation
+│       ├── dropdown.js             # Dropdown-Menü
+│       ├── switches.js             # Toggle-Switches
+│       └── core-ui.js              # UI-Bootstrap
+└── docs/                        # Dokumentation des modularen UI-Systems
 ```
 
 ## Zentrale Module
 
-### Visuelle Timeline (`index.html`)
-Die Timeline-Daten stehen direkt im Skript der Startseite. `assets/js/timeline.js` erzeugt daraus zugängliche Akkordeon-Karten. Über den Filter lassen sich die Epochen nach philosophischen Kernthemen sortieren.
+### Visuelle Timeline (`timeline.js`)
+Liest Epochendaten aus dem Seitenquelltext und rendert daraus zugängliche Akkordeon‑Karten mit ARIA‑Attributen (`aria-expanded`, `aria-controls`). Der Filter‑Dropdown sortiert die Epochen nach philosophischen Kernthemen in Echtzeit — ohne Seitenneuladen.
 
-### Daten-getriebene Profile (`philosopher-profile.js`)
-Statt statischer HTML-Wiederholung werden alle biografischen und bibliografischen Daten der über 60 Philosophen zentral im Array `PHILOSOPHERS` gepflegt. Das Skript rendert den Inhalt dynamisch in die leeren HTML-Container der Profilseiten.
+### Datenbank & Templating (`philosopher-profile.js`)
+Das Herzstück des Projekts: **68 KB** zentrale Datenbank mit allen 61 Philosophenprofilen im Array `PHILOSOPHERS[]`. Jede Profilseite ist ein leeres HTML‑Gerüst. Beim Laden identifiziert das Modul den passenden Eintrag über den Dateinamen und füllt alle Felder dynamisch — kein doppelter HTML‑Code.
 
-### Quiz-Engine (`quiz.js`)
-Ein leichtgewichtiges Modul, das für jede Epoche zufällige Fragen generiert, Antwortoptionen mischt und eine direkte Auswertung inklusive Score anzeigt.
+### Quiz‑Engine (`quiz.js`)
+**36 KB** leichtgewichtiges Modul: Zieht für jede Epoche zufällige Fragen aus dem Datensatz, mischt die Antwortoptionen, zeigt direktes Feedback pro Frage und berechnet am Ende den Gesamtscore.
 
-### Gestaltung (`custom.css`)
-Das Design fokussiert sich auf eine akademisch-präzise, minimalistische Ästhetik. Mit einem nativen Dark Mode, sanften Gradienten und Hover-Micro-Interaktionen bietet die UI ein hochwertiges Leseerlebnis, inspiriert von modernen Museums-Websites.
+### Theme‑Engine (`theme.js`)
+Togglet zwischen Dark und Light Mode durch Klassen‑Wechsel am `<html>`‑Element. Der gewählte Modus wird in `localStorage` gespeichert und beim nächsten Besuch automatisch wiederhergestellt.
+
+### Modulares CSS‑System (`assets/css/`)
+Fünf‑Schichten‑Architektur:
+1. `core.css` — Design Tokens (Farben, Abstände, Schriften) & CSS Reset
+2. `core-theme.css` — CSS Custom Properties für Dark/Light‑Mode
+3. `core-ui.css` — Basis‑Typografie, Layout‑Primitives
+4. `ui-kit.css` — Wiederverwendbare Komponenten (Cards, Buttons, Badges)
+5. `custom.css` — Projekt‑spezifische Ästhetik & Overrides
 
 ## Technische Hinweise
 
-- **Reines HTML, CSS und Vanilla JavaScript:** Keine React/Vue-Abhängigkeit.
-- **Kein Build-Prozess:** Kein NPM, Webpack oder Vite erforderlich.
-- **Extreme Performance:** Sehr kleine Dateigrößen und optimierte `.webp`-Grafiken.
+- **Stack:** Reines HTML5, CSS3 und Vanilla JavaScript — keine React‑, Vue‑ oder Angular‑Abhängigkeit.
+- **Kein Build‑Prozess:** Kein NPM, Webpack oder Vite erforderlich.
+- **Offline‑fähig:** Funktioniert vollständig über `file://` ohne Webserver.
+- **Daten‑Architektur:** Ein zentrales JS‑Array als Datenquelle für alle 61 Profile — kein doppelter HTML‑Code.
+- **Barrierefreiheit:** ARIA‑Attribute auf allen interaktiven Elementen (Akkordeon, Filter, Quiz).
 
 ## Projektlizenz
 
-Das Projekt steht unter [MIT-Lizenz](LICENSE). Du kannst es frei verwenden, verändern und verbreiten.
+Das Projekt steht unter [MIT‑Lizenz](LICENSE). Du kannst es frei verwenden, verändern und verbreiten.
