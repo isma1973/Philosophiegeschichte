@@ -1,0 +1,19 @@
+﻿# Abhängigkeiten
+node_modules/
+
+# PowerShell Skripte (Hilfsdateien)
+*.ps1
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
