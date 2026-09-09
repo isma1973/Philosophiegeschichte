@@ -10,7 +10,7 @@
 
 A fully modular, data-driven learning platform for the global history of philosophy –
 from the wisdom traditions of Asia to the present day.
-With **69 dynamically rendered philosopher profiles**, 10 era modules, an interactive
+With **80 dynamically rendered philosopher profiles**, 10 era modules, an interactive
 timeline, quiz engine, theme system (with Glassmorphism in Light Mode) and ARIA-optimized UI —
 fully usable offline and without a build process.
 
@@ -18,7 +18,7 @@ fully usable offline and without a build process.
 
 - **Global Timeline:** 10 historical eras (India, China, Islamic World, Japan, Antiquity, Middle Ages, Early Modern, Modern, 20th Century, Contemporary) as an accessible accordion structure.
 - **Philosophical Filters:** Thematic filtering by Ontology, Epistemology, Ethics, Aesthetics, Logic, Metaphysics, Language, Power, Mind, and Being.
-- **Data-Driven Profiles:** 69 philosopher profiles, centrally maintained in `PHILOSOPHERS[]`. Each profile page identifies the philosopher via URL and renders content dynamically into empty HTML containers.
+- **Data-Driven Profiles:** 80 philosopher profiles, centrally maintained in `PHILOSOPHERS[]`. Each profile page identifies the philosopher via URL and renders content dynamically into empty HTML containers.
 - **Quiz Engine:** Randomized questions, answer shuffling, and direct score calculation per era.
 - **Theme Engine:** Native Dark/Light Mode (incl. Glassmorphism) with persistent state via `localStorage`.
 - **UI Components:** Lightbox, Modal, Tooltip, Toast, Tabs, Dropdown — all in independent Vanilla JS modules.
@@ -59,7 +59,7 @@ Philosophiegeschichte/
 │   ├── moderne.html
 │   ├── 20jh.html
 │   ├── gegenwart.html
-│   └── [name].html              # Individual philosopher profiles (69 files)
+│   └── [name].html              # Individual philosopher profiles (80 files)
 ├── assets/
 │   ├── css/                     # Modular UI system (5 layers)
 │   │   ├── core.css             # Design Tokens & Reset
@@ -69,7 +69,7 @@ Philosophiegeschichte/
 │   │   └── ui-kit.css           # Reusable UI building blocks
 │   ├── img/                     # .webp era images
 │   └── js/                      # 12 Vanilla JS modules
-│       ├── philosopher-profile.js  # Central database (69 profiles) & templating (68 KB)
+│       ├── philosopher-profile.js  # Central database (80 profiles) & templating (68 KB)
 │       ├── quiz.js                 # Quiz engine with shuffling & scoring (36 KB)
 │       ├── theme.js                # Dark/Light Mode via localStorage
 │       ├── timeline.js             # Accordion timeline with ARIA
@@ -90,7 +90,7 @@ Philosophiegeschichte/
 Reads era data from the page source and renders accessible accordion cards with ARIA attributes (`aria-expanded`, `aria-controls`). The filter dropdown sorts eras by core philosophical themes in real time — without page reload.
 
 ### Database & Templating (`philosopher-profile.js`)
-The heart of the project: **68 KB** central database with all 69 philosopher profiles in the `PHILOSOPHERS[]` array. Each profile page is an empty HTML shell. On load, the module identifies the matching entry via filename and fills all fields dynamically — no duplicated HTML code.
+The heart of the project: **68 KB** central database with all 80 philosopher profiles in the `PHILOSOPHERS[]` array. Each profile page is an empty HTML shell. On load, the module identifies the matching entry via filename and fills all fields dynamically — no duplicated HTML code.
 
 ### Quiz Engine (`quiz.js`)
 **36 KB** lightweight module: pulls random questions per era from the dataset, shuffles answer options, shows direct feedback per question and calculates the final score.
@@ -111,7 +111,7 @@ Five-layer architecture:
 - **Stack:** Pure HTML5, CSS3, and Vanilla JavaScript — no React, Vue, or Angular dependency.
 - **No Build Process:** No NPM, Webpack, or Vite required.
 - **Offline-capable:** Works fully via `file://` without a web server.
-- **Data Architecture:** One central JS array as data source for all 69 profiles — no duplicated HTML code.
+- **Data Architecture:** One central JS array as data source for all 80 profiles — no duplicated HTML code.
 - **Accessibility:** ARIA attributes on all interactive elements (accordion, filter, quiz).
 
 ## Project License

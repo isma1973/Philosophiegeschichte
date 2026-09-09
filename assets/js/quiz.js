@@ -128,7 +128,9 @@
         { q: 'Von wem stammt die Einteilung der Naturdinge in Form und Materie (Hylemorphismus)?', options: ['Aristoteles', 'Zenon', 'Thales', 'Parmenides'], answer: 'Aristoteles' },
         { q: 'Wer war der Lehrer von Platon?', options: ['Sokrates', 'Aristoteles', 'Heraklit', 'Thales'], answer: 'Sokrates' },
         { q: 'Wer war der "Philosophenkaiser" und ein Hauptvertreter der späten Stoa?', options: ['Marc Aurel', 'Seneca', 'Epikur', 'Platon'], answer: 'Marc Aurel' },
-        { q: 'Welche berühmte antike Philosophin und Mathematikerin leitete die neuplatonische Schule in Alexandria?', options: ['Hypatia von Alexandria', 'Diotima', 'Sappho', 'Aspasia'], answer: 'Hypatia von Alexandria' }
+        { q: 'Welche berühmte antike Philosophin und Mathematikerin leitete die neuplatonische Schule in Alexandria?', options: ['Hypatia von Alexandria', 'Diotima', 'Sappho', 'Aspasia'], answer: 'Hypatia von Alexandria' },
+        { q: 'Wer war der berühmte Kyniker, der der Überlieferung nach in einem Fass lebte?', options: ['Diogenes von Sinope', 'Sokrates', 'Epikur', 'Zenon'], answer: 'Diogenes von Sinope' },
+        { q: 'Welcher Vorsokratiker sah die Welt als musikalisch-mathematische Harmonie?', options: ['Pythagoras', 'Heraklit', 'Thales', 'Parmenides'], answer: 'Pythagoras' }
       ],
     },
     mittelalter: {
@@ -153,7 +155,8 @@
         { q: 'Was meint Thomas von Aquin mit „natürlicher Theologie“?', options: ['Gotteserkenntnis durch Vernunft ohne göttliche Offenbarung', 'Ein Leben im Kloster in der Natur', 'Die Leugnung jeglicher göttlichen Kraft', 'Die mystische Erfahrung im Wald'], answer: 'Gotteserkenntnis durch Vernunft ohne göttliche Offenbarung' },
         { q: 'Welcher mittelalterliche Denker formulierte die fünf Wege der Gotteserkenntnis?', options: ['Thomas von Aquin', 'Augustinus', 'Boethius', 'Meister Eckhart'], answer: 'Thomas von Aquin' },
         { q: 'Welchem religiösen Orden gehörte Thomas von Aquin an?', options: ['Dominikaner', 'Franziskaner', 'Jesuiten', 'Benediktiner'], answer: 'Dominikaner' },
-        { q: 'Mit welchem Bild beschreibt Boethius in seinem Werk die Unbeständigkeit des irdischen Glücks?', options: ['Das Rad der Fortuna', 'Die Höhle', 'Der unsichtbare Faden', 'Die Maschine'], answer: 'Das Rad der Fortuna' }
+        { q: 'Mit welchem Bild beschreibt Boethius in seinem Werk die Unbeständigkeit des irdischen Glücks?', options: ['Das Rad der Fortuna', 'Die Höhle', 'Der unsichtbare Faden', 'Die Maschine'], answer: 'Das Rad der Fortuna' },
+        { q: 'Von wem stammt das Prinzip der Wissenschaftsökonomie, bekannt als "Rasiermesser"?', options: ['Wilhelm von Ockham', 'Thomas von Aquin', 'Augustinus', 'Meister Eckhart'], answer: 'Wilhelm von Ockham' }
       ],
     },
     neuzeit: {
@@ -179,7 +182,9 @@
         { q: 'Von wem stammt der Satz „Der Mensch ist dem Menschen ein Wolf“ (Homo homini lupus)?', options: ['Thomas Hobbes', 'David Hume', 'Niccolò Machiavelli', 'Baruch de Spinoza'], answer: 'Thomas Hobbes' },
         { q: 'Welcher skeptische Philosoph weckte Immanuel Kant sprichwörtlich aus seinem „dogmatischen Schlummer“?', options: ['David Hume', 'John Locke', 'René Descartes', 'Gottfried Wilhelm Leibniz'], answer: 'David Hume' },
         { q: 'Wer entwickelte die Erkenntnismethode des „methodischen Zweifels“?', options: ['René Descartes', 'Baruch de Spinoza', 'Thomas Hobbes', 'Niccolò Machiavelli'], answer: 'René Descartes' },
-        { q: 'Wer verfasste "A Vindication of the Rights of Woman" und gilt als frühe feministische Philosophin?', options: ['Mary Wollstonecraft', 'Olympe de Gouges', 'Hannah Arendt', 'Simone de Beauvoir'], answer: 'Mary Wollstonecraft' }
+        { q: 'Wer verfasste "A Vindication of the Rights of Woman" und gilt als frühe feministische Philosophin?', options: ['Mary Wollstonecraft', 'Olympe de Gouges', 'Hannah Arendt', 'Simone de Beauvoir'], answer: 'Mary Wollstonecraft' },
+        { q: 'Wer prägte den Satz "Wissen ist Macht" und begründete die moderne empirische Forschung?', options: ['Francis Bacon', 'René Descartes', 'John Locke', 'David Hume'], answer: 'Francis Bacon' },
+        { q: 'Wer gilt als der Erfinder der literarisch-philosophischen Form des Essays?', options: ['Michel de Montaigne', 'Thomas Hobbes', 'Baruch de Spinoza', 'Niccolò Machiavelli'], answer: 'Michel de Montaigne' }
       ],
     },
     moderne: {
@@ -234,7 +239,10 @@
         { q: 'Wer begründete den Kritischen Rationalismus und das Falsifikationsprinzip?', options: ['Karl Popper', 'Thomas Kuhn', 'Ludwig Wittgenstein', 'Jürgen Habermas'], answer: 'Karl Popper' },
         { q: 'Welcher Logiker und Nobelpreisträger versuchte Mathematik auf Logik zurückzuführen?', options: ['Bertrand Russell', 'Gottlob Frege', 'Kurt Gödel', 'Edmund Husserl'], answer: 'Bertrand Russell' },
         { q: 'Wer ist der Begründer der Phänomenologie?', options: ['Edmund Husserl', 'Martin Heidegger', 'Jean-Paul Sartre', 'Maurice Merleau-Ponty'], answer: 'Edmund Husserl' },
-        { q: 'Wer schrieb "Eine Theorie der Gerechtigkeit" und entwickelte den "Schleier des Nichtwissens"?', options: ['John Rawls', 'Robert Nozick', 'Jürgen Habermas', 'Hannah Arendt'], answer: 'John Rawls' }
+        { q: 'Wer schrieb "Eine Theorie der Gerechtigkeit" und entwickelte den "Schleier des Nichtwissens"?', options: ['John Rawls', 'Robert Nozick', 'Jürgen Habermas', 'Hannah Arendt'], answer: 'John Rawls' },
+        { q: 'Wer verfasste zusammen mit Max Horkheimer die "Dialektik der Aufklärung"?', options: ['Theodor W. Adorno', 'Jürgen Habermas', 'Michel Foucault', 'Karl Popper'], answer: 'Theodor W. Adorno' },
+        { q: 'Welcher Begriff von Thomas Kuhn beschreibt revolutionäre Sprünge in der Wissenschaft?', options: ['Paradigmenwechsel', 'Falsifikation', 'Verifikation', 'Dialektik'], answer: 'Paradigmenwechsel' },
+        { q: 'Welcher Philosoph begründete die Methode der Dekonstruktion?', options: ['Jacques Derrida', 'Michel Foucault', 'Jean-Paul Sartre', 'Martin Heidegger'], answer: 'Jacques Derrida' }
       ],
     },
     gegenwart: {
@@ -259,7 +267,9 @@
         { q: 'Welche Autorin des Buches „Das Unbehagen der Geschlechter“ revolutionierte die Queer-Theorie?', options: ['Judith Butler', 'Martha Nussbaum', 'Simone de Beauvoir', 'Hannah Arendt'], answer: 'Judith Butler' },
         { q: 'Wer kritisiert die Erosion des Anderen durch die permanente digitale Vernetzung (z. B. in „Die Austreibung des Anderen“)?', options: ['Byung-Chul Han', 'Daniel Dennett', 'Judith Butler', 'Martha Nussbaum'], answer: 'Byung-Chul Han' },
         { q: 'Wer verteidigt vehement die Bedeutung der Geisteswissenschaften in der modernen Demokratie („Nicht für den Profit“)?', options: ['Martha Nussbaum', 'Judith Butler', 'Simone de Beauvoir', 'Byung-Chul Han'], answer: 'Martha Nussbaum' },
-        { q: 'Welcher Denker ist als prominenter Vertreter des sogenannten „Neuen Atheismus“ und der naturalistischen Philosophie bekannt?', options: ['Daniel Dennett', 'Byung-Chul Han', 'Martin Heidegger', 'Jean-Paul Sartre'], answer: 'Daniel Dennett' }
+        { q: 'Welcher Denker ist als prominenter Vertreter des sogenannten „Neuen Atheismus“ und der naturalistischen Philosophie bekannt?', options: ['Daniel Dennett', 'Byung-Chul Han', 'Martin Heidegger', 'Jean-Paul Sartre'], answer: 'Daniel Dennett' },
+        { q: 'Wer gilt mit seinem Buch "Animal Liberation" als Wegbereiter der modernen Tierrechtsbewegung?', options: ['Peter Singer', 'Martha Nussbaum', 'Slavoj Žižek', 'Judith Butler'], answer: 'Peter Singer' },
+        { q: 'Welcher zeitgenössische Philosoph verbindet Hegelianismus und Lacansche Psychoanalyse oft anhand von Popkultur?', options: ['Slavoj Žižek', 'Byung-Chul Han', 'Daniel Dennett', 'Peter Singer'], answer: 'Slavoj Žižek' }
       ],
     },
   };
