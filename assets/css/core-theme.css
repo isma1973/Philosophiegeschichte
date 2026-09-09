@@ -46,7 +46,7 @@
    LIGHT MODE (Override)
 --------------------------------------------------- */
 body:not(.dark-mode) {
-  --bg: #dde6ee;               /* weiches, modernes Grau */
+  --bg: linear-gradient(135deg, #e0eaf5 0%, #cfd9df 100%); /* weicher Gradient für besseren Glass-Effekt */
   --bg-secondary: #cfd4e2;     /* Panels */
   --bg-tertiary: #bbc0c9;      /* Inputs, leichte Abgrenzung */
 

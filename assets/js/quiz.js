@@ -126,7 +126,9 @@
         { q: 'Welcher Denker argumentierte streng logisch, dass Veränderung und Bewegung nur eine Illusion sind?', options: ['Parmenides', 'Heraklit', 'Thales', 'Sokrates'], answer: 'Parmenides' },
         { q: 'Wer verfasste die "Nikomachische Ethik"?', options: ['Aristoteles', 'Platon', 'Sokrates', 'Epikur'], answer: 'Aristoteles' },
         { q: 'Von wem stammt die Einteilung der Naturdinge in Form und Materie (Hylemorphismus)?', options: ['Aristoteles', 'Zenon', 'Thales', 'Parmenides'], answer: 'Aristoteles' },
-        { q: 'Wer war der Lehrer von Platon?', options: ['Sokrates', 'Aristoteles', 'Heraklit', 'Thales'], answer: 'Sokrates' }
+        { q: 'Wer war der Lehrer von Platon?', options: ['Sokrates', 'Aristoteles', 'Heraklit', 'Thales'], answer: 'Sokrates' },
+        { q: 'Wer war der "Philosophenkaiser" und ein Hauptvertreter der späten Stoa?', options: ['Marc Aurel', 'Seneca', 'Epikur', 'Platon'], answer: 'Marc Aurel' },
+        { q: 'Welche berühmte antike Philosophin und Mathematikerin leitete die neuplatonische Schule in Alexandria?', options: ['Hypatia von Alexandria', 'Diotima', 'Sappho', 'Aspasia'], answer: 'Hypatia von Alexandria' }
       ],
     },
     mittelalter: {
@@ -176,7 +178,8 @@
         { q: 'Welcher Philosoph erregte Aufsehen mit der These, dass Gott und Natur dasselbe seien („Deus sive Natura“)?', options: ['Baruch de Spinoza', 'Thomas Hobbes', 'John Locke', 'Jean-Jacques Rousseau'], answer: 'Baruch de Spinoza' },
         { q: 'Von wem stammt der Satz „Der Mensch ist dem Menschen ein Wolf“ (Homo homini lupus)?', options: ['Thomas Hobbes', 'David Hume', 'Niccolò Machiavelli', 'Baruch de Spinoza'], answer: 'Thomas Hobbes' },
         { q: 'Welcher skeptische Philosoph weckte Immanuel Kant sprichwörtlich aus seinem „dogmatischen Schlummer“?', options: ['David Hume', 'John Locke', 'René Descartes', 'Gottfried Wilhelm Leibniz'], answer: 'David Hume' },
-        { q: 'Wer entwickelte die Erkenntnismethode des „methodischen Zweifels“?', options: ['René Descartes', 'Baruch de Spinoza', 'Thomas Hobbes', 'Niccolò Machiavelli'], answer: 'René Descartes' }
+        { q: 'Wer entwickelte die Erkenntnismethode des „methodischen Zweifels“?', options: ['René Descartes', 'Baruch de Spinoza', 'Thomas Hobbes', 'Niccolò Machiavelli'], answer: 'René Descartes' },
+        { q: 'Wer verfasste "A Vindication of the Rights of Woman" und gilt als frühe feministische Philosophin?', options: ['Mary Wollstonecraft', 'Olympe de Gouges', 'Hannah Arendt', 'Simone de Beauvoir'], answer: 'Mary Wollstonecraft' }
       ],
     },
     moderne: {
@@ -201,7 +204,8 @@
         { q: 'Wer interpretierte die Geschichte als einen dialektischen Prozess von These, Antithese und Synthese?', options: ['Georg Wilhelm Friedrich Hegel', 'Immanuel Kant', 'Arthur Schopenhauer', 'Søren Kierkegaard'], answer: 'Georg Wilhelm Friedrich Hegel' },
         { q: 'Wer gilt als Vater der Existenzphilosophie und stellte den einzelnen „Glaubensritter“ ins Zentrum?', options: ['Søren Kierkegaard', 'Friedrich Nietzsche', 'Johann Gottlieb Fichte', 'John Stuart Mill'], answer: 'Søren Kierkegaard' },
         { q: 'Wer erweiterte den Utilitarismus um die Qualität von Freuden (besser ein unzufriedener Sokrates als ein zufriedener Narr)?', options: ['John Stuart Mill', 'Karl Marx', 'Immanuel Kant', 'Friedrich Schelling'], answer: 'John Stuart Mill' },
-        { q: 'Welcher Aufklärer und Idealist formulierte das Konzept des „absoluten Ichs“?', options: ['Johann Gottlieb Fichte', 'Georg Wilhelm Friedrich Hegel', 'Arthur Schopenhauer', 'Friedrich Nietzsche'], answer: 'Johann Gottlieb Fichte' }
+        { q: 'Welcher Aufklärer und Idealist formulierte das Konzept des „absoluten Ichs“?', options: ['Johann Gottlieb Fichte', 'Georg Wilhelm Friedrich Hegel', 'Arthur Schopenhauer', 'Friedrich Nietzsche'], answer: 'Johann Gottlieb Fichte' },
+        { q: 'Wer war ein Begründer des Pragmatismus und bewertete Ideen nach ihrem praktischen Nutzen?', options: ['William James', 'John Dewey', 'Charles S. Peirce', 'John Stuart Mill'], answer: 'William James' }
       ],
     },
     '20jh': {
@@ -226,7 +230,11 @@
         { q: 'Welcher Philosoph prägte im Stück Geschlossene Gesellschaft den Satz „Die Hölle, das sind die anderen“?', options: ['Jean-Paul Sartre', 'Albert Camus', 'Martin Heidegger', 'Jürgen Habermas'], answer: 'Jean-Paul Sartre' },
         { q: 'Welcher Frankfurter Denker prägte die „Theorie des kommunikativen Handelns“?', options: ['Jürgen Habermas', 'Michel Foucault', 'Ludwig Wittgenstein', 'Hannah Arendt'], answer: 'Jürgen Habermas' },
         { q: 'Wer verglich das absurde menschliche Leben mit Sisyphos, der ewig einen Stein den Berg hinaufrollt?', options: ['Albert Camus', 'Jean-Paul Sartre', 'Martin Heidegger', 'Simone de Beauvoir'], answer: 'Albert Camus' },
-        { q: 'Wer analysierte nach dem Zweiten Weltkrieg tiefgründig das Konzept der „Vita activa“?', options: ['Hannah Arendt', 'Simone de Beauvoir', 'Ludwig Wittgenstein', 'Jürgen Habermas'], answer: 'Hannah Arendt' }
+        { q: 'Wer analysierte nach dem Zweiten Weltkrieg tiefgründig das Konzept der „Vita activa“?', options: ['Hannah Arendt', 'Simone de Beauvoir', 'Ludwig Wittgenstein', 'Jürgen Habermas'], answer: 'Hannah Arendt' },
+        { q: 'Wer begründete den Kritischen Rationalismus und das Falsifikationsprinzip?', options: ['Karl Popper', 'Thomas Kuhn', 'Ludwig Wittgenstein', 'Jürgen Habermas'], answer: 'Karl Popper' },
+        { q: 'Welcher Logiker und Nobelpreisträger versuchte Mathematik auf Logik zurückzuführen?', options: ['Bertrand Russell', 'Gottlob Frege', 'Kurt Gödel', 'Edmund Husserl'], answer: 'Bertrand Russell' },
+        { q: 'Wer ist der Begründer der Phänomenologie?', options: ['Edmund Husserl', 'Martin Heidegger', 'Jean-Paul Sartre', 'Maurice Merleau-Ponty'], answer: 'Edmund Husserl' },
+        { q: 'Wer schrieb "Eine Theorie der Gerechtigkeit" und entwickelte den "Schleier des Nichtwissens"?', options: ['John Rawls', 'Robert Nozick', 'Jürgen Habermas', 'Hannah Arendt'], answer: 'John Rawls' }
       ],
     },
     gegenwart: {
