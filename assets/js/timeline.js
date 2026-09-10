@@ -15,7 +15,7 @@ window.Timeline = {
                     const panelId = `${container.id}-timeline-panel-${index}`;
 
                     return `
-                    <div class="timeline-v-item philosophy-card" data-themes="${item.themes || ''}">
+                    <div class="timeline-v-item" data-themes="${item.themes || ''}">
                         <div class="timeline-v-marker">
                             <div class="timeline-v-dot"></div>
                         </div>
@@ -33,7 +33,7 @@ window.Timeline = {
                                     <span class="timeline-v-indicator" aria-hidden="true"></span>
                                 </button>
                             </h3>
-                            <p class="text-muted">${item.summary}</p>
+                            <p class="text-muted" style="margin-bottom: 0;">${item.summary}</p>
                             <div
                                 class="timeline-v-detail"
                                 id="${panelId}"

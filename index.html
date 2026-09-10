@@ -100,7 +100,7 @@
     // Filter function for philosophy cards
     window.filterPhilosophy = function() {
         const filter = document.getElementById('themeFilter').value.toLowerCase();
-        const cards = document.querySelectorAll('.philosophy-card');
+        const cards = document.querySelectorAll('.timeline-v-item');
         cards.forEach(card => {
             const tags = (card.dataset.themes || '').toLowerCase();
             if (!filter || tags.includes(filter)) {
