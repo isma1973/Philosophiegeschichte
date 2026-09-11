@@ -995,6 +995,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "georg-wilhelm-friedrich-hegel",
+    "portrait": "../assets/img/philosophers/georg-wilhelm-friedrich-hegel.jpg",
     "name": "Georg Wilhelm Friedrich Hegel",
     "shortName": "Hegel",
     "years": "1770–1831",
@@ -1014,6 +1015,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "arthur-schopenhauer",
+    "portrait": "../assets/img/philosophers/arthur-schopenhauer.jpg",
     "name": "Arthur Schopenhauer",
     "shortName": "Schopenhauer",
     "years": "1788–1860",
@@ -1033,6 +1035,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "john-stuart-mill",
+    "portrait": "../assets/img/philosophers/john-stuart-mill.jpg",
     "name": "John Stuart Mill",
     "shortName": "J. S. Mill",
     "years": "1806–1873",
@@ -1052,6 +1055,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "karl-marx",
+    "portrait": "../assets/img/philosophers/karl-marx.jpg",
     "name": "Karl Marx",
     "shortName": "Karl Marx",
     "years": "1818–1883",
@@ -1071,6 +1075,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "soren-kierkegaard",
+    "portrait": "../assets/img/philosophers/soren-kierkegaard.jpg",
     "name": "Søren Kierkegaard",
     "shortName": "Kierkegaard",
     "years": "1813–1855",
@@ -1090,6 +1095,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "friedrich-nietzsche",
+    "portrait": "../assets/img/philosophers/friedrich-nietzsche.jpg",
     "name": "Friedrich Nietzsche",
     "shortName": "Nietzsche",
     "years": "1844–1900",
@@ -1128,6 +1134,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "ludwig-wittgenstein",
+    "portrait": "../assets/img/philosophers/ludwig-wittgenstein.jpg",
     "name": "Ludwig Wittgenstein",
     "shortName": "Wittgenstein",
     "years": "1889–1951",
@@ -1148,6 +1155,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "martin-heidegger",
+    "portrait": "../assets/img/philosophers/martin-heidegger.jpg",
     "name": "Martin Heidegger",
     "shortName": "Heidegger",
     "years": "1889–1976",
@@ -1167,6 +1175,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "jean-paul-sartre",
+    "portrait": "../assets/img/philosophers/jean-paul-sartre.jpg",
     "name": "Jean-Paul Sartre",
     "shortName": "Sartre",
     "years": "1905–1980",
@@ -1186,6 +1195,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "albert-camus",
+    "portrait": "../assets/img/philosophers/albert-camus.jpg",
     "name": "Albert Camus",
     "shortName": "Camus",
     "years": "1913–1960",
@@ -1205,6 +1215,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "hannah-arendt",
+    "portrait": "../assets/img/philosophers/hannah-arendt.jpg",
     "name": "Hannah Arendt",
     "shortName": "Arendt",
     "years": "1906–1975",
