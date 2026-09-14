@@ -16,7 +16,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Denken revolutionierte die asiatische Philosophie und bildet die Grundlage des Buddhismus. Radikale Abkehr von substanzialistischem Denken.",
     "works": "Palikanon (mündlich überliefert, später verschriftlicht)",
-    "context": "Wirkte in Nordindien während einer Zeit großer spiritueller Umbrüche und Kritik an der vedischen Orthodoxie."
+    "context": "Wirkte in Nordindien während einer Zeit großer spiritueller Umbrüche und Kritik an der vedischen Orthodoxie.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Siddhartha%20Gautama"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Siddhartha%20Gautama"
+      }
+    ]
   },
   {
     "slug": "nagarjuna",
@@ -35,7 +45,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Einer der tiefsinnigsten Logiker der Weltgeschichte. Sein Anti-Essentialismus nimmt Aspekte der modernen Dekonstruktion vorweg.",
     "works": "Mūlamadhyamakakārikā (Lehrverse über die grundlegende Mittlere Weisheit)",
-    "context": "Wirkte im antiken Indien und systematisierte die Prajnaparamita-Sutras des Mahayana-Buddhismus."
+    "context": "Wirkte im antiken Indien und systematisierte die Prajnaparamita-Sutras des Mahayana-Buddhismus.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Nagarjuna"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Nagarjuna"
+      }
+    ]
   },
   {
     "slug": "shankara",
@@ -54,7 +74,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Prägte den Hinduismus maßgeblich und schuf das systematischste Fundament für die vedantische Philosophie.",
     "works": "Brahmasutra-Bhashya, Vivekachudamani",
-    "context": "Reiste durch Indien, um durch philosophische Debatten die Autorität der Veden gegen buddhistische und jainistische Strömungen zu verteidigen."
+    "context": "Reiste durch Indien, um durch philosophische Debatten die Autorität der Veden gegen buddhistische und jainistische Strömungen zu verteidigen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Adi%20Shankara"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Adi%20Shankara"
+      }
+    ]
   },
   {
     "slug": "chanakya",
@@ -73,7 +103,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Oft als 'indischer Machiavelli' bezeichnet, obwohl er Jahrtausende früher lebte. Ein Pionier der systematischen Politikwissenschaft.",
     "works": "Arthashastra",
-    "context": "War maßgeblich an der Gründung des Maurya-Reiches unter Chandragupta beteiligt."
+    "context": "War maßgeblich an der Gründung des Maurya-Reiches unter Chandragupta beteiligt.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Chanakya"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Chanakya"
+      }
+    ]
   },
   {
     "slug": "sri-aurobindo",
@@ -92,7 +132,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Schuf eine optimistische, zukunftsgewandte Synthese aus Ost und West, die Materie und Geist nicht trennt.",
     "works": "The Life Divine, Savitri",
-    "context": "Zunächst politischer Revolutionär gegen die Briten, wandte er sich später der Philosophie und inneren Entwicklung zu."
+    "context": "Zunächst politischer Revolutionär gegen die Briten, wandte er sich später der Philosophie und inneren Entwicklung zu.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Sri%20Aurobindo"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Sri%20Aurobindo"
+      }
+    ]
   },
   {
     "slug": "tagore",
@@ -111,7 +161,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Erster asiatischer Nobelpreisträger. Er baute eine intellektuelle Brücke zwischen der indischen Seele und der modernen Welt.",
     "works": "Gitanjali, Sadhana",
-    "context": "Wirkte in der bengalischen Renaissance und gründete die experimentelle Universität Visva-Bharati."
+    "context": "Wirkte in der bengalischen Renaissance und gründete die experimentelle Universität Visva-Bharati.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Rabindranath%20Tagore"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Rabindranath%20Tagore"
+      }
+    ]
   },
   {
     "slug": "konfuzius",
@@ -130,7 +190,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Denken wurde zur Staatsphilosophie Chinas und prägt bis heute die sozialen Strukturen ganz Ostasiens.",
     "works": "Analekten (Lunyu)",
-    "context": "Lebte in der Zeit der Frühlings- und Herbstannalen, einer Epoche des politischen Zerfalls, der er eine ethische Ordnung entgegenstellte."
+    "context": "Lebte in der Zeit der Frühlings- und Herbstannalen, einer Epoche des politischen Zerfalls, der er eine ethische Ordnung entgegenstellte.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Konfuzius"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Konfuzius"
+      }
+    ]
   },
   {
     "slug": "laozi",
@@ -149,7 +219,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Der Gegenpol zum strengen Konfuzianismus. Beeinflusste die chinesische Kunst, Medizin und den Zen-Buddhismus maßgeblich.",
     "works": "Daodejing",
-    "context": "Seine Historizität ist umstritten. Das Daodejing entstand in einer Zeit der Streitenden Reiche als friedvolle, mystische Alternative."
+    "context": "Seine Historizität ist umstritten. Das Daodejing entstand in einer Zeit der Streitenden Reiche als friedvolle, mystische Alternative.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Laozi"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Laozi"
+      }
+    ]
   },
   {
     "slug": "zhuangzi",
@@ -168,7 +248,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Einer der kreativsten und sprachgewaltigsten Denker Chinas. Sein Relativismus ist erstaunlich modern.",
     "works": "Das wahre Buch vom südlichen Blütenland",
-    "context": "Zeit der Streitenden Reiche. Er lehnte Regierungsämter ab, um seine Unabhängigkeit zu bewahren."
+    "context": "Zeit der Streitenden Reiche. Er lehnte Regierungsämter ab, um seine Unabhängigkeit zu bewahren.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Zhuangzi"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Zhuangzi"
+      }
+    ]
   },
   {
     "slug": "mozi",
@@ -187,7 +277,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Ein radikaler Denker, der den utilitaristischen Theorien des Westens um Jahrtausende voraus war.",
     "works": "Mozi",
-    "context": "Gründer der mohistischen Schule, die stark logisch-wissenschaftlich orientiert war, später aber verdrängt wurde."
+    "context": "Gründer der mohistischen Schule, die stark logisch-wissenschaftlich orientiert war, später aber verdrängt wurde.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Mozi"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Mozi"
+      }
+    ]
   },
   {
     "slug": "mencius",
@@ -206,7 +306,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sicherte das Überleben des Konfuzianismus und legitimierte den Sturz ungerechter Herrscher (Mandat des Himmels).",
     "works": "Mengzi",
-    "context": "Wirkte als reisender Berater von Königen, deren moralisches Versagen er furchtlos kritisierte."
+    "context": "Wirkte als reisender Berater von Königen, deren moralisches Versagen er furchtlos kritisierte.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Mencius"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Mencius"
+      }
+    ]
   },
   {
     "slug": "zhu-xi",
@@ -225,7 +335,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Die einflussreichste intellektuelle Figur Chinas nach Konfuzius. Seine Interpretationen wurden bis ins 20. Jahrhundert als Staatsdoktrin geprüft.",
     "works": "Kommentare zu den Vier Büchern",
-    "context": "Song-Dynastie, eine Zeit hoher kultureller Blüte und philosophischer Erneuerung."
+    "context": "Song-Dynastie, eine Zeit hoher kultureller Blüte und philosophischer Erneuerung.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Zhu%20Xi"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Zhu%20Xi"
+      }
+    ]
   },
   {
     "slug": "thales",
@@ -245,7 +365,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Mit der Frage nach einem gemeinsamen Ursprung der Welt eröffnete Thales einen neuen Typ des Erklärens. Entscheidend ist weniger seine konkrete Antwort als der Versuch, Vielfalt rational auf ein Grundprinzip zurückzuführen.",
     "works": "Von Thales sind keine eigenen Schriften erhalten. Seine Positionen sind nur durch spätere Autoren, besonders Aristoteles, überliefert.",
-    "context": "Thales wirkte in der ionischen Hafenstadt Milet. Handel, kultureller Austausch und praktische Kenntnisse in Geometrie und Astronomie bildeten den Hintergrund der frühen griechischen Naturphilosophie."
+    "context": "Thales wirkte in der ionischen Hafenstadt Milet. Handel, kultureller Austausch und praktische Kenntnisse in Geometrie und Astronomie bildeten den Hintergrund der frühen griechischen Naturphilosophie.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Thales%20von%20Milet"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Thales%20von%20Milet"
+      }
+    ]
   },
   {
     "slug": "heraklit",
@@ -265,7 +395,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Denken setzte Akzente gegen statische Ontologien und beeinflusste spätere Dialektik. Viele Fragmente bleiben hermeneutisch herausfordernd.",
     "works": "Fragmente überliefert in antiken Kommentaren",
-    "context": "Lebte in Ephesos in einer Zeit politischer Umschichtungen. Seine aphoristische Schrifttradition machte ihn später schwer fassbar."
+    "context": "Lebte in Ephesos in einer Zeit politischer Umschichtungen. Seine aphoristische Schrifttradition machte ihn später schwer fassbar.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Heraklit"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Heraklit"
+      }
+    ]
   },
   {
     "slug": "parmenides",
@@ -285,7 +425,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Begründete eine streng ontologische Perspektive, die die abendländische Metaphysik prägte. Seine Position provozierte Reaktionen wie jene der pluralistischen Schulen.",
     "works": "Lehrgedicht (Fragment überliefert)",
-    "context": "Wirkte in Elea; sein Denken reagiert auf frühe naturphilosophische Spekulationen. Viele Texte nur fragmentarisch erhalten."
+    "context": "Wirkte in Elea; sein Denken reagiert auf frühe naturphilosophische Spekulationen. Viele Texte nur fragmentarisch erhalten.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Parmenides"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Parmenides"
+      }
+    ]
   },
   {
     "slug": "sokrates",
@@ -305,7 +455,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Legte Grundsteine für ethische Reflexion und die philosophische Dialogform. Im Jahr 399 v. Chr. wurde er in Athen zum Tode verurteilt; das Urteil wurde durch das Trinken des Schierlingsbechers vollstreckt.",
     "works": "Keine eigenen Schriften; Darstellungen bei Platon, Xenophon und Aristophanes",
-    "context": "Athen des 5. Jahrhunderts v. Chr., an der Schwelle politischer Umwälzungen. Sokrates' Verfahren wurde politisch und philosophisch kontrovers angesehen."
+    "context": "Athen des 5. Jahrhunderts v. Chr., an der Schwelle politischer Umwälzungen. Sokrates' Verfahren wurde politisch und philosophisch kontrovers angesehen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Sokrates"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Sokrates"
+      }
+    ]
   },
   {
     "slug": "platon",
@@ -325,7 +485,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Eine der einflussreichsten Gestalten der abendländischen Philosophie mit umfassender Systematik. Seine Texte prägten Ethik, Metaphysik und politische Theorie über Jahrhunderte.",
     "works": "Dialoge wie Staat, Phaidon, Timaios",
-    "context": "Gründete die Akademie in Athen; reagierte auf Sokrates und die ionische Naturphilosophie. Sein Werk war sowohl philosophisch als auch politisch wirkmächtig."
+    "context": "Gründete die Akademie in Athen; reagierte auf Sokrates und die ionische Naturphilosophie. Sein Werk war sowohl philosophisch als auch politisch wirkmächtig.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Platon"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Platon"
+      }
+    ]
   },
   {
     "slug": "aristoteles",
@@ -345,7 +515,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein umfangreiches Werk bildete über die Antike und das Mittelalter hinweg die Grundlage vieler Wissenschaften. Aristotelische Kategorien prägten Scholastik und Naturphilosophie.",
     "works": "Organon, Metaphysik, Nikomachische Ethik, Politik, Physik",
-    "context": "Lehrte u. a. am Hof von Makedonien; gründete eigene Schule (Lykeion). Sein Einfluss wurde in unterschiedlichen Epochen sehr unterschiedlich rezipiert."
+    "context": "Lehrte u. a. am Hof von Makedonien; gründete eigene Schule (Lykeion). Sein Einfluss wurde in unterschiedlichen Epochen sehr unterschiedlich rezipiert.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Aristoteles"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Aristoteles"
+      }
+    ]
   },
   {
     "slug": "epikur",
@@ -365,7 +545,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Praktische Ethik mit starkem Einfluss auf spätere hedonistische und materialistische Strömungen. Vieles überliefert in Briefen und Fragmenten.",
     "works": "Briefe und Gnomai (Fragmente), Lehre durch spätere Überlieferung",
-    "context": "Wirkte in Hellenistisch-Romischer Zeit; reagierte auf Ängste seiner Zeit mit einer Lebenskunst. Viele Lehren wurden später polemisiert."
+    "context": "Wirkte in Hellenistisch-Romischer Zeit; reagierte auf Ängste seiner Zeit mit einer Lebenskunst. Viele Lehren wurden später polemisiert.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Epikur"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Epikur"
+      }
+    ]
   },
   {
     "slug": "zenon-von-kition",
@@ -385,7 +575,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Stoa wurde eine langlebige Lebens- und Ethikschule, einflussreich bis in römische Philosophie und später. Zenons Lehre wurde oft adaptiert und systematisiert.",
     "works": "Überliefert fragmentarisch durch Nachfolger",
-    "context": "Entstand in hellenistischer Ära mit politischer Unsicherheit; suchte praktische Lebenshilfe. Viele ursprüngliche Schriften verloren."
+    "context": "Entstand in hellenistischer Ära mit politischer Unsicherheit; suchte praktische Lebenshilfe. Viele ursprüngliche Schriften verloren.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Zenon%20von%20Kition"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Zenon%20von%20Kition"
+      }
+    ]
   },
   {
     "slug": "marc-aurel",
@@ -404,7 +604,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Seine Schriften zählen zu den meistgelesenen Werken der Weltliteratur und prägen bis heute Menschen in Führungspositionen und Krisenzeiten.",
     "works": "Selbstbetrachtungen",
-    "context": "Schrieb seine Notizen als römischer Kaiser nachts in Feldlagern während der Markomannenkriege."
+    "context": "Schrieb seine Notizen als römischer Kaiser nachts in Feldlagern während der Markomannenkriege.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Marc%20Aurel"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Marc%20Aurel"
+      }
+    ]
   },
   {
     "slug": "hypatia",
@@ -423,7 +633,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Ihr tragischer Tod durch einen christlichen Mob machte sie zum Symbol für den Untergang der klassischen antiken Wissenschaft und für weibliche Gelehrsamkeit.",
     "works": "Keine eigenen Schriften erhalten; wirkte als einflussreiche Lehrerin und Kommentatorin.",
-    "context": "Lebte in einer Zeit extremen religiösen und politischen Umbruchs im Römischen Reich, als das Christentum Staatsreligion wurde."
+    "context": "Lebte in einer Zeit extremen religiösen und politischen Umbruchs im Römischen Reich, als das Christentum Staatsreligion wurde.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Hypatia%20von%20Alexandria"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Hypatia%20von%20Alexandria"
+      }
+    ]
   },
   {
     "slug": "diogenes-von-sinope",
@@ -442,7 +662,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Er prägte das Ideal des autarken Weisen, das später von der Stoa stark aufgenommen wurde.",
     "works": "Keine Schriften erhalten; wirkte durch seine provokante Lebensführung (Anekdoten).",
-    "context": "Lebte zur Zeit Platons und Alexanders des Großen; kritisierte die athenische Hochkultur scharf."
+    "context": "Lebte zur Zeit Platons und Alexanders des Großen; kritisierte die athenische Hochkultur scharf.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Diogenes%20von%20Sinope"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Diogenes%20von%20Sinope"
+      }
+    ]
   },
   {
     "slug": "pythagoras",
@@ -461,7 +691,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein mystisch-mathematisches Weltbild beeinflusste Platon zutiefst und legte den Grundstein für die naturwissenschaftliche Quantifizierung der Welt.",
     "works": "Keine eigenen Schriften; Lehre wurde mündlich (akusmatisch) weitergegeben.",
-    "context": "Wirkte in Süditalien (Kroton) und verband frühe griechische Wissenschaft mit orphischer Mystik."
+    "context": "Wirkte in Süditalien (Kroton) und verband frühe griechische Wissenschaft mit orphischer Mystik.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Pythagoras"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Pythagoras"
+      }
+    ]
   },
   {
     "slug": "augustinus",
@@ -481,7 +721,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wesentliche Figur der westlichen Christentumsgeschichte; Einfluss auf Theologie, Ethik und politische Theorie. Viele seiner Begriffe bestimmen theologische Debatten bis heute.",
     "works": "Bekenntnisse, De civitate Dei, De Trinitate",
-    "context": "Lebte in spätantiker Spätphase von Rom und Nordafrika; Reaktionen auf heidnische und kirchliche Konflikte. Seine Synthese prägte die mittelalterliche Scholastik."
+    "context": "Lebte in spätantiker Spätphase von Rom und Nordafrika; Reaktionen auf heidnische und kirchliche Konflikte. Seine Synthese prägte die mittelalterliche Scholastik.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Augustinus"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Augustinus"
+      }
+    ]
   },
   {
     "slug": "boethius",
@@ -501,7 +751,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Schlüsselgestalt für die Vermittlung Aristoteles' und Platons in Mittelalter. Seine Texte waren bis in die Renaissance einflussreich.",
     "works": "De consolatione philosophiae; Übersetzungen und Kommentare zu Aristoteles",
-    "context": "Wirkte in oströmisch-italienischem Machtgefüge; politisch verstrickt und schließlich hingerichtet. Seine Schriften wurden zu mittelalterlichen Lehrtexten."
+    "context": "Wirkte in oströmisch-italienischem Machtgefüge; politisch verstrickt und schließlich hingerichtet. Seine Schriften wurden zu mittelalterlichen Lehrtexten.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Boethius"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Boethius"
+      }
+    ]
   },
   {
     "slug": "thomas-von-aquin",
@@ -521,7 +781,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Prägte katholische Theologie und universitäre Lehre nachhaltig. Seine scholastische Methode dominierte europäische Theologie lange Zeit.",
     "works": "Summa Theologiae, Summa contra Gentiles",
-    "context": "Werk in Rahmen mittelalterlicher Universitätskultur; Auseinandersetzung mit Aristoteles via arabische Vermittlung. Wurde von der Kirche hoch rezipiert."
+    "context": "Werk in Rahmen mittelalterlicher Universitätskultur; Auseinandersetzung mit Aristoteles via arabische Vermittlung. Wurde von der Kirche hoch rezipiert.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Thomas%20von%20Aquin"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Thomas%20von%20Aquin"
+      }
+    ]
   },
   {
     "slug": "meister-eckhart",
@@ -541,7 +811,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Seine mystische Sprache beeinflusste christliche Spiritualität und spätere Mystikforschung. Teile seiner Lehre wurden kirchlich kritisiert, teils rehabilitiert.",
     "works": "Predigten und Traktate; viele Fragmente erhalten",
-    "context": "Wirkte in spätmittelalterlichem Deutschland und Frankreich. Mystik stand in Spannung zu scholastischer Rationalität und kirchlicher Kontrolle."
+    "context": "Wirkte in spätmittelalterlichem Deutschland und Frankreich. Mystik stand in Spannung zu scholastischer Rationalität und kirchlicher Kontrolle.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Meister%20Eckhart"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Meister%20Eckhart"
+      }
+    ]
   },
   {
     "slug": "wilhelm-von-ockham",
@@ -560,7 +840,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Sparsamkeitsprinzip ist bis heute eine Grundregel wissenschaftlicher Modellbildung. Er half, die Philosophie aus der Umklammerung der Theologie zu lösen.",
     "works": "Summa logicae",
-    "context": "Geriet in Konflikt mit dem Papsttum in Avignon und suchte Asyl beim römisch-deutschen Kaiser Ludwig dem Bayern."
+    "context": "Geriet in Konflikt mit dem Papsttum in Avignon und suchte Asyl beim römisch-deutschen Kaiser Ludwig dem Bayern.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Wilhelm%20von%20Ockham"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Wilhelm%20von%20Ockham"
+      }
+    ]
   },
   {
     "slug": "avicenna",
@@ -580,7 +870,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Prägende Figur für Philosophie und Medizin in islamischer und später europäischer Tradition. Seine metaphysischen Unterscheidungen beeinflussten Scholastiker.",
     "works": "Al-Qanun fi al-Tibb (Kanon der Medizin), Al-Shifa' (Die Heilung)",
-    "context": "Wirkung im mittelalterlich-islamischen Wissensraum; Vermittler antiker Texte. Seine Werke wurden später ins Lateinische übersetzt."
+    "context": "Wirkung im mittelalterlich-islamischen Wissensraum; Vermittler antiker Texte. Seine Werke wurden später ins Lateinische übersetzt.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Avicenna"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Avicenna"
+      }
+    ]
   },
   {
     "slug": "averroes",
@@ -600,7 +900,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wesentlich für die Wiederentdeckung Aristoteles’ im mittelalterlichen Europa. Seine Thesen führten zu breit geführten Debatten über Vernunft und Religion.",
     "works": "Kommentare zu Aristoteles, Tahafut al-Tahafut (Widerlegung der Widerlegung)",
-    "context": "Wirkte im al-Andalus sowie marokkanisch-arabischem Kulturraum. Seine Schriften reisten nach Europa durch Übersetzungen."
+    "context": "Wirkte im al-Andalus sowie marokkanisch-arabischem Kulturraum. Seine Schriften reisten nach Europa durch Übersetzungen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Averroes"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Averroes"
+      }
+    ]
   },
   {
     "slug": "al-farabi",
@@ -619,7 +929,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Pionier der politischen Philosophie und Logik im Mittelalter. Er bewahrte das antike Erbe nicht nur, sondern entwickelte es eigenständig weiter.",
     "works": "Der Musterstaat",
-    "context": "Wirkte in Bagdad während des Goldenen Zeitalters des Islam. Hochgebildet in Sprachen, Logik und Musik."
+    "context": "Wirkte in Bagdad während des Goldenen Zeitalters des Islam. Hochgebildet in Sprachen, Logik und Musik.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Al-Farabi"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Al-Farabi"
+      }
+    ]
   },
   {
     "slug": "al-ghazali",
@@ -638,7 +958,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Werk 'Die Inkohärenz der Philosophen' veränderte die Geistesgeschichte des Islams nachhaltig und nahm Humes Kausalitätskritik vorweg.",
     "works": "Die Inkohärenz der Philosophen, Die Wiederbelebung der religiösen Wissenschaften",
-    "context": "Gab seine hoch angesehene Professur in Bagdad auf, um als wandernder Asket nach innerer Gewissheit zu suchen."
+    "context": "Gab seine hoch angesehene Professur in Bagdad auf, um als wandernder Asket nach innerer Gewissheit zu suchen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Al-Ghazali"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Al-Ghazali"
+      }
+    ]
   },
   {
     "slug": "ibn-khaldun",
@@ -657,7 +987,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Ein unvergleichliches intellektuelles Genie, dessen empirisch-soziologischer Blick auf die Geschichte im Mittelalter absolut einzigartig war.",
     "works": "Muqaddima (Prolegomena)",
-    "context": "Wirkte als Diplomat, Richter und Gelehrter in Nordafrika und Andalusien. Beobachtete den Niedergang des islamischen Reiches aus erster Hand."
+    "context": "Wirkte als Diplomat, Richter und Gelehrter in Nordafrika und Andalusien. Beobachtete den Niedergang des islamischen Reiches aus erster Hand.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ibn%20Khaldun"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Ibn%20Khaldun"
+      }
+    ]
   },
   {
     "slug": "dogen",
@@ -676,7 +1016,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Werk Shobogenzo gilt als Höhepunkt der japanischen Philosophie, tiefgreifend in seiner Analyse von Zeit und Existenz.",
     "works": "Shōbōgenzō",
-    "context": "Kamakura-Zeit, eine Ära ständiger Kriege. Er gründete das Kloster Eihei-ji in der Abgeschiedenheit der Berge."
+    "context": "Kamakura-Zeit, eine Ära ständiger Kriege. Er gründete das Kloster Eihei-ji in der Abgeschiedenheit der Berge.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=D%C5%8Dgen%20Zenji"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=D%C5%8Dgen%20Zenji"
+      }
+    ]
   },
   {
     "slug": "nishida",
@@ -695,7 +1045,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Der erste japanische Philosoph von globalem Rang, der ein völlig eigenständiges, modernes System entwickelte.",
     "works": "Über das Gute, Logik des Ortes",
-    "context": "Zeit der Modernisierung (Meiji- bis Showa-Zeit). Japan suchte nach einer intellektuellen Identität auf Augenhöhe mit dem Westen."
+    "context": "Zeit der Modernisierung (Meiji- bis Showa-Zeit). Japan suchte nach einer intellektuellen Identität auf Augenhöhe mit dem Westen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Nishida%20Kitar%C5%8D"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Nishida%20Kitar%C5%8D"
+      }
+    ]
   },
   {
     "slug": "watsuji",
@@ -714,7 +1074,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Eine der wichtigsten Beiträge zur interkulturellen Philosophie und Umweltethik.",
     "works": "Fūdo (Klima und Kultur), Ethik",
-    "context": "Reiste nach Europa, studierte bei Heidegger und wandte dessen Zeit-Fokus kritisch in einen Raum-Fokus (Klima) um."
+    "context": "Reiste nach Europa, studierte bei Heidegger und wandte dessen Zeit-Fokus kritisch in einen Raum-Fokus (Klima) um.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Watsuji%20Tetsur%C5%8D"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Watsuji%20Tetsur%C5%8D"
+      }
+    ]
   },
   {
     "slug": "niccolo-machiavelli",
@@ -734,7 +1104,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Schlüsselfigur der modernen politischen Theorie mit nachhaltiger Kontroverse. Sein Name steht für nüchterne Machtbetrachtung und politische Praxisorientierung.",
     "works": "Il Principe (Der Fürst), Discorsi (Discorsi sopra la prima deca di Tito Livio)",
-    "context": "Italien der Renaissance, zersplittert in Stadtstaaten; Erfahrungen als Diplomat und Beamter prägten seine Perspektive. Werk wurde als Handbuch und Warnung gelesen."
+    "context": "Italien der Renaissance, zersplittert in Stadtstaaten; Erfahrungen als Diplomat und Beamter prägten seine Perspektive. Werk wurde als Handbuch und Warnung gelesen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Niccol%C3%B2%20Machiavelli"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Niccol%C3%B2%20Machiavelli"
+      }
+    ]
   },
   {
     "slug": "rene-descartes",
@@ -754,7 +1134,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Begründer des neuzeitlichen Rationalismus; beeinflusste Wissenschaftsbild und Philosophie. Seine Trennung von Geist und Körper löste lange Debatten aus.",
     "works": "Meditationes de prima philosophia, Discours de la méthode",
-    "context": "Lebte im Übergang von Renaissance zur Wissenschaftlichen Revolution; suchte sichere Erkenntnis in einer Zeit religiöser Spannungen. Naturwissenschaftliche Erfolge inspirierten seine Methode."
+    "context": "Lebte im Übergang von Renaissance zur Wissenschaftlichen Revolution; suchte sichere Erkenntnis in einer Zeit religiöser Spannungen. Naturwissenschaftliche Erfolge inspirierten seine Methode.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ren%C3%A9%20Descartes"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Ren%C3%A9%20Descartes"
+      }
+    ]
   },
   {
     "slug": "thomas-hobbes",
@@ -774,7 +1164,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Begründer moderner Vertragstheorie mit erheblicher Wirkung auf Staats- und Rechtslehre. Seine pessimistischen Anthropologie bleibt kontrovers.",
     "works": "Leviathan",
-    "context": "Wirkte im England des Bürgerkriegs; politisch und intellektuell reagierte er auf soziale Unruhen. Seine Theorie reflektiert Praxis- und Stabilitätsbedenken."
+    "context": "Wirkte im England des Bürgerkriegs; politisch und intellektuell reagierte er auf soziale Unruhen. Seine Theorie reflektiert Praxis- und Stabilitätsbedenken.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Thomas%20Hobbes"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Thomas%20Hobbes"
+      }
+    ]
   },
   {
     "slug": "baruch-de-spinoza",
@@ -794,7 +1194,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Radikaler Neuansatz zur Metaphysik und Religionskritik, einflussreich für Aufklärung und moderne Philosophie. Seine Schriften waren oft verboten oder umstritten.",
     "works": "Ethica, Tractatus Theologico-Politicus",
-    "context": "Wirkung im niederländischen Umfeld der frühen Moderne; jüdische Herkunft und Exkommunikation prägten seine Position. Reaktionen reichten von Verurteilung bis Bewunderung."
+    "context": "Wirkung im niederländischen Umfeld der frühen Moderne; jüdische Herkunft und Exkommunikation prägten seine Position. Reaktionen reichten von Verurteilung bis Bewunderung.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Baruch%20de%20Spinoza"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Baruch%20de%20Spinoza"
+      }
+    ]
   },
   {
     "slug": "john-locke",
@@ -814,7 +1224,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wesentliche Grundlage liberaler politischer Theorie und moderner Erkenntnistheorie. Beeinflusste Verfassungsdenken und Aufklärung stark.",
     "works": "An Essay Concerning Human Understanding, Two Treatises of Government",
-    "context": "Englische Revolution und Aufklärungskontexte formten seine Gedanken. Locke war praktischer Technokrat und politischer Denker zugleich."
+    "context": "Englische Revolution und Aufklärungskontexte formten seine Gedanken. Locke war praktischer Technokrat und politischer Denker zugleich.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=John%20Locke"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=John%20Locke"
+      }
+    ]
   },
   {
     "slug": "gottfried-wilhelm-leibniz",
@@ -834,7 +1254,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wichtiger Systemdenker der Aufklärung und Mitbegründer der modernen Mathematik. Seine Ideen lieferten Impulse für Metaphysik und Theodizeedebatten.",
     "works": "Monadologie, Theodizee, mathematische Schriften",
-    "context": "Arbeitete als Universalgelehrter in europäischen Fürstenhöfen; Vernetzung von Wissenschaft, Diplomatie und Philosophie. Seine Schriften sind oft notizartig und fragmentarisch."
+    "context": "Arbeitete als Universalgelehrter in europäischen Fürstenhöfen; Vernetzung von Wissenschaft, Diplomatie und Philosophie. Seine Schriften sind oft notizartig und fragmentarisch.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Gottfried%20Wilhelm%20Leibniz"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Gottfried%20Wilhelm%20Leibniz"
+      }
+    ]
   },
   {
     "slug": "david-hume",
@@ -854,7 +1284,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Entfachte zentrale Debatten der Aufklärung und beeinflusste Kants kritische Wende. Humes empirische Psychologie prägt bis heute Philosophie und Wissenschaftstheorie.",
     "works": "A Treatise of Human Nature, An Enquiry Concerning Human Understanding",
-    "context": "Aufklärungsschottland; Rezeption in Europa war breit und kontrovers. Sein Werk provozierte Reaktionen in Ethik, Erkenntnistheorie und Religionskritik."
+    "context": "Aufklärungsschottland; Rezeption in Europa war breit und kontrovers. Sein Werk provozierte Reaktionen in Ethik, Erkenntnistheorie und Religionskritik.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=David%20Hume"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=David%20Hume"
+      }
+    ]
   },
   {
     "slug": "jean-jacques-rousseau",
@@ -874,7 +1314,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wichtiger Wegbereiter moderner Demokratie- und Bildungsideale; ambivalente Rezeption in Revolution und Konservatismus. Seine Begriffe bleiben politisch einflussreich.",
     "works": "Du contrat social, Émile",
-    "context": "Aufklärungskonflikte und soziale Spannungen prägen seine Kritik. Sein Denken wurde in französischer Revolution instrumentalisiert und kontrovers interpretiert."
+    "context": "Aufklärungskonflikte und soziale Spannungen prägen seine Kritik. Sein Denken wurde in französischer Revolution instrumentalisiert und kontrovers interpretiert.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Jean-Jacques%20Rousseau"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Jean-Jacques%20Rousseau"
+      }
+    ]
   },
   {
     "slug": "mary-wollstonecraft",
@@ -893,7 +1343,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Ihr Hauptwerk ist ein Meilenstein der feministischen Philosophie und Menschenrechtsgeschichte.",
     "works": "A Vindication of the Rights of Woman",
-    "context": "Wirkte im Zeitalter der Aufklärung und der Französischen Revolution; ihr radikaler Lebensstil und ihre Ideen schockierten viele Zeitgenossen."
+    "context": "Wirkte im Zeitalter der Aufklärung und der Französischen Revolution; ihr radikaler Lebensstil und ihre Ideen schockierten viele Zeitgenossen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Mary%20Wollstonecraft"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Mary%20Wollstonecraft"
+      }
+    ]
   },
   {
     "slug": "francis-bacon",
@@ -912,7 +1372,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein methodischer Ansatz war der Startschuss für die naturwissenschaftliche Revolution in Europa.",
     "works": "Novum Organum, Neu-Atlantis",
-    "context": "War Lordkanzler unter König Jakob I. in England, bevor er wegen Bestechungsvorwürfen stürzte."
+    "context": "War Lordkanzler unter König Jakob I. in England, bevor er wegen Bestechungsvorwürfen stürzte.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Francis%20Bacon"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Francis%20Bacon"
+      }
+    ]
   },
   {
     "slug": "michel-de-montaigne",
@@ -931,7 +1401,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein humanistisch-skeptischer Blick auf den Menschen prägte Descartes, Pascal, Rousseau und die gesamte französische Literatur.",
     "works": "Essais",
-    "context": "Schrieb seine Essays während der grausamen französischen Hugenottenkriege, was seine Sehnsucht nach Toleranz und Gelassenheit erklärt."
+    "context": "Schrieb seine Essays während der grausamen französischen Hugenottenkriege, was seine Sehnsucht nach Toleranz und Gelassenheit erklärt.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Michel%20de%20Montaigne"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Michel%20de%20Montaigne"
+      }
+    ]
   },
   {
     "slug": "immanuel-kant",
@@ -951,7 +1431,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Begründer der kritischen Philosophie mit immensen Folgen für Metaphysik, Ethik und Ästhetik. Kant prägte die moderne Philosophie Europas grundlegend.",
     "works": "Kritik der reinen Vernunft, Kritik der praktischen Vernunft, Kritik der Urteilskraft",
-    "context": "Wirkung in preußischer Aufklärung und akademischem Leben; reagierte auf Rationalismus und Empirismus. Kants System versucht ein programmatisches Ende metaphysischer Zweifel."
+    "context": "Wirkung in preußischer Aufklärung und akademischem Leben; reagierte auf Rationalismus und Empirismus. Kants System versucht ein programmatisches Ende metaphysischer Zweifel.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Immanuel%20Kant"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Immanuel%20Kant"
+      }
+    ]
   },
   {
     "slug": "johann-gottlieb-fichte",
@@ -971,7 +1461,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Schlüsselfigur des deutschen Idealismus; beeinflusste politische und philosophische Debatten um Autonomie und Nation. Seine Betonung des Subjekts prägte nachfolgende Denker.",
     "works": "Wissenschaftslehre (verschiedene Fassungen)",
-    "context": "Wirkte in der Umbruchszeit um Französische Revolution und Preußische Reformen. Fichtes Arbeit ist stark normativ-pädagogisch ausgerichtet."
+    "context": "Wirkte in der Umbruchszeit um Französische Revolution und Preußische Reformen. Fichtes Arbeit ist stark normativ-pädagogisch ausgerichtet.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Johann%20Gottlieb%20Fichte"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Johann%20Gottlieb%20Fichte"
+      }
+    ]
   },
   {
     "slug": "friedrich-wilhelm-joseph-schelling",
@@ -991,7 +1491,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wichtiger Vertreter des deutschen Idealismus mit komplexer Entwicklung; beeinflusste Romantik, Idealismus und spätere Existenzdeutungen. Seine Wandlungen machten ihn schwer einzuordnen.",
     "works": "Philosophie der Natur, System des transzendentalen Idealismus",
-    "context": "Entstand in der deutschen Aufbruchszeit nach Revolution und Aufklärung. Schelling bewegte sich in intellektuellen Netzwerken mit Fichte und Hegel."
+    "context": "Entstand in der deutschen Aufbruchszeit nach Revolution und Aufklärung. Schelling bewegte sich in intellektuellen Netzwerken mit Fichte und Hegel.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Friedrich%20Wilhelm%20Joseph%20Schelling"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Friedrich%20Wilhelm%20Joseph%20Schelling"
+      }
+    ]
   },
   {
     "slug": "georg-wilhelm-friedrich-hegel",
@@ -1011,7 +1521,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Extrem einflussreicher Denker für Politik, Geschichte und Philosophie; Hegels System löste vielfältige Interpretationen aus. Sein Begriff von Freiheit prägte moderne Theoriebildung.",
     "works": "Phänomenologie des Geistes, Wissenschaft der Logik, Rechtsphilosophie",
-    "context": "Wirkte in Nachrevolutionärem Europa; Rezeption war politisch und akademisch stark umstritten. Seine Philosophie beansprucht umfassende systematische Erklärungen."
+    "context": "Wirkte in Nachrevolutionärem Europa; Rezeption war politisch und akademisch stark umstritten. Seine Philosophie beansprucht umfassende systematische Erklärungen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Georg%20Wilhelm%20Friedrich%20Hegel"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Georg%20Wilhelm%20Friedrich%20Hegel"
+      }
+    ]
   },
   {
     "slug": "arthur-schopenhauer",
@@ -1031,7 +1551,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Seine Philosophie beeinflusste Literatur, Psychologie und spätere Existenzphilosophie. Oft rezipiert als Gegenmodell zum optimistischen Fortschrittsdenken.",
     "works": "Die Welt als Wille und Vorstellung",
-    "context": "19. Jahrhundert der Industrialisierung und Romantik; reagierte auf Optimismus und wissenschaftlichen Fortschritt. Seine Haltung war provokativ und konträr."
+    "context": "19. Jahrhundert der Industrialisierung und Romantik; reagierte auf Optimismus und wissenschaftlichen Fortschritt. Seine Haltung war provokativ und konträr.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Arthur%20Schopenhauer"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Arthur%20Schopenhauer"
+      }
+    ]
   },
   {
     "slug": "john-stuart-mill",
@@ -1051,7 +1581,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wichtiger Theoretiker des Liberalismus und der Moderne; beeinflusste Menschenrechte und politische Reformen. Seine Kombination aus Nutzen- und Freiheitsprinzipien blieb einflussreich.",
     "works": "Utilitarianism, On Liberty, The Subjection of Women",
-    "context": "Industrielle Revolution und politische Reformbewegungen in Großbritannien prägten seine Anliegen. Mill war sowohl Philosoph als auch politischer Aktivist."
+    "context": "Industrielle Revolution und politische Reformbewegungen in Großbritannien prägten seine Anliegen. Mill war sowohl Philosoph als auch politischer Aktivist.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=John%20Stuart%20Mill"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=John%20Stuart%20Mill"
+      }
+    ]
   },
   {
     "slug": "karl-marx",
@@ -1071,7 +1611,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Begründer einer einflussreichen kritischen Theorie, die Politik und Wissenschaft weltweit prägte. Marx' Analysen blieben zentral für Sozial- und Wirtschaftstheorie.",
     "works": "Das Kapital, Manifest der Kommunistischen Partei (mit Engels)",
-    "context": "Industrialisierung und soziale Ungleichheit des 19. Jahrhunderts bildeten den Hintergrund. Marx arbeitete als Theoretiker und politischer Aktivist."
+    "context": "Industrialisierung und soziale Ungleichheit des 19. Jahrhunderts bildeten den Hintergrund. Marx arbeitete als Theoretiker und politischer Aktivist.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Karl%20Marx"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Karl%20Marx"
+      }
+    ]
   },
   {
     "slug": "soren-kierkegaard",
@@ -1091,7 +1641,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wegbereiter der Existenzphilosophie und späterer theologischer Reflexionen. Seine Betonung von Individualität und Angst prägte moderne Existenzdeutungen.",
     "works": "Entweder – Oder, Furcht und Zittern, Die Krankheit zum Tode",
-    "context": "Dänemark im 19. Jahrhundert; persönliche Auseinandersetzung mit Glaube und Gesellschaft beeinflusste sein Denken. Stilistisch provokant und persönlich."
+    "context": "Dänemark im 19. Jahrhundert; persönliche Auseinandersetzung mit Glaube und Gesellschaft beeinflusste sein Denken. Stilistisch provokant und persönlich.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=S%C3%B8ren%20Kierkegaard"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=S%C3%B8ren%20Kierkegaard"
+      }
+    ]
   },
   {
     "slug": "friedrich-nietzsche",
@@ -1111,7 +1671,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Enorm einflussreicher Denker der Moderne, rezipiert in Philosophie, Literatur und Politik; oft kontrovers gelesen. Seine aphoristische Form fördert vielfältige Interpretationen.",
     "works": "Also sprach Zarathustra, Jenseits von Gut und Böse, Zur Genealogie der Moral",
-    "context": "19. Jahrhundert mit kulturellem Wandel, Nationalismus und Wissenschaftsoptimismus; Nietzsche reagierte mit kulturkritischer Perspektive. Krankheit und Rezeption komplizierten sein Erbe."
+    "context": "19. Jahrhundert mit kulturellem Wandel, Nationalismus und Wissenschaftsoptimismus; Nietzsche reagierte mit kulturkritischer Perspektive. Krankheit und Rezeption komplizierten sein Erbe.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Friedrich%20Nietzsche"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Friedrich%20Nietzsche"
+      }
+    ]
   },
   {
     "slug": "william-james",
@@ -1130,7 +1700,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Prägte die amerikanische Philosophie nachhaltig und schuf wichtige Grundlagen für Psychologie und Religionsphilosophie.",
     "works": "Pragmatism, The Varieties of Religious Experience",
-    "context": "Wirkte an der Harvard University in einer Zeit rasanter wissenschaftlicher und gesellschaftlicher Veränderungen in den USA."
+    "context": "Wirkte an der Harvard University in einer Zeit rasanter wissenschaftlicher und gesellschaftlicher Veränderungen in den USA.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=William%20James"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=William%20James"
+      }
+    ]
   },
   {
     "slug": "ludwig-wittgenstein",
@@ -1151,7 +1731,17 @@ const PHILOSOPHERS = [
     "significance": "Einer der zentralen Philosophen des 20. Jahrhunderts; beeinflusste Analytische Philosophie und Geisteswissenschaften. Seine Zäsur zwischen früher und später Philosophie ist methodisch richtungsweisend.",
     "works": "Tractatus logico-philosophicus, Philosophische Untersuchungen",
     "context": "Wiener Kreis, Cambridge und Entstehung moderner Sprachkritik prägen die Rezeption; Leben zwischen Wissenschaft und persönlicher Reflexion.",
-    "works_note": ""
+    "works_note": "",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ludwig%20Wittgenstein"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Ludwig%20Wittgenstein"
+      }
+    ]
   },
   {
     "slug": "martin-heidegger",
@@ -1171,7 +1761,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Prägender Einfluss auf Kontinentalphilosophie, Hermeneutik und Existenzphilosophie. Seine politische Haltung bleibt kontrovers und beeinträchtigt die Rezeption.",
     "works": "Sein und Zeit, Spätere Schriften",
-    "context": "Wirkung in der deutschen Geistesgeschichte des 20. Jahrhunderts; Debatten um Politik und Philosophie begleiteten sein Werk."
+    "context": "Wirkung in der deutschen Geistesgeschichte des 20. Jahrhunderts; Debatten um Politik und Philosophie begleiteten sein Werk.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Martin%20Heidegger"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Martin%20Heidegger"
+      }
+    ]
   },
   {
     "slug": "jean-paul-sartre",
@@ -1191,7 +1791,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Hauptvertreter des Existentialismus; beeinflusste Philosophie, Literatur und politische Praxis in Europa. Seine Betonung individueller Freiheit prägte Debatten der Moderne.",
     "works": "Das Sein und das Nichts, Existenzielles Theater und Romane",
-    "context": "Zwischen Weltkriegen und Nachkriegszeit entstanden seine Werke; politisches Engagement beeinflusste öffentliches Ansehen und Rezeption."
+    "context": "Zwischen Weltkriegen und Nachkriegszeit entstanden seine Werke; politisches Engagement beeinflusste öffentliches Ansehen und Rezeption.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Jean-Paul%20Sartre"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Jean-Paul%20Sartre"
+      }
+    ]
   },
   {
     "slug": "albert-camus",
@@ -1211,7 +1821,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Einflussreicher Denker der Moderne, besonders in Ethik und politischer Praxis; literarische Formen machten seine Philosophie zugänglich. Distanz zu einigen existentialistischen Positionen kennzeichnete ihn.",
     "works": "Der Mythos des Sisyphos, Der Fremde",
-    "context": "Algerische Herkunft und französische Kolonialgeschichte prägen seine Perspektive; Nachkriegskontexte formten sein politisches Engagement."
+    "context": "Algerische Herkunft und französische Kolonialgeschichte prägen seine Perspektive; Nachkriegskontexte formten sein politisches Engagement.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Albert%20Camus"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Albert%20Camus"
+      }
+    ]
   },
   {
     "slug": "hannah-arendt",
@@ -1231,7 +1851,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Schlüsselwerkzeuge für Verständnis moderner politischer Verbrechen und demokratischer Praxis. Ihre Unterscheidungen prägen politische Theorie und Geschichtsinterpretation.",
     "works": "Elemente und Ursprünge totaler Herrschaft, Vita activa",
-    "context": "Flucht vor dem Nationalsozialismus und Emigration prägten ihr Denken. Ihre Arbeit entstand im Kontext des 20. Jahrhunderts mit totalitären Erfahrungen."
+    "context": "Flucht vor dem Nationalsozialismus und Emigration prägten ihr Denken. Ihre Arbeit entstand im Kontext des 20. Jahrhunderts mit totalitären Erfahrungen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Hannah%20Arendt"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Hannah%20Arendt"
+      }
+    ]
   },
   {
     "slug": "simone-de-beauvoir",
@@ -1251,7 +1881,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Einflussreiche Vordenkerin des Feminismus der Moderne; ihr Werk inspirierte politische und theoretische Bewegungen. Verbindung von Philosophie und biografischem Erzählen macht ihre Texte nachwirkend.",
     "works": "Das andere Geschlecht (Le Deuxième Sexe)",
-    "context": "Nachkriegsfrankreich und existenzialistische Intellektuellenszene bildeten Rahmen. Ihre Analysen decken soziale, politische und ökonomische Dimensionen auf."
+    "context": "Nachkriegsfrankreich und existenzialistische Intellektuellenszene bildeten Rahmen. Ihre Analysen decken soziale, politische und ökonomische Dimensionen auf.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Simone%20de%20Beauvoir"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Simone%20de%20Beauvoir"
+      }
+    ]
   },
   {
     "slug": "michel-foucault",
@@ -1271,7 +1911,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Prägende Methode für Diskurstheorie, Kultur- und Sozialwissenschaften; beeinflusste Kritik an Institutionen und Wissenschaft. Seine Arbeiten sind interdisziplinär rezipiert.",
     "works": "Wahnsinn und Gesellschaft, Überwachen und Strafen, Sexualität und Wahrheit",
-    "context": "Aufwachsen in Frankreich der Nachkriegszeit; engagierte Forschung in Gefängnis-, Klinik- und Sexualitätsgeschichte. Politische Aktivitäten begleiteten seine Arbeit."
+    "context": "Aufwachsen in Frankreich der Nachkriegszeit; engagierte Forschung in Gefängnis-, Klinik- und Sexualitätsgeschichte. Politische Aktivitäten begleiteten seine Arbeit.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Michel%20Foucault"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Michel%20Foucault"
+      }
+    ]
   },
   {
     "slug": "juergen-habermas",
@@ -1290,7 +1940,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Einflussreiche Stimme in kritischer Theorie und Demokratieforschung; seine Theorie bietet normative Maßstäbe für öffentliche Rationalität. Weitreichende Interdisziplinarität.",
     "works": "Theorie des kommunikativen Handelns, Strukturwandel der Öffentlichkeit",
-    "context": "Aufgewachsen in Deutschland des 20. Jahrhunderts; Rekonstruktion demokratischer Diskurse nach NS-Vergangenheit prägt sein Anliegen. Aktiv in politischen Debatten."
+    "context": "Aufgewachsen in Deutschland des 20. Jahrhunderts; Rekonstruktion demokratischer Diskurse nach NS-Vergangenheit prägt sein Anliegen. Aktiv in politischen Debatten.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=J%C3%BCrgen%20Habermas"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=J%C3%BCrgen%20Habermas"
+      }
+    ]
   },
   {
     "slug": "karl-popper",
@@ -1309,7 +1969,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Einer der wichtigsten Wissenschaftstheoretiker des 20. Jahrhunderts. Seine Ideen beeinflussten Forschungsmethoden und das Verständnis westlicher Demokratien zutiefst.",
     "works": "Logik der Forschung, Die offene Gesellschaft und ihre Feinde",
-    "context": "Emigrierte vor dem Nationalsozialismus nach Neuseeland und später nach London; sein Denken war stark von der Ablehnung totalitärer Systeme (Faschismus, Kommunismus) geprägt."
+    "context": "Emigrierte vor dem Nationalsozialismus nach Neuseeland und später nach London; sein Denken war stark von der Ablehnung totalitärer Systeme (Faschismus, Kommunismus) geprägt.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Karl%20Popper"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Karl%20Popper"
+      }
+    ]
   },
   {
     "slug": "bertrand-russell",
@@ -1328,7 +1998,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Prägte die angelsächsische Philosophie des 20. Jahrhunderts maßgeblich und war ein weltweit gelesener, öffentlicher Intellektueller (Nobelpreisträger für Literatur).",
     "works": "Principia Mathematica (mit Whitehead), Probleme der Philosophie",
-    "context": "Wirkte in Cambridge; seine politische Haltung führte während des Ersten Weltkriegs zu seiner Inhaftierung."
+    "context": "Wirkte in Cambridge; seine politische Haltung führte während des Ersten Weltkriegs zu seiner Inhaftierung.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Bertrand%20Russell"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Bertrand%20Russell"
+      }
+    ]
   },
   {
     "slug": "edmund-husserl",
@@ -1347,7 +2027,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Seine Methode bildete das Fundament für die gesamte Existenzphilosophie und Hermeneutik (Heidegger, Sartre, Merleau-Ponty).",
     "works": "Logische Untersuchungen, Ideen zu einer reinen Phänomenologie",
-    "context": "Entwickelte seine Theorie in der Krise der europäischen Wissenschaften, als Antwort auf reinen Naturwissenschafts-Positivismus."
+    "context": "Entwickelte seine Theorie in der Krise der europäischen Wissenschaften, als Antwort auf reinen Naturwissenschafts-Positivismus.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Edmund%20Husserl"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Edmund%20Husserl"
+      }
+    ]
   },
   {
     "slug": "john-rawls",
@@ -1366,7 +2056,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Werk 'Eine Theorie der Gerechtigkeit' gilt als der wichtigste Text der politischen Philosophie des 20. Jahrhunderts und bildet die Basis des modernen Liberalismus.",
     "works": "A Theory of Justice",
-    "context": "Schrieb sein Hauptwerk während der US-Bürgerrechtsbewegung und des Vietnamkriegs, auf der Suche nach einem legitimen, fairen Gesellschaftsvertrag."
+    "context": "Schrieb sein Hauptwerk während der US-Bürgerrechtsbewegung und des Vietnamkriegs, auf der Suche nach einem legitimen, fairen Gesellschaftsvertrag.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=John%20Rawls"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=John%20Rawls"
+      }
+    ]
   },
   {
     "slug": "theodor-adorno",
@@ -1385,7 +2085,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Seine pessimistisch-brillante Gesellschaftskritik prägte die westdeutsche Nachkriegsintellektualität und die 68er-Bewegung tiefgreifend.",
     "works": "Dialektik der Aufklärung (mit Horkheimer), Minima Moralia",
-    "context": "Musste als Jude vor den Nationalsozialisten fliehen (USA) und analysierte von dort den Zusammenbruch der europäischen Zivilisation."
+    "context": "Musste als Jude vor den Nationalsozialisten fliehen (USA) und analysierte von dort den Zusammenbruch der europäischen Zivilisation.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Theodor%20W.%20Adorno"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Theodor%20W.%20Adorno"
+      }
+    ]
   },
   {
     "slug": "max-horkheimer",
@@ -1404,7 +2114,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Er legte den methodischen Grundstein der Kritischen Theorie, die Soziologie, Philosophie und Psychoanalyse zu einer radikalen Gesellschaftskritik verschmolz.",
     "works": "Dialektik der Aufklärung (mit Adorno), Traditionelle und kritische Theorie",
-    "context": "Baute das Institut für Sozialforschung im US-Exil auf und führte es nach dem Krieg in Frankfurt zu weltweiter Bedeutung."
+    "context": "Baute das Institut für Sozialforschung im US-Exil auf und führte es nach dem Krieg in Frankfurt zu weltweiter Bedeutung.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Max%20Horkheimer"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Max%20Horkheimer"
+      }
+    ]
   },
   {
     "slug": "jacques-derrida",
@@ -1423,7 +2143,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Seine Theorien erschütterten die klassischen Geisteswissenschaften und prägen Literatur- und Kulturwissenschaften (Cultural Studies) bis heute.",
     "works": "Grammatologie, Die Schrift und die Differenz",
-    "context": "Wirkte vor allem in Frankreich und den USA und wurde zur zentralen, oft stark umstrittenen Figur der philosophischen Postmoderne."
+    "context": "Wirkte vor allem in Frankreich und den USA und wurde zur zentralen, oft stark umstrittenen Figur der philosophischen Postmoderne.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Jacques%20Derrida"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Jacques%20Derrida"
+      }
+    ]
   },
   {
     "slug": "thomas-kuhn",
@@ -1442,7 +2172,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Werk ist eines der meistzitierten akademischen Bücher überhaupt. Er relativierte den strikten Rationalismus von Popper erheblich.",
     "works": "Die Struktur wissenschaftlicher Revolutionen",
-    "context": "Seine Ideen passten perfekt zum relativistischen Zeitgeist der 1960er Jahre, in denen bestehende Wahrheiten grundlegend hinterfragt wurden."
+    "context": "Seine Ideen passten perfekt zum relativistischen Zeitgeist der 1960er Jahre, in denen bestehende Wahrheiten grundlegend hinterfragt wurden.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Thomas_S._Kuhn"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Thomas%20Kuhn"
+      }
+    ]
   },
   {
     "slug": "daniel-dennett",
@@ -1461,7 +2201,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Zentrale Figur der analytischen Philosophie des Geistes und populäre Vermittler wissenschaftlicher Perspektiven. Seine Modelle sind in Debatten über KI und Bewusstsein präsent.",
     "works": "Consciousness Explained, Darwin's Dangerous Idea",
-    "context": "Arbeit in US-amerikanischen akademischen Kontexten der späten 20. und 21. Jahrhunderts; Interdisziplinarität prägt seine Forschung."
+    "context": "Arbeit in US-amerikanischen akademischen Kontexten der späten 20. und 21. Jahrhunderts; Interdisziplinarität prägt seine Forschung.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Daniel%20Dennett"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Daniel%20Dennett"
+      }
+    ]
   },
   {
     "slug": "martha-nussbaum",
@@ -1480,7 +2230,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wichtige Stimme in Global Justice-Debatten und Entwicklungsethik; ihr Ansatz beeinflusst Politik und internationale normative Diskussionen. Interdisziplinär rezipiert.",
     "works": "Frontiers of Justice, Creating Capabilities",
-    "context": "Entstand in der Nachkriegs- und Globalisierungsära; Nussbaum arbeitet an Schnittstellen von Philosophie, Recht und Politik."
+    "context": "Entstand in der Nachkriegs- und Globalisierungsära; Nussbaum arbeitet an Schnittstellen von Philosophie, Recht und Politik.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Martha%20Nussbaum"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Martha%20Nussbaum"
+      }
+    ]
   },
   {
     "slug": "judith-butler",
@@ -1499,7 +2259,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Zentrale Figur der Gender- und Queer-Theorie mit breitem Einfluss in Geistes- und Sozialwissenschaften. Ihre Konzepte beeinflussen zeitgenössische Debatten zu Identität und Politik.",
     "works": "Gender Trouble, Bodies That Matter",
-    "context": "Entstand in akademischen Debatten über Feminismus, Poststrukturalismus und Queer-Theorie. Butler arbeitet transdisziplinär zwischen Philosophie und Kulturkritik."
+    "context": "Entstand in akademischen Debatten über Feminismus, Poststrukturalismus und Queer-Theorie. Butler arbeitet transdisziplinär zwischen Philosophie und Kulturkritik.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Judith%20Butler"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Judith%20Butler"
+      }
+    ]
   },
   {
     "slug": "byung-chul-han",
@@ -1518,7 +2288,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Bekannter Kulturkritiker in deutschsprachigem Diskurs; seine pointierten Thesen prägen öffentliche Debatten zu Medien und Subjektivität. Wirkung vor allem in Popularphilosophie.",
     "works": "Müdigkeitsgesellschaft, Psychopolitik",
-    "context": "Arbeitet in globalisierten mediellen Kontexten; reagiert auf Digitalisierung, Kapitalismus und Veränderung sozialer Beziehungen."
+    "context": "Arbeitet in globalisierten mediellen Kontexten; reagiert auf Digitalisierung, Kapitalismus und Veränderung sozialer Beziehungen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Byung-Chul%20Han"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Byung-Chul%20Han"
+      }
+    ]
   },
   {
     "slug": "peter-singer",
@@ -1537,7 +2317,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Buch 'Animal Liberation' war die philosophische Initialzündung der modernen Tierrechts- und Veganismus-Bewegung.",
     "works": "Animal Liberation, Praktische Ethik",
-    "context": "Lehrt in Princeton; seine logisch-kühlen Analysen zu Lebensrecht und Sterbehilfe rufen regelmäßig starke gesellschaftliche Proteste hervor."
+    "context": "Lehrt in Princeton; seine logisch-kühlen Analysen zu Lebensrecht und Sterbehilfe rufen regelmäßig starke gesellschaftliche Proteste hervor.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Peter%20Singer"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Peter%20Singer"
+      }
+    ]
   },
   {
     "slug": "slavoj-zizek",
@@ -1556,7 +2346,17 @@ const PHILOSOPHERS = [
     ],
     "significance": "Er brachte radikalen Marxismus und Psychoanalyse als popkulturelles und theoretisches Großereignis zurück in den globalen Diskurs.",
     "works": "Das erhabene Objekt der Ideologie",
-    "context": "Stammt aus dem kommunistischen Jugoslawien (Slowenien); seine mediale Präsenz (Bücher, Dokus, Debatten) ist beispiellos für einen lebenden Philosophen."
+    "context": "Stammt aus dem kommunistischen Jugoslawien (Slowenien); seine mediale Präsenz (Bücher, Dokus, Debatten) ist beispiellos für einen lebenden Philosophen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Slavoj%20%C5%BDi%C5%BEek"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Slavoj%20%C5%BDi%C5%BEek"
+      }
+    ]
   }
 ];
 
@@ -1627,6 +2427,12 @@ function renderPhilosopherProfile() {
         <section class="panel" aria-labelledby="profile-works-title">
             <h2 id="profile-works-title">Werke und Überlieferung</h2>
             <p>${philosopher.works}</p>
+        </section>
+        <section class="panel profile-links-section" aria-labelledby="profile-links-title">
+            <h2 id="profile-links-title">Quellen & Weiterführende Links</h2>
+            <ul class="profile-links-list" style="list-style-type: disc; margin-left: 20px;">
+                ${philosopher.links && philosopher.links.length > 0 ? philosopher.links.map(link => `<li><a href="${link.url}" target="_blank" rel="noopener noreferrer">${link.title}</a></li>`).join("") : ""}
+            </ul>
         </section>
         <nav class="profile-pagination" aria-label="Philosophen-Navigation">
             ${previous ? `<a class="epoch-nav-link" href="${previous.slug}.html">← ${previous.shortName}</a>` : "<span></span>"}
