@@ -236,7 +236,7 @@ const PHILOSOPHERS = [
     "eraLink": "antike.html",
     "field": "Naturphilosophie",
     "thesis": "Die Natur lässt sich aus natürlichen Ursachen erklären.",
-    "portrait": "../assets/img/philosophers/thales.jpg",
+    "portrait": "../assets/img/philosophers/thales.webp",
     "intro": "Thales gilt in der europäischen Überlieferung als einer der ersten Denker, der Naturphänomene nicht ausschließlich mythisch, sondern durch ein einheitliches Prinzip zu erklären versuchte.",
     "ideas": [
       "Wasser als Ursprung und Grundstoff aller Dinge",
@@ -249,7 +249,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "heraklit",
-    "portrait": "../assets/img/philosophers/heraklit.jpg",
+    "portrait": "../assets/img/philosophers/heraklit.webp",
     "name": "Heraklit",
     "shortName": "Heraklit",
     "years": "ca. 540–480 v. Chr.",
@@ -269,7 +269,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "parmenides",
-    "portrait": "../assets/img/philosophers/parmenides.jpg",
+    "portrait": "../assets/img/philosophers/parmenides.webp",
     "name": "Parmenides",
     "shortName": "Parmenides",
     "years": "ca. 515–445 v. Chr.",
@@ -289,7 +289,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "sokrates",
-    "portrait": "../assets/img/philosophers/sokrates.jpg",
+    "portrait": "../assets/img/philosophers/sokrates.webp",
     "name": "Sokrates",
     "shortName": "Sokrates",
     "years": "ca. 470–399 v. Chr.",
@@ -309,7 +309,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "platon",
-    "portrait": "../assets/img/philosophers/platon.jpg",
+    "portrait": "../assets/img/philosophers/platon.webp",
     "name": "Platon",
     "shortName": "Platon",
     "years": "ca. 427–347 v. Chr.",
@@ -329,7 +329,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "aristoteles",
-    "portrait": "../assets/img/philosophers/aristoteles.jpg",
+    "portrait": "../assets/img/philosophers/aristoteles.webp",
     "name": "Aristoteles",
     "shortName": "Aristoteles",
     "years": "384–322 v. Chr.",
@@ -349,7 +349,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "epikur",
-    "portrait": "../assets/img/philosophers/epikur.jpg",
+    "portrait": "../assets/img/philosophers/epikur.webp",
     "name": "Epikur",
     "shortName": "Epikur",
     "years": "341–270 v. Chr.",
@@ -369,7 +369,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "zenon-von-kition",
-    "portrait": "../assets/img/philosophers/zenon-von-kition.jpg",
+    "portrait": "../assets/img/philosophers/zenon-von-kition.webp",
     "name": "Zenon von Kition",
     "shortName": "Zenon von Kition",
     "years": "ca. 334–262 v. Chr.",
@@ -465,7 +465,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "augustinus",
-    "portrait": "../assets/img/philosophers/augustinus.jpg",
+    "portrait": "../assets/img/philosophers/augustinus.webp",
     "name": "Augustinus",
     "shortName": "Augustinus",
     "years": "354–430",
@@ -485,7 +485,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "boethius",
-    "portrait": "../assets/img/philosophers/boethius.jpg",
+    "portrait": "../assets/img/philosophers/boethius.webp",
     "name": "Boethius",
     "shortName": "Boethius",
     "years": "ca. 477–524",
@@ -505,7 +505,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "thomas-von-aquin",
-    "portrait": "../assets/img/philosophers/thomas-von-aquin.jpg",
+    "portrait": "../assets/img/philosophers/thomas-von-aquin.webp",
     "name": "Thomas von Aquin",
     "shortName": "Thomas von Aquin",
     "years": "1225–1274",
@@ -525,7 +525,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "meister-eckhart",
-    "portrait": "../assets/img/philosophers/meister-eckhart.jpg",
+    "portrait": "../assets/img/philosophers/meister-eckhart.webp",
     "name": "Meister Eckhart",
     "shortName": "Meister Eckhart",
     "years": "ca. 1260–1328",
@@ -564,7 +564,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "avicenna",
-    "portrait": "../assets/img/philosophers/avicenna.jpg",
+    "portrait": "../assets/img/philosophers/avicenna.webp",
     "name": "Avicenna",
     "shortName": "Avicenna",
     "years": "980–1037",
@@ -584,7 +584,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "averroes",
-    "portrait": "../assets/img/philosophers/averroes.jpg",
+    "portrait": "../assets/img/philosophers/averroes.webp",
     "name": "Averroes",
     "shortName": "Averroes",
     "years": "1126–1198",
@@ -718,7 +718,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "niccolo-machiavelli",
-    "portrait": "../assets/img/philosophers/niccolo-machiavelli.jpg",
+    "portrait": "../assets/img/philosophers/niccolo-machiavelli.webp",
     "name": "Niccolò Machiavelli",
     "shortName": "Machiavelli",
     "years": "1469–1527",
@@ -738,7 +738,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "rene-descartes",
-    "portrait": "../assets/img/philosophers/rene-descartes.jpg",
+    "portrait": "../assets/img/philosophers/rene-descartes.webp",
     "name": "René Descartes",
     "shortName": "Descartes",
     "years": "1596–1650",
@@ -758,7 +758,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "thomas-hobbes",
-    "portrait": "../assets/img/philosophers/thomas-hobbes.jpg",
+    "portrait": "../assets/img/philosophers/thomas-hobbes.webp",
     "name": "Thomas Hobbes",
     "shortName": "Hobbes",
     "years": "1588–1679",
@@ -778,7 +778,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "baruch-de-spinoza",
-    "portrait": "../assets/img/philosophers/baruch-de-spinoza.jpg",
+    "portrait": "../assets/img/philosophers/baruch-de-spinoza.webp",
     "name": "Baruch de Spinoza",
     "shortName": "Spinoza",
     "years": "1632–1677",
@@ -798,7 +798,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "john-locke",
-    "portrait": "../assets/img/philosophers/john-locke.jpg",
+    "portrait": "../assets/img/philosophers/john-locke.webp",
     "name": "John Locke",
     "shortName": "Locke",
     "years": "1632–1704",
@@ -818,7 +818,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "gottfried-wilhelm-leibniz",
-    "portrait": "../assets/img/philosophers/gottfried-wilhelm-leibniz.jpg",
+    "portrait": "../assets/img/philosophers/gottfried-wilhelm-leibniz.webp",
     "name": "Gottfried Wilhelm Leibniz",
     "shortName": "Leibniz",
     "years": "1646–1716",
@@ -838,7 +838,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "david-hume",
-    "portrait": "../assets/img/philosophers/david-hume.jpg",
+    "portrait": "../assets/img/philosophers/david-hume.webp",
     "name": "David Hume",
     "shortName": "Hume",
     "years": "1711–1776",
@@ -858,7 +858,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "jean-jacques-rousseau",
-    "portrait": "../assets/img/philosophers/jean-jacques-rousseau.jpg",
+    "portrait": "../assets/img/philosophers/jean-jacques-rousseau.webp",
     "name": "Jean-Jacques Rousseau",
     "shortName": "Rousseau",
     "years": "1712–1778",
@@ -935,7 +935,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "immanuel-kant",
-    "portrait": "../assets/img/philosophers/immanuel-kant.jpg",
+    "portrait": "../assets/img/philosophers/immanuel-kant.webp",
     "name": "Immanuel Kant",
     "shortName": "Kant",
     "years": "1724–1804",
@@ -955,7 +955,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "johann-gottlieb-fichte",
-    "portrait": "../assets/img/philosophers/johann-gottlieb-fichte.jpg",
+    "portrait": "../assets/img/philosophers/johann-gottlieb-fichte.webp",
     "name": "Johann Gottlieb Fichte",
     "shortName": "Fichte",
     "years": "1762–1814",
@@ -975,7 +975,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "friedrich-wilhelm-joseph-schelling",
-    "portrait": "../assets/img/philosophers/friedrich-wilhelm-joseph-schelling.jpg",
+    "portrait": "../assets/img/philosophers/friedrich-wilhelm-joseph-schelling.webp",
     "name": "Friedrich Wilhelm Joseph Schelling",
     "shortName": "Schelling",
     "years": "1775–1854",
@@ -995,7 +995,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "georg-wilhelm-friedrich-hegel",
-    "portrait": "../assets/img/philosophers/georg-wilhelm-friedrich-hegel.jpg",
+    "portrait": "../assets/img/philosophers/georg-wilhelm-friedrich-hegel.webp",
     "name": "Georg Wilhelm Friedrich Hegel",
     "shortName": "Hegel",
     "years": "1770–1831",
@@ -1015,7 +1015,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "arthur-schopenhauer",
-    "portrait": "../assets/img/philosophers/arthur-schopenhauer.jpg",
+    "portrait": "../assets/img/philosophers/arthur-schopenhauer.webp",
     "name": "Arthur Schopenhauer",
     "shortName": "Schopenhauer",
     "years": "1788–1860",
@@ -1035,7 +1035,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "john-stuart-mill",
-    "portrait": "../assets/img/philosophers/john-stuart-mill.jpg",
+    "portrait": "../assets/img/philosophers/john-stuart-mill.webp",
     "name": "John Stuart Mill",
     "shortName": "J. S. Mill",
     "years": "1806–1873",
@@ -1055,7 +1055,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "karl-marx",
-    "portrait": "../assets/img/philosophers/karl-marx.jpg",
+    "portrait": "../assets/img/philosophers/karl-marx.webp",
     "name": "Karl Marx",
     "shortName": "Karl Marx",
     "years": "1818–1883",
@@ -1075,7 +1075,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "soren-kierkegaard",
-    "portrait": "../assets/img/philosophers/soren-kierkegaard.jpg",
+    "portrait": "../assets/img/philosophers/soren-kierkegaard.webp",
     "name": "Søren Kierkegaard",
     "shortName": "Kierkegaard",
     "years": "1813–1855",
@@ -1095,7 +1095,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "friedrich-nietzsche",
-    "portrait": "../assets/img/philosophers/friedrich-nietzsche.jpg",
+    "portrait": "../assets/img/philosophers/friedrich-nietzsche.webp",
     "name": "Friedrich Nietzsche",
     "shortName": "Nietzsche",
     "years": "1844–1900",
@@ -1134,7 +1134,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "ludwig-wittgenstein",
-    "portrait": "../assets/img/philosophers/ludwig-wittgenstein.jpg",
+    "portrait": "../assets/img/philosophers/ludwig-wittgenstein.webp",
     "name": "Ludwig Wittgenstein",
     "shortName": "Wittgenstein",
     "years": "1889–1951",
@@ -1155,7 +1155,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "martin-heidegger",
-    "portrait": "../assets/img/philosophers/martin-heidegger.jpg",
+    "portrait": "../assets/img/philosophers/martin-heidegger.webp",
     "name": "Martin Heidegger",
     "shortName": "Heidegger",
     "years": "1889–1976",
@@ -1175,7 +1175,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "jean-paul-sartre",
-    "portrait": "../assets/img/philosophers/jean-paul-sartre.jpg",
+    "portrait": "../assets/img/philosophers/jean-paul-sartre.webp",
     "name": "Jean-Paul Sartre",
     "shortName": "Sartre",
     "years": "1905–1980",
@@ -1195,7 +1195,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "albert-camus",
-    "portrait": "../assets/img/philosophers/albert-camus.jpg",
+    "portrait": "../assets/img/philosophers/albert-camus.webp",
     "name": "Albert Camus",
     "shortName": "Camus",
     "years": "1913–1960",
@@ -1215,7 +1215,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "hannah-arendt",
-    "portrait": "../assets/img/philosophers/hannah-arendt.jpg",
+    "portrait": "../assets/img/philosophers/hannah-arendt.webp",
     "name": "Hannah Arendt",
     "shortName": "Arendt",
     "years": "1906–1975",
@@ -1235,6 +1235,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "simone-de-beauvoir",
+    "portrait": "../assets/img/philosophers/simone-de-beauvoir.webp",
     "name": "Simone de Beauvoir",
     "shortName": "de Beauvoir",
     "years": "1908–1986",
@@ -1254,6 +1255,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "michel-foucault",
+    "portrait": "../assets/img/philosophers/michel-foucault.webp",
     "name": "Michel Foucault",
     "shortName": "Foucault",
     "years": "1926–1984",

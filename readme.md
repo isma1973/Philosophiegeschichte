@@ -203,6 +203,12 @@ Fünf‑Schichten‑Architektur:
 
 </details>
 
+## Bildnachweise & Credits
+
+Alle auf dieser Plattform verwendeten Porträts der Philosophen wurden maschinell mithilfe von Künstlicher Intelligenz (generiert mit Google Gemini 3.1 Pro / Antigravity) im modernen Vektor-Stil erstellt. 
+
+Da diese Bilder vollständig durch KI generiert wurden, unterliegen sie nach aktuellem rechtlichem Stand (EU/US) keinem menschlichen Urheberrecht. Sie sind de facto **gemeinfrei (Public Domain)**. Sie dürfen uneingeschränkt frei verwendet, kopiert und verändert werden.
+
 ## Projektlizenz
 
 Das Projekt steht unter [MIT‑Lizenz](LICENSE). Du kannst es frei verwenden, verändern und verbreiten.

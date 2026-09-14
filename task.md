@@ -1,0 +1,85 @@
+# Philosophen Bilder-Generierung
+- [x] aristoteles (Testbild)
+- [x] thales
+- [x] heraklit
+- [x] parmenides
+- [x] sokrates
+- [x] platon
+- [x] epikur
+- [x] zenon-von-kition
+- [x] augustinus
+- [x] boethius
+- [x] avicenna
+- [x] averroes
+- [x] thomas-von-aquin
+- [x] meister-eckhart
+- [x] niccolo-machiavelli
+- [x] rene-descartes
+- [x] thomas-hobbes
+- [x] baruch-de-spinoza
+- [x] john-locke
+- [x] gottfried-wilhelm-leibniz
+- [x] david-hume
+- [x] jean-jacques-rousseau
+- [x] immanuel-kant
+- [x] johann-gottlieb-fichte
+- [x] friedrich-wilhelm-joseph-schelling
+- [x] georg-wilhelm-friedrich-hegel
+- [x] arthur-schopenhauer
+- [x] john-stuart-mill
+- [x] karl-marx
+- [x] soren-kierkegaard
+- [x] friedrich-nietzsche
+- [x] ludwig-wittgenstein
+- [x] martin-heidegger
+- [x] jean-paul-sartre
+- [x] albert-camus
+- [x] hannah-arendt
+- [x] simone-de-beauvoir
+- [x] michel-foucault
+- [ ] juergen-habermas
+- [ ] daniel-dennett
+- [ ] martha-nussbaum
+- [ ] judith-butler
+- [ ] byung-chul-han
+- [ ] buddha
+- [ ] nagarjuna
+- [ ] shankara
+- [ ] chanakya
+- [ ] sri-aurobindo
+- [ ] tagore
+- [ ] konfuzius
+- [ ] laozi
+- [ ] zhuangzi
+- [ ] mozi
+- [ ] mencius
+- [ ] zhu-xi
+- [ ] dogen
+- [ ] nishida
+- [ ] watsuji
+- [ ] al-farabi
+- [ ] al-ghazali
+- [ ] ibn-khaldun
+- [ ] marc-aurel
+- [ ] william-james
+- [ ] karl-popper
+- [ ] bertrand-russell
+- [ ] edmund-husserl
+- [ ] john-rawls
+- [ ] mary-wollstonecraft
+- [ ] hypatia
+- [ ] diogenes-von-sinope
+- [ ] pythagoras
+- [ ] wilhelm-von-ockham
+- [ ] francis-bacon
+- [ ] michel-de-montaigne
+- [ ] theodor-adorno
+- [ ] max-horkheimer
+- [ ] jacques-derrida
+- [ ] thomas-kuhn
+- [ ] peter-singer
+- [ ] slavoj-zizek
+
+## Integration
+- [x] Teil 1 der Integration: Die ersten 12 generierten Bilder in der `philosopher-profile.js` verknüpfen.
+- [ ] Restliche Bilder in der `philosopher-profile.js` aktualisieren.
