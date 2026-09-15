@@ -42,12 +42,12 @@
 - [ ] martha-nussbaum
 - [ ] judith-butler
 - [ ] byung-chul-han
-- [ ] buddha
-- [ ] nagarjuna
-- [ ] shankara
-- [ ] chanakya
-- [ ] sri-aurobindo
-- [ ] tagore
+- [x] buddha
+- [x] nagarjuna
+- [x] shankara
+- [x] chanakya
+- [x] sri-aurobindo
+- [x] tagore
 - [ ] konfuzius
 - [ ] laozi
 - [ ] zhuangzi

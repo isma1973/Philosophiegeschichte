@@ -8,6 +8,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Ethik, Befreiungslehre",
     "thesis": "Leid entsteht durch Anhaftung; die Loslösung führt zur Befreiung (Nirvana).",
+    "portrait": "../assets/img/philosophers/buddha.jpg",
     "intro": "Der Buddha begründete eine empirische, ethische Praxis zur Überwindung des existenziellen Leids, unabhängig von dogmatischer Metaphysik.",
     "ideas": [
       "Die Vier Edlen Wahrheiten",
@@ -37,6 +38,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Ontologie, Logik",
     "thesis": "Alle Phänomene sind leer (Śūnyatā) von einer inhärenten Eigennatur.",
+    "portrait": "../assets/img/philosophers/nagarjuna.jpg",
     "intro": "Nagarjuna ist der Begründer der Madhyamaka-Schule. Seine brillante Logik dekonstruierte alle philosophischen Standpunkte und zeigte, dass alles in gegenseitiger Abhängigkeit existiert.",
     "ideas": [
       "Leere (Śūnyatā)",
@@ -66,6 +68,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Metaphysik",
     "thesis": "Brahman (das Absolute) und Atman (das Selbst) sind eins; die Vielheit ist Illusion (Maya).",
+    "portrait": "../assets/img/philosophers/shankara.jpg",
     "intro": "Shankara konsolidierte die Lehre des Advaita Vedanta. Er argumentierte mit bestechender Schärfe für eine radikale Nicht-Dualität des Seins.",
     "ideas": [
       "Advaita (Nicht-Dualität)",
@@ -95,6 +98,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Politische Philosophie",
     "thesis": "Macht und Staatsräson stehen über konventioneller Moral, wenn es um den Erhalt des Staates geht.",
+    "portrait": "../assets/img/philosophers/chanakya.jpg",
     "intro": "Chanakya war Stratege und Philosoph. Sein Werk ist eine der frühesten und schonungslosesten Analysen von Macht, Wirtschaft und Staatskunst.",
     "ideas": [
       "Realpolitik",
@@ -124,6 +128,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Integrale Philosophie",
     "thesis": "Die Evolution ist nicht nur physisch, sondern die spirituelle Entfaltung des göttlichen Bewusstseins.",
+    "portrait": "../assets/img/philosophers/sri-aurobindo.jpg",
     "intro": "Aurobindo verband westliches evolutionäres Denken mit indischer Mystik zu einem gewaltigen philosophischen System der 'Integralen Entfaltung'.",
     "ideas": [
       "Evolution des Bewusstseins",
@@ -153,6 +158,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Humanismus, Ästhetik",
     "thesis": "Die höchste Wahrheit ist die Harmonie des Menschen mit dem Universum.",
+    "portrait": "../assets/img/philosophers/tagore.jpg",
     "intro": "Tagore war Dichter und Philosoph. Er kritisierte den engen westlichen Nationalismus und plädierte für einen universalen Humanismus.",
     "ideas": [
       "Universaler Humanismus",

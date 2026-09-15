@@ -28,12 +28,44 @@
                 <span class="slider"></span>
             </label>
         </header>
-        <div id="questionBlock"></div>
-        <div class="answers" id="answersBlock"></div>
-        <button id="nextBtn" class="btn btn-primary hidden">Nächste Frage</button>
-        <div class="result" id="resultBlock"></div>
+
+        <div id="quizStartScreen" class="quiz-start-screen">
+            <h2>Wähle deinen Schwierigkeitsgrad</h2>
+            <p>Bist du bereit, dein Wissen auf die Probe zu stellen?</p>
+            <div class="difficulty-buttons">
+                <button id="btnEasy" class="difficulty-btn easy-btn">
+                    <strong>Einfach</strong>
+                    <span>3 Fragen</span>
+                </button>
+                <button id="btnAdvanced" class="difficulty-btn advanced-btn">
+                    <strong>Fortgeschritten</strong>
+                    <span>7 Fragen <br><small>(inkl. Belohnung)</small></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="quizContent" class="hidden">
+            <div id="questionBlock" class="question"></div>
+            <div class="answers" id="answersBlock"></div>
+            <button id="nextBtn" class="btn btn-primary hidden">Nächste Frage</button>
+            <div class="result" id="resultBlock"></div>
+        </div>
     </div>
+
+    <!-- Slideshow Modal -->
+    <div id="slideshowModal" class="slideshow-modal hidden">
+        <div class="slideshow-modal-content">
+            <button id="closeModalBtn" class="slideshow-close-btn">&times;</button>
+            <div id="slideshowContainer" class="slideshow-container">
+                <!-- Slides will be injected here via JS -->
+            </div>
+            <button id="prevSlideBtn" class="slide-nav prev-slide">&#10094;</button>
+            <button id="nextSlideBtn" class="slide-nav next-slide">&#10095;</button>
+        </div>
+    </div>
+
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/philosopher-profile.js"></script>
     <script src="assets/js/quiz.js"></script>
 </body>
 </html>

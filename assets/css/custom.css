@@ -713,3 +713,218 @@ h1.topbar-brand.index-topbar-title {
     color: var(--text-light);
     margin-bottom: var(--space-4);
 }
+
+/* ── Slideshow Modal ─────────────────────────────── */
+.slideshow-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.slideshow-modal:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.slideshow-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    padding: var(--space-6);
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.slideshow-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: var(--text-light);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.slideshow-close-btn:hover {
+    color: var(--accent);
+}
+
+.slideshow-container {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    display: none;
+    animation: fadeSlide 0.5s ease-in-out;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide-img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border);
+    margin: 0 auto var(--space-4);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.slide-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+    color: var(--text);
+}
+
+.slide-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.slide-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--bg-tertiary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+}
+
+.slide-nav:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+.prev-slide {
+    left: -20px;
+}
+
+.next-slide {
+    right: -20px;
+}
+
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.reward-btn {
+    margin-top: var(--space-3);
+    background: linear-gradient(135deg, #d4af37, #b5952f);
+    color: #000;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+}
+
+.reward-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* ── Quiz Start Screen ─────────────────────────────── */
+.quiz-start-screen {
+    text-align: center;
+    padding: var(--space-4) 0;
+    animation: fadeSlide 0.4s ease-in-out;
+}
+
+.quiz-start-screen h2 {
+    font-size: 1.8rem;
+    margin-bottom: var(--space-2);
+}
+
+.quiz-start-screen p {
+    color: var(--text-light);
+    margin-bottom: var(--space-5);
+}
+
+.difficulty-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-4);
+}
+
+.difficulty-btn {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    color: var(--text);
+}
+
+.difficulty-btn:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.dark-mode .difficulty-btn:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.difficulty-btn strong {
+    font-size: 1.3rem;
+}
+
+.difficulty-btn span {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.easy-btn:hover {
+    border-color: #4caf50;
+}
+
+.advanced-btn:hover {
+    border-color: #d4af37;
+}
+
+.advanced-btn small {
+    color: #d4af37;
+    font-weight: bold;
+}

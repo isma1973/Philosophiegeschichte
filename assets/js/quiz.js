@@ -1,7 +1,7 @@
 // assets/js/quiz.js
 
 (() => {
-  const QUESTIONS_PER_QUIZ = 7;
+
 
   const questionBanks = {
     indien: {
@@ -313,14 +313,32 @@
 
   if (!bank) {
     titleEl.textContent = 'Quiz – Epoche fehlt';
+    document.getElementById('quizStartScreen').classList.add('hidden');
+    document.getElementById('quizContent').classList.remove('hidden');
     qBlock.textContent = 'Bitte starte das Quiz über eine Epoche der Timeline.';
     nextBtn.classList.add('hidden');
     return;
   }
 
-  const questions = shuffle(bank.questions).slice(0, QUESTIONS_PER_QUIZ).map(prepareQuestion);
+  let questions = [];
   let current = 0;
   let score = 0;
+  let questionsPerQuiz = 7;
+
+  const startQuiz = (numQuestions) => {
+    questionsPerQuiz = numQuestions;
+    questions = shuffle(bank.questions).slice(0, questionsPerQuiz).map(prepareQuestion);
+    current = 0;
+    score = 0;
+    
+    document.getElementById('quizStartScreen').classList.add('hidden');
+    document.getElementById('quizContent').classList.remove('hidden');
+    
+    renderQuestion();
+  };
+
+  document.getElementById('btnEasy')?.addEventListener('click', () => startQuiz(3));
+  document.getElementById('btnAdvanced')?.addEventListener('click', () => startQuiz(7));
 
   const renderQuestion = () => {
     const question = questions[current];
@@ -361,8 +379,85 @@
     qBlock.textContent = '';
     aBlock.innerHTML = '';
     nextBtn.classList.add('hidden');
-    resultBlock.textContent = `Du hast ${score} von ${questions.length} richtig beantwortet.`;
+    
+    if (score === questionsPerQuiz && typeof PHILOSOPHERS !== 'undefined') {
+      if (questionsPerQuiz === 7) {
+        resultBlock.innerHTML = `
+          <div style="font-size: 1.2rem; margin-bottom: 10px;">Meisterhaft! Du hast alle ${score} Fragen richtig beantwortet! 🏆</div>
+          <button id="rewardBtn" class="reward-btn">Große Belohnung: Galerie der Epoche</button>
+        `;
+        document.getElementById('rewardBtn').addEventListener('click', initSlideshow);
+      } else if (questionsPerQuiz === 3) {
+        const normalized = normalizeEra(params.get('era'));
+        const epochPhilosophers = PHILOSOPHERS.filter(p => p.eraLink && p.eraLink.includes(normalized));
+        let quoteHtml = '';
+        
+        if (epochPhilosophers.length > 0) {
+          const randomPhil = epochPhilosophers[Math.floor(Math.random() * epochPhilosophers.length)];
+          quoteHtml = `
+            <div style="margin-top: 15px; padding: 15px; background: var(--bg-tertiary); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); font-style: italic; text-align: left;">
+              " ${randomPhil.thesis} "
+              <strong style="font-style: normal; display: block; margin-top: 8px; color: var(--text);">— ${randomPhil.name}</strong>
+            </div>
+          `;
+        }
+        
+        resultBlock.innerHTML = `
+          <div style="font-size: 1.2rem; margin-bottom: 10px;">Klasse! Du hast alle ${score} Fragen richtig beantwortet! ⭐</div>
+          <div style="font-size: 0.95rem; color: var(--text-light);">Hier ist ein kleiner Funke Weisheit für dich:</div>
+          ${quoteHtml}
+        `;
+      }
+    } else {
+      resultBlock.textContent = `Du hast ${score} von ${questions.length} richtig beantwortet.`;
+    }
   });
 
-  renderQuestion();
+  // --- Slideshow Logic ---
+  let currentSlide = 0;
+  let epochPhilosophers = [];
+
+  const initSlideshow = () => {
+    const normalized = normalizeEra(params.get('era'));
+    epochPhilosophers = PHILOSOPHERS.filter(p => 
+      p.eraLink && p.eraLink.includes(normalized) && p.portrait
+    );
+
+    if (epochPhilosophers.length === 0) {
+      alert("Für diese Epoche stehen leider noch keine Bilder zur Verfügung.");
+      return;
+    }
+
+    const modal = document.getElementById('slideshowModal');
+    const container = document.getElementById('slideshowContainer');
+    
+    container.innerHTML = epochPhilosophers.map((p, idx) => `
+      <div class="slide ${idx === 0 ? 'active' : ''}">
+        <img src="${p.portrait}" alt="${p.name}" class="slide-img">
+        <div class="slide-name">${p.name}</div>
+        <div class="slide-quote">"${p.thesis}"</div>
+      </div>
+    `).join('');
+
+    currentSlide = 0;
+    modal.classList.remove('hidden');
+  };
+
+  const showSlide = (index) => {
+    const slides = document.querySelectorAll('#slideshowContainer .slide');
+    if (slides.length === 0) return;
+    slides.forEach(s => s.classList.remove('active'));
+    
+    if (index >= slides.length) currentSlide = 0;
+    else if (index < 0) currentSlide = slides.length - 1;
+    else currentSlide = index;
+
+    slides[currentSlide].classList.add('active');
+  };
+
+  document.getElementById('prevSlideBtn')?.addEventListener('click', () => showSlide(currentSlide - 1));
+  document.getElementById('nextSlideBtn')?.addEventListener('click', () => showSlide(currentSlide + 1));
+  document.getElementById('closeModalBtn')?.addEventListener('click', () => {
+    document.getElementById('slideshowModal').classList.add('hidden');
+  });
 })();

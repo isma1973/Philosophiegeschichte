@@ -19,7 +19,7 @@ fully usable offline and without a build process.
 - **Global Timeline:** 10 historical eras (India, China, Islamic World, Japan, Antiquity, Middle Ages, Early Modern, Modern, 20th Century, Contemporary) as an accessible accordion structure.
 - **Philosophical Filters:** Thematic filtering by Ontology, Epistemology, Ethics, Aesthetics, Logic, Metaphysics, Language, Power, Mind, and Being.
 - **Data-Driven Profiles:** 80 philosopher profiles, centrally maintained in `PHILOSOPHERS[]`. Each profile page identifies the philosopher via URL and renders content dynamically into empty HTML containers.
-- **Quiz Engine:** Randomized questions, answer shuffling, and direct score calculation per era.
+- **Quiz Engine:** Two difficulty levels (Easy & Advanced), randomized questions, direct score calculation, and a dynamic reward system (philosopher gallery & quotes).
 - **Theme Engine:** Native Dark/Light Mode (incl. Glassmorphism) with persistent state via `localStorage`.
 - **UI Components:** Lightbox, Modal, Tooltip, Toast, Tabs, Dropdown — all in independent Vanilla JS modules.
 - **Zero-Build:** Pure HTML/CSS/JS, works offline directly via `file://`.
@@ -93,7 +93,7 @@ Reads era data from the page source and renders accessible accordion cards with 
 The heart of the project: **68 KB** central database with all 80 philosopher profiles in the `PHILOSOPHERS[]` array. Each profile page is an empty HTML shell. On load, the module identifies the matching entry via filename and fills all fields dynamically — no duplicated HTML code.
 
 ### Quiz Engine (`quiz.js`)
-**36 KB** lightweight module: pulls random questions per era from the dataset, shuffles answer options, shows direct feedback per question and calculates the final score.
+**38 KB** lightweight module: Offers two selectable difficulty levels (3 or 7 questions). Pulls random questions per era from the dataset, shuffles options, and gives feedback. A perfect score automatically unlocks a reward (a quote for "Easy" or a full image gallery of the era for "Advanced").
 
 ### Theme Engine (`theme.js`)
 Toggles between Dark and Light Mode via class switching on the `<html>` element. The chosen mode is saved in `localStorage` and automatically restored on next visit.

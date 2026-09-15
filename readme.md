@@ -19,7 +19,7 @@ komplett offline nutzbar und ohne Build‑Prozess.
 - **Globale Timeline:** 10 Epochen (Indien, China, Islamische Welt, Japan, Antike, Mittelalter, Neuzeit, Moderne, 20. Jh., Gegenwart) als zugängliche Akkordeon‑Struktur.
 - **Philosophische Filter:** Thematische Filterung nach Ontologie, Epistemologie, Ethik, Ästhetik, Logik, Metaphysik, Sprache, Macht, Geist und Sein.
 - **Datengetriebene Profile:** 80 Philosophenprofile, zentral in `PHILOSOPHERS[]` gepflegt. Jede Profilseite identifiziert den Philosophen per URL und rendert den Inhalt dynamisch in leere HTML‑Container.
-- **Quiz‑Engine:** Zufallsgenerierte Fragen, Antwort‑Shuffling und direkte Score‑Berechnung pro Epoche.
+- **Quiz‑Engine:** Zwei Schwierigkeitsstufen (Einfach & Fortgeschritten), zufallsgenerierte Fragen, direkte Score-Berechnung und ein dynamisches Belohnungssystem (Philosophen-Galerie & Zitate).
 - **Theme‑Engine:** Nativer Dark/Light‑Mode (inkl. Glassmorphismus) mit persistentem Zustand via `localStorage`.
 - **UI‑Komponenten:** Lightbox, Modal, Tooltip, Toast, Tabs, Dropdown — alles in eigenständigen Vanilla‑JS‑Modulen.
 - **Zero‑Build:** Reines HTML/CSS/JS, funktioniert offline direkt über `file://`.
@@ -93,7 +93,7 @@ Liest Epochendaten aus dem Seitenquelltext und rendert daraus zugängliche Akkor
 Das Herzstück des Projekts: **68 KB** zentrale Datenbank mit allen 80 Philosophenprofilen im Array `PHILOSOPHERS[]`. Jede Profilseite ist ein leeres HTML‑Gerüst. Beim Laden identifiziert das Modul den passenden Eintrag über den Dateinamen und füllt alle Felder dynamisch — kein doppelter HTML‑Code.
 
 ### Quiz‑Engine (`quiz.js`)
-**36 KB** leichtgewichtiges Modul: Zieht für jede Epoche zufällige Fragen aus dem Datensatz, mischt die Antwortoptionen, zeigt direktes Feedback pro Frage und berechnet am Ende den Gesamtscore.
+**38 KB** leichtgewichtiges Modul: Bietet zwei wählbare Schwierigkeitsgrade (3 oder 7 Fragen). Zieht für jede Epoche zufällige Fragen aus dem Datensatz, mischt die Optionen und gibt Feedback. Bei einer perfekten Leistung schaltet das System automatisch eine Belohnung frei (ein Zitat für "Einfach" oder eine Bildergalerie der Epoche für "Fortgeschritten").
 
 ### Theme‑Engine (`theme.js`)
 Togglet zwischen Dark und Light Mode durch Klassen‑Wechsel am `<html>`‑Element. Der gewählte Modus wird in `localStorage` gespeichert und beim nächsten Besuch automatisch wiederhergestellt.
