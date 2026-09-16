@@ -113,6 +113,18 @@ input:focus {
   cursor: pointer;
 }
 
+.ios-switch::after {
+  content: "Theme wechseln";
+  position: absolute;
+  right: 100%;
+  margin-right: 12px;
+  white-space: nowrap;
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 28px;
+  pointer-events: none;
+}
+
 .ios-switch input {
   opacity: 0;
   width: 0;
@@ -152,4 +164,38 @@ input:focus {
 body.theme-fade {
   opacity: 0.4;
   transition: opacity 0.25s ease;
+}
+
+/* ---------------------------------------------------
+   CUSTOM TOOLTIP
+--------------------------------------------------- */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip-text);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: var(--shadow-soft);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+[data-tooltip]:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-8px);
 }
