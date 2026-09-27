@@ -181,6 +181,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "konfuzius",
+    "portrait": "../assets/img/philosophers/konfuzius.jpg",
     "name": "Konfuzius (Kongzi)",
     "shortName": "Konfuzius",
     "years": "ca. 551–479 v. Chr.",
@@ -210,6 +211,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "laozi",
+    "portrait": "../assets/img/philosophers/laozi.jpg",
     "name": "Laozi",
     "shortName": "Laozi",
     "years": "ca. 6. Jh. v. Chr.",
@@ -239,6 +241,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "zhuangzi",
+    "portrait": "../assets/img/philosophers/zhuangzi.jpg",
     "name": "Zhuangzi",
     "shortName": "Zhuangzi",
     "years": "ca. 369–286 v. Chr.",
@@ -268,6 +271,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "mozi",
+    "portrait": "../assets/img/philosophers/mozi.jpg",
     "name": "Mozi",
     "shortName": "Mozi",
     "years": "ca. 470–391 v. Chr.",
@@ -297,6 +301,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "mencius",
+    "portrait": "../assets/img/philosophers/mencius.jpg",
     "name": "Mencius (Mengzi)",
     "shortName": "Mencius",
     "years": "ca. 372–289 v. Chr.",
@@ -326,6 +331,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "zhu-xi",
+    "portrait": "../assets/img/philosophers/zhu-xi.jpg",
     "name": "Zhu Xi",
     "shortName": "Zhu Xi",
     "years": "1130–1200",

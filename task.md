@@ -48,12 +48,12 @@
 - [x] chanakya
 - [x] sri-aurobindo
 - [x] tagore
-- [ ] konfuzius
-- [ ] laozi
-- [ ] zhuangzi
-- [ ] mozi
-- [ ] mencius
-- [ ] zhu-xi
+- [x] konfuzius
+- [x] laozi
+- [x] zhuangzi
+- [x] mozi
+- [x] mencius
+- [x] zhu-xi
 - [ ] dogen
 - [ ] nishida
 - [ ] watsuji
