@@ -37,9 +37,9 @@
 - [x] hannah-arendt
 - [x] simone-de-beauvoir
 - [x] michel-foucault
-- [ ] juergen-habermas
-- [ ] daniel-dennett
-- [ ] martha-nussbaum
+- [x] juergen-habermas
+- [x] daniel-dennett
+- [x] martha-nussbaum
 - [ ] judith-butler
 - [ ] byung-chul-han
 - [x] buddha
@@ -54,7 +54,7 @@
 - [x] mozi
 - [x] mencius
 - [x] zhu-xi
-- [ ] dogen
+- [x] dogen
 - [ ] nishida
 - [ ] watsuji
 - [ ] al-farabi

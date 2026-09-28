@@ -1013,6 +1013,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "dogen",
+    "portrait": "../assets/img/philosophers/dogen.jpg",
     "name": "Dōgen Zenji",
     "shortName": "Dōgen",
     "years": "1200–1253",
@@ -1937,6 +1938,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "juergen-habermas",
+    "portrait": "../assets/img/philosophers/juergen-habermas.jpg",
     "name": "Jürgen Habermas",
     "shortName": "Habermas",
     "years": "geb. 1929",
@@ -2198,6 +2200,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "daniel-dennett",
+    "portrait": "../assets/img/philosophers/daniel-dennett.jpg",
     "name": "Daniel Dennett",
     "shortName": "Dennett",
     "years": "1942–2024",
@@ -2227,6 +2230,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "martha-nussbaum",
+    "portrait": "../assets/img/philosophers/martha-nussbaum.jpg",
     "name": "Martha Nussbaum",
     "shortName": "Nussbaum",
     "years": "geb. 1947",
