@@ -40,8 +40,8 @@
 - [x] juergen-habermas
 - [x] daniel-dennett
 - [x] martha-nussbaum
-- [ ] judith-butler
-- [ ] byung-chul-han
+- [x] judith-butler
+- [x] byung-chul-han
 - [x] buddha
 - [x] nagarjuna
 - [x] shankara
@@ -55,17 +55,17 @@
 - [x] mencius
 - [x] zhu-xi
 - [x] dogen
-- [ ] nishida
-- [ ] watsuji
-- [ ] al-farabi
-- [ ] al-ghazali
-- [ ] ibn-khaldun
-- [ ] marc-aurel
-- [ ] william-james
-- [ ] karl-popper
-- [ ] bertrand-russell
-- [ ] edmund-husserl
-- [ ] john-rawls
+- [x] nishida
+- [x] watsuji
+- [x] al-farabi
+- [x] al-ghazali
+- [x] ibn-khaldun
+- [x] marc-aurel
+- [x] william-james
+- [x] karl-popper
+- [x] bertrand-russell
+- [x] edmund-husserl
+- [x] john-rawls
 - [ ] mary-wollstonecraft
 - [ ] hypatia
 - [ ] diogenes-von-sinope

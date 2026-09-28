@@ -601,6 +601,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "marc-aurel",
+    "portrait": "../assets/img/philosophers/marc-aurel.jpg",
     "name": "Marc Aurel",
     "shortName": "Marc Aurel",
     "years": "121–180",
@@ -926,6 +927,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "al-farabi",
+    "portrait": "../assets/img/philosophers/al-farabi.jpg",
     "name": "Al-Farabi",
     "shortName": "Al-Farabi",
     "years": "ca. 872–950",
@@ -955,6 +957,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "al-ghazali",
+    "portrait": "../assets/img/philosophers/al-ghazali.jpg",
     "name": "Al-Ghazali",
     "shortName": "Al-Ghazali",
     "years": "1058–1111",
@@ -984,6 +987,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "ibn-khaldun",
+    "portrait": "../assets/img/philosophers/ibn-khaldun.jpg",
     "name": "Ibn Khaldun",
     "shortName": "Ibn Khaldun",
     "years": "1332–1406",
@@ -1043,6 +1047,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "nishida",
+    "portrait": "../assets/img/philosophers/nishida.jpg",
     "name": "Nishida Kitarō",
     "shortName": "Nishida",
     "years": "1870–1945",
@@ -1072,6 +1077,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "watsuji",
+    "portrait": "../assets/img/philosophers/watsuji.jpg",
     "name": "Watsuji Tetsurō",
     "shortName": "Watsuji",
     "years": "1889–1960",
@@ -1698,6 +1704,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "william-james",
+    "portrait": "../assets/img/philosophers/william-james.jpg",
     "name": "William James",
     "shortName": "James",
     "years": "1842–1910",
@@ -1968,6 +1975,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "karl-popper",
+    "portrait": "../assets/img/philosophers/karl-popper.jpg",
     "name": "Karl Popper",
     "shortName": "Popper",
     "years": "1902–1994",
@@ -1997,6 +2005,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "bertrand-russell",
+    "portrait": "../assets/img/philosophers/bertrand-russell.jpg",
     "name": "Bertrand Russell",
     "shortName": "Russell",
     "years": "1872–1970",
@@ -2026,6 +2035,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "edmund-husserl",
+    "portrait": "../assets/img/philosophers/edmund-husserl.jpg",
     "name": "Edmund Husserl",
     "shortName": "Husserl",
     "years": "1859–1938",
@@ -2055,6 +2065,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "john-rawls",
+    "portrait": "../assets/img/philosophers/john-rawls.jpg",
     "name": "John Rawls",
     "shortName": "Rawls",
     "years": "1921–2002",
@@ -2260,6 +2271,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "judith-butler",
+    "portrait": "../assets/img/philosophers/judith-butler.jpg",
     "name": "Judith Butler",
     "shortName": "Butler",
     "years": "geb. 1956",
@@ -2289,6 +2301,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "byung-chul-han",
+    "portrait": "../assets/img/philosophers/byung-chul-han.jpg",
     "name": "Byung-Chul Han",
     "shortName": "Byung-Chul Han",
     "years": "geb. 1959",
