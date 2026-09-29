@@ -66,17 +66,17 @@
 - [x] bertrand-russell
 - [x] edmund-husserl
 - [x] john-rawls
-- [ ] mary-wollstonecraft
-- [ ] hypatia
-- [ ] diogenes-von-sinope
-- [ ] pythagoras
-- [ ] wilhelm-von-ockham
-- [ ] francis-bacon
-- [ ] michel-de-montaigne
-- [ ] theodor-adorno
-- [ ] max-horkheimer
-- [ ] jacques-derrida
-- [ ] thomas-kuhn
+- [x] mary-wollstonecraft
+- [x] hypatia
+- [x] diogenes-von-sinope
+- [x] pythagoras
+- [x] wilhelm-von-ockham
+- [x] francis-bacon
+- [x] michel-de-montaigne
+- [x] theodor-adorno
+- [x] max-horkheimer
+- [x] jacques-derrida
+- [x] thomas-kuhn
 - [ ] peter-singer
 - [ ] slavoj-zizek
 

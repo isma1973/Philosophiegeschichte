@@ -631,6 +631,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "hypatia",
+    "portrait": "../assets/img/philosophers/hypatia.jpg",
     "name": "Hypatia von Alexandria",
     "shortName": "Hypatia",
     "years": "ca. 355–415",
@@ -660,6 +661,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "diogenes-von-sinope",
+    "portrait": "../assets/img/philosophers/diogenes-von-sinope.jpg",
     "name": "Diogenes von Sinope",
     "shortName": "Diogenes",
     "years": "ca. 412–323 v. Chr.",
@@ -689,6 +691,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "pythagoras",
+    "portrait": "../assets/img/philosophers/pythagoras.jpg",
     "name": "Pythagoras",
     "shortName": "Pythagoras",
     "years": "ca. 570–495 v. Chr.",
@@ -838,6 +841,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "wilhelm-von-ockham",
+    "portrait": "../assets/img/philosophers/wilhelm-von-ockham.jpg",
     "name": "Wilhelm von Ockham",
     "shortName": "Ockham",
     "years": "ca. 1288–1347",
@@ -1347,6 +1351,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "mary-wollstonecraft",
+    "portrait": "../assets/img/philosophers/mary-wollstonecraft.jpg",
     "name": "Mary Wollstonecraft",
     "shortName": "Wollstonecraft",
     "years": "1759–1797",
@@ -1376,6 +1381,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "francis-bacon",
+    "portrait": "../assets/img/philosophers/francis-bacon.jpg",
     "name": "Francis Bacon",
     "shortName": "Bacon",
     "years": "1561–1626",
@@ -1405,6 +1411,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "michel-de-montaigne",
+    "portrait": "../assets/img/philosophers/michel-de-montaigne.jpg",
     "name": "Michel de Montaigne",
     "shortName": "Montaigne",
     "years": "1533–1592",
@@ -2095,6 +2102,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "theodor-adorno",
+    "portrait": "../assets/img/philosophers/theodor-adorno.jpg",
     "name": "Theodor W. Adorno",
     "shortName": "Adorno",
     "years": "1903–1969",
@@ -2124,6 +2132,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "max-horkheimer",
+    "portrait": "../assets/img/philosophers/max-horkheimer.jpg",
     "name": "Max Horkheimer",
     "shortName": "Horkheimer",
     "years": "1895–1973",
@@ -2153,6 +2162,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "jacques-derrida",
+    "portrait": "../assets/img/philosophers/jacques-derrida.jpg",
     "name": "Jacques Derrida",
     "shortName": "Derrida",
     "years": "1930–2004",
@@ -2182,6 +2192,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "thomas-kuhn",
+    "portrait": "../assets/img/philosophers/thomas-kuhn.jpg",
     "name": "Thomas Kuhn",
     "shortName": "Kuhn",
     "years": "1922–1996",
