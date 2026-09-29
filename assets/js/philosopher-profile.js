@@ -2342,6 +2342,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "peter-singer",
+    "portrait": "../assets/img/philosophers/peter-singer.jpg",
     "name": "Peter Singer",
     "shortName": "Singer",
     "years": "1946–",
@@ -2371,6 +2372,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "slavoj-zizek",
+    "portrait": "../assets/img/philosophers/slavoj-zizek.jpg",
     "name": "Slavoj Žižek",
     "shortName": "Žižek",
     "years": "1949–",

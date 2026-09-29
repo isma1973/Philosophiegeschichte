@@ -77,9 +77,9 @@
 - [x] max-horkheimer
 - [x] jacques-derrida
 - [x] thomas-kuhn
-- [ ] peter-singer
-- [ ] slavoj-zizek
+- [x] peter-singer
+- [x] slavoj-zizek
 
 ## Integration
 - [x] Teil 1 der Integration: Die ersten 12 generierten Bilder in der `philosopher-profile.js` verknüpfen.
-- [ ] Restliche Bilder in der `philosopher-profile.js` aktualisieren.
+- [x] Restliche Bilder in der `philosopher-profile.js` aktualisieren.
