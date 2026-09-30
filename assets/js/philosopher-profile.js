@@ -2482,6 +2482,32 @@ function renderPhilosopherProfile() {
             ${next ? `<a class="epoch-nav-link" href="${next.slug}.html">${next.shortName} →</a>` : "<span></span>"}
         </nav>
     `;
+
+    // Keyboard and Swipe Navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft' && previous) {
+            window.location.href = `${previous.slug}.html`;
+        } else if (e.key === 'ArrowRight' && next) {
+            window.location.href = `${next.slug}.html`;
+        }
+    });
+
+    let touchstartX = 0;
+    let touchendX = 0;
+
+    document.addEventListener('touchstart', e => {
+        touchstartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+
+    document.addEventListener('touchend', e => {
+        touchendX = e.changedTouches[0].screenX;
+        if (touchendX < touchstartX - 50 && next) {
+            window.location.href = `${next.slug}.html`; // Swipe left -> Next
+        }
+        if (touchendX > touchstartX + 50 && previous) {
+            window.location.href = `${previous.slug}.html`; // Swipe right -> Prev
+        }
+    }, {passive: true});
 }
 
 document.addEventListener("DOMContentLoaded", renderPhilosopherProfile);

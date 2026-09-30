@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Entdecken – Philosophiegeschichte</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <!-- Framework Styles -->
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/core-theme.css">
+    <link rel="stylesheet" href="assets/css/core-ui.css">
+    <link rel="stylesheet" href="assets/css/ui-kit.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <style>
+        body { 
+            overflow: hidden; 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            touch-action: none;
+        }
+        .gallery-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .tinder-card {
+            position: absolute;
+            width: 90vw;
+            max-width: 420px;
+            height: 70vh;
+            max-height: 650px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            transform-origin: 50% 100%;
+            will-change: transform;
+            cursor: grab;
+        }
+        .tinder-card:active { cursor: grabbing; }
+        .card-img {
+            flex: 1;
+            object-fit: cover;
+            width: 100%;
+            height: 55%;
+            border-bottom: 1px solid var(--border);
+            pointer-events: none;
+        }
+        .card-body {
+            flex: 0 0 45%;
+            padding: var(--space-4);
+            text-align: center;
+            pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card-name { font-size: 1.8rem; font-weight: 700; margin-bottom: var(--space-2); }
+        .card-era { font-size: 0.85rem; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-bottom: var(--space-3); letter-spacing: 0.05em; }
+        .card-quote { font-style: italic; font-size: 1.1rem; color: var(--text-light); line-height: 1.4; }
+        
+        .gallery-actions {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 24px;
+            z-index: 100;
+        }
+        .action-btn {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            border: none;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .action-btn:hover { transform: scale(1.1); }
+        .btn-nope { background: var(--bg-tertiary); color: var(--text); }
+        .btn-love { background: var(--accent); color: #fff; }
+        
+        .empty-state {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 1.2rem;
+            display: none;
+        }
+        
+        /* Topbar Reset for this page */
+        .topbar-gallery {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-3) var(--space-4);
+            background: var(--bg);
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <header class="topbar-gallery">
+        <a href="index.html" style="text-decoration: none; color: var(--text-light); font-weight: 600; font-size: 1.1rem;">← Zurück</a>
+        <h1 style="font-size: 1.2rem; margin: 0; font-weight: 700;">Entdecken</h1>
+        <div style="width: 52px;"><!-- Spacer for flex --></div>
+    </header>
+
+    <div class="gallery-container" id="galleryContainer">
+        <div class="empty-state" id="emptyState">
+            Du hast alle Philosophen entdeckt!<br>
+            <button onclick="location.reload()" class="btn btn-primary" style="margin-top: 15px;">Neu mischen</button>
+        </div>
+        <!-- Cards injected via JS -->
+    </div>
+    
+    <div class="gallery-actions">
+        <button class="action-btn btn-nope" id="btnNope" aria-label="Nächster">✕</button>
+        <button class="action-btn btn-love" id="btnLove" aria-label="Zum Profil">📖</button>
+    </div>
+
+    <!-- The ios switch is fixed in css, we add it here just to keep the dark mode functionality -->
+    <label class="ios-switch" for="themeToggle" style="display: none;">
+        <input type="checkbox" id="themeToggle" checked>
+        <span class="slider"></span>
+    </label>
+
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/philosopher-profile.js"></script>
+    <script src="assets/js/galerie.js"></script>
+</body>
+</html>
