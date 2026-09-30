@@ -8,7 +8,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Ethik, Befreiungslehre",
     "thesis": "Leid entsteht durch Anhaftung; die Loslösung führt zur Befreiung (Nirvana).",
-    "portrait": "../assets/img/philosophers/buddha.jpg",
+    "portrait": "../assets/img/philosophers/buddha.webp",
     "intro": "Der Buddha begründete eine empirische, ethische Praxis zur Überwindung des existenziellen Leids, unabhängig von dogmatischer Metaphysik.",
     "ideas": [
       "Die Vier Edlen Wahrheiten",
@@ -38,7 +38,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Ontologie, Logik",
     "thesis": "Alle Phänomene sind leer (Śūnyatā) von einer inhärenten Eigennatur.",
-    "portrait": "../assets/img/philosophers/nagarjuna.jpg",
+    "portrait": "../assets/img/philosophers/nagarjuna.webp",
     "intro": "Nagarjuna ist der Begründer der Madhyamaka-Schule. Seine brillante Logik dekonstruierte alle philosophischen Standpunkte und zeigte, dass alles in gegenseitiger Abhängigkeit existiert.",
     "ideas": [
       "Leere (Śūnyatā)",
@@ -68,7 +68,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Metaphysik",
     "thesis": "Brahman (das Absolute) und Atman (das Selbst) sind eins; die Vielheit ist Illusion (Maya).",
-    "portrait": "../assets/img/philosophers/shankara.jpg",
+    "portrait": "../assets/img/philosophers/shankara.webp",
     "intro": "Shankara konsolidierte die Lehre des Advaita Vedanta. Er argumentierte mit bestechender Schärfe für eine radikale Nicht-Dualität des Seins.",
     "ideas": [
       "Advaita (Nicht-Dualität)",
@@ -98,7 +98,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Politische Philosophie",
     "thesis": "Macht und Staatsräson stehen über konventioneller Moral, wenn es um den Erhalt des Staates geht.",
-    "portrait": "../assets/img/philosophers/chanakya.jpg",
+    "portrait": "../assets/img/philosophers/chanakya.webp",
     "intro": "Chanakya war Stratege und Philosoph. Sein Werk ist eine der frühesten und schonungslosesten Analysen von Macht, Wirtschaft und Staatskunst.",
     "ideas": [
       "Realpolitik",
@@ -128,7 +128,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Integrale Philosophie",
     "thesis": "Die Evolution ist nicht nur physisch, sondern die spirituelle Entfaltung des göttlichen Bewusstseins.",
-    "portrait": "../assets/img/philosophers/sri-aurobindo.jpg",
+    "portrait": "../assets/img/philosophers/sri-aurobindo.webp",
     "intro": "Aurobindo verband westliches evolutionäres Denken mit indischer Mystik zu einem gewaltigen philosophischen System der 'Integralen Entfaltung'.",
     "ideas": [
       "Evolution des Bewusstseins",
@@ -158,7 +158,7 @@ const PHILOSOPHERS = [
     "eraLink": "indien.html",
     "field": "Humanismus, Ästhetik",
     "thesis": "Die höchste Wahrheit ist die Harmonie des Menschen mit dem Universum.",
-    "portrait": "../assets/img/philosophers/tagore.jpg",
+    "portrait": "../assets/img/philosophers/tagore.webp",
     "intro": "Tagore war Dichter und Philosoph. Er kritisierte den engen westlichen Nationalismus und plädierte für einen universalen Humanismus.",
     "ideas": [
       "Universaler Humanismus",
@@ -181,7 +181,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "konfuzius",
-    "portrait": "../assets/img/philosophers/konfuzius.jpg",
+    "portrait": "../assets/img/philosophers/konfuzius.webp",
     "name": "Konfuzius (Kongzi)",
     "shortName": "Konfuzius",
     "years": "ca. 551–479 v. Chr.",
@@ -211,7 +211,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "laozi",
-    "portrait": "../assets/img/philosophers/laozi.jpg",
+    "portrait": "../assets/img/philosophers/laozi.webp",
     "name": "Laozi",
     "shortName": "Laozi",
     "years": "ca. 6. Jh. v. Chr.",
@@ -241,7 +241,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "zhuangzi",
-    "portrait": "../assets/img/philosophers/zhuangzi.jpg",
+    "portrait": "../assets/img/philosophers/zhuangzi.webp",
     "name": "Zhuangzi",
     "shortName": "Zhuangzi",
     "years": "ca. 369–286 v. Chr.",
@@ -271,7 +271,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "mozi",
-    "portrait": "../assets/img/philosophers/mozi.jpg",
+    "portrait": "../assets/img/philosophers/mozi.webp",
     "name": "Mozi",
     "shortName": "Mozi",
     "years": "ca. 470–391 v. Chr.",
@@ -301,7 +301,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "mencius",
-    "portrait": "../assets/img/philosophers/mencius.jpg",
+    "portrait": "../assets/img/philosophers/mencius.webp",
     "name": "Mencius (Mengzi)",
     "shortName": "Mencius",
     "years": "ca. 372–289 v. Chr.",
@@ -331,7 +331,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "zhu-xi",
-    "portrait": "../assets/img/philosophers/zhu-xi.jpg",
+    "portrait": "../assets/img/philosophers/zhu-xi.webp",
     "name": "Zhu Xi",
     "shortName": "Zhu Xi",
     "years": "1130–1200",
@@ -601,7 +601,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "marc-aurel",
-    "portrait": "../assets/img/philosophers/marc-aurel.jpg",
+    "portrait": "../assets/img/philosophers/marc-aurel.webp",
     "name": "Marc Aurel",
     "shortName": "Marc Aurel",
     "years": "121–180",
@@ -631,7 +631,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "hypatia",
-    "portrait": "../assets/img/philosophers/hypatia.jpg",
+    "portrait": "../assets/img/philosophers/hypatia.webp",
     "name": "Hypatia von Alexandria",
     "shortName": "Hypatia",
     "years": "ca. 355–415",
@@ -661,7 +661,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "diogenes-von-sinope",
-    "portrait": "../assets/img/philosophers/diogenes-von-sinope.jpg",
+    "portrait": "../assets/img/philosophers/diogenes-von-sinope.webp",
     "name": "Diogenes von Sinope",
     "shortName": "Diogenes",
     "years": "ca. 412–323 v. Chr.",
@@ -691,7 +691,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "pythagoras",
-    "portrait": "../assets/img/philosophers/pythagoras.jpg",
+    "portrait": "../assets/img/philosophers/pythagoras.webp",
     "name": "Pythagoras",
     "shortName": "Pythagoras",
     "years": "ca. 570–495 v. Chr.",
@@ -841,7 +841,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "wilhelm-von-ockham",
-    "portrait": "../assets/img/philosophers/wilhelm-von-ockham.jpg",
+    "portrait": "../assets/img/philosophers/wilhelm-von-ockham.webp",
     "name": "Wilhelm von Ockham",
     "shortName": "Ockham",
     "years": "ca. 1288–1347",
@@ -931,7 +931,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "al-farabi",
-    "portrait": "../assets/img/philosophers/al-farabi.jpg",
+    "portrait": "../assets/img/philosophers/al-farabi.webp",
     "name": "Al-Farabi",
     "shortName": "Al-Farabi",
     "years": "ca. 872–950",
@@ -961,7 +961,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "al-ghazali",
-    "portrait": "../assets/img/philosophers/al-ghazali.jpg",
+    "portrait": "../assets/img/philosophers/al-ghazali.webp",
     "name": "Al-Ghazali",
     "shortName": "Al-Ghazali",
     "years": "1058–1111",
@@ -991,7 +991,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "ibn-khaldun",
-    "portrait": "../assets/img/philosophers/ibn-khaldun.jpg",
+    "portrait": "../assets/img/philosophers/ibn-khaldun.webp",
     "name": "Ibn Khaldun",
     "shortName": "Ibn Khaldun",
     "years": "1332–1406",
@@ -1021,7 +1021,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "dogen",
-    "portrait": "../assets/img/philosophers/dogen.jpg",
+    "portrait": "../assets/img/philosophers/dogen.webp",
     "name": "Dōgen Zenji",
     "shortName": "Dōgen",
     "years": "1200–1253",
@@ -1051,7 +1051,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "nishida",
-    "portrait": "../assets/img/philosophers/nishida.jpg",
+    "portrait": "../assets/img/philosophers/nishida.webp",
     "name": "Nishida Kitarō",
     "shortName": "Nishida",
     "years": "1870–1945",
@@ -1081,7 +1081,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "watsuji",
-    "portrait": "../assets/img/philosophers/watsuji.jpg",
+    "portrait": "../assets/img/philosophers/watsuji.webp",
     "name": "Watsuji Tetsurō",
     "shortName": "Watsuji",
     "years": "1889–1960",
@@ -1351,7 +1351,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "mary-wollstonecraft",
-    "portrait": "../assets/img/philosophers/mary-wollstonecraft.jpg",
+    "portrait": "../assets/img/philosophers/mary-wollstonecraft.webp",
     "name": "Mary Wollstonecraft",
     "shortName": "Wollstonecraft",
     "years": "1759–1797",
@@ -1381,7 +1381,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "francis-bacon",
-    "portrait": "../assets/img/philosophers/francis-bacon.jpg",
+    "portrait": "../assets/img/philosophers/francis-bacon.webp",
     "name": "Francis Bacon",
     "shortName": "Bacon",
     "years": "1561–1626",
@@ -1411,7 +1411,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "michel-de-montaigne",
-    "portrait": "../assets/img/philosophers/michel-de-montaigne.jpg",
+    "portrait": "../assets/img/philosophers/michel-de-montaigne.webp",
     "name": "Michel de Montaigne",
     "shortName": "Montaigne",
     "years": "1533–1592",
@@ -1711,7 +1711,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "william-james",
-    "portrait": "../assets/img/philosophers/william-james.jpg",
+    "portrait": "../assets/img/philosophers/william-james.webp",
     "name": "William James",
     "shortName": "James",
     "years": "1842–1910",
@@ -1952,7 +1952,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "juergen-habermas",
-    "portrait": "../assets/img/philosophers/juergen-habermas.jpg",
+    "portrait": "../assets/img/philosophers/juergen-habermas.webp",
     "name": "Jürgen Habermas",
     "shortName": "Habermas",
     "years": "geb. 1929",
@@ -1982,7 +1982,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "karl-popper",
-    "portrait": "../assets/img/philosophers/karl-popper.jpg",
+    "portrait": "../assets/img/philosophers/karl-popper.webp",
     "name": "Karl Popper",
     "shortName": "Popper",
     "years": "1902–1994",
@@ -2012,7 +2012,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "bertrand-russell",
-    "portrait": "../assets/img/philosophers/bertrand-russell.jpg",
+    "portrait": "../assets/img/philosophers/bertrand-russell.webp",
     "name": "Bertrand Russell",
     "shortName": "Russell",
     "years": "1872–1970",
@@ -2042,7 +2042,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "edmund-husserl",
-    "portrait": "../assets/img/philosophers/edmund-husserl.jpg",
+    "portrait": "../assets/img/philosophers/edmund-husserl.webp",
     "name": "Edmund Husserl",
     "shortName": "Husserl",
     "years": "1859–1938",
@@ -2072,7 +2072,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "john-rawls",
-    "portrait": "../assets/img/philosophers/john-rawls.jpg",
+    "portrait": "../assets/img/philosophers/john-rawls.webp",
     "name": "John Rawls",
     "shortName": "Rawls",
     "years": "1921–2002",
@@ -2102,7 +2102,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "theodor-adorno",
-    "portrait": "../assets/img/philosophers/theodor-adorno.jpg",
+    "portrait": "../assets/img/philosophers/theodor-adorno.webp",
     "name": "Theodor W. Adorno",
     "shortName": "Adorno",
     "years": "1903–1969",
@@ -2132,7 +2132,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "max-horkheimer",
-    "portrait": "../assets/img/philosophers/max-horkheimer.jpg",
+    "portrait": "../assets/img/philosophers/max-horkheimer.webp",
     "name": "Max Horkheimer",
     "shortName": "Horkheimer",
     "years": "1895–1973",
@@ -2162,7 +2162,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "jacques-derrida",
-    "portrait": "../assets/img/philosophers/jacques-derrida.jpg",
+    "portrait": "../assets/img/philosophers/jacques-derrida.webp",
     "name": "Jacques Derrida",
     "shortName": "Derrida",
     "years": "1930–2004",
@@ -2192,7 +2192,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "thomas-kuhn",
-    "portrait": "../assets/img/philosophers/thomas-kuhn.jpg",
+    "portrait": "../assets/img/philosophers/thomas-kuhn.webp",
     "name": "Thomas Kuhn",
     "shortName": "Kuhn",
     "years": "1922–1996",
@@ -2222,7 +2222,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "daniel-dennett",
-    "portrait": "../assets/img/philosophers/daniel-dennett.jpg",
+    "portrait": "../assets/img/philosophers/daniel-dennett.webp",
     "name": "Daniel Dennett",
     "shortName": "Dennett",
     "years": "1942–2024",
@@ -2252,7 +2252,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "martha-nussbaum",
-    "portrait": "../assets/img/philosophers/martha-nussbaum.jpg",
+    "portrait": "../assets/img/philosophers/martha-nussbaum.webp",
     "name": "Martha Nussbaum",
     "shortName": "Nussbaum",
     "years": "geb. 1947",
@@ -2282,7 +2282,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "judith-butler",
-    "portrait": "../assets/img/philosophers/judith-butler.jpg",
+    "portrait": "../assets/img/philosophers/judith-butler.webp",
     "name": "Judith Butler",
     "shortName": "Butler",
     "years": "geb. 1956",
@@ -2312,7 +2312,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "byung-chul-han",
-    "portrait": "../assets/img/philosophers/byung-chul-han.jpg",
+    "portrait": "../assets/img/philosophers/byung-chul-han.webp",
     "name": "Byung-Chul Han",
     "shortName": "Byung-Chul Han",
     "years": "geb. 1959",
@@ -2342,7 +2342,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "peter-singer",
-    "portrait": "../assets/img/philosophers/peter-singer.jpg",
+    "portrait": "../assets/img/philosophers/peter-singer.webp",
     "name": "Peter Singer",
     "shortName": "Singer",
     "years": "1946–",
@@ -2372,7 +2372,7 @@ const PHILOSOPHERS = [
   },
   {
     "slug": "slavoj-zizek",
-    "portrait": "../assets/img/philosophers/slavoj-zizek.jpg",
+    "portrait": "../assets/img/philosophers/slavoj-zizek.webp",
     "name": "Slavoj Žižek",
     "shortName": "Žižek",
     "years": "1949–",

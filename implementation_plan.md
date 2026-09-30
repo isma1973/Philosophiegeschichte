@@ -28,10 +28,10 @@ Für alle erfolgreich generierten Bilder muss in der Datei `assets/js/philosophe
 *Beispiel:*
 ```json
 "slug": "aristoteles",
-"portrait": "../assets/img/philosophers/aristoteles.jpg",
+"portrait": "../assets/img/philosophers/aristoteles.webp",
 ```
 
 ## ✅ Verifizierungsplan
-- Ich stelle sicher, dass alle generierten `.jpg` Dateien im Ordner `assets/img/philosophers/` liegen.
+- Ich stelle sicher, dass alle generierten `.webp` Dateien im Ordner `assets/img/philosophers/` liegen.
 - Die JavaScript-Datei lädt die Bilder fehlerfrei auf den jeweiligen Profilseiten.
 - Die Fortschritte werden laufend in der `task.md` Checkliste dokumentiert.

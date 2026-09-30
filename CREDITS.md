@@ -49,6 +49,49 @@ Die folgenden Bilder wurden vollständig durch Künstliche Intelligenz (Modell: 
 | thomas-von-aquin.webp | Thomas von Aquin | KI (Gemini 3.1 Pro) | Public Domain |
 | zenon-von-kition.webp | Zenon von Kition | KI (Gemini 3.1 Pro) | Public Domain |
 
+| al-farabi.webp | Al Farabi | KI (Gemini 3.1 Pro) | Public Domain |
+| al-ghazali.webp | Al Ghazali | KI (Gemini 3.1 Pro) | Public Domain |
+| bertrand-russell.webp | Bertrand Russell | KI (Gemini 3.1 Pro) | Public Domain |
+| buddha.webp | Buddha | KI (Gemini 3.1 Pro) | Public Domain |
+| byung-chul-han.webp | Byung Chul Han | KI (Gemini 3.1 Pro) | Public Domain |
+| chanakya.webp | Chanakya | KI (Gemini 3.1 Pro) | Public Domain |
+| daniel-dennett.webp | Daniel Dennett | KI (Gemini 3.1 Pro) | Public Domain |
+| diogenes-von-sinope.webp | Diogenes Von Sinope | KI (Gemini 3.1 Pro) | Public Domain |
+| dogen.webp | Dogen | KI (Gemini 3.1 Pro) | Public Domain |
+| edmund-husserl.webp | Edmund Husserl | KI (Gemini 3.1 Pro) | Public Domain |
+| francis-bacon.webp | Francis Bacon | KI (Gemini 3.1 Pro) | Public Domain |
+| hypatia.webp | Hypatia | KI (Gemini 3.1 Pro) | Public Domain |
+| ibn-khaldun.webp | Ibn Khaldun | KI (Gemini 3.1 Pro) | Public Domain |
+| jacques-derrida.webp | Jacques Derrida | KI (Gemini 3.1 Pro) | Public Domain |
+| john-rawls.webp | John Rawls | KI (Gemini 3.1 Pro) | Public Domain |
+| judith-butler.webp | Judith Butler | KI (Gemini 3.1 Pro) | Public Domain |
+| juergen-habermas.webp | Juergen Habermas | KI (Gemini 3.1 Pro) | Public Domain |
+| karl-popper.webp | Karl Popper | KI (Gemini 3.1 Pro) | Public Domain |
+| konfuzius.webp | Konfuzius | KI (Gemini 3.1 Pro) | Public Domain |
+| laozi.webp | Laozi | KI (Gemini 3.1 Pro) | Public Domain |
+| marc-aurel.webp | Marc Aurel | KI (Gemini 3.1 Pro) | Public Domain |
+| martha-nussbaum.webp | Martha Nussbaum | KI (Gemini 3.1 Pro) | Public Domain |
+| mary-wollstonecraft.webp | Mary Wollstonecraft | KI (Gemini 3.1 Pro) | Public Domain |
+| max-horkheimer.webp | Max Horkheimer | KI (Gemini 3.1 Pro) | Public Domain |
+| mencius.webp | Mencius | KI (Gemini 3.1 Pro) | Public Domain |
+| michel-de-montaigne.webp | Michel De Montaigne | KI (Gemini 3.1 Pro) | Public Domain |
+| mozi.webp | Mozi | KI (Gemini 3.1 Pro) | Public Domain |
+| nagarjuna.webp | Nagarjuna | KI (Gemini 3.1 Pro) | Public Domain |
+| nishida.webp | Nishida | KI (Gemini 3.1 Pro) | Public Domain |
+| peter-singer.webp | Peter Singer | KI (Gemini 3.1 Pro) | Public Domain |
+| pythagoras.webp | Pythagoras | KI (Gemini 3.1 Pro) | Public Domain |
+| shankara.webp | Shankara | KI (Gemini 3.1 Pro) | Public Domain |
+| slavoj-zizek.webp | Slavoj Zizek | KI (Gemini 3.1 Pro) | Public Domain |
+| sri-aurobindo.webp | Sri Aurobindo | KI (Gemini 3.1 Pro) | Public Domain |
+| tagore.webp | Tagore | KI (Gemini 3.1 Pro) | Public Domain |
+| theodor-adorno.webp | Theodor Adorno | KI (Gemini 3.1 Pro) | Public Domain |
+| thomas-kuhn.webp | Thomas Kuhn | KI (Gemini 3.1 Pro) | Public Domain |
+| watsuji.webp | Watsuji | KI (Gemini 3.1 Pro) | Public Domain |
+| wilhelm-von-ockham.webp | Wilhelm Von Ockham | KI (Gemini 3.1 Pro) | Public Domain |
+| william-james.webp | William James | KI (Gemini 3.1 Pro) | Public Domain |
+| zhu-xi.webp | Zhu Xi | KI (Gemini 3.1 Pro) | Public Domain |
+| zhuangzi.webp | Zhuangzi | KI (Gemini 3.1 Pro) | Public Domain |
+
 ## Epochen-Bilder (Public Domain)
 
 Diese Hintergrund- und Stimmungsbilder für die einzelnen Epochen (im Ordner `assets/img/`) wurden ebenfalls mithilfe von KI generiert und sind daher gemeinfrei.
