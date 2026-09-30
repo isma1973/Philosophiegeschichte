@@ -106,22 +106,26 @@ input:focus {
 --------------------------------------------------- */
 
 .ios-switch {
-  position: relative;
+  position: fixed;
+  top: 24px;
+  right: 24px;
   display: inline-block;
   width: 52px;
   height: 28px;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .ios-switch::after {
   content: "Theme wechseln";
   position: absolute;
-  right: 100%;
-  margin-right: 12px;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 12px;
   color: var(--text-light);
-  line-height: 28px;
+  line-height: 1;
   pointer-events: none;
 }
 
