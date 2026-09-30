@@ -11,10 +11,10 @@ window.Timeline = {
         container.innerHTML = `
             <div class="timeline-v">
                 ${data.map((item, index) => {
-                    const triggerId = `${container.id}-timeline-trigger-${index}`;
-                    const panelId = `${container.id}-timeline-panel-${index}`;
+            const triggerId = `${container.id}-timeline-trigger-${index}`;
+            const panelId = `${container.id}-timeline-panel-${index}`;
 
-                    return `
+            return `
                     <div class="timeline-v-item" data-themes="${item.themes || ''}">
                         <div class="timeline-v-marker">
                             <div class="timeline-v-dot"></div>
@@ -33,7 +33,7 @@ window.Timeline = {
                                     <span class="timeline-v-indicator" aria-hidden="true"></span>
                                 </button>
                             </h3>
-                            <p class="text-muted" style="margin-bottom: 0;">${item.summary}</p>
+                            <p class="text-muted" style="margin-top: 12px;">${item.summary}</p>
                             <div
                                 class="timeline-v-detail"
                                 id="${panelId}"
@@ -41,16 +41,7 @@ window.Timeline = {
                                 aria-labelledby="${triggerId}"
                                 hidden
                             >
-                                ${item.image ? `
-                                    <div class="timeline-v-media">
-                                        <img
-                                            src="${item.image}"
-                                            alt="Illustration zur Epoche ${item.title}"
-                                            class="timeline-v-image"
-                                            decoding="async"
-                                        >
-                                    </div>
-                                ` : ''}
+
                                 <p><strong>Wichtige Denker:</strong> ${item.thinkers}</p>
                                 <p>${item.description}</p>
                                 <div class="timeline-v-actions">

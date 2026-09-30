@@ -460,4 +460,5 @@
   document.getElementById('closeModalBtn')?.addEventListener('click', () => {
     document.getElementById('slideshowModal').classList.add('hidden');
   });
+  document.getElementById('btnCheatGallery')?.addEventListener('click', initSlideshow);
 })();
