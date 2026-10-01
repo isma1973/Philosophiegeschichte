@@ -433,7 +433,7 @@
     
     container.innerHTML = epochPhilosophers.map((p, idx) => `
       <div class="slide ${idx === 0 ? 'active' : ''}">
-        <img src="${p.portrait}" alt="${p.name}" class="slide-img">
+        <img src="${p.portrait.replace('../', '')}" alt="${p.name}" class="slide-img">
         <div class="slide-name">${p.name}</div>
         <div class="slide-quote">"${p.thesis}"</div>
       </div>
