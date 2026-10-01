@@ -26,13 +26,14 @@
             justify-content: center;
             position: relative;
             overflow: hidden;
+            /* Leave room for the action buttons row below */
         }
         .tinder-card {
             position: absolute;
             width: 90vw;
             max-width: 420px;
-            height: 70vh;
-            max-height: 650px;
+            /* Reduced height so buttons below never overlap */
+            height: min(62vh, 580px);
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-radius: var(--radius-lg);
@@ -76,14 +77,14 @@
         .card-era { font-size: 0.85rem; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-bottom: var(--space-3); letter-spacing: 0.05em; }
         .card-quote { font-style: italic; font-size: 1.1rem; color: var(--text-light); line-height: 1.4; }
         
+        /* Action buttons: static row BELOW the card stack, never overlaps */
         .gallery-actions {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
             display: flex;
+            justify-content: center;
             gap: 24px;
-            z-index: 100;
+            padding: 14px 0 20px;
+            flex-shrink: 0;
+            z-index: 10;
         }
         .action-btn {
             width: 64px; height: 64px;
@@ -157,7 +158,8 @@
         </div>
         <!-- Cards injected via JS -->
     </div>
-    
+
+    <!-- Action buttons sit BELOW the card stack in the normal document flow -->
     <div class="gallery-actions">
         <button class="action-btn btn-nope" id="btnNope" aria-label="Nächster">✕</button>
         <button class="action-btn btn-love" id="btnLove" aria-label="Zum Profil">📖</button>
