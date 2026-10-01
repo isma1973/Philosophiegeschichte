@@ -102,6 +102,7 @@
             /* Show up to 4 lines, clip the rest cleanly */
             display: -webkit-box;
             -webkit-line-clamp: 4;
+            line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -110,7 +111,7 @@
         @media (max-height: 700px) {
             .card-img { height: clamp(110px, 28vh, 200px); }
             .card-name { font-size: clamp(1rem, 4vw, 1.4rem); }
-            .card-quote { -webkit-line-clamp: 3; }
+            .card-quote { -webkit-line-clamp: 3; line-clamp: 3; }
             .action-btn { width: 52px; height: 52px; font-size: 22px; }
         }
         
