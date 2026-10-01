@@ -393,7 +393,7 @@
 .profile-hero {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 200px;
-    align-items: center;
+    align-items: start;
     gap: var(--space-6);
     padding: var(--space-7) 0 var(--space-3);
 }
@@ -402,7 +402,6 @@
     margin: var(--space-2) 0;
 }
 
-.profile-kicker,
 .profile-years {
     color: var(--text-light);
 }
@@ -411,6 +410,9 @@
     margin: 0;
     font-weight: 700;
     text-transform: uppercase;
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 0.05em;
 }
 
 .profile-years {
@@ -946,4 +948,14 @@ h1.topbar-brand.index-topbar-title {
     text-decoration: underline;
     cursor: pointer;
     font-size: 0.9rem;
+}
+
+.epoch-toolbar {
+    position: relative;
+}
+
+.epoch-toolbar .epoch-nav-home {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }

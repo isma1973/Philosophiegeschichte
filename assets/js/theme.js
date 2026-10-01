@@ -7,11 +7,7 @@ document.body.classList.toggle("dark-mode", isDarkMode);
 if (toggle) {
     toggle.checked = isDarkMode;
 
-    // Set custom hover hint (tooltip) on the label for all pages
-    if (toggle.parentElement && toggle.parentElement.tagName === 'LABEL') {
-        toggle.parentElement.setAttribute("data-tooltip", "true");
-        toggle.parentElement.setAttribute("data-tooltip-text", "Hell / Dunkel Modus");
-    }
+    // No custom tooltip needed as it is a text button now
 
     // Wechseln
     toggle.addEventListener("change", () => {
