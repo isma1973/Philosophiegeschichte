@@ -1031,7 +1031,7 @@ h1.topbar-brand.index-topbar-title {
     padding: 10px 16px;
   }
     .card-img-area {
-        height: clamp(173px, 32vh, 265px);
+        height: clamp(230px, 42vh, 340px);
     }
 }
 
