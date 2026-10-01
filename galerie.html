@@ -57,11 +57,11 @@
                 0 32px 64px rgba(0,0,0,0.4);
         }
         .tinder-card:active { cursor: grabbing; }
-        /* Portrait-Bereich: volle Breite mit Hintergrund, Bild zentriert bei 50% */
+        /* Portrait-Bereich: volle Breite, ganzes Bild sichtbar (nicht reingezoomt) */
         .card-img-area {
             flex: 0 0 auto;
             width: 100%;
-            height: clamp(120px, 22vh, 180px);
+            height: clamp(150px, 28vh, 230px);
             background: var(--bg-tertiary);
             border-bottom: 1px solid var(--border);
             display: flex;
@@ -70,9 +70,9 @@
             overflow: hidden;
         }
         .card-img {
-            /* 50% Zoom: Bild nur halb so breit, ganzes Gesicht sichtbar */
+            /* Volle Breite, aber ganzes Bild sichtbar — kein harter Crop */
             display: block;
-            width: 50%;
+            width: 100%;
             height: 100%;
             object-fit: contain;
             object-position: center top;
