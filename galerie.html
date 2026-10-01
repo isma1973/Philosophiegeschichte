@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +13,14 @@
     <link rel="stylesheet" href="assets/css/ui-kit.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <style>
-        body { 
-            overflow: hidden; 
-            height: 100vh; 
-            display: flex; 
-            flex-direction: column; 
+        body {
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
             touch-action: none;
         }
+
         .gallery-container {
             flex: 1;
             display: flex;
@@ -28,6 +30,7 @@
             overflow: hidden;
             /* Leave room for the action buttons row below */
         }
+
         .tinder-card {
             position: absolute;
             width: 90vw;
@@ -49,14 +52,19 @@
             transform: translateZ(0);
             cursor: grab;
         }
+
         body.dark-mode .tinder-card {
             /* Stronger layered shadow for Dark Mode */
-            box-shadow: 
-                0 4px 12px rgba(0,0,0,0.15),
-                0 16px 32px rgba(0,0,0,0.25),
-                0 32px 64px rgba(0,0,0,0.4);
+            box-shadow:
+                0 4px 12px rgba(0, 0, 0, 0.15),
+                0 16px 32px rgba(0, 0, 0, 0.25),
+                0 32px 64px rgba(0, 0, 0, 0.4);
         }
-        .tinder-card:active { cursor: grabbing; }
+
+        .tinder-card:active {
+            cursor: grabbing;
+        }
+
         /* Portrait-Bereich: volle Breite, ganzes Bild sichtbar (nicht reingezoomt) */
         .card-img-area {
             flex: 0 0 auto;
@@ -69,15 +77,18 @@
             justify-content: center;
             overflow: hidden;
         }
+
         .card-img {
-            /* Volle Breite, aber ganzes Bild sichtbar — kein harter Crop */
+            /* Volle Breite, ganzes Bild sichtbar, kein harter Crop */
             display: block;
             width: 100%;
-            height: 100%;
+            height: auto;
+            max-height: 100%;
             object-fit: contain;
-            object-position: center top;
+            object-position: top;
             pointer-events: none;
         }
+
         .card-body {
             flex: 1 1 auto;
             padding: clamp(12px, 3vw, 20px);
@@ -89,6 +100,7 @@
             gap: 4px;
             overflow: hidden;
         }
+
         .card-name {
             font-size: clamp(1.1rem, 4.5vw, 1.8rem);
             font-weight: 700;
@@ -98,6 +110,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+
         .card-era {
             font-size: clamp(0.7rem, 2.5vw, 0.85rem);
             color: var(--accent);
@@ -106,6 +119,7 @@
             margin-bottom: 6px;
             letter-spacing: 0.05em;
         }
+
         .card-quote {
             font-style: italic;
             font-size: clamp(0.8rem, 2.8vw, 1rem);
@@ -121,12 +135,26 @@
 
         /* Extra compact on very small screens (< 380px, older iPhones) */
         @media (max-height: 700px) {
-            .card-img { height: clamp(110px, 28vh, 200px); }
-            .card-name { font-size: clamp(1rem, 4vw, 1.4rem); }
-            .card-quote { -webkit-line-clamp: 3; line-clamp: 3; }
-            .action-btn { width: 52px; height: 52px; font-size: 22px; }
+            .card-img {
+                height: clamp(110px, 28vh, 200px);
+            }
+
+            .card-name {
+                font-size: clamp(1rem, 4vw, 1.4rem);
+            }
+
+            .card-quote {
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+            }
+
+            .action-btn {
+                width: 52px;
+                height: 52px;
+                font-size: 22px;
+            }
         }
-        
+
         /* Action buttons: static row BELOW the card stack, never overlaps */
         .gallery-actions {
             display: flex;
@@ -136,27 +164,42 @@
             flex-shrink: 0;
             z-index: 10;
         }
+
         .action-btn {
-            width: 64px; height: 64px;
+            width: 64px;
+            height: 64px;
             border-radius: 50%;
             border: none;
-            display: flex; align-items: center; justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 28px;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.2s, background-color 0.2s;
         }
-        .action-btn:hover { transform: scale(1.1); }
-        .btn-nope { background: var(--bg-tertiary); color: var(--text); }
-        .btn-love { background: var(--accent); color: #fff; }
-        
+
+        .action-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-nope {
+            background: var(--bg-tertiary);
+            color: var(--text);
+        }
+
+        .btn-love {
+            background: var(--accent);
+            color: #fff;
+        }
+
         .empty-state {
             text-align: center;
             color: var(--text-light);
             font-size: 1.2rem;
             display: none;
         }
-        
+
         /* Topbar Reset for this page */
         .topbar-gallery {
             display: flex;
@@ -167,33 +210,34 @@
             z-index: 100;
             border-bottom: 1px solid var(--border);
         }
-        
+
         .galerie-back-link {
             text-decoration: none;
             color: var(--text-light);
             font-weight: 600;
             font-size: 1.1rem;
         }
-        
+
         .galerie-title {
             font-size: 1.2rem;
             margin: 0;
             font-weight: 700;
         }
-        
+
         .galerie-spacer {
             width: 52px;
         }
-        
+
         .galerie-reload-btn {
             margin-top: 15px;
         }
-        
+
         .galerie-hidden-switch {
             display: none;
         }
     </style>
 </head>
+
 <body class="dark-mode">
     <header class="topbar-gallery">
         <a href="index.html" class="galerie-back-link">← Zurück</a>
@@ -225,4 +269,5 @@
     <script src="assets/js/philosopher-profile.js"></script>
     <script src="assets/js/galerie.js"></script>
 </body>
+
 </html>
