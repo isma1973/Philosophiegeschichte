@@ -954,8 +954,81 @@ h1.topbar-brand.index-topbar-title {
     position: relative;
 }
 
+
 .epoch-toolbar .epoch-nav-home {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* =====================================================
+   📱 MOBILE FIXES — iPhone 13 Pro (390px) & ähnliche
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+  /* ── 1. Hauptcontainer: weniger Padding ── */
+  .main,
+  .ui-main {
+    padding: 20px 16px;
+  }
+
+  /* ── 2. Topbar: kompakter ── */
+  .topbar {
+    margin-bottom: 20px;
+    padding: 0;
+    gap: 8px;
+  }
+
+  /* ── 3. Titel-Text auf Mobile verkleinern ── */
+  .topbar-title-main {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .topbar-title-sub {
+    font-size: 0.72rem;
+  }
+
+  h1.topbar-brand.index-topbar-title {
+    max-width: calc(100vw - 100px);
+  }
+
+  /* ── 4. iOS-Switch: kleiner & kompakter ── */
+  .ios-switch {
+    width: 80px;
+    padding: 5px 8px;
+    font-size: 11px;
+    flex-shrink: 0;
+  }
+
+  /* ── 5. Filter-Bar: vertikal stapeln ── */
+  .filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 14px;
+  }
+
+  .filter-bar select {
+    width: 100%;
+    min-width: unset;
+    font-size: 0.9rem;
+  }
+
+  /* ── 6. Hero-Block: weniger Padding ── */
+  .hero-premium {
+    padding: 24px 16px;
+    margin-bottom: 16px;
+  }
+
+  .hero-premium-title {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+
+  .hero-gallery-btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}
+
