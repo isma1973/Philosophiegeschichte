@@ -36,14 +36,23 @@
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-radius: var(--radius-lg);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            /* Schatten im Light Mode komplett entfernt, da der Border reicht und glatt ist */
+            box-shadow: none;
             display: flex;
             flex-direction: column;
             overflow: hidden;
             transition: transform 0.3s ease, opacity 0.3s ease;
             transform-origin: 50% 100%;
             will-change: transform;
+            transform: translateZ(0); /* Forces GPU rendering for smoother shadows */
             cursor: grab;
+        }
+        body.dark-mode .tinder-card {
+            /* Stronger layered shadow for Dark Mode */
+            box-shadow: 
+                0 4px 12px rgba(0,0,0,0.15),
+                0 16px 32px rgba(0,0,0,0.25),
+                0 32px 64px rgba(0,0,0,0.4);
         }
         .tinder-card:active { cursor: grabbing; }
         .card-img {
