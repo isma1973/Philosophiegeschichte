@@ -21,7 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
         card.className = 'tinder-card';
         card.dataset.slug = p.slug;
         card.innerHTML = `
-            <img src="${portrait}" alt="${p.name}" class="card-img" draggable="false">
+            <div class="card-img-area">
+                <img src="${portrait}" alt="${p.name}" class="card-img" draggable="false">
+            </div>
             <div class="card-body">
                 <div class="card-era">${p.era}</div>
                 <div class="card-name">${p.name}</div>
