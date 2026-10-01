@@ -1,5 +1,35 @@
 const PHILOSOPHERS = [
   {
+    "slug": "vedische-seher",
+    "name": "Die Vedischen Seher (Rishis)",
+    "shortName": "Vedische Seher",
+    "years": "ca. 1500–500 v. Chr.",
+    "era": "Indien",
+    "eraLink": "indien.html",
+    "field": "Metaphysik, Kosmologie",
+    "thesis": "Das Absolute (Brahman) und der innerste Kern des Menschen (Atman) sind letztlich eins.",
+    "portrait": "../assets/img/indien.webp",
+    "intro": "Die Rishis waren mythologische, oft anonyme Weise, die durch tiefe Meditation kosmische Wahrheiten schauten. Ihre gesammelten Einsichten bilden die Veden und die Upanishaden – das Fundament der indischen Philosophie.",
+    "ideas": [
+      "Brahman (Das universelle Prinzip)",
+      "Atman (Das wahre Selbst)",
+      "Karma und Samsara (Wiedergeburtszyklus)"
+    ],
+    "significance": "Sie legten den absoluten Grundstein für das gesamte spätere indische Denken. Bevor es greifbare historische Individuen wie Buddha gab, etablierten sie die großen metaphysischen Fragen.",
+    "works": "Die Veden (z. B. Rigveda), Die Upanishaden (z. B. Brihadaranyaka)",
+    "context": "Eine Zeit des Übergangs von reiner Natur- und Ritualreligion (Veden) zur tiefgründigen philosophischen Verinnerlichung (Upanishaden) im alten Indien.",
+    "links": [
+      {
+        "title": "Wikipedia: Veden",
+        "url": "https://de.wikipedia.org/wiki/Veda"
+      },
+      {
+        "title": "Wikipedia: Upanishaden",
+        "url": "https://de.wikipedia.org/wiki/Upanischaden"
+      }
+    ]
+  },
+  {
     "slug": "buddha",
     "name": "Siddhartha Gautama (Buddha)",
     "shortName": "Buddha",
@@ -26,6 +56,36 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Siddhartha%20Gautama"
+      }
+    ]
+  },
+  {
+    "slug": "chanakya",
+    "name": "Chanakya (Kautilya)",
+    "shortName": "Chanakya",
+    "years": "ca. 375–283 v. Chr.",
+    "era": "Indien",
+    "eraLink": "indien.html",
+    "field": "Politische Philosophie",
+    "thesis": "Macht und Staatsräson stehen über konventioneller Moral, wenn es um den Erhalt des Staates geht.",
+    "portrait": "../assets/img/philosophers/chanakya.webp",
+    "intro": "Chanakya war Stratege und Philosoph. Sein Werk ist eine der frühesten und schonungslosesten Analysen von Macht, Wirtschaft und Staatskunst.",
+    "ideas": [
+      "Realpolitik",
+      "Die sieben Säulen des Staates",
+      "Wirtschaft als Fundament der Macht"
+    ],
+    "significance": "Oft als 'indischer Machiavelli' bezeichnet, obwohl er Jahrtausende früher lebte. Ein Pionier der systematischen Politikwissenschaft.",
+    "works": "Arthashastra",
+    "context": "War maßgeblich an der Gründung des Maurya-Reiches unter Chandragupta beteiligt.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Chanakya"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Chanakya"
       }
     ]
   },
@@ -90,32 +150,32 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "chanakya",
-    "name": "Chanakya (Kautilya)",
-    "shortName": "Chanakya",
-    "years": "ca. 375–283 v. Chr.",
+    "slug": "tagore",
+    "name": "Rabindranath Tagore",
+    "shortName": "Tagore",
+    "years": "1861–1941",
     "era": "Indien",
     "eraLink": "indien.html",
-    "field": "Politische Philosophie",
-    "thesis": "Macht und Staatsräson stehen über konventioneller Moral, wenn es um den Erhalt des Staates geht.",
-    "portrait": "../assets/img/philosophers/chanakya.webp",
-    "intro": "Chanakya war Stratege und Philosoph. Sein Werk ist eine der frühesten und schonungslosesten Analysen von Macht, Wirtschaft und Staatskunst.",
+    "field": "Humanismus, Ästhetik",
+    "thesis": "Die höchste Wahrheit ist die Harmonie des Menschen mit dem Universum.",
+    "portrait": "../assets/img/philosophers/tagore.webp",
+    "intro": "Tagore war Dichter und Philosoph. Er kritisierte den engen westlichen Nationalismus und plädierte für einen universalen Humanismus.",
     "ideas": [
-      "Realpolitik",
-      "Die sieben Säulen des Staates",
-      "Wirtschaft als Fundament der Macht"
+      "Universaler Humanismus",
+      "Kritik an blindem Nationalismus",
+      "Kunst als spirituelle Praxis"
     ],
-    "significance": "Oft als 'indischer Machiavelli' bezeichnet, obwohl er Jahrtausende früher lebte. Ein Pionier der systematischen Politikwissenschaft.",
-    "works": "Arthashastra",
-    "context": "War maßgeblich an der Gründung des Maurya-Reiches unter Chandragupta beteiligt.",
+    "significance": "Erster asiatischer Nobelpreisträger. Er baute eine intellektuelle Brücke zwischen der indischen Seele und der modernen Welt.",
+    "works": "Gitanjali, Sadhana",
+    "context": "Wirkte in der bengalischen Renaissance und gründete die experimentelle Universität Visva-Bharati.",
     "links": [
       {
         "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Chanakya"
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Rabindranath%20Tagore"
       },
       {
         "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Chanakya"
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Rabindranath%20Tagore"
       }
     ]
   },
@@ -150,66 +210,6 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "tagore",
-    "name": "Rabindranath Tagore",
-    "shortName": "Tagore",
-    "years": "1861–1941",
-    "era": "Indien",
-    "eraLink": "indien.html",
-    "field": "Humanismus, Ästhetik",
-    "thesis": "Die höchste Wahrheit ist die Harmonie des Menschen mit dem Universum.",
-    "portrait": "../assets/img/philosophers/tagore.webp",
-    "intro": "Tagore war Dichter und Philosoph. Er kritisierte den engen westlichen Nationalismus und plädierte für einen universalen Humanismus.",
-    "ideas": [
-      "Universaler Humanismus",
-      "Kritik an blindem Nationalismus",
-      "Kunst als spirituelle Praxis"
-    ],
-    "significance": "Erster asiatischer Nobelpreisträger. Er baute eine intellektuelle Brücke zwischen der indischen Seele und der modernen Welt.",
-    "works": "Gitanjali, Sadhana",
-    "context": "Wirkte in der bengalischen Renaissance und gründete die experimentelle Universität Visva-Bharati.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Rabindranath%20Tagore"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Rabindranath%20Tagore"
-      }
-    ]
-  },
-  {
-    "slug": "konfuzius",
-    "portrait": "../assets/img/philosophers/konfuzius.webp",
-    "name": "Konfuzius (Kongzi)",
-    "shortName": "Konfuzius",
-    "years": "ca. 551–479 v. Chr.",
-    "era": "China",
-    "eraLink": "china.html",
-    "field": "Ethik, Sozialphilosophie",
-    "thesis": "Soziale Harmonie entsteht durch Tugend, Rituale und die richtige Erfüllung der eigenen Rolle.",
-    "intro": "Konfuzius formte das ethische Rückgrat Ostasiens. Sein Fokus lag nicht auf Metaphysik, sondern auf dem moralischen Charakter des Menschen und der Ordnung des Staates.",
-    "ideas": [
-      "Ren (Menschlichkeit)",
-      "Li (Ritual, Sitte)",
-      "Pietät gegenüber den Ahnen"
-    ],
-    "significance": "Sein Denken wurde zur Staatsphilosophie Chinas und prägt bis heute die sozialen Strukturen ganz Ostasiens.",
-    "works": "Analekten (Lunyu)",
-    "context": "Lebte in der Zeit der Frühlings- und Herbstannalen, einer Epoche des politischen Zerfalls, der er eine ethische Ordnung entgegenstellte.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Konfuzius"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Konfuzius"
-      }
-    ]
-  },
-  {
     "slug": "laozi",
     "portrait": "../assets/img/philosophers/laozi.webp",
     "name": "Laozi",
@@ -240,32 +240,32 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "zhuangzi",
-    "portrait": "../assets/img/philosophers/zhuangzi.webp",
-    "name": "Zhuangzi",
-    "shortName": "Zhuangzi",
-    "years": "ca. 369–286 v. Chr.",
+    "slug": "konfuzius",
+    "portrait": "../assets/img/philosophers/konfuzius.webp",
+    "name": "Konfuzius (Kongzi)",
+    "shortName": "Konfuzius",
+    "years": "ca. 551–479 v. Chr.",
     "era": "China",
     "eraLink": "china.html",
-    "field": "Daoismus, Erkenntnistheorie",
-    "thesis": "Alle menschlichen Perspektiven sind relativ. Freiheit liegt im Abwerfen starrer Kategorien.",
-    "intro": "Mit brillanten Fabeln und radikalem Humor untergrub Zhuangzi die moralischen Gewissheiten seiner Zeit und feierte die absolute geistige Freiheit.",
+    "field": "Ethik, Sozialphilosophie",
+    "thesis": "Soziale Harmonie entsteht durch Tugend, Rituale und die richtige Erfüllung der eigenen Rolle.",
+    "intro": "Konfuzius formte das ethische Rückgrat Ostasiens. Sein Fokus lag nicht auf Metaphysik, sondern auf dem moralischen Charakter des Menschen und der Ordnung des Staates.",
     "ideas": [
-      "Perspektivismus",
-      "Der Schmetterlingstraum",
-      "Kritik an staatlicher Einmischung"
+      "Ren (Menschlichkeit)",
+      "Li (Ritual, Sitte)",
+      "Pietät gegenüber den Ahnen"
     ],
-    "significance": "Einer der kreativsten und sprachgewaltigsten Denker Chinas. Sein Relativismus ist erstaunlich modern.",
-    "works": "Das wahre Buch vom südlichen Blütenland",
-    "context": "Zeit der Streitenden Reiche. Er lehnte Regierungsämter ab, um seine Unabhängigkeit zu bewahren.",
+    "significance": "Sein Denken wurde zur Staatsphilosophie Chinas und prägt bis heute die sozialen Strukturen ganz Ostasiens.",
+    "works": "Analekten (Lunyu)",
+    "context": "Lebte in der Zeit der Frühlings- und Herbstannalen, einer Epoche des politischen Zerfalls, der er eine ethische Ordnung entgegenstellte.",
     "links": [
       {
         "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Zhuangzi"
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Konfuzius"
       },
       {
         "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Zhuangzi"
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Konfuzius"
       }
     ]
   },
@@ -330,6 +330,36 @@ const PHILOSOPHERS = [
     ]
   },
   {
+    "slug": "zhuangzi",
+    "portrait": "../assets/img/philosophers/zhuangzi.webp",
+    "name": "Zhuangzi",
+    "shortName": "Zhuangzi",
+    "years": "ca. 369–286 v. Chr.",
+    "era": "China",
+    "eraLink": "china.html",
+    "field": "Daoismus, Erkenntnistheorie",
+    "thesis": "Alle menschlichen Perspektiven sind relativ. Freiheit liegt im Abwerfen starrer Kategorien.",
+    "intro": "Mit brillanten Fabeln und radikalem Humor untergrub Zhuangzi die moralischen Gewissheiten seiner Zeit und feierte die absolute geistige Freiheit.",
+    "ideas": [
+      "Perspektivismus",
+      "Der Schmetterlingstraum",
+      "Kritik an staatlicher Einmischung"
+    ],
+    "significance": "Einer der kreativsten und sprachgewaltigsten Denker Chinas. Sein Relativismus ist erstaunlich modern.",
+    "works": "Das wahre Buch vom südlichen Blütenland",
+    "context": "Zeit der Streitenden Reiche. Er lehnte Regierungsämter ab, um seine Unabhängigkeit zu bewahren.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Zhuangzi"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Zhuangzi"
+      }
+    ]
+  },
+  {
     "slug": "zhu-xi",
     "portrait": "../assets/img/philosophers/zhu-xi.webp",
     "name": "Zhu Xi",
@@ -386,6 +416,36 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Thales%20von%20Milet"
+      }
+    ]
+  },
+  {
+    "slug": "pythagoras",
+    "portrait": "../assets/img/philosophers/pythagoras.webp",
+    "name": "Pythagoras",
+    "shortName": "Pythagoras",
+    "years": "ca. 570–495 v. Chr.",
+    "era": "Antike",
+    "eraLink": "antike.html",
+    "field": "Vorsokratik, Mathematik",
+    "thesis": "Alles ist Zahl; die Ordnung des Kosmos basiert auf mathematischen und musikalischen Proportionen.",
+    "intro": "Pythagoras war nicht nur Mathematiker, sondern auch Gründer einer religiös-philosophischen Bruderschaft. Für ihn war die Mathematik der Schlüssel zum Verständnis der göttlichen Ordnung der Welt.",
+    "ideas": [
+      "Zahlen als Urprinzip der Welt",
+      "Sphärenharmonie",
+      "Seelenwanderung (Reinkarnation)"
+    ],
+    "significance": "Sein mystisch-mathematisches Weltbild beeinflusste Platon zutiefst und legte den Grundstein für die naturwissenschaftliche Quantifizierung der Welt.",
+    "works": "Keine eigenen Schriften; Lehre wurde mündlich (akusmatisch) weitergegeben.",
+    "context": "Wirkte in Süditalien (Kroton) und verband frühe griechische Wissenschaft mit orphischer Mystik.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Pythagoras"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Pythagoras"
       }
     ]
   },
@@ -506,6 +566,36 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Platon"
+      }
+    ]
+  },
+  {
+    "slug": "diogenes-von-sinope",
+    "portrait": "../assets/img/philosophers/diogenes-von-sinope.webp",
+    "name": "Diogenes von Sinope",
+    "shortName": "Diogenes",
+    "years": "ca. 412–323 v. Chr.",
+    "era": "Antike",
+    "eraLink": "antike.html",
+    "field": "Kynismus, Ethik",
+    "thesis": "Wahre Freiheit liegt in der absoluten Bedürfnislosigkeit und Unabhängigkeit von gesellschaftlichen Normen.",
+    "intro": "Diogenes war der radikalste Vertreter des antiken Kynismus. Er lebte der Überlieferung nach in einem Fass auf dem Marktplatz von Athen und provozierte die Bürger mit seiner kompromisslosen, naturnahen Lebensweise.",
+    "ideas": [
+      "Askese und Bedürfnislosigkeit",
+      "Verachtung von Konventionen und Besitz",
+      "Kosmopolitismus"
+    ],
+    "significance": "Er prägte das Ideal des autarken Weisen, das später von der Stoa stark aufgenommen wurde.",
+    "works": "Keine Schriften erhalten; wirkte durch seine provokante Lebensführung (Anekdoten).",
+    "context": "Lebte zur Zeit Platons und Alexanders des Großen; kritisierte die athenische Hochkultur scharf.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Diogenes%20von%20Sinope"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Diogenes%20von%20Sinope"
       }
     ]
   },
@@ -660,66 +750,6 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "diogenes-von-sinope",
-    "portrait": "../assets/img/philosophers/diogenes-von-sinope.webp",
-    "name": "Diogenes von Sinope",
-    "shortName": "Diogenes",
-    "years": "ca. 412–323 v. Chr.",
-    "era": "Antike",
-    "eraLink": "antike.html",
-    "field": "Kynismus, Ethik",
-    "thesis": "Wahre Freiheit liegt in der absoluten Bedürfnislosigkeit und Unabhängigkeit von gesellschaftlichen Normen.",
-    "intro": "Diogenes war der radikalste Vertreter des antiken Kynismus. Er lebte der Überlieferung nach in einem Fass auf dem Marktplatz von Athen und provozierte die Bürger mit seiner kompromisslosen, naturnahen Lebensweise.",
-    "ideas": [
-      "Askese und Bedürfnislosigkeit",
-      "Verachtung von Konventionen und Besitz",
-      "Kosmopolitismus"
-    ],
-    "significance": "Er prägte das Ideal des autarken Weisen, das später von der Stoa stark aufgenommen wurde.",
-    "works": "Keine Schriften erhalten; wirkte durch seine provokante Lebensführung (Anekdoten).",
-    "context": "Lebte zur Zeit Platons und Alexanders des Großen; kritisierte die athenische Hochkultur scharf.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Diogenes%20von%20Sinope"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Diogenes%20von%20Sinope"
-      }
-    ]
-  },
-  {
-    "slug": "pythagoras",
-    "portrait": "../assets/img/philosophers/pythagoras.webp",
-    "name": "Pythagoras",
-    "shortName": "Pythagoras",
-    "years": "ca. 570–495 v. Chr.",
-    "era": "Antike",
-    "eraLink": "antike.html",
-    "field": "Vorsokratik, Mathematik",
-    "thesis": "Alles ist Zahl; die Ordnung des Kosmos basiert auf mathematischen und musikalischen Proportionen.",
-    "intro": "Pythagoras war nicht nur Mathematiker, sondern auch Gründer einer religiös-philosophischen Bruderschaft. Für ihn war die Mathematik der Schlüssel zum Verständnis der göttlichen Ordnung der Welt.",
-    "ideas": [
-      "Zahlen als Urprinzip der Welt",
-      "Sphärenharmonie",
-      "Seelenwanderung (Reinkarnation)"
-    ],
-    "significance": "Sein mystisch-mathematisches Weltbild beeinflusste Platon zutiefst und legte den Grundstein für die naturwissenschaftliche Quantifizierung der Welt.",
-    "works": "Keine eigenen Schriften; Lehre wurde mündlich (akusmatisch) weitergegeben.",
-    "context": "Wirkte in Süditalien (Kroton) und verband frühe griechische Wissenschaft mit orphischer Mystik.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Pythagoras"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Pythagoras"
-      }
-    ]
-  },
-  {
     "slug": "augustinus",
     "portrait": "../assets/img/philosophers/augustinus.webp",
     "name": "Augustinus",
@@ -870,66 +900,6 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "avicenna",
-    "portrait": "../assets/img/philosophers/avicenna.webp",
-    "name": "Avicenna",
-    "shortName": "Avicenna",
-    "years": "980–1037",
-    "era": "Islamische Welt",
-    "eraLink": "islam.html",
-    "field": "Metaphysik, Medizin",
-    "thesis": "Vernunftliche Metaphysik kann das Verhältnis von Wesen und Existenz sowie Gottesbegriff systematisch behandeln.",
-    "intro": "Ibn Sīnā (Avicenna) verband arabisch-islamische Gelehrsamkeit mit aristotelisch-neuplatonischer Metaphysik. Er war bedeutender Mediziner und Philosoph.",
-    "ideas": [
-      "Unterscheidung von Wesen und Existenz",
-      "Rationalistische Gottesargumente",
-      "Systematische Heilkunde und Ontologie"
-    ],
-    "significance": "Prägende Figur für Philosophie und Medizin in islamischer und später europäischer Tradition. Seine metaphysischen Unterscheidungen beeinflussten Scholastiker.",
-    "works": "Al-Qanun fi al-Tibb (Kanon der Medizin), Al-Shifa' (Die Heilung)",
-    "context": "Wirkung im mittelalterlich-islamischen Wissensraum; Vermittler antiker Texte. Seine Werke wurden später ins Lateinische übersetzt.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Avicenna"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Avicenna"
-      }
-    ]
-  },
-  {
-    "slug": "averroes",
-    "portrait": "../assets/img/philosophers/averroes.webp",
-    "name": "Averroes",
-    "shortName": "Averroes",
-    "years": "1126–1198",
-    "era": "Islamische Welt",
-    "eraLink": "islam.html",
-    "field": "Philosophie, Rechtswissenschaft",
-    "thesis": "Philosophische Vernunft und religiöse Schrift sind zu prüfen und können zusammenwirken, teils unterschiedlich zu verstehen.",
-    "intro": "Ibn Rušd (Averroes) war Kommentator Aristoteles' und suchte Harmonie zwischen Vernunft und Offenbarung. Seine Interpretationen wurden in Europa und im islamischen Umfeld intensiv diskutiert.",
-    "ideas": [
-      "Aristotelische Kommentierung",
-      "Unterscheidung verschiedener Lesarten religiöser Texte",
-      "Universalität der Vernunft"
-    ],
-    "significance": "Wesentlich für die Wiederentdeckung Aristoteles’ im mittelalterlichen Europa. Seine Thesen führten zu breit geführten Debatten über Vernunft und Religion.",
-    "works": "Kommentare zu Aristoteles, Tahafut al-Tahafut (Widerlegung der Widerlegung)",
-    "context": "Wirkte im al-Andalus sowie marokkanisch-arabischem Kulturraum. Seine Schriften reisten nach Europa durch Übersetzungen.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Averroes"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Averroes"
-      }
-    ]
-  },
-  {
     "slug": "al-farabi",
     "portrait": "../assets/img/philosophers/al-farabi.webp",
     "name": "Al-Farabi",
@@ -960,6 +930,36 @@ const PHILOSOPHERS = [
     ]
   },
   {
+    "slug": "avicenna",
+    "portrait": "../assets/img/philosophers/avicenna.webp",
+    "name": "Avicenna",
+    "shortName": "Avicenna",
+    "years": "980–1037",
+    "era": "Islamische Welt",
+    "eraLink": "islam.html",
+    "field": "Metaphysik, Medizin",
+    "thesis": "Vernunftliche Metaphysik kann das Verhältnis von Wesen und Existenz sowie Gottesbegriff systematisch behandeln.",
+    "intro": "Ibn Sīnā (Avicenna) verband arabisch-islamische Gelehrsamkeit mit aristotelisch-neuplatonischer Metaphysik. Er war bedeutender Mediziner und Philosoph.",
+    "ideas": [
+      "Unterscheidung von Wesen und Existenz",
+      "Rationalistische Gottesargumente",
+      "Systematische Heilkunde und Ontologie"
+    ],
+    "significance": "Prägende Figur für Philosophie und Medizin in islamischer und später europäischer Tradition. Seine metaphysischen Unterscheidungen beeinflussten Scholastiker.",
+    "works": "Al-Qanun fi al-Tibb (Kanon der Medizin), Al-Shifa' (Die Heilung)",
+    "context": "Wirkung im mittelalterlich-islamischen Wissensraum; Vermittler antiker Texte. Seine Werke wurden später ins Lateinische übersetzt.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Avicenna"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Avicenna"
+      }
+    ]
+  },
+  {
     "slug": "al-ghazali",
     "portrait": "../assets/img/philosophers/al-ghazali.webp",
     "name": "Al-Ghazali",
@@ -986,6 +986,36 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Al-Ghazali"
+      }
+    ]
+  },
+  {
+    "slug": "averroes",
+    "portrait": "../assets/img/philosophers/averroes.webp",
+    "name": "Averroes",
+    "shortName": "Averroes",
+    "years": "1126–1198",
+    "era": "Islamische Welt",
+    "eraLink": "islam.html",
+    "field": "Philosophie, Rechtswissenschaft",
+    "thesis": "Philosophische Vernunft und religiöse Schrift sind zu prüfen und können zusammenwirken, teils unterschiedlich zu verstehen.",
+    "intro": "Ibn Rušd (Averroes) war Kommentator Aristoteles' und suchte Harmonie zwischen Vernunft und Offenbarung. Seine Interpretationen wurden in Europa und im islamischen Umfeld intensiv diskutiert.",
+    "ideas": [
+      "Aristotelische Kommentierung",
+      "Unterscheidung verschiedener Lesarten religiöser Texte",
+      "Universalität der Vernunft"
+    ],
+    "significance": "Wesentlich für die Wiederentdeckung Aristoteles’ im mittelalterlichen Europa. Seine Thesen führten zu breit geführten Debatten über Vernunft und Religion.",
+    "works": "Kommentare zu Aristoteles, Tahafut al-Tahafut (Widerlegung der Widerlegung)",
+    "context": "Wirkte im al-Andalus sowie marokkanisch-arabischem Kulturraum. Seine Schriften reisten nach Europa durch Übersetzungen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Averroes"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Averroes"
       }
     ]
   },
@@ -1140,32 +1170,62 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "rene-descartes",
-    "portrait": "../assets/img/philosophers/rene-descartes.webp",
-    "name": "René Descartes",
-    "shortName": "Descartes",
-    "years": "1596–1650",
+    "slug": "michel-de-montaigne",
+    "portrait": "../assets/img/philosophers/michel-de-montaigne.webp",
+    "name": "Michel de Montaigne",
+    "shortName": "Montaigne",
+    "years": "1533–1592",
     "era": "Frühe Neuzeit",
     "eraLink": "neuzeit.html",
-    "field": "Erkenntnistheorie, Metaphysik, Mathematik",
-    "thesis": "Methodischer Zweifel führt zu unbezweifelbarer Gewissheit des denkenden Subjekts: cogito ergo sum.",
-    "intro": "Descartes suchte unerschütterliche Grundlagen der Erkenntnis durch methodischen Zweifel. Er verband philosophische Fragen mit mathematischer Methode.",
+    "field": "Humanismus, Skeptizismus",
+    "thesis": "Was weiß ich? Die Erforschung der menschlichen Natur muss beim eigenen, unvollkommenen Ich beginnen.",
+    "intro": "Montaigne erfand den Essay. Er zog sich auf sein Landgut zurück, um in entspannter, undogmatischer Form über sich selbst, den Tod, Gewohnheiten und die Grenzen des menschlichen Wissens zu schreiben.",
     "ideas": [
-      "Methodischer Zweifel",
-      "Substanzdualismus (Res cogitans / Res extensa)",
-      "Rationalistische Gewissheitssuche"
+      "Radikaler Skeptizismus",
+      "Erfindung des Essays",
+      "Toleranz und Relativierung des Eigenen"
     ],
-    "significance": "Begründer des neuzeitlichen Rationalismus; beeinflusste Wissenschaftsbild und Philosophie. Seine Trennung von Geist und Körper löste lange Debatten aus.",
-    "works": "Meditationes de prima philosophia, Discours de la méthode",
-    "context": "Lebte im Übergang von Renaissance zur Wissenschaftlichen Revolution; suchte sichere Erkenntnis in einer Zeit religiöser Spannungen. Naturwissenschaftliche Erfolge inspirierten seine Methode.",
+    "significance": "Sein humanistisch-skeptischer Blick auf den Menschen prägte Descartes, Pascal, Rousseau und die gesamte französische Literatur.",
+    "works": "Essais",
+    "context": "Schrieb seine Essays während der grausamen französischen Hugenottenkriege, was seine Sehnsucht nach Toleranz und Gelassenheit erklärt.",
     "links": [
       {
         "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ren%C3%A9%20Descartes"
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Michel%20de%20Montaigne"
       },
       {
         "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Ren%C3%A9%20Descartes"
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Michel%20de%20Montaigne"
+      }
+    ]
+  },
+  {
+    "slug": "francis-bacon",
+    "portrait": "../assets/img/philosophers/francis-bacon.webp",
+    "name": "Francis Bacon",
+    "shortName": "Bacon",
+    "years": "1561–1626",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Empirismus, Wissenschaftstheorie",
+    "thesis": "Wissen ist Macht; Naturbeherrschung gelingt nur durch systematische Erfahrung und Induktion.",
+    "intro": "Francis Bacon gilt als der Prophet der modernen Naturwissenschaften. Er forderte die Abkehr von der aristotelischen Scholastik und begründete die empirische, experimentelle Forschungsmethode.",
+    "ideas": [
+      "Induktive Methode",
+      "Wissen ist Macht",
+      "Idolenlehre (Kritik menschlicher Vorurteile)"
+    ],
+    "significance": "Sein methodischer Ansatz war der Startschuss für die naturwissenschaftliche Revolution in Europa.",
+    "works": "Novum Organum, Neu-Atlantis",
+    "context": "War Lordkanzler unter König Jakob I. in England, bevor er wegen Bestechungsvorwürfen stürzte.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Francis%20Bacon"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Francis%20Bacon"
       }
     ]
   },
@@ -1196,6 +1256,36 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Thomas%20Hobbes"
+      }
+    ]
+  },
+  {
+    "slug": "rene-descartes",
+    "portrait": "../assets/img/philosophers/rene-descartes.webp",
+    "name": "René Descartes",
+    "shortName": "Descartes",
+    "years": "1596–1650",
+    "era": "Frühe Neuzeit",
+    "eraLink": "neuzeit.html",
+    "field": "Erkenntnistheorie, Metaphysik, Mathematik",
+    "thesis": "Methodischer Zweifel führt zu unbezweifelbarer Gewissheit des denkenden Subjekts: cogito ergo sum.",
+    "intro": "Descartes suchte unerschütterliche Grundlagen der Erkenntnis durch methodischen Zweifel. Er verband philosophische Fragen mit mathematischer Methode.",
+    "ideas": [
+      "Methodischer Zweifel",
+      "Substanzdualismus (Res cogitans / Res extensa)",
+      "Rationalistische Gewissheitssuche"
+    ],
+    "significance": "Begründer des neuzeitlichen Rationalismus; beeinflusste Wissenschaftsbild und Philosophie. Seine Trennung von Geist und Körper löste lange Debatten aus.",
+    "works": "Meditationes de prima philosophia, Discours de la méthode",
+    "context": "Lebte im Übergang von Renaissance zur Wissenschaftlichen Revolution; suchte sichere Erkenntnis in einer Zeit religiöser Spannungen. Naturwissenschaftliche Erfolge inspirierten seine Methode.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ren%C3%A9%20Descartes"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Ren%C3%A9%20Descartes"
       }
     ]
   },
@@ -1380,66 +1470,6 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "francis-bacon",
-    "portrait": "../assets/img/philosophers/francis-bacon.webp",
-    "name": "Francis Bacon",
-    "shortName": "Bacon",
-    "years": "1561–1626",
-    "era": "Frühe Neuzeit",
-    "eraLink": "neuzeit.html",
-    "field": "Empirismus, Wissenschaftstheorie",
-    "thesis": "Wissen ist Macht; Naturbeherrschung gelingt nur durch systematische Erfahrung und Induktion.",
-    "intro": "Francis Bacon gilt als der Prophet der modernen Naturwissenschaften. Er forderte die Abkehr von der aristotelischen Scholastik und begründete die empirische, experimentelle Forschungsmethode.",
-    "ideas": [
-      "Induktive Methode",
-      "Wissen ist Macht",
-      "Idolenlehre (Kritik menschlicher Vorurteile)"
-    ],
-    "significance": "Sein methodischer Ansatz war der Startschuss für die naturwissenschaftliche Revolution in Europa.",
-    "works": "Novum Organum, Neu-Atlantis",
-    "context": "War Lordkanzler unter König Jakob I. in England, bevor er wegen Bestechungsvorwürfen stürzte.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Francis%20Bacon"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Francis%20Bacon"
-      }
-    ]
-  },
-  {
-    "slug": "michel-de-montaigne",
-    "portrait": "../assets/img/philosophers/michel-de-montaigne.webp",
-    "name": "Michel de Montaigne",
-    "shortName": "Montaigne",
-    "years": "1533–1592",
-    "era": "Frühe Neuzeit",
-    "eraLink": "neuzeit.html",
-    "field": "Humanismus, Skeptizismus",
-    "thesis": "Was weiß ich? Die Erforschung der menschlichen Natur muss beim eigenen, unvollkommenen Ich beginnen.",
-    "intro": "Montaigne erfand den Essay. Er zog sich auf sein Landgut zurück, um in entspannter, undogmatischer Form über sich selbst, den Tod, Gewohnheiten und die Grenzen des menschlichen Wissens zu schreiben.",
-    "ideas": [
-      "Radikaler Skeptizismus",
-      "Erfindung des Essays",
-      "Toleranz und Relativierung des Eigenen"
-    ],
-    "significance": "Sein humanistisch-skeptischer Blick auf den Menschen prägte Descartes, Pascal, Rousseau und die gesamte französische Literatur.",
-    "works": "Essais",
-    "context": "Schrieb seine Essays während der grausamen französischen Hugenottenkriege, was seine Sehnsucht nach Toleranz und Gelassenheit erklärt.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Michel%20de%20Montaigne"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Michel%20de%20Montaigne"
-      }
-    ]
-  },
-  {
     "slug": "immanuel-kant",
     "portrait": "../assets/img/philosophers/immanuel-kant.webp",
     "name": "Immanuel Kant",
@@ -1500,36 +1530,6 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "friedrich-wilhelm-joseph-schelling",
-    "portrait": "../assets/img/philosophers/friedrich-wilhelm-joseph-schelling.webp",
-    "name": "Friedrich Wilhelm Joseph Schelling",
-    "shortName": "Schelling",
-    "years": "1775–1854",
-    "era": "Klassische Moderne",
-    "eraLink": "moderne.html",
-    "field": "Naturphilosophie, Idealismus",
-    "thesis": "Natur und Geist gehören zu einem dynamischen Ganzen, das sich in Freiheit und naturphilosophischer Entwicklung entfaltet.",
-    "intro": "Schelling versuchte eine Einheit von Natur- und Geistesphilosophie zu entwerfen. Seine Systeme variierten zwischen spekulativer Metaphysik und späterer existenzieller Wendung.",
-    "ideas": [
-      "Identitätsphilosophie von Natur und Geist",
-      "Philosophie als systematische Entwicklung",
-      "Spätere Betonung des Existentiellen und des Ursprungs"
-    ],
-    "significance": "Wichtiger Vertreter des deutschen Idealismus mit komplexer Entwicklung; beeinflusste Romantik, Idealismus und spätere Existenzdeutungen. Seine Wandlungen machten ihn schwer einzuordnen.",
-    "works": "Philosophie der Natur, System des transzendentalen Idealismus",
-    "context": "Entstand in der deutschen Aufbruchszeit nach Revolution und Aufklärung. Schelling bewegte sich in intellektuellen Netzwerken mit Fichte und Hegel.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Friedrich%20Wilhelm%20Joseph%20Schelling"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Friedrich%20Wilhelm%20Joseph%20Schelling"
-      }
-    ]
-  },
-  {
     "slug": "georg-wilhelm-friedrich-hegel",
     "portrait": "../assets/img/philosophers/georg-wilhelm-friedrich-hegel.webp",
     "name": "Georg Wilhelm Friedrich Hegel",
@@ -1556,6 +1556,36 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Georg%20Wilhelm%20Friedrich%20Hegel"
+      }
+    ]
+  },
+  {
+    "slug": "friedrich-wilhelm-joseph-schelling",
+    "portrait": "../assets/img/philosophers/friedrich-wilhelm-joseph-schelling.webp",
+    "name": "Friedrich Wilhelm Joseph Schelling",
+    "shortName": "Schelling",
+    "years": "1775–1854",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Naturphilosophie, Idealismus",
+    "thesis": "Natur und Geist gehören zu einem dynamischen Ganzen, das sich in Freiheit und naturphilosophischer Entwicklung entfaltet.",
+    "intro": "Schelling versuchte eine Einheit von Natur- und Geistesphilosophie zu entwerfen. Seine Systeme variierten zwischen spekulativer Metaphysik und späterer existenzieller Wendung.",
+    "ideas": [
+      "Identitätsphilosophie von Natur und Geist",
+      "Philosophie als systematische Entwicklung",
+      "Spätere Betonung des Existentiellen und des Ursprungs"
+    ],
+    "significance": "Wichtiger Vertreter des deutschen Idealismus mit komplexer Entwicklung; beeinflusste Romantik, Idealismus und spätere Existenzdeutungen. Seine Wandlungen machten ihn schwer einzuordnen.",
+    "works": "Philosophie der Natur, System des transzendentalen Idealismus",
+    "context": "Entstand in der deutschen Aufbruchszeit nach Revolution und Aufklärung. Schelling bewegte sich in intellektuellen Netzwerken mit Fichte und Hegel.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Friedrich%20Wilhelm%20Joseph%20Schelling"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Friedrich%20Wilhelm%20Joseph%20Schelling"
       }
     ]
   },
@@ -1620,6 +1650,36 @@ const PHILOSOPHERS = [
     ]
   },
   {
+    "slug": "soren-kierkegaard",
+    "portrait": "../assets/img/philosophers/soren-kierkegaard.webp",
+    "name": "Søren Kierkegaard",
+    "shortName": "Kierkegaard",
+    "years": "1813–1855",
+    "era": "Klassische Moderne",
+    "eraLink": "moderne.html",
+    "field": "Existenzphilosophie, Theologie",
+    "thesis": "Individuelle Existenz, Entscheidung und subjektive Beziehung zu Gott sind vorrangig gegenüber abstrakten Systemen.",
+    "intro": "Kierkegaard betonte persönliche Existenz und die existentielle Entscheidung; er kritisierte abstrakte Systemphilosophie. Seine Schriften sind oft pseudonym und literarisch gestaltet.",
+    "ideas": [
+      "Subjektivität als Wahrheitskategorie",
+      "Stufen auf dem Lebensweg (Ästhetisch, Ethisch, Religiös)",
+      "Kritik an Institutionenreligion"
+    ],
+    "significance": "Wegbereiter der Existenzphilosophie und späterer theologischer Reflexionen. Seine Betonung von Individualität und Angst prägte moderne Existenzdeutungen.",
+    "works": "Entweder – Oder, Furcht und Zittern, Die Krankheit zum Tode",
+    "context": "Dänemark im 19. Jahrhundert; persönliche Auseinandersetzung mit Glaube und Gesellschaft beeinflusste sein Denken. Stilistisch provokant und persönlich.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=S%C3%B8ren%20Kierkegaard"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=S%C3%B8ren%20Kierkegaard"
+      }
+    ]
+  },
+  {
     "slug": "karl-marx",
     "portrait": "../assets/img/philosophers/karl-marx.webp",
     "name": "Karl Marx",
@@ -1650,32 +1710,32 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "soren-kierkegaard",
-    "portrait": "../assets/img/philosophers/soren-kierkegaard.webp",
-    "name": "Søren Kierkegaard",
-    "shortName": "Kierkegaard",
-    "years": "1813–1855",
+    "slug": "william-james",
+    "portrait": "../assets/img/philosophers/william-james.webp",
+    "name": "William James",
+    "shortName": "James",
+    "years": "1842–1910",
     "era": "Klassische Moderne",
     "eraLink": "moderne.html",
-    "field": "Existenzphilosophie, Theologie",
-    "thesis": "Individuelle Existenz, Entscheidung und subjektive Beziehung zu Gott sind vorrangig gegenüber abstrakten Systemen.",
-    "intro": "Kierkegaard betonte persönliche Existenz und die existentielle Entscheidung; er kritisierte abstrakte Systemphilosophie. Seine Schriften sind oft pseudonym und literarisch gestaltet.",
+    "field": "Pragmatismus, Psychologie",
+    "thesis": "Der Wert einer Idee liegt in ihrem praktischen Nutzen und ihrer Auswirkung auf das Leben.",
+    "intro": "William James ist einer der Begründer des Pragmatismus und der modernen Psychologie. Er bewertete Überzeugungen nicht nach abstrakter Wahrheit, sondern nach ihrer praktischen Bewährung.",
     "ideas": [
-      "Subjektivität als Wahrheitskategorie",
-      "Stufen auf dem Lebensweg (Ästhetisch, Ethisch, Religiös)",
-      "Kritik an Institutionenreligion"
+      "Pragmatische Wahrheitstheorie",
+      "Radikaler Empirismus",
+      "Bewusstseinsstrom (Stream of consciousness)"
     ],
-    "significance": "Wegbereiter der Existenzphilosophie und späterer theologischer Reflexionen. Seine Betonung von Individualität und Angst prägte moderne Existenzdeutungen.",
-    "works": "Entweder – Oder, Furcht und Zittern, Die Krankheit zum Tode",
-    "context": "Dänemark im 19. Jahrhundert; persönliche Auseinandersetzung mit Glaube und Gesellschaft beeinflusste sein Denken. Stilistisch provokant und persönlich.",
+    "significance": "Prägte die amerikanische Philosophie nachhaltig und schuf wichtige Grundlagen für Psychologie und Religionsphilosophie.",
+    "works": "Pragmatism, The Varieties of Religious Experience",
+    "context": "Wirkte an der Harvard University in einer Zeit rasanter wissenschaftlicher und gesellschaftlicher Veränderungen in den USA.",
     "links": [
       {
         "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=S%C3%B8ren%20Kierkegaard"
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=William%20James"
       },
       {
         "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=S%C3%B8ren%20Kierkegaard"
+        "url": "https://plato.stanford.edu/search/searcher.py?query=William%20James"
       }
     ]
   },
@@ -1710,32 +1770,62 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "william-james",
-    "portrait": "../assets/img/philosophers/william-james.webp",
-    "name": "William James",
-    "shortName": "James",
-    "years": "1842–1910",
-    "era": "Klassische Moderne",
-    "eraLink": "moderne.html",
-    "field": "Pragmatismus, Psychologie",
-    "thesis": "Der Wert einer Idee liegt in ihrem praktischen Nutzen und ihrer Auswirkung auf das Leben.",
-    "intro": "William James ist einer der Begründer des Pragmatismus und der modernen Psychologie. Er bewertete Überzeugungen nicht nach abstrakter Wahrheit, sondern nach ihrer praktischen Bewährung.",
+    "slug": "edmund-husserl",
+    "portrait": "../assets/img/philosophers/edmund-husserl.webp",
+    "name": "Edmund Husserl",
+    "shortName": "Husserl",
+    "years": "1859–1938",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Phänomenologie",
+    "thesis": "Wir müssen 'zu den Sachen selbst' zurückkehren, indem wir untersuchen, wie uns die Welt im Bewusstsein erscheint.",
+    "intro": "Husserl begründete die Phänomenologie, eine der wichtigsten Denkrichtungen des 20. Jahrhunderts. Er forderte, Vorurteile einzuklammern und die reinen Strukturen des Bewusstseins zu analysieren.",
     "ideas": [
-      "Pragmatische Wahrheitstheorie",
-      "Radikaler Empirismus",
-      "Bewusstseinsstrom (Stream of consciousness)"
+      "Intentionalität des Bewusstseins",
+      "Phänomenologische Reduktion (Epoché)",
+      "Die Lebenswelt"
     ],
-    "significance": "Prägte die amerikanische Philosophie nachhaltig und schuf wichtige Grundlagen für Psychologie und Religionsphilosophie.",
-    "works": "Pragmatism, The Varieties of Religious Experience",
-    "context": "Wirkte an der Harvard University in einer Zeit rasanter wissenschaftlicher und gesellschaftlicher Veränderungen in den USA.",
+    "significance": "Seine Methode bildete das Fundament für die gesamte Existenzphilosophie und Hermeneutik (Heidegger, Sartre, Merleau-Ponty).",
+    "works": "Logische Untersuchungen, Ideen zu einer reinen Phänomenologie",
+    "context": "Entwickelte seine Theorie in der Krise der europäischen Wissenschaften, als Antwort auf reinen Naturwissenschafts-Positivismus.",
     "links": [
       {
         "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=William%20James"
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Edmund%20Husserl"
       },
       {
         "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=William%20James"
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Edmund%20Husserl"
+      }
+    ]
+  },
+  {
+    "slug": "bertrand-russell",
+    "portrait": "../assets/img/philosophers/bertrand-russell.webp",
+    "name": "Bertrand Russell",
+    "shortName": "Russell",
+    "years": "1872–1970",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Analytische Philosophie, Logik",
+    "thesis": "Sprache und Mathematik lassen sich auf reine Logik zurückführen; gesellschaftlicher Fortschritt erfordert Vernunft und Pazifismus.",
+    "intro": "Bertrand Russell war einer der Begründer der Analytischen Philosophie. Er strebte nach absoluter Klarheit in der Logik und war gleichzeitig ein leidenschaftlicher Aktivist für Frieden und Menschenrechte.",
+    "ideas": [
+      "Logizismus (Rückführung von Mathe auf Logik)",
+      "Theorie der Kennzeichnungen",
+      "Pazifismus und Religionskritik"
+    ],
+    "significance": "Prägte die angelsächsische Philosophie des 20. Jahrhunderts maßgeblich und war ein weltweit gelesener, öffentlicher Intellektueller (Nobelpreisträger für Literatur).",
+    "works": "Principia Mathematica (mit Whitehead), Probleme der Philosophie",
+    "context": "Wirkte in Cambridge; seine politische Haltung führte während des Ersten Weltkriegs zu seiner Inhaftierung.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Bertrand%20Russell"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Bertrand%20Russell"
       }
     ]
   },
@@ -1801,6 +1891,96 @@ const PHILOSOPHERS = [
     ]
   },
   {
+    "slug": "max-horkheimer",
+    "portrait": "../assets/img/philosophers/max-horkheimer.webp",
+    "name": "Max Horkheimer",
+    "shortName": "Horkheimer",
+    "years": "1895–1973",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Kritische Theorie",
+    "thesis": "Die instrumentelle Vernunft der Moderne hat sich von der Suche nach dem guten Leben entkoppelt und dient nur noch der Herrschaft.",
+    "intro": "Horkheimer gründete das Institut für Sozialforschung (Frankfurter Schule). Gemeinsam mit Adorno analysierte er, wie die Aufklärung in Totalitarismus und Massenkultur umschlagen konnte.",
+    "ideas": [
+      "Kritische Theorie der Gesellschaft",
+      "Kritik der instrumentellen Vernunft",
+      "Analyse des Autoritären Charakters"
+    ],
+    "significance": "Er legte den methodischen Grundstein der Kritischen Theorie, die Soziologie, Philosophie und Psychoanalyse zu einer radikalen Gesellschaftskritik verschmolz.",
+    "works": "Dialektik der Aufklärung (mit Adorno), Traditionelle und kritische Theorie",
+    "context": "Baute das Institut für Sozialforschung im US-Exil auf und führte es nach dem Krieg in Frankfurt zu weltweiter Bedeutung.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Max%20Horkheimer"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Max%20Horkheimer"
+      }
+    ]
+  },
+  {
+    "slug": "karl-popper",
+    "portrait": "../assets/img/philosophers/karl-popper.webp",
+    "name": "Karl Popper",
+    "shortName": "Popper",
+    "years": "1902–1994",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Wissenschaftstheorie, Politik",
+    "thesis": "Wissenschaftlicher Fortschritt geschieht durch Falsifikation; eine Theorie muss prinzipiell widerlegbar sein.",
+    "intro": "Popper begründete den Kritischen Rationalismus. Er zeigte, dass wir niemals absolute Wahrheit beweisen, sondern nur Irrtümer ausschließen können, und verteidigte konsequent die offene Gesellschaft.",
+    "ideas": [
+      "Falsifikationsprinzip",
+      "Kritik des Historizismus",
+      "Verteidigung der offenen Gesellschaft"
+    ],
+    "significance": "Einer der wichtigsten Wissenschaftstheoretiker des 20. Jahrhunderts. Seine Ideen beeinflussten Forschungsmethoden und das Verständnis westlicher Demokratien zutiefst.",
+    "works": "Logik der Forschung, Die offene Gesellschaft und ihre Feinde",
+    "context": "Emigrierte vor dem Nationalsozialismus nach Neuseeland und später nach London; sein Denken war stark von der Ablehnung totalitärer Systeme (Faschismus, Kommunismus) geprägt.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Karl%20Popper"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Karl%20Popper"
+      }
+    ]
+  },
+  {
+    "slug": "theodor-adorno",
+    "portrait": "../assets/img/philosophers/theodor-adorno.webp",
+    "name": "Theodor W. Adorno",
+    "shortName": "Adorno",
+    "years": "1903–1969",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Kritische Theorie, Ästhetik",
+    "thesis": "Es gibt kein richtiges Leben im falschen.",
+    "intro": "Adorno war der intellektuelle Kopf der Frankfurter Schule. Er kritisierte die Kulturindustrie und die kapitalistische Gesellschaftsordnung, die den Menschen zur austauschbaren Ware degradiert.",
+    "ideas": [
+      "Kritik der Kulturindustrie",
+      "Negative Dialektik",
+      "Verflechtung von Aufklärung und Mythos"
+    ],
+    "significance": "Seine pessimistisch-brillante Gesellschaftskritik prägte die westdeutsche Nachkriegsintellektualität und die 68er-Bewegung tiefgreifend.",
+    "works": "Dialektik der Aufklärung (mit Horkheimer), Minima Moralia",
+    "context": "Musste als Jude vor den Nationalsozialisten fliehen (USA) und analysierte von dort den Zusammenbruch der europäischen Zivilisation.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Theodor%20W.%20Adorno"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Theodor%20W.%20Adorno"
+      }
+    ]
+  },
+  {
     "slug": "jean-paul-sartre",
     "portrait": "../assets/img/philosophers/jean-paul-sartre.webp",
     "name": "Jean-Paul Sartre",
@@ -1827,36 +2007,6 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Jean-Paul%20Sartre"
-      }
-    ]
-  },
-  {
-    "slug": "albert-camus",
-    "portrait": "../assets/img/philosophers/albert-camus.webp",
-    "name": "Albert Camus",
-    "shortName": "Camus",
-    "years": "1913–1960",
-    "era": "20. Jahrhundert",
-    "eraLink": "20jh.html",
-    "field": "Existentialismus, Literatur",
-    "thesis": "Das Absurde entsteht aus der Spannung zwischen Menschenverlangen nach Sinn und einer indifferenten Welt; Ethik folgt aus Auflehnung gegen das Absurde.",
-    "intro": "Camus formulierte philosophisch-literarisch das Problem des Absurden und die Haltung des Aufbegehrens. Er war zugleich Autor und politischer Kommentator.",
-    "ideas": [
-      "Absurdität des Lebens",
-      "Revolte als ethische Antwort",
-      "Solidarität gegen Gewalt und Resignation"
-    ],
-    "significance": "Einflussreicher Denker der Moderne, besonders in Ethik und politischer Praxis; literarische Formen machten seine Philosophie zugänglich. Distanz zu einigen existentialistischen Positionen kennzeichnete ihn.",
-    "works": "Der Mythos des Sisyphos, Der Fremde",
-    "context": "Algerische Herkunft und französische Kolonialgeschichte prägen seine Perspektive; Nachkriegskontexte formten sein politisches Engagement.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Albert%20Camus"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Albert%20Camus"
       }
     ]
   },
@@ -1921,6 +2071,96 @@ const PHILOSOPHERS = [
     ]
   },
   {
+    "slug": "albert-camus",
+    "portrait": "../assets/img/philosophers/albert-camus.webp",
+    "name": "Albert Camus",
+    "shortName": "Camus",
+    "years": "1913–1960",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Existentialismus, Literatur",
+    "thesis": "Das Absurde entsteht aus der Spannung zwischen Menschenverlangen nach Sinn und einer indifferenten Welt; Ethik folgt aus Auflehnung gegen das Absurde.",
+    "intro": "Camus formulierte philosophisch-literarisch das Problem des Absurden und die Haltung des Aufbegehrens. Er war zugleich Autor und politischer Kommentator.",
+    "ideas": [
+      "Absurdität des Lebens",
+      "Revolte als ethische Antwort",
+      "Solidarität gegen Gewalt und Resignation"
+    ],
+    "significance": "Einflussreicher Denker der Moderne, besonders in Ethik und politischer Praxis; literarische Formen machten seine Philosophie zugänglich. Distanz zu einigen existentialistischen Positionen kennzeichnete ihn.",
+    "works": "Der Mythos des Sisyphos, Der Fremde",
+    "context": "Algerische Herkunft und französische Kolonialgeschichte prägen seine Perspektive; Nachkriegskontexte formten sein politisches Engagement.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Albert%20Camus"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Albert%20Camus"
+      }
+    ]
+  },
+  {
+    "slug": "john-rawls",
+    "portrait": "../assets/img/philosophers/john-rawls.webp",
+    "name": "John Rawls",
+    "shortName": "Rawls",
+    "years": "1921–2002",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Politische Philosophie",
+    "thesis": "Gerechtigkeit ist Fairneß; soziale Ungleichheiten sind nur legitim, wenn sie den Schwächsten der Gesellschaft den größtmöglichen Vorteil bringen.",
+    "intro": "John Rawls revitalisierte die politische Philosophie nach dem Zweiten Weltkrieg. Sein Gedankenexperiment des 'Schleiers des Nichtwissens' ist heute ein Standardmodell der Gerechtigkeitstheorie.",
+    "ideas": [
+      "Gerechtigkeit als Fairneß",
+      "Schleier des Nichtwissens",
+      "Das Differenzprinzip"
+    ],
+    "significance": "Sein Werk 'Eine Theorie der Gerechtigkeit' gilt als der wichtigste Text der politischen Philosophie des 20. Jahrhunderts und bildet die Basis des modernen Liberalismus.",
+    "works": "A Theory of Justice",
+    "context": "Schrieb sein Hauptwerk während der US-Bürgerrechtsbewegung und des Vietnamkriegs, auf der Suche nach einem legitimen, fairen Gesellschaftsvertrag.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=John%20Rawls"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=John%20Rawls"
+      }
+    ]
+  },
+  {
+    "slug": "thomas-kuhn",
+    "portrait": "../assets/img/philosophers/thomas-kuhn.webp",
+    "name": "Thomas Kuhn",
+    "shortName": "Kuhn",
+    "years": "1922–1996",
+    "era": "20. Jahrhundert",
+    "eraLink": "20jh.html",
+    "field": "Wissenschaftstheorie",
+    "thesis": "Wissenschaftlicher Fortschritt verläuft nicht kontinuierlich, sondern durch revolutionäre Brüche zwischen unvereinbaren Paradigmen.",
+    "intro": "Kuhn revolutionierte unser Verständnis davon, wie Wissenschaft funktioniert. Statt eines stetigen Erkenntnisgewinns sah er Phasen 'normaler Wissenschaft', die abrupt durch wissenschaftliche Revolutionen (Paradigmenwechsel) abgelöst werden.",
+    "ideas": [
+      "Paradigmenwechsel",
+      "Inkommensurabilität",
+      "Normale vs. Revolutionäre Wissenschaft"
+    ],
+    "significance": "Sein Werk ist eines der meistzitierten akademischen Bücher überhaupt. Er relativierte den strikten Rationalismus von Popper erheblich.",
+    "works": "Die Struktur wissenschaftlicher Revolutionen",
+    "context": "Seine Ideen passten perfekt zum relativistischen Zeitgeist der 1960er Jahre, in denen bestehende Wahrheiten grundlegend hinterfragt wurden.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Thomas_S._Kuhn"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Thomas%20Kuhn"
+      }
+    ]
+  },
+  {
     "slug": "michel-foucault",
     "portrait": "../assets/img/philosophers/michel-foucault.webp",
     "name": "Michel Foucault",
@@ -1981,186 +2221,6 @@ const PHILOSOPHERS = [
     ]
   },
   {
-    "slug": "karl-popper",
-    "portrait": "../assets/img/philosophers/karl-popper.webp",
-    "name": "Karl Popper",
-    "shortName": "Popper",
-    "years": "1902–1994",
-    "era": "20. Jahrhundert",
-    "eraLink": "20jh.html",
-    "field": "Wissenschaftstheorie, Politik",
-    "thesis": "Wissenschaftlicher Fortschritt geschieht durch Falsifikation; eine Theorie muss prinzipiell widerlegbar sein.",
-    "intro": "Popper begründete den Kritischen Rationalismus. Er zeigte, dass wir niemals absolute Wahrheit beweisen, sondern nur Irrtümer ausschließen können, und verteidigte konsequent die offene Gesellschaft.",
-    "ideas": [
-      "Falsifikationsprinzip",
-      "Kritik des Historizismus",
-      "Verteidigung der offenen Gesellschaft"
-    ],
-    "significance": "Einer der wichtigsten Wissenschaftstheoretiker des 20. Jahrhunderts. Seine Ideen beeinflussten Forschungsmethoden und das Verständnis westlicher Demokratien zutiefst.",
-    "works": "Logik der Forschung, Die offene Gesellschaft und ihre Feinde",
-    "context": "Emigrierte vor dem Nationalsozialismus nach Neuseeland und später nach London; sein Denken war stark von der Ablehnung totalitärer Systeme (Faschismus, Kommunismus) geprägt.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Karl%20Popper"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Karl%20Popper"
-      }
-    ]
-  },
-  {
-    "slug": "bertrand-russell",
-    "portrait": "../assets/img/philosophers/bertrand-russell.webp",
-    "name": "Bertrand Russell",
-    "shortName": "Russell",
-    "years": "1872–1970",
-    "era": "20. Jahrhundert",
-    "eraLink": "20jh.html",
-    "field": "Analytische Philosophie, Logik",
-    "thesis": "Sprache und Mathematik lassen sich auf reine Logik zurückführen; gesellschaftlicher Fortschritt erfordert Vernunft und Pazifismus.",
-    "intro": "Bertrand Russell war einer der Begründer der Analytischen Philosophie. Er strebte nach absoluter Klarheit in der Logik und war gleichzeitig ein leidenschaftlicher Aktivist für Frieden und Menschenrechte.",
-    "ideas": [
-      "Logizismus (Rückführung von Mathe auf Logik)",
-      "Theorie der Kennzeichnungen",
-      "Pazifismus und Religionskritik"
-    ],
-    "significance": "Prägte die angelsächsische Philosophie des 20. Jahrhunderts maßgeblich und war ein weltweit gelesener, öffentlicher Intellektueller (Nobelpreisträger für Literatur).",
-    "works": "Principia Mathematica (mit Whitehead), Probleme der Philosophie",
-    "context": "Wirkte in Cambridge; seine politische Haltung führte während des Ersten Weltkriegs zu seiner Inhaftierung.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Bertrand%20Russell"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Bertrand%20Russell"
-      }
-    ]
-  },
-  {
-    "slug": "edmund-husserl",
-    "portrait": "../assets/img/philosophers/edmund-husserl.webp",
-    "name": "Edmund Husserl",
-    "shortName": "Husserl",
-    "years": "1859–1938",
-    "era": "20. Jahrhundert",
-    "eraLink": "20jh.html",
-    "field": "Phänomenologie",
-    "thesis": "Wir müssen 'zu den Sachen selbst' zurückkehren, indem wir untersuchen, wie uns die Welt im Bewusstsein erscheint.",
-    "intro": "Husserl begründete die Phänomenologie, eine der wichtigsten Denkrichtungen des 20. Jahrhunderts. Er forderte, Vorurteile einzuklammern und die reinen Strukturen des Bewusstseins zu analysieren.",
-    "ideas": [
-      "Intentionalität des Bewusstseins",
-      "Phänomenologische Reduktion (Epoché)",
-      "Die Lebenswelt"
-    ],
-    "significance": "Seine Methode bildete das Fundament für die gesamte Existenzphilosophie und Hermeneutik (Heidegger, Sartre, Merleau-Ponty).",
-    "works": "Logische Untersuchungen, Ideen zu einer reinen Phänomenologie",
-    "context": "Entwickelte seine Theorie in der Krise der europäischen Wissenschaften, als Antwort auf reinen Naturwissenschafts-Positivismus.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Edmund%20Husserl"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Edmund%20Husserl"
-      }
-    ]
-  },
-  {
-    "slug": "john-rawls",
-    "portrait": "../assets/img/philosophers/john-rawls.webp",
-    "name": "John Rawls",
-    "shortName": "Rawls",
-    "years": "1921–2002",
-    "era": "20. Jahrhundert",
-    "eraLink": "20jh.html",
-    "field": "Politische Philosophie",
-    "thesis": "Gerechtigkeit ist Fairneß; soziale Ungleichheiten sind nur legitim, wenn sie den Schwächsten der Gesellschaft den größtmöglichen Vorteil bringen.",
-    "intro": "John Rawls revitalisierte die politische Philosophie nach dem Zweiten Weltkrieg. Sein Gedankenexperiment des 'Schleiers des Nichtwissens' ist heute ein Standardmodell der Gerechtigkeitstheorie.",
-    "ideas": [
-      "Gerechtigkeit als Fairneß",
-      "Schleier des Nichtwissens",
-      "Das Differenzprinzip"
-    ],
-    "significance": "Sein Werk 'Eine Theorie der Gerechtigkeit' gilt als der wichtigste Text der politischen Philosophie des 20. Jahrhunderts und bildet die Basis des modernen Liberalismus.",
-    "works": "A Theory of Justice",
-    "context": "Schrieb sein Hauptwerk während der US-Bürgerrechtsbewegung und des Vietnamkriegs, auf der Suche nach einem legitimen, fairen Gesellschaftsvertrag.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=John%20Rawls"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=John%20Rawls"
-      }
-    ]
-  },
-  {
-    "slug": "theodor-adorno",
-    "portrait": "../assets/img/philosophers/theodor-adorno.webp",
-    "name": "Theodor W. Adorno",
-    "shortName": "Adorno",
-    "years": "1903–1969",
-    "era": "20. Jahrhundert",
-    "eraLink": "20jh.html",
-    "field": "Kritische Theorie, Ästhetik",
-    "thesis": "Es gibt kein richtiges Leben im falschen.",
-    "intro": "Adorno war der intellektuelle Kopf der Frankfurter Schule. Er kritisierte die Kulturindustrie und die kapitalistische Gesellschaftsordnung, die den Menschen zur austauschbaren Ware degradiert.",
-    "ideas": [
-      "Kritik der Kulturindustrie",
-      "Negative Dialektik",
-      "Verflechtung von Aufklärung und Mythos"
-    ],
-    "significance": "Seine pessimistisch-brillante Gesellschaftskritik prägte die westdeutsche Nachkriegsintellektualität und die 68er-Bewegung tiefgreifend.",
-    "works": "Dialektik der Aufklärung (mit Horkheimer), Minima Moralia",
-    "context": "Musste als Jude vor den Nationalsozialisten fliehen (USA) und analysierte von dort den Zusammenbruch der europäischen Zivilisation.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Theodor%20W.%20Adorno"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Theodor%20W.%20Adorno"
-      }
-    ]
-  },
-  {
-    "slug": "max-horkheimer",
-    "portrait": "../assets/img/philosophers/max-horkheimer.webp",
-    "name": "Max Horkheimer",
-    "shortName": "Horkheimer",
-    "years": "1895–1973",
-    "era": "20. Jahrhundert",
-    "eraLink": "20jh.html",
-    "field": "Kritische Theorie",
-    "thesis": "Die instrumentelle Vernunft der Moderne hat sich von der Suche nach dem guten Leben entkoppelt und dient nur noch der Herrschaft.",
-    "intro": "Horkheimer gründete das Institut für Sozialforschung (Frankfurter Schule). Gemeinsam mit Adorno analysierte er, wie die Aufklärung in Totalitarismus und Massenkultur umschlagen konnte.",
-    "ideas": [
-      "Kritische Theorie der Gesellschaft",
-      "Kritik der instrumentellen Vernunft",
-      "Analyse des Autoritären Charakters"
-    ],
-    "significance": "Er legte den methodischen Grundstein der Kritischen Theorie, die Soziologie, Philosophie und Psychoanalyse zu einer radikalen Gesellschaftskritik verschmolz.",
-    "works": "Dialektik der Aufklärung (mit Adorno), Traditionelle und kritische Theorie",
-    "context": "Baute das Institut für Sozialforschung im US-Exil auf und führte es nach dem Krieg in Frankfurt zu weltweiter Bedeutung.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Max%20Horkheimer"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Max%20Horkheimer"
-      }
-    ]
-  },
-  {
     "slug": "jacques-derrida",
     "portrait": "../assets/img/philosophers/jacques-derrida.webp",
     "name": "Jacques Derrida",
@@ -2187,36 +2247,6 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Jacques%20Derrida"
-      }
-    ]
-  },
-  {
-    "slug": "thomas-kuhn",
-    "portrait": "../assets/img/philosophers/thomas-kuhn.webp",
-    "name": "Thomas Kuhn",
-    "shortName": "Kuhn",
-    "years": "1922–1996",
-    "era": "20. Jahrhundert",
-    "eraLink": "20jh.html",
-    "field": "Wissenschaftstheorie",
-    "thesis": "Wissenschaftlicher Fortschritt verläuft nicht kontinuierlich, sondern durch revolutionäre Brüche zwischen unvereinbaren Paradigmen.",
-    "intro": "Kuhn revolutionierte unser Verständnis davon, wie Wissenschaft funktioniert. Statt eines stetigen Erkenntnisgewinns sah er Phasen 'normaler Wissenschaft', die abrupt durch wissenschaftliche Revolutionen (Paradigmenwechsel) abgelöst werden.",
-    "ideas": [
-      "Paradigmenwechsel",
-      "Inkommensurabilität",
-      "Normale vs. Revolutionäre Wissenschaft"
-    ],
-    "significance": "Sein Werk ist eines der meistzitierten akademischen Bücher überhaupt. Er relativierte den strikten Rationalismus von Popper erheblich.",
-    "works": "Die Struktur wissenschaftlicher Revolutionen",
-    "context": "Seine Ideen passten perfekt zum relativistischen Zeitgeist der 1960er Jahre, in denen bestehende Wahrheiten grundlegend hinterfragt wurden.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Thomas_S._Kuhn"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Thomas%20Kuhn"
       }
     ]
   },
@@ -2251,6 +2281,36 @@ const PHILOSOPHERS = [
     ]
   },
   {
+    "slug": "peter-singer",
+    "portrait": "../assets/img/philosophers/peter-singer.webp",
+    "name": "Peter Singer",
+    "shortName": "Singer",
+    "years": "1946–",
+    "era": "Gegenwart & Zukunft",
+    "eraLink": "gegenwart.html",
+    "field": "Praktische Ethik, Utilitarismus",
+    "thesis": "Moralische Berücksichtigung hängt nicht von der Spezies ab, sondern von der Fähigkeit, Leid zu empfinden (Präferenz-Utilitarismus).",
+    "intro": "Der Australier Peter Singer ist der weltweit bekannteste und oft umstrittenste angewandte Ethiker. Sein utilitaristischer Ansatz fordert eine radikale Ausweitung unserer moralischen Pflichten auf Tiere und Menschen in extremer Armut.",
+    "ideas": [
+      "Tierrechte und Antispeziesismus",
+      "Präferenz-Utilitarismus",
+      "Effektiver Altruismus"
+    ],
+    "significance": "Sein Buch 'Animal Liberation' war die philosophische Initialzündung der modernen Tierrechts- und Veganismus-Bewegung.",
+    "works": "Animal Liberation, Praktische Ethik",
+    "context": "Lehrt in Princeton; seine logisch-kühlen Analysen zu Lebensrecht und Sterbehilfe rufen regelmäßig starke gesellschaftliche Proteste hervor.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Peter%20Singer"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Peter%20Singer"
+      }
+    ]
+  },
+  {
     "slug": "martha-nussbaum",
     "portrait": "../assets/img/philosophers/martha-nussbaum.webp",
     "name": "Martha Nussbaum",
@@ -2277,6 +2337,36 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Martha%20Nussbaum"
+      }
+    ]
+  },
+  {
+    "slug": "slavoj-zizek",
+    "portrait": "../assets/img/philosophers/slavoj-zizek.webp",
+    "name": "Slavoj Žižek",
+    "shortName": "Žižek",
+    "years": "1949–",
+    "era": "Gegenwart & Zukunft",
+    "eraLink": "gegenwart.html",
+    "field": "Hegelianismus, Psychoanalyse",
+    "thesis": "Ideologie ist nicht das, was wir nicht wissen, sondern das, was wir wissen und trotzdem tun.",
+    "intro": "Žižek ist der Popstar der zeitgenössischen Philosophie. Er verwebt meisterhaft Hegelsche Dialektik, Lacansche Psychoanalyse und Kritik am globalen Kapitalismus anhand von Hollywood-Filmen und Popkultur.",
+    "ideas": [
+      "Ideologiekritik (Ideologie als Illusion der Praxis)",
+      "Psychoanalytische Subjekttheorie",
+      "Kritik an liberaler Toleranz und 'Wokeness'"
+    ],
+    "significance": "Er brachte radikalen Marxismus und Psychoanalyse als popkulturelles und theoretisches Großereignis zurück in den globalen Diskurs.",
+    "works": "Das erhabene Objekt der Ideologie",
+    "context": "Stammt aus dem kommunistischen Jugoslawien (Slowenien); seine mediale Präsenz (Bücher, Dokus, Debatten) ist beispiellos für einen lebenden Philosophen.",
+    "links": [
+      {
+        "title": "Wikipedia Artikel",
+        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Slavoj%20%C5%BDi%C5%BEek"
+      },
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/search/searcher.py?query=Slavoj%20%C5%BDi%C5%BEek"
       }
     ]
   },
@@ -2337,66 +2427,6 @@ const PHILOSOPHERS = [
       {
         "title": "Stanford Encyclopedia of Philosophy",
         "url": "https://plato.stanford.edu/search/searcher.py?query=Byung-Chul%20Han"
-      }
-    ]
-  },
-  {
-    "slug": "peter-singer",
-    "portrait": "../assets/img/philosophers/peter-singer.webp",
-    "name": "Peter Singer",
-    "shortName": "Singer",
-    "years": "1946–",
-    "era": "Gegenwart & Zukunft",
-    "eraLink": "gegenwart.html",
-    "field": "Praktische Ethik, Utilitarismus",
-    "thesis": "Moralische Berücksichtigung hängt nicht von der Spezies ab, sondern von der Fähigkeit, Leid zu empfinden (Präferenz-Utilitarismus).",
-    "intro": "Der Australier Peter Singer ist der weltweit bekannteste und oft umstrittenste angewandte Ethiker. Sein utilitaristischer Ansatz fordert eine radikale Ausweitung unserer moralischen Pflichten auf Tiere und Menschen in extremer Armut.",
-    "ideas": [
-      "Tierrechte und Antispeziesismus",
-      "Präferenz-Utilitarismus",
-      "Effektiver Altruismus"
-    ],
-    "significance": "Sein Buch 'Animal Liberation' war die philosophische Initialzündung der modernen Tierrechts- und Veganismus-Bewegung.",
-    "works": "Animal Liberation, Praktische Ethik",
-    "context": "Lehrt in Princeton; seine logisch-kühlen Analysen zu Lebensrecht und Sterbehilfe rufen regelmäßig starke gesellschaftliche Proteste hervor.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Peter%20Singer"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Peter%20Singer"
-      }
-    ]
-  },
-  {
-    "slug": "slavoj-zizek",
-    "portrait": "../assets/img/philosophers/slavoj-zizek.webp",
-    "name": "Slavoj Žižek",
-    "shortName": "Žižek",
-    "years": "1949–",
-    "era": "Gegenwart & Zukunft",
-    "eraLink": "gegenwart.html",
-    "field": "Hegelianismus, Psychoanalyse",
-    "thesis": "Ideologie ist nicht das, was wir nicht wissen, sondern das, was wir wissen und trotzdem tun.",
-    "intro": "Žižek ist der Popstar der zeitgenössischen Philosophie. Er verwebt meisterhaft Hegelsche Dialektik, Lacansche Psychoanalyse und Kritik am globalen Kapitalismus anhand von Hollywood-Filmen und Popkultur.",
-    "ideas": [
-      "Ideologiekritik (Ideologie als Illusion der Praxis)",
-      "Psychoanalytische Subjekttheorie",
-      "Kritik an liberaler Toleranz und 'Wokeness'"
-    ],
-    "significance": "Er brachte radikalen Marxismus und Psychoanalyse als popkulturelles und theoretisches Großereignis zurück in den globalen Diskurs.",
-    "works": "Das erhabene Objekt der Ideologie",
-    "context": "Stammt aus dem kommunistischen Jugoslawien (Slowenien); seine mediale Präsenz (Bücher, Dokus, Debatten) ist beispiellos für einen lebenden Philosophen.",
-    "links": [
-      {
-        "title": "Wikipedia Artikel",
-        "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Slavoj%20%C5%BDi%C5%BEek"
-      },
-      {
-        "title": "Stanford Encyclopedia of Philosophy",
-        "url": "https://plato.stanford.edu/search/searcher.py?query=Slavoj%20%C5%BDi%C5%BEek"
       }
     ]
   }

@@ -928,3 +928,22 @@ h1.topbar-brand.index-topbar-title {
     color: #d4af37;
     font-weight: bold;
 }
+
+.hero-gallery-btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.quiz-cheat-container {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.quiz-cheat-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+}

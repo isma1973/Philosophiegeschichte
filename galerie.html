@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entdecken – Philosophiegeschichte</title>
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <!-- Framework Styles -->
@@ -107,19 +107,44 @@
             z-index: 100;
             border-bottom: 1px solid var(--border);
         }
+        
+        .galerie-back-link {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .galerie-title {
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        
+        .galerie-spacer {
+            width: 52px;
+        }
+        
+        .galerie-reload-btn {
+            margin-top: 15px;
+        }
+        
+        .galerie-hidden-switch {
+            display: none;
+        }
     </style>
 </head>
 <body class="dark-mode">
     <header class="topbar-gallery">
-        <a href="index.html" style="text-decoration: none; color: var(--text-light); font-weight: 600; font-size: 1.1rem;">← Zurück</a>
-        <h1 style="font-size: 1.2rem; margin: 0; font-weight: 700;">Entdecken</h1>
-        <div style="width: 52px;"><!-- Spacer for flex --></div>
+        <a href="index.html" class="galerie-back-link">← Zurück</a>
+        <h1 class="galerie-title">Entdecken</h1>
+        <div class="galerie-spacer"><!-- Spacer for flex --></div>
     </header>
 
     <div class="gallery-container" id="galleryContainer">
         <div class="empty-state" id="emptyState">
             Du hast alle Philosophen entdeckt!<br>
-            <button onclick="location.reload()" class="btn btn-primary" style="margin-top: 15px;">Neu mischen</button>
+            <button onclick="location.reload()" class="btn btn-primary galerie-reload-btn">Neu mischen</button>
         </div>
         <!-- Cards injected via JS -->
     </div>
@@ -130,7 +155,7 @@
     </div>
 
     <!-- The ios switch is fixed in css, we add it here just to keep the dark mode functionality -->
-    <label class="ios-switch" for="themeToggle" style="display: none;">
+    <label class="ios-switch galerie-hidden-switch" for="themeToggle">
         <input type="checkbox" id="themeToggle" checked>
         <span class="slider"></span>
     </label>
