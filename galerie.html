@@ -58,12 +58,13 @@
         }
         .tinder-card:active { cursor: grabbing; }
         .card-img {
-            /* Portrait: anchor to top so faces/heads are never clipped */
+            /* Kleineres Portrait, kein Abschneiden: ganzes Bild sichtbar */
             flex: 0 0 auto;
-            object-fit: cover;
-            object-position: top center;
+            object-fit: contain;
+            object-position: center top;
             width: 100%;
-            height: clamp(120px, 28vh, 220px);
+            height: clamp(80px, 16vh, 130px);
+            background: var(--bg-tertiary);
             border-bottom: 1px solid var(--border);
             pointer-events: none;
         }
