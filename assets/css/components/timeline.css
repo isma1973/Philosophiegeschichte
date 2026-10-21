@@ -1,5 +1,6 @@
 /* ---------------------------------------------------
    TIMELINE-V COMPONENT (Ismail UI Style)
+   Elevated Editorial Philosophy Edition
 --------------------------------------------------- */
 
 .timeline-v {
@@ -12,11 +13,11 @@
     content: '';
     position: absolute;
     left: 19px;
-    top: 5px;
-    bottom: 5px;
+    top: 10px;
+    bottom: 10px;
     width: 2px;
-    background: var(--border);
-    opacity: 0.5;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--border) 25%, var(--border) 75%, var(--accent) 100%);
+    opacity: 0.7;
 }
 
 .timeline-v-item {
@@ -36,59 +37,53 @@
 }
 
 .timeline-v-dot {
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     background: var(--bg-secondary);
     border: 3px solid var(--accent);
     border-radius: 50%;
     z-index: 1;
-    transition: transform var(--transition), background var(--transition);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 0 0 0 var(--accent-glow, rgba(59, 130, 246, 0.2));
 }
 
 .timeline-v-item:hover .timeline-v-dot {
-    transform: scale(1.4);
+    transform: scale(1.35);
     background: var(--accent);
+    box-shadow: 0 0 0 6px var(--accent-glow, rgba(59, 130, 246, 0.25));
 }
 
 .timeline-v-date {
-    display: block;
-    font-size: 13px;
+    display: inline-block;
+    font-size: 0.8rem;
     color: var(--accent);
     font-weight: 700;
     margin-bottom: var(--space-1);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .timeline-v-content {
-    transition: border-color var(--transition), transform var(--transition);
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    padding: var(--space-4) var(--space-5);
+    transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 
+.timeline-v-content:hover,
 .timeline-v-content:has(.timeline-v-trigger:hover),
 .timeline-v-content:has(.timeline-v-trigger:focus-visible) {
     border-color: var(--accent);
-    transform: translateX(5px);
-}
-
-.timeline-v-media {
-    width: min(220px, 100%);
-    height: 140px;
-    margin-bottom: var(--space-4);
-    overflow: hidden;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--bg-tertiary);
-}
-
-.timeline-v-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    transform: translateX(4px);
+    box-shadow: var(--shadow-strong), var(--shadow-glow, 0 0 24px rgba(59, 130, 246, 0.08));
 }
 
 .timeline-v-heading {
     margin: 0;
+    color: var(--text);
 }
 
 .timeline-v-trigger {
@@ -101,9 +96,23 @@
     border: 0;
     background: transparent;
     color: var(--text);
-    font: inherit;
+    font-family: var(--font-display, "Inter", sans-serif);
+    font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+    font-weight: 700;
     text-align: left;
     cursor: pointer;
+    letter-spacing: -0.015em;
+    transition: color var(--transition);
+}
+
+.timeline-v-trigger span:first-child {
+    color: var(--text);
+    transition: color var(--transition);
+}
+
+.timeline-v-trigger:hover,
+.timeline-v-trigger:hover span:first-child {
+    color: var(--accent);
 }
 
 .timeline-v-trigger:focus-visible {
@@ -114,36 +123,120 @@
 
 .timeline-v-indicator {
     flex: 0 0 auto;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
     color: var(--accent);
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     line-height: 1;
+    transition: all 0.25s ease;
+}
+
+.timeline-v-trigger:hover .timeline-v-indicator {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
 }
 
 .timeline-v-indicator::before {
     content: '+';
 }
 
+.timeline-v-trigger[aria-expanded="true"] .timeline-v-indicator {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+    transform: rotate(180deg);
+}
+
 .timeline-v-trigger[aria-expanded="true"] .timeline-v-indicator::before {
     content: '−';
+}
+
+.timeline-v-media {
+    width: 100%;
+    height: clamp(160px, 22vw, 240px);
+    margin: var(--space-3) 0 var(--space-4);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-tertiary);
+    position: relative;
+    box-shadow: var(--shadow-soft);
+}
+
+.timeline-v-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.timeline-v-media:hover .timeline-v-image {
+    transform: scale(1.04);
+}
+
+.timeline-v-desc {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--text);
+    margin: var(--space-3) 0 var(--space-4);
 }
 
 .timeline-v-detail {
     border-top: 1px solid var(--border);
     margin-top: var(--space-3);
-    padding-top: var(--space-3);
-    animation: uiFadeIn 0.3s ease;
+    padding-top: var(--space-4);
+    animation: accordionSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes accordionSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .timeline-v-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-2);
-    margin-top: var(--space-3);
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+
+.timeline-v-actions .btn {
+    padding: 8px 18px;
+    font-size: 0.92rem;
+    font-weight: 600;
 }
 
 @media (max-width: 600px) {
+    .timeline-v {
+        padding-left: 36px;
+    }
+    .timeline-v::before {
+        left: 15px;
+    }
+    .timeline-v-marker {
+        left: -36px;
+        width: 32px;
+        height: 32px;
+    }
+    .timeline-v-content {
+        padding: var(--space-3) var(--space-4);
+    }
     .timeline-v-media {
-        width: min(180px, 100%);
-        height: 120px;
+        height: 150px;
     }
 }

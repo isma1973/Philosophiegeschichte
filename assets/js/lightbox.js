@@ -12,8 +12,8 @@
       overlay.setAttribute('aria-hidden', 'true');
       overlay.innerHTML = `
         <div class="lightbox-content">
-          <button class="lightbox-close" aria-label="Schließen">&times;</button>
-          <img class="lightbox-img" src="" alt="Vergrößerte Ansicht">
+          <button class="lightbox-close" aria-label="Schliessen">&times;</button>
+          <img class="lightbox-img" src="" alt="Vergrösserte Ansicht">
           <p class="lightbox-caption"></p>
         </div>
       `;

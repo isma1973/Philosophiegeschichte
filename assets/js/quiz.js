@@ -18,7 +18,7 @@
         { q: 'Welche Lehre beschreibt im Buddhismus das Fehlen eines unveränderlichen Selbst?', options: ['Anatta', 'Brahman', 'Maya', 'Dharmaśāstra'], answer: 'Anatta' },
         { q: 'Welcher Weg gehört zur buddhistischen Lehre von der Überwindung des Leids?', options: ['Der Edle Achtfache Pfad', 'Die sieben Säulen des Staates', 'Der kategorische Imperativ', 'Wu Wei'], answer: 'Der Edle Achtfache Pfad' },
         { q: 'Welche Schule begründete Nagarjuna?', options: ['Madhyamaka', 'Advaita Vedanta', 'Soto-Zen', 'Mohismus'], answer: 'Madhyamaka' },
-        { q: 'Wie heißt Nagarjunas Lehre vom Entstehen aller Dinge in wechselseitiger Abhängigkeit?', options: ['Abhängiges Entstehen', 'Reines Erleben', 'Universale Liebe', 'Prästabilierte Harmonie'], answer: 'Abhängiges Entstehen' },
+        { q: 'Wie heisst Nagarjunas Lehre vom Entstehen aller Dinge in wechselseitiger Abhängigkeit?', options: ['Abhängiges Entstehen', 'Reines Erleben', 'Universale Liebe', 'Prästabilierte Harmonie'], answer: 'Abhängiges Entstehen' },
         { q: 'Welcher Begriff bezeichnet bei Shankara die kosmische Illusion der Vielheit?', options: ['Maya', 'Nirvana', 'Ren', 'Asabiyya'], answer: 'Maya' },
         { q: 'Wodurch wird im Advaita Vedanta Befreiung erlangt?', options: ['Durch Erkenntnis der Nicht-Dualität', 'Durch politische Herrschaft', 'Durch sinnlichen Genuss', 'Durch Angriffskriege'], answer: 'Durch Erkenntnis der Nicht-Dualität' },
         { q: 'Welches Werk wird Chanakya zugeschrieben?', options: ['Arthashastra', 'Gitanjali', 'Daodejing', 'Shōbōgenzō'], answer: 'Arthashastra' },
@@ -38,16 +38,16 @@
         { q: 'Welcher Denker vertrat einen strikten Universalismus (allgemeine Menschenliebe)?', options: ['Mozi', 'Mencius', 'Zhuangzi', 'Laozi'], answer: 'Mozi' },
         { q: 'Wer betonte, dass die menschliche Natur von Grund auf gut sei?', options: ['Mencius', 'Xunzi', 'Han Feizi', 'Konfuzius'], answer: 'Mencius' },
         { q: 'Wer ist ein Meister des daoistischen Relativismus und Humors?', options: ['Zhuangzi', 'Konfuzius', 'Zhu Xi', 'Mozi'], answer: 'Zhuangzi' },
-        { q: 'Welcher Denker schuf die große Synthese des Neo-Konfuzianismus?', options: ['Zhu Xi', 'Laozi', 'Mencius', 'Konfuzius'], answer: 'Zhu Xi' },
+        { q: 'Welcher Denker schuf die grosse Synthese des Neo-Konfuzianismus?', options: ['Zhu Xi', 'Laozi', 'Mencius', 'Konfuzius'], answer: 'Zhu Xi' },
         { q: 'Was beschreibt das Dao am besten?', options: ['Das unergründliche, alles durchdringende Prinzip', 'Ein persönlicher Schöpfergott', 'Eine strenge Gesetzessammlung', 'Der Herrscher der Erde'], answer: 'Das unergründliche, alles durchdringende Prinzip' },
-        { q: 'Wie heißt die Sammlung der Konfuzius zugeschriebenen Gespräche?', options: ['Analekten', 'Daodejing', 'Mengzi', 'Shōbōgenzō'], answer: 'Analekten' },
+        { q: 'Wie heisst die Sammlung der Konfuzius zugeschriebenen Gespräche?', options: ['Analekten', 'Daodejing', 'Mengzi', 'Shōbōgenzō'], answer: 'Analekten' },
         { q: 'Welcher konfuzianische Begriff bezeichnet Ritual und angemessenes Verhalten?', options: ['Li', 'Ren', 'Dao', 'Qi'], answer: 'Li' },
         { q: 'Welche Haltung empfiehlt Laozi gegenüber erzwungenem Handeln?', options: ['Natürlichkeit und Zurückhaltung', 'Aggressive Durchsetzung', 'Starre Ritualpflicht', 'Militärische Expansion'], answer: 'Natürlichkeit und Zurückhaltung' },
         { q: 'Welches berühmte Gleichnis stammt von Zhuangzi?', options: ['Der Schmetterlingstraum', 'Das Höhlengleichnis', 'Der fliegende Mensch', 'Das Rad der Fortuna'], answer: 'Der Schmetterlingstraum' },
         { q: 'Warum lehnte Zhuangzi der Überlieferung nach Regierungsämter ab?', options: ['Um seine Unabhängigkeit zu bewahren', 'Um eine Armee aufzubauen', 'Um Kaufmann zu werden', 'Um die Rituale zu verbieten'], answer: 'Um seine Unabhängigkeit zu bewahren' },
-        { q: 'Wie heißt Mozis Lehre der allgemeinen Menschenliebe?', options: ['Jian’ai', 'Wu Wei', 'Anatta', 'Asabiyya'], answer: 'Jian’ai' },
+        { q: 'Wie heisst Mozis Lehre der allgemeinen Menschenliebe?', options: ['Jian’ai', 'Wu Wei', 'Anatta', 'Asabiyya'], answer: 'Jian’ai' },
         { q: 'Welche politische Praxis verurteilte Mozi ausdrücklich?', options: ['Angriffskriege', 'Friedliche Diplomatie', 'Sparsame Verwaltung', 'Allgemeine Fürsorge'], answer: 'Angriffskriege' },
-        { q: 'Was sind bei Mencius die „vier Keime“?', options: ['Anlagen moralischer Tugenden', 'Vier politische Ämter', 'Vier Naturstoffe', 'Vier Meditationsstufen'], answer: 'Anlagen moralischer Tugenden' },
+        { q: 'Was sind bei Mencius die «vier Keime»?', options: ['Anlagen moralischer Tugenden', 'Vier politische Ämter', 'Vier Naturstoffe', 'Vier Meditationsstufen'], answer: 'Anlagen moralischer Tugenden' },
         { q: 'Was kann ein tyrannischer Herrscher nach Mencius verlieren?', options: ['Das Mandat des Himmels', 'Das Dao der Natur', 'Die Buddha-Natur', 'Die prästabilierte Harmonie'], answer: 'Das Mandat des Himmels' },
         { q: 'Welche zwei Grundbegriffe verbindet Zhu Xi in seiner Ontologie?', options: ['Li und Qi', 'Ren und Wu Wei', 'Yin und Nirvana', 'Atman und Anatta'], answer: 'Li und Qi' },
         { q: 'Welche Texte kommentierte Zhu Xi besonders einflussreich?', options: ['Die Vier Bücher', 'Die Veden', 'Platons Dialoge', 'Den Palikanon'], answer: 'Die Vier Bücher' },
@@ -62,7 +62,7 @@
         { q: 'Was analysierte Watsuji Tetsurō in seinem Hauptwerk "Fudo"?', options: ['Den Zusammenhang von Klima und Kultur (Ethik)', 'Die Struktur der japanischen Sprache', 'Die Logik des reinen Erlebens', 'Zen-Meditation'], answer: 'Den Zusammenhang von Klima und Kultur (Ethik)' },
         { q: 'Was bezeichnet der Begriff "Ma" in der japanischen Ästhetik?', options: ['Den leeren, aber wirkungsvollen Zwischenraum', 'Den Samurai-Kodex', 'Die Teezeremonie', 'Das absolute Nichts'], answer: 'Den leeren, aber wirkungsvollen Zwischenraum' },
         { q: 'Wie nennt Nishida Kitarō die Erfahrung vor der Trennung in Subjekt und Objekt?', options: ['Reines Erleben', 'Dialektik', 'Satori', 'Karma'], answer: 'Reines Erleben' },
-        { q: 'Was ist Zazen?', options: ['Die Sitzmeditation im Zen-Buddhismus', 'Eine Kampfsportart', 'Die Kunst des Bogenschießens', 'Ein Ritualschwert'], answer: 'Die Sitzmeditation im Zen-Buddhismus' },
+        { q: 'Was ist Zazen?', options: ['Die Sitzmeditation im Zen-Buddhismus', 'Eine Kampfsportart', 'Die Kunst des Bogenschiessens', 'Ein Ritualschwert'], answer: 'Die Sitzmeditation im Zen-Buddhismus' },
         { q: 'Welches Konzept verbindet bei Dōgen Sein und Zeit untrennbar miteinander?', options: ['Uji (Sein-Zeit)', 'Samsara', 'Bushido', 'Wabi-Sabi'], answer: 'Uji (Sein-Zeit)' },
         { q: 'Welche ethische Dimension steht bei Watsuji Tetsurō im Zentrum?', options: ['Die Zwischenmenschlichkeit (Rinri)', 'Der Egoismus', 'Der Utilitarismus', 'Der Kategorische Imperativ'], answer: 'Die Zwischenmenschlichkeit (Rinri)' },
         { q: 'Was bedeutet Shikantaza in Dōgens Zen-Praxis?', options: ['Nur-Sitzen', 'Schriftstudium', 'Ritueller Tanz', 'Logische Widerlegung'], answer: 'Nur-Sitzen' },
@@ -90,10 +90,10 @@
         { q: 'Wie versuchte Averroes den Konflikt zwischen Philosophie und Religion zu lösen?', options: ['Beide drücken dieselbe Wahrheit in unterschiedlicher Form aus', 'Religion ist reine Illusion', 'Philosophie muss verboten werden', 'Nur Mystik bringt Erkenntnis'], answer: 'Beide drücken dieselbe Wahrheit in unterschiedlicher Form aus' },
         { q: 'Welches Gedankenexperiment von Avicenna demonstriert die Existenz der Seele unabhängig vom Körper?', options: ['Der fliegende Mensch', 'Das Höhlengleichnis', 'Buridans Esel', 'Das Gehirn im Tank'], answer: 'Der fliegende Mensch' },
         { q: 'Welche theologische Strömung kritisierte Al-Ghazali besonders stark zugunsten mystischer Erkenntnis?', options: ['Den strengen Rationalismus', 'Den Polytheismus', 'Den Daoismus', 'Den Empirismus'], answer: 'Den strengen Rationalismus' },
-        { q: 'Wie heißt Al-Farabis politisches Hauptwerk?', options: ['Der Musterstaat', 'Die Muqaddima', 'Der Kanon der Medizin', 'Die Inkohärenz der Philosophen'], answer: 'Der Musterstaat' },
+        { q: 'Wie heisst Al-Farabis politisches Hauptwerk?', options: ['Der Musterstaat', 'Die Muqaddima', 'Der Kanon der Medizin', 'Die Inkohärenz der Philosophen'], answer: 'Der Musterstaat' },
         { q: 'Welche antike Disziplin entwickelte Al-Farabi in der islamischen Philosophie weiter?', options: ['Logik', 'Stoische Askese', 'Epikureische Lustlehre', 'Kynische Lebenskunst'], answer: 'Logik' },
         { q: 'Welche Unterscheidung ist zentral für Avicennas Metaphysik?', options: ['Wesen und Existenz', 'These und Antithese', 'Ren und Li', 'Sein und Zeit'], answer: 'Wesen und Existenz' },
-        { q: 'Wie heißt Avicennas umfassendes philosophisches Werk?', options: ['Das Buch der Heilung', 'Der Musterstaat', 'Die Muqaddima', 'Die Wiederbelebung der religiösen Wissenschaften'], answer: 'Das Buch der Heilung' },
+        { q: 'Wie heisst Avicennas umfassendes philosophisches Werk?', options: ['Das Buch der Heilung', 'Der Musterstaat', 'Die Muqaddima', 'Die Wiederbelebung der religiösen Wissenschaften'], answer: 'Das Buch der Heilung' },
         { q: 'Unter welchem Namen ist Ibn Rushd im lateinischen Westen bekannt?', options: ['Averroes', 'Avicenna', 'Al-Farabi', 'Ibn Khaldun'], answer: 'Averroes' },
         { q: 'Welches Werk schrieb Averroes als Antwort auf Al-Ghazalis Kritik?', options: ['Die Widerlegung der Widerlegung', 'Der Kanon der Medizin', 'Der Musterstaat', 'Die Wiederbelebung der religiösen Wissenschaften'], answer: 'Die Widerlegung der Widerlegung' },
         { q: 'Welcher mystischen Tradition wandte sich Al-Ghazali zu?', options: ['Dem Sufismus', 'Dem Daoismus', 'Dem Stoizismus', 'Dem Zen-Buddhismus'], answer: 'Dem Sufismus' },
@@ -119,7 +119,7 @@
         { q: 'Welche Lehre beeinflusste Epikurs Naturphilosophie?', options: ['Der Atomismus', 'Der Idealismus', 'Die Scholastik', 'Der Existenzialismus'], answer: 'Der Atomismus' },
         { q: 'Wer gründete das Lykeion in Athen?', options: ['Aristoteles', 'Platon', 'Zenon von Kition', 'Thales'], answer: 'Aristoteles' },
         { q: 'Was gilt in der stoischen Ethik als höchstes Gut?', options: ['Tugend', 'Reichtum', 'Ruhm', 'Sinnlicher Genuss'], answer: 'Tugend' },
-        { q: 'Wer sagte sinngemäß, man könne nicht zweimal in denselben Fluss steigen (Panta rhei)?', options: ['Heraklit', 'Thales', 'Parmenides', 'Sokrates'], answer: 'Heraklit' },
+        { q: 'Wer sagte sinngemäss, man könne nicht zweimal in denselben Fluss steigen (Panta rhei)?', options: ['Heraklit', 'Thales', 'Parmenides', 'Sokrates'], answer: 'Heraklit' },
         { q: 'Wer sah in der "Ideenlehre" die wahre Realität jenseits der Sinnenwelt?', options: ['Platon', 'Aristoteles', 'Epikur', 'Zenon'], answer: 'Platon' },
         { q: 'Welcher antike Denker wurde in Athen zum Tode verurteilt und starb durch den Schierlingsbecher?', options: ['Sokrates', 'Thales', 'Parmenides', 'Heraklit'], answer: 'Sokrates' },
         { q: 'Welcher Philosoph lehrte, dass man das Streben nach Lust auf einfache, ungestörte Freuden beschränken sollte?', options: ['Epikur', 'Platon', 'Zenon', 'Aristoteles'], answer: 'Epikur' },
@@ -137,22 +137,22 @@
       title: 'Mittelalter',
       questions: [
         { q: 'Welche Grundfrage prägt die mittelalterliche Philosophie besonders?', options: ['Das Verhältnis von Glaube und Vernunft', 'Die Funktionsweise des Internets', 'Die Evolution durch natürliche Selektion', 'Die industrielle Arbeitsteilung'], answer: 'Das Verhältnis von Glaube und Vernunft' },
-        { q: 'Wer verfasste die „Summa Theologiae“?', options: ['Thomas von Aquin', 'Boethius', 'Augustinus', 'Meister Eckhart'], answer: 'Thomas von Aquin' },
+        { q: 'Wer verfasste die «Summa Theologiae»?', options: ['Thomas von Aquin', 'Boethius', 'Augustinus', 'Meister Eckhart'], answer: 'Thomas von Aquin' },
         { q: 'Welcher Denker unterschied zwischen dem irdischen Staat und dem Gottesstaat?', options: ['Augustinus', 'Boethius', 'Thomas von Aquin', 'Meister Eckhart'], answer: 'Augustinus' },
         { q: 'Welches Werk schrieb Boethius?', options: ['Trost der Philosophie', 'Der Fürst', 'Leviathan', 'Kritik der reinen Vernunft'], answer: 'Trost der Philosophie' },
         { q: 'Wer verband die Philosophie des Aristoteles systematisch mit der christlichen Theologie?', options: ['Thomas von Aquin', 'Augustinus', 'Boethius', 'Meister Eckhart'], answer: 'Thomas von Aquin' },
         { q: 'Mit welcher Strömung wird Meister Eckhart vor allem verbunden?', options: ['Mystik', 'Empirismus', 'Utilitarismus', 'Existenzialismus'], answer: 'Mystik' },
-        { q: 'Wer schrieb die „Bekenntnisse“?', options: ['Augustinus', 'Boethius', 'Meister Eckhart', 'Thomas von Aquin'], answer: 'Augustinus' },
-        { q: 'Welcher Denker schrieb den „Trost der Philosophie“ während seiner Gefangenschaft?', options: ['Boethius', 'Augustinus', 'Thomas von Aquin', 'Meister Eckhart'], answer: 'Boethius' },
+        { q: 'Wer schrieb die «Bekenntnisse»?', options: ['Augustinus', 'Boethius', 'Meister Eckhart', 'Thomas von Aquin'], answer: 'Augustinus' },
+        { q: 'Welcher Denker schrieb den «Trost der Philosophie» während seiner Gefangenschaft?', options: ['Boethius', 'Augustinus', 'Thomas von Aquin', 'Meister Eckhart'], answer: 'Boethius' },
         { q: 'Wer betonte in seinen Predigten die innere Gelassenheit und Gottesnähe?', options: ['Meister Eckhart', 'Augustinus', 'Boethius', 'Thomas von Aquin'], answer: 'Meister Eckhart' },
         { q: 'Welche antike Philosophie prägte Augustinus besonders?', options: ['Der Neuplatonismus', 'Der Epikureismus', 'Der Skeptizismus', 'Der Kynismus'], answer: 'Der Neuplatonismus' },
         { q: 'Welchen Philosophen integrierte Thomas von Aquin umfassend in die christliche Theologie?', options: ['Aristoteles', 'Epikur', 'Heraklit', 'Sokrates'], answer: 'Aristoteles' },
-        { q: 'Was bezeichnet „Scholastik“?', options: ['Eine mittelalterliche Lehr- und Argumentationsmethode', 'Eine antike Staatsform', 'Eine moderne Kunstbewegung', 'Eine naturwissenschaftliche Messmethode'], answer: 'Eine mittelalterliche Lehr- und Argumentationsmethode' },
+        { q: 'Was bezeichnet «Scholastik»?', options: ['Eine mittelalterliche Lehr- und Argumentationsmethode', 'Eine antike Staatsform', 'Eine moderne Kunstbewegung', 'Eine naturwissenschaftliche Messmethode'], answer: 'Eine mittelalterliche Lehr- und Argumentationsmethode' },
         { q: 'Welcher Begriff steht bei Meister Eckhart für den tiefsten, göttlichen Kern des Menschen?', options: ['Seelengrund', 'Cogito', 'Übermensch', 'Dasein'], answer: 'Seelengrund' },
-        { q: 'Wie heißt Augustinus\' berühmtes Werk über das himmlische und irdische Reich auf Latein?', options: ['De civitate Dei', 'Summa Theologiae', 'Tractatus logico-philosophicus', 'Leviathan'], answer: 'De civitate Dei' },
+        { q: 'Wie heisst Augustinus\' berühmtes Werk über das himmlische und irdische Reich auf Latein?', options: ['De civitate Dei', 'Summa Theologiae', 'Tractatus logico-philosophicus', 'Leviathan'], answer: 'De civitate Dei' },
         { q: 'Welcher Denker behandelte das Verhältnis von göttlicher Vorsehung und menschlicher Freiheit?', options: ['Boethius', 'Augustinus', 'Thomas von Aquin', 'Meister Eckhart'], answer: 'Boethius' },
-        { q: 'Welcher antike Denker wurde im Mittelalter oft einfach nur als „Der Philosoph“ zitiert?', options: ['Aristoteles', 'Platon', 'Sokrates', 'Epikur'], answer: 'Aristoteles' },
-        { q: 'Was meint Thomas von Aquin mit „natürlicher Theologie“?', options: ['Gotteserkenntnis durch Vernunft ohne göttliche Offenbarung', 'Ein Leben im Kloster in der Natur', 'Die Leugnung jeglicher göttlichen Kraft', 'Die mystische Erfahrung im Wald'], answer: 'Gotteserkenntnis durch Vernunft ohne göttliche Offenbarung' },
+        { q: 'Welcher antike Denker wurde im Mittelalter oft einfach nur als «Der Philosoph» zitiert?', options: ['Aristoteles', 'Platon', 'Sokrates', 'Epikur'], answer: 'Aristoteles' },
+        { q: 'Was meint Thomas von Aquin mit «natürlicher Theologie»?', options: ['Gotteserkenntnis durch Vernunft ohne göttliche Offenbarung', 'Ein Leben im Kloster in der Natur', 'Die Leugnung jeglicher göttlichen Kraft', 'Die mystische Erfahrung im Wald'], answer: 'Gotteserkenntnis durch Vernunft ohne göttliche Offenbarung' },
         { q: 'Welcher mittelalterliche Denker formulierte die fünf Wege der Gotteserkenntnis?', options: ['Thomas von Aquin', 'Augustinus', 'Boethius', 'Meister Eckhart'], answer: 'Thomas von Aquin' },
         { q: 'Welchem religiösen Orden gehörte Thomas von Aquin an?', options: ['Dominikaner', 'Franziskaner', 'Jesuiten', 'Benediktiner'], answer: 'Dominikaner' },
         { q: 'Mit welchem Bild beschreibt Boethius in seinem Werk die Unbeständigkeit des irdischen Glücks?', options: ['Das Rad der Fortuna', 'Die Höhle', 'Der unsichtbare Faden', 'Die Maschine'], answer: 'Das Rad der Fortuna' },
@@ -162,26 +162,26 @@
     neuzeit: {
       title: 'Frühe Neuzeit',
       questions: [
-        { q: 'Wer formulierte „Ich denke, also bin ich“?', options: ['René Descartes', 'David Hume', 'John Locke', 'Thomas Hobbes'], answer: 'René Descartes' },
-        { q: 'Welcher Philosoph beschrieb den Staat als „Leviathan“?', options: ['Thomas Hobbes', 'Baruch de Spinoza', 'Gottfried Wilhelm Leibniz', 'Jean-Jacques Rousseau'], answer: 'Thomas Hobbes' },
+        { q: 'Wer formulierte «Ich denke, also bin ich»?', options: ['René Descartes', 'David Hume', 'John Locke', 'Thomas Hobbes'], answer: 'René Descartes' },
+        { q: 'Welcher Philosoph beschrieb den Staat als «Leviathan»?', options: ['Thomas Hobbes', 'Baruch de Spinoza', 'Gottfried Wilhelm Leibniz', 'Jean-Jacques Rousseau'], answer: 'Thomas Hobbes' },
         { q: 'Wer verband natürliche Rechte mit Leben, Freiheit und Eigentum?', options: ['John Locke', 'Niccolò Machiavelli', 'René Descartes', 'David Hume'], answer: 'John Locke' },
         { q: 'Welche Position verbindet man mit Spinoza?', options: ['Gott oder Natur als eine Substanz', 'Die Ideenlehre', 'Den kategorischen Imperativ', 'Die Banalität des Bösen'], answer: 'Gott oder Natur als eine Substanz' },
         { q: 'Wer kritisierte die Annahme, Kausalität sei unmittelbar erkennbar?', options: ['David Hume', 'Gottfried Wilhelm Leibniz', 'Jean-Jacques Rousseau', 'Niccolò Machiavelli'], answer: 'David Hume' },
-        { q: 'Von wem stammt die „Monadologie“?', options: ['Gottfried Wilhelm Leibniz', 'John Locke', 'Thomas Hobbes', 'René Descartes'], answer: 'Gottfried Wilhelm Leibniz' },
-        { q: 'Wer schrieb „Der Fürst“?', options: ['Niccolò Machiavelli', 'Thomas Hobbes', 'John Locke', 'Jean-Jacques Rousseau'], answer: 'Niccolò Machiavelli' },
-        { q: 'Welcher Denker verstand den Geist zunächst als „unbeschriebenes Blatt“?', options: ['John Locke', 'René Descartes', 'Baruch de Spinoza', 'Gottfried Wilhelm Leibniz'], answer: 'John Locke' },
+        { q: 'Von wem stammt die «Monadologie»?', options: ['Gottfried Wilhelm Leibniz', 'John Locke', 'Thomas Hobbes', 'René Descartes'], answer: 'Gottfried Wilhelm Leibniz' },
+        { q: 'Wer schrieb «Der Fürst»?', options: ['Niccolò Machiavelli', 'Thomas Hobbes', 'John Locke', 'Jean-Jacques Rousseau'], answer: 'Niccolò Machiavelli' },
+        { q: 'Welcher Denker verstand den Geist zunächst als «unbeschriebenes Blatt»?', options: ['John Locke', 'René Descartes', 'Baruch de Spinoza', 'Gottfried Wilhelm Leibniz'], answer: 'John Locke' },
         { q: 'Welcher Begriff bezeichnet Descartes’ Trennung von Geist und Körper?', options: ['Substanzdualismus', 'Monismus', 'Materialismus', 'Utilitarismus'], answer: 'Substanzdualismus' },
-        { q: 'Von wem stammt die Idee des „allgemeinen Willens“?', options: ['Jean-Jacques Rousseau', 'Thomas Hobbes', 'David Hume', 'Niccolò Machiavelli'], answer: 'Jean-Jacques Rousseau' },
+        { q: 'Von wem stammt die Idee des «allgemeinen Willens»?', options: ['Jean-Jacques Rousseau', 'Thomas Hobbes', 'David Hume', 'Niccolò Machiavelli'], answer: 'Jean-Jacques Rousseau' },
         { q: 'Welche Erkenntnisquelle betont der Empirismus?', options: ['Erfahrung', 'Angeborene Ideen allein', 'Offenbarung allein', 'Mathematische Deduktion allein'], answer: 'Erfahrung' },
         { q: 'Wie nennt Leibniz die einfachen geistartigen Einheiten der Wirklichkeit?', options: ['Monaden', 'Ideen', 'Atome', 'Kategorien'], answer: 'Monaden' },
         { q: 'Wer riet politischen Herrschern, eher gefürchtet als geliebt zu werden?', options: ['Niccolò Machiavelli', 'Thomas Hobbes', 'John Locke', 'Jean-Jacques Rousseau'], answer: 'Niccolò Machiavelli' },
-        { q: 'Wer verfasste das einflussreiche Werk „Emile oder Über die Erziehung“?', options: ['Jean-Jacques Rousseau', 'John Locke', 'David Hume', 'René Descartes'], answer: 'Jean-Jacques Rousseau' },
-        { q: 'Welcher Denker vertrat die Ansicht, dass der menschliche Geist bei der Geburt ein „unbeschriebenes Blatt“ (Tabula rasa) sei?', options: ['John Locke', 'Baruch de Spinoza', 'Gottfried Wilhelm Leibniz', 'Thomas Hobbes'], answer: 'John Locke' },
-        { q: 'Wer behauptete optimistisch, wir leben in der „besten aller möglichen Welten“?', options: ['Gottfried Wilhelm Leibniz', 'David Hume', 'Niccolò Machiavelli', 'René Descartes'], answer: 'Gottfried Wilhelm Leibniz' },
-        { q: 'Welcher Philosoph erregte Aufsehen mit der These, dass Gott und Natur dasselbe seien („Deus sive Natura“)?', options: ['Baruch de Spinoza', 'Thomas Hobbes', 'John Locke', 'Jean-Jacques Rousseau'], answer: 'Baruch de Spinoza' },
-        { q: 'Von wem stammt der Satz „Der Mensch ist dem Menschen ein Wolf“ (Homo homini lupus)?', options: ['Thomas Hobbes', 'David Hume', 'Niccolò Machiavelli', 'Baruch de Spinoza'], answer: 'Thomas Hobbes' },
-        { q: 'Welcher skeptische Philosoph weckte Immanuel Kant sprichwörtlich aus seinem „dogmatischen Schlummer“?', options: ['David Hume', 'John Locke', 'René Descartes', 'Gottfried Wilhelm Leibniz'], answer: 'David Hume' },
-        { q: 'Wer entwickelte die Erkenntnismethode des „methodischen Zweifels“?', options: ['René Descartes', 'Baruch de Spinoza', 'Thomas Hobbes', 'Niccolò Machiavelli'], answer: 'René Descartes' },
+        { q: 'Wer verfasste das einflussreiche Werk «Emile oder Über die Erziehung»?', options: ['Jean-Jacques Rousseau', 'John Locke', 'David Hume', 'René Descartes'], answer: 'Jean-Jacques Rousseau' },
+        { q: 'Welcher Denker vertrat die Ansicht, dass der menschliche Geist bei der Geburt ein «unbeschriebenes Blatt» (Tabula rasa) sei?', options: ['John Locke', 'Baruch de Spinoza', 'Gottfried Wilhelm Leibniz', 'Thomas Hobbes'], answer: 'John Locke' },
+        { q: 'Wer behauptete optimistisch, wir leben in der «besten aller möglichen Welten»?', options: ['Gottfried Wilhelm Leibniz', 'David Hume', 'Niccolò Machiavelli', 'René Descartes'], answer: 'Gottfried Wilhelm Leibniz' },
+        { q: 'Welcher Philosoph erregte Aufsehen mit der These, dass Gott und Natur dasselbe seien («Deus sive Natura»)?', options: ['Baruch de Spinoza', 'Thomas Hobbes', 'John Locke', 'Jean-Jacques Rousseau'], answer: 'Baruch de Spinoza' },
+        { q: 'Von wem stammt der Satz «Der Mensch ist dem Menschen ein Wolf» (Homo homini lupus)?', options: ['Thomas Hobbes', 'David Hume', 'Niccolò Machiavelli', 'Baruch de Spinoza'], answer: 'Thomas Hobbes' },
+        { q: 'Welcher skeptische Philosoph weckte Immanuel Kant sprichwörtlich aus seinem «dogmatischen Schlummer»?', options: ['David Hume', 'John Locke', 'René Descartes', 'Gottfried Wilhelm Leibniz'], answer: 'David Hume' },
+        { q: 'Wer entwickelte die Erkenntnismethode des «methodischen Zweifels»?', options: ['René Descartes', 'Baruch de Spinoza', 'Thomas Hobbes', 'Niccolò Machiavelli'], answer: 'René Descartes' },
         { q: 'Wer verfasste "A Vindication of the Rights of Woman" und gilt als frühe feministische Philosophin?', options: ['Mary Wollstonecraft', 'Olympe de Gouges', 'Hannah Arendt', 'Simone de Beauvoir'], answer: 'Mary Wollstonecraft' },
         { q: 'Wer prägte den Satz "Wissen ist Macht" und begründete die moderne empirische Forschung?', options: ['Francis Bacon', 'René Descartes', 'John Locke', 'David Hume'], answer: 'Francis Bacon' },
         { q: 'Wer gilt als der Erfinder der literarisch-philosophischen Form des Essays?', options: ['Michel de Montaigne', 'Thomas Hobbes', 'Baruch de Spinoza', 'Niccolò Machiavelli'], answer: 'Michel de Montaigne' }
@@ -192,24 +192,24 @@
       questions: [
         { q: 'Wer entwickelte den kategorischen Imperativ?', options: ['Immanuel Kant', 'Georg Wilhelm Friedrich Hegel', 'Karl Marx', 'John Stuart Mill'], answer: 'Immanuel Kant' },
         { q: 'Welcher Denker analysierte den Kapitalismus anhand von Klasse und Mehrwert?', options: ['Karl Marx', 'Søren Kierkegaard', 'Arthur Schopenhauer', 'Johann Gottlieb Fichte'], answer: 'Karl Marx' },
-        { q: 'Wer schrieb „Die Welt als Wille und Vorstellung“?', options: ['Arthur Schopenhauer', 'Friedrich Nietzsche', 'Friedrich Schelling', 'Georg Wilhelm Friedrich Hegel'], answer: 'Arthur Schopenhauer' },
+        { q: 'Wer schrieb «Die Welt als Wille und Vorstellung»?', options: ['Arthur Schopenhauer', 'Friedrich Nietzsche', 'Friedrich Schelling', 'Georg Wilhelm Friedrich Hegel'], answer: 'Arthur Schopenhauer' },
         { q: 'Mit welchem Denker ist der Utilitarismus besonders verbunden?', options: ['John Stuart Mill', 'Johann Gottlieb Fichte', 'Søren Kierkegaard', 'Immanuel Kant'], answer: 'John Stuart Mill' },
         { q: 'Wer stellte individuelle Existenz und Entscheidung gegen abstrakte Systeme?', options: ['Søren Kierkegaard', 'Georg Wilhelm Friedrich Hegel', 'Karl Marx', 'Friedrich Schelling'], answer: 'Søren Kierkegaard' },
-        { q: 'Welcher Philosoph forderte eine „Umwertung aller Werte“?', options: ['Friedrich Nietzsche', 'Immanuel Kant', 'Arthur Schopenhauer', 'John Stuart Mill'], answer: 'Friedrich Nietzsche' },
+        { q: 'Welcher Philosoph forderte eine «Umwertung aller Werte»?', options: ['Friedrich Nietzsche', 'Immanuel Kant', 'Arthur Schopenhauer', 'John Stuart Mill'], answer: 'Friedrich Nietzsche' },
         { q: 'Wer entwickelte die Wissenschaftslehre?', options: ['Johann Gottlieb Fichte', 'Friedrich Schelling', 'Georg Wilhelm Friedrich Hegel', 'Immanuel Kant'], answer: 'Johann Gottlieb Fichte' },
         { q: 'Welcher Denker verband Natur und Geist in seiner Naturphilosophie?', options: ['Friedrich Schelling', 'Karl Marx', 'John Stuart Mill', 'Søren Kierkegaard'], answer: 'Friedrich Schelling' },
-        { q: 'Von wem stammt die „Phänomenologie des Geistes“?', options: ['Georg Wilhelm Friedrich Hegel', 'Immanuel Kant', 'Arthur Schopenhauer', 'Friedrich Nietzsche'], answer: 'Georg Wilhelm Friedrich Hegel' },
+        { q: 'Von wem stammt die «Phänomenologie des Geistes»?', options: ['Georg Wilhelm Friedrich Hegel', 'Immanuel Kant', 'Arthur Schopenhauer', 'Friedrich Nietzsche'], answer: 'Georg Wilhelm Friedrich Hegel' },
         { q: 'Was schützt Mills Freiheitsprinzip?', options: ['Individuelle Freiheit, solange anderen nicht geschadet wird', 'Unbegrenzte staatliche Herrschaft', 'Nur wirtschaftliches Eigentum', 'Die Herrschaft einer einzigen Religion'], answer: 'Individuelle Freiheit, solange anderen nicht geschadet wird' },
         { q: 'Welcher Begriff ist zentral für Schopenhauers Ethik?', options: ['Mitleid', 'Pflicht', 'Klassenkampf', 'Kommunikative Vernunft'], answer: 'Mitleid' },
         { q: 'Welche philosophische Bewegung bereitete Kierkegaard wesentlich vor?', options: ['Existenzphilosophie', 'Positivismus', 'Strukturalismus', 'Stoa'], answer: 'Existenzphilosophie' },
-        { q: 'Wer unterschied fundamental zwischen dem „Ding an sich“ und der Erscheinung?', options: ['Immanuel Kant', 'Georg Wilhelm Friedrich Hegel', 'Arthur Schopenhauer', 'Karl Marx'], answer: 'Immanuel Kant' },
-        { q: 'Wer prägte im 19. Jahrhundert den Begriff des „Übermenschen“?', options: ['Friedrich Nietzsche', 'Arthur Schopenhauer', 'Søren Kierkegaard', 'John Stuart Mill'], answer: 'Friedrich Nietzsche' },
-        { q: 'Welcher Denker beschrieb das Universum als angetrieben von einem blinden, unvernünftigen „Willen“?', options: ['Arthur Schopenhauer', 'Georg Wilhelm Friedrich Hegel', 'Immanuel Kant', 'Johann Gottlieb Fichte'], answer: 'Arthur Schopenhauer' },
-        { q: 'Wer verfasste die „Kritik der reinen Vernunft“?', options: ['Immanuel Kant', 'Friedrich Schelling', 'John Stuart Mill', 'Karl Marx'], answer: 'Immanuel Kant' },
+        { q: 'Wer unterschied fundamental zwischen dem «Ding an sich» und der Erscheinung?', options: ['Immanuel Kant', 'Georg Wilhelm Friedrich Hegel', 'Arthur Schopenhauer', 'Karl Marx'], answer: 'Immanuel Kant' },
+        { q: 'Wer prägte im 19. Jahrhundert den Begriff des «Übermenschen»?', options: ['Friedrich Nietzsche', 'Arthur Schopenhauer', 'Søren Kierkegaard', 'John Stuart Mill'], answer: 'Friedrich Nietzsche' },
+        { q: 'Welcher Denker beschrieb das Universum als angetrieben von einem blinden, unvernünftigen «Willen»?', options: ['Arthur Schopenhauer', 'Georg Wilhelm Friedrich Hegel', 'Immanuel Kant', 'Johann Gottlieb Fichte'], answer: 'Arthur Schopenhauer' },
+        { q: 'Wer verfasste die «Kritik der reinen Vernunft»?', options: ['Immanuel Kant', 'Friedrich Schelling', 'John Stuart Mill', 'Karl Marx'], answer: 'Immanuel Kant' },
         { q: 'Wer interpretierte die Geschichte als einen dialektischen Prozess von These, Antithese und Synthese?', options: ['Georg Wilhelm Friedrich Hegel', 'Immanuel Kant', 'Arthur Schopenhauer', 'Søren Kierkegaard'], answer: 'Georg Wilhelm Friedrich Hegel' },
-        { q: 'Wer gilt als Vater der Existenzphilosophie und stellte den einzelnen „Glaubensritter“ ins Zentrum?', options: ['Søren Kierkegaard', 'Friedrich Nietzsche', 'Johann Gottlieb Fichte', 'John Stuart Mill'], answer: 'Søren Kierkegaard' },
+        { q: 'Wer gilt als Vater der Existenzphilosophie und stellte den einzelnen «Glaubensritter» ins Zentrum?', options: ['Søren Kierkegaard', 'Friedrich Nietzsche', 'Johann Gottlieb Fichte', 'John Stuart Mill'], answer: 'Søren Kierkegaard' },
         { q: 'Wer erweiterte den Utilitarismus um die Qualität von Freuden (besser ein unzufriedener Sokrates als ein zufriedener Narr)?', options: ['John Stuart Mill', 'Karl Marx', 'Immanuel Kant', 'Friedrich Schelling'], answer: 'John Stuart Mill' },
-        { q: 'Welcher Aufklärer und Idealist formulierte das Konzept des „absoluten Ichs“?', options: ['Johann Gottlieb Fichte', 'Georg Wilhelm Friedrich Hegel', 'Arthur Schopenhauer', 'Friedrich Nietzsche'], answer: 'Johann Gottlieb Fichte' },
+        { q: 'Welcher Aufklärer und Idealist formulierte das Konzept des «absoluten Ichs»?', options: ['Johann Gottlieb Fichte', 'Georg Wilhelm Friedrich Hegel', 'Arthur Schopenhauer', 'Friedrich Nietzsche'], answer: 'Johann Gottlieb Fichte' },
         { q: 'Wer war ein Begründer des Pragmatismus und bewertete Ideen nach ihrem praktischen Nutzen?', options: ['William James', 'John Dewey', 'Charles S. Peirce', 'John Stuart Mill'], answer: 'William James' }
       ],
     },
@@ -217,25 +217,25 @@
       title: '20. Jahrhundert',
       questions: [
         { q: 'Wer entwickelte die Idee der Sprachspiele?', options: ['Ludwig Wittgenstein', 'Martin Heidegger', 'Jean-Paul Sartre', 'Jürgen Habermas'], answer: 'Ludwig Wittgenstein' },
-        { q: 'Von wem stammt „Sein und Zeit“?', options: ['Martin Heidegger', 'Albert Camus', 'Michel Foucault', 'Hannah Arendt'], answer: 'Martin Heidegger' },
+        { q: 'Von wem stammt «Sein und Zeit»?', options: ['Martin Heidegger', 'Albert Camus', 'Michel Foucault', 'Hannah Arendt'], answer: 'Martin Heidegger' },
         { q: 'Wer formulierte, dass die Existenz der Essenz vorausgeht?', options: ['Jean-Paul Sartre', 'Ludwig Wittgenstein', 'Jürgen Habermas', 'Simone de Beauvoir'], answer: 'Jean-Paul Sartre' },
-        { q: 'Welcher Begriff steht im Zentrum von Camus’ „Mythos des Sisyphos“?', options: ['Das Absurde', 'Der kategorische Imperativ', 'Die Monade', 'Der Gesellschaftsvertrag'], answer: 'Das Absurde' },
-        { q: 'Wer analysierte die „Banalität des Bösen“?', options: ['Hannah Arendt', 'Simone de Beauvoir', 'Michel Foucault', 'Jean-Paul Sartre'], answer: 'Hannah Arendt' },
+        { q: 'Welcher Begriff steht im Zentrum von Camus’ «Mythos des Sisyphos»?', options: ['Das Absurde', 'Der kategorische Imperativ', 'Die Monade', 'Der Gesellschaftsvertrag'], answer: 'Das Absurde' },
+        { q: 'Wer analysierte die «Banalität des Bösen»?', options: ['Hannah Arendt', 'Simone de Beauvoir', 'Michel Foucault', 'Jean-Paul Sartre'], answer: 'Hannah Arendt' },
         { q: 'Wer untersuchte moderne Gesellschaften über den Zusammenhang von Macht und Wissen?', options: ['Michel Foucault', 'Jürgen Habermas', 'Albert Camus', 'Ludwig Wittgenstein'], answer: 'Michel Foucault' },
-        { q: 'Wer schrieb „Das andere Geschlecht“?', options: ['Simone de Beauvoir', 'Hannah Arendt', 'Judith Butler', 'Martha Nussbaum'], answer: 'Simone de Beauvoir' },
+        { q: 'Wer schrieb «Das andere Geschlecht»?', options: ['Simone de Beauvoir', 'Hannah Arendt', 'Judith Butler', 'Martha Nussbaum'], answer: 'Simone de Beauvoir' },
         { q: 'Mit welchem Begriff verbindet Habermas demokratische Verständigung?', options: ['Kommunikative Rationalität', 'Wille zur Macht', 'Absurdität', 'Ontologische Differenz'], answer: 'Kommunikative Rationalität' },
-        { q: 'Wie heißt Wittgensteins frühes Hauptwerk?', options: ['Tractatus logico-philosophicus', 'Sein und Zeit', 'Vita activa', 'Das Sein und das Nichts'], answer: 'Tractatus logico-philosophicus' },
+        { q: 'Wie heisst Wittgensteins frühes Hauptwerk?', options: ['Tractatus logico-philosophicus', 'Sein und Zeit', 'Vita activa', 'Das Sein und das Nichts'], answer: 'Tractatus logico-philosophicus' },
         { q: 'Welcher Begriff bezeichnet bei Heidegger die menschliche Existenzweise?', options: ['Dasein', 'Monade', 'Habitus', 'Eudaimonia'], answer: 'Dasein' },
         { q: 'Welche politische Herrschaftsform untersuchte Hannah Arendt besonders?', options: ['Totalitarismus', 'Feudalismus', 'Absolutismus', 'Merkantilismus'], answer: 'Totalitarismus' },
         { q: 'Welche Methode ist besonders mit Foucault verbunden?', options: ['Genealogie', 'Syllogistik', 'Transzendentale Deduktion', 'Sokratische Maieutik'], answer: 'Genealogie' },
         { q: 'Wer analysierte das Panoptikum als Sinnbild für die moderne Überwachungs- und Disziplinargesellschaft?', options: ['Michel Foucault', 'Jürgen Habermas', 'Jean-Paul Sartre', 'Hannah Arendt'], answer: 'Michel Foucault' },
-        { q: 'Welcher Denker unterschied zwischen der „Zuhandenheit“ und „Vorhandenheit“ von Dingen?', options: ['Martin Heidegger', 'Ludwig Wittgenstein', 'Albert Camus', 'Simone de Beauvoir'], answer: 'Martin Heidegger' },
-        { q: 'Von wem stammt das berühmte Zitat: „Man wird nicht als Frau geboren, man wird es“?', options: ['Simone de Beauvoir', 'Hannah Arendt', 'Judith Butler', 'Martha Nussbaum'], answer: 'Simone de Beauvoir' },
-        { q: 'Wer forderte: „Wovon man nicht sprechen kann, darüber muss man schweigen“?', options: ['Ludwig Wittgenstein', 'Martin Heidegger', 'Jean-Paul Sartre', 'Michel Foucault'], answer: 'Ludwig Wittgenstein' },
-        { q: 'Welcher Philosoph prägte im Stück Geschlossene Gesellschaft den Satz „Die Hölle, das sind die anderen“?', options: ['Jean-Paul Sartre', 'Albert Camus', 'Martin Heidegger', 'Jürgen Habermas'], answer: 'Jean-Paul Sartre' },
-        { q: 'Welcher Frankfurter Denker prägte die „Theorie des kommunikativen Handelns“?', options: ['Jürgen Habermas', 'Michel Foucault', 'Ludwig Wittgenstein', 'Hannah Arendt'], answer: 'Jürgen Habermas' },
+        { q: 'Welcher Denker unterschied zwischen der «Zuhandenheit» und «Vorhandenheit» von Dingen?', options: ['Martin Heidegger', 'Ludwig Wittgenstein', 'Albert Camus', 'Simone de Beauvoir'], answer: 'Martin Heidegger' },
+        { q: 'Von wem stammt das berühmte Zitat: «Man wird nicht als Frau geboren, man wird es»?', options: ['Simone de Beauvoir', 'Hannah Arendt', 'Judith Butler', 'Martha Nussbaum'], answer: 'Simone de Beauvoir' },
+        { q: 'Wer forderte: «Wovon man nicht sprechen kann, darüber muss man schweigen»?', options: ['Ludwig Wittgenstein', 'Martin Heidegger', 'Jean-Paul Sartre', 'Michel Foucault'], answer: 'Ludwig Wittgenstein' },
+        { q: 'Welcher Philosoph prägte im Stück Geschlossene Gesellschaft den Satz «Die Hölle, das sind die anderen»?', options: ['Jean-Paul Sartre', 'Albert Camus', 'Martin Heidegger', 'Jürgen Habermas'], answer: 'Jean-Paul Sartre' },
+        { q: 'Welcher Frankfurter Denker prägte die «Theorie des kommunikativen Handelns»?', options: ['Jürgen Habermas', 'Michel Foucault', 'Ludwig Wittgenstein', 'Hannah Arendt'], answer: 'Jürgen Habermas' },
         { q: 'Wer verglich das absurde menschliche Leben mit Sisyphos, der ewig einen Stein den Berg hinaufrollt?', options: ['Albert Camus', 'Jean-Paul Sartre', 'Martin Heidegger', 'Simone de Beauvoir'], answer: 'Albert Camus' },
-        { q: 'Wer analysierte nach dem Zweiten Weltkrieg tiefgründig das Konzept der „Vita activa“?', options: ['Hannah Arendt', 'Simone de Beauvoir', 'Ludwig Wittgenstein', 'Jürgen Habermas'], answer: 'Hannah Arendt' },
+        { q: 'Wer analysierte nach dem Zweiten Weltkrieg tiefgründig das Konzept der «Vita activa»?', options: ['Hannah Arendt', 'Simone de Beauvoir', 'Ludwig Wittgenstein', 'Jürgen Habermas'], answer: 'Hannah Arendt' },
         { q: 'Wer begründete den Kritischen Rationalismus und das Falsifikationsprinzip?', options: ['Karl Popper', 'Thomas Kuhn', 'Ludwig Wittgenstein', 'Jürgen Habermas'], answer: 'Karl Popper' },
         { q: 'Welcher Logiker und Nobelpreisträger versuchte Mathematik auf Logik zurückzuführen?', options: ['Bertrand Russell', 'Gottlob Frege', 'Kurt Gödel', 'Edmund Husserl'], answer: 'Bertrand Russell' },
         { q: 'Wer ist der Begründer der Phänomenologie?', options: ['Edmund Husserl', 'Martin Heidegger', 'Jean-Paul Sartre', 'Maurice Merleau-Ponty'], answer: 'Edmund Husserl' },
@@ -251,7 +251,7 @@
         { q: 'Wer vertrat eine naturalistische Theorie des Bewusstseins?', options: ['Daniel Dennett', 'Martha Nussbaum', 'Judith Butler', 'Byung-Chul Han'], answer: 'Daniel Dennett' },
         { q: 'Mit wem ist der Fähigkeitenansatz besonders verbunden?', options: ['Martha Nussbaum', 'Judith Butler', 'Daniel Dennett', 'Byung-Chul Han'], answer: 'Martha Nussbaum' },
         { q: 'Wer prägte die Theorie der Performativität von Geschlecht?', options: ['Judith Butler', 'Martha Nussbaum', 'Daniel Dennett', 'Byung-Chul Han'], answer: 'Judith Butler' },
-        { q: 'Von wem stammt die Diagnose der „Müdigkeitsgesellschaft“?', options: ['Byung-Chul Han', 'Daniel Dennett', 'Judith Butler', 'Martha Nussbaum'], answer: 'Byung-Chul Han' },
+        { q: 'Von wem stammt die Diagnose der «Müdigkeitsgesellschaft»?', options: ['Byung-Chul Han', 'Daniel Dennett', 'Judith Butler', 'Martha Nussbaum'], answer: 'Byung-Chul Han' },
         { q: 'Welches Thema gehört besonders zur gegenwärtigen Philosophie?', options: ['Ethik künstlicher Intelligenz', 'Die Erfindung der Keilschrift', 'Die ptolemäische Astronomie', 'Die mittelalterliche Lehnsherrschaft'], answer: 'Ethik künstlicher Intelligenz' },
         { q: 'Welche Frage stellt die Philosophie des Geistes an KI-Systeme?', options: ['Ob und wie Bewusstsein erklärbar ist', 'Wie viele Server ein Netzwerk besitzt', 'Welche Schriftart eine App verwendet', 'Wann der Buchdruck erfunden wurde'], answer: 'Ob und wie Bewusstsein erklärbar ist' },
         { q: 'Welches Erklärungsmodell verwendete Dennett für geistige Zustände?', options: ['Den intentionalen Standpunkt', 'Die Ideenlehre', 'Die negative Dialektik', 'Den Gesellschaftsvertrag'], answer: 'Den intentionalen Standpunkt' },
@@ -260,19 +260,32 @@
         { q: 'Was kritisiert Byung-Chul Han an der Leistungsgesellschaft?', options: ['Selbstausbeutung und Erschöpfung', 'Mangelnde Industrialisierung', 'Zu wenig staatliche Zensur', 'Die antike Tugendlehre'], answer: 'Selbstausbeutung und Erschöpfung' },
         { q: 'Welche Frage gehört zur digitalen Ethik?', options: ['Wie algorithmische Entscheidungen fair gestaltet werden', 'Wie Monaden miteinander sprechen', 'Wie ein Lehnswesen organisiert wird', 'Wie die Planeten auf Kristallsphären kreisen'], answer: 'Wie algorithmische Entscheidungen fair gestaltet werden' },
         { q: 'Welches Problem untersucht die gegenwärtige Identitätsphilosophie?', options: ['Wie soziale Normen Selbstbilder prägen', 'Wie viele Elemente das Periodensystem hat', 'Wie Burgen befestigt wurden', 'Wie Dampfmaschinen konstruiert sind'], answer: 'Wie soziale Normen Selbstbilder prägen' },
-        { q: 'Welche Philosophin beschrieb das Geschlecht (Gender) als etwas, das durch soziale Wiederholung „performiert“ wird?', options: ['Judith Butler', 'Martha Nussbaum', 'Simone de Beauvoir', 'Hannah Arendt'], answer: 'Judith Butler' },
-        { q: 'Welcher Denker prägte die Gegenwartsbegriffe „Müdigkeitsgesellschaft“ und „Transparenzgesellschaft“?', options: ['Byung-Chul Han', 'Daniel Dennett', 'Jürgen Habermas', 'Michel Foucault'], answer: 'Byung-Chul Han' },
-        { q: 'Wer hat den „Fähigkeitenansatz“ (Capability Approach) für eine globale Gerechtigkeitstheorie stark mitentwickelt?', options: ['Martha Nussbaum', 'Judith Butler', 'Hannah Arendt', 'Simone de Beauvoir'], answer: 'Martha Nussbaum' },
-        { q: 'Welcher amerikanische Denker erklärt das menschliche Bewusstsein als komplexes informationelles Konstrukt („Multiple Drafts Model“)?', options: ['Daniel Dennett', 'Byung-Chul Han', 'Jürgen Habermas', 'Michel Foucault'], answer: 'Daniel Dennett' },
-        { q: 'Welche Autorin des Buches „Das Unbehagen der Geschlechter“ revolutionierte die Queer-Theorie?', options: ['Judith Butler', 'Martha Nussbaum', 'Simone de Beauvoir', 'Hannah Arendt'], answer: 'Judith Butler' },
-        { q: 'Wer kritisiert die Erosion des Anderen durch die permanente digitale Vernetzung (z. B. in „Die Austreibung des Anderen“)?', options: ['Byung-Chul Han', 'Daniel Dennett', 'Judith Butler', 'Martha Nussbaum'], answer: 'Byung-Chul Han' },
-        { q: 'Wer verteidigt vehement die Bedeutung der Geisteswissenschaften in der modernen Demokratie („Nicht für den Profit“)?', options: ['Martha Nussbaum', 'Judith Butler', 'Simone de Beauvoir', 'Byung-Chul Han'], answer: 'Martha Nussbaum' },
-        { q: 'Welcher Denker ist als prominenter Vertreter des sogenannten „Neuen Atheismus“ und der naturalistischen Philosophie bekannt?', options: ['Daniel Dennett', 'Byung-Chul Han', 'Martin Heidegger', 'Jean-Paul Sartre'], answer: 'Daniel Dennett' },
+        { q: 'Welche Philosophin beschrieb das Geschlecht (Gender) als etwas, das durch soziale Wiederholung «performiert» wird?', options: ['Judith Butler', 'Martha Nussbaum', 'Simone de Beauvoir', 'Hannah Arendt'], answer: 'Judith Butler' },
+        { q: 'Welcher Denker prägte die Gegenwartsbegriffe «Müdigkeitsgesellschaft» und «Transparenzgesellschaft»?', options: ['Byung-Chul Han', 'Daniel Dennett', 'Jürgen Habermas', 'Michel Foucault'], answer: 'Byung-Chul Han' },
+        { q: 'Wer hat den «Fähigkeitenansatz» (Capability Approach) für eine globale Gerechtigkeitstheorie stark mitentwickelt?', options: ['Martha Nussbaum', 'Judith Butler', 'Hannah Arendt', 'Simone de Beauvoir'], answer: 'Martha Nussbaum' },
+        { q: 'Welcher amerikanische Denker erklärt das menschliche Bewusstsein als komplexes informationelles Konstrukt («Multiple Drafts Model»)?', options: ['Daniel Dennett', 'Byung-Chul Han', 'Jürgen Habermas', 'Michel Foucault'], answer: 'Daniel Dennett' },
+        { q: 'Welche Autorin des Buches «Das Unbehagen der Geschlechter» revolutionierte die Queer-Theorie?', options: ['Judith Butler', 'Martha Nussbaum', 'Simone de Beauvoir', 'Hannah Arendt'], answer: 'Judith Butler' },
+        { q: 'Wer kritisiert die Erosion des Anderen durch die permanente digitale Vernetzung (z. B. in «Die Austreibung des Anderen»)?', options: ['Byung-Chul Han', 'Daniel Dennett', 'Judith Butler', 'Martha Nussbaum'], answer: 'Byung-Chul Han' },
+        { q: 'Wer verteidigt vehement die Bedeutung der Geisteswissenschaften in der modernen Demokratie («Nicht für den Profit»)?', options: ['Martha Nussbaum', 'Judith Butler', 'Simone de Beauvoir', 'Byung-Chul Han'], answer: 'Martha Nussbaum' },
+        { q: 'Welcher Denker ist als prominenter Vertreter des sogenannten «Neuen Atheismus» und der naturalistischen Philosophie bekannt?', options: ['Daniel Dennett', 'Byung-Chul Han', 'Martin Heidegger', 'Jean-Paul Sartre'], answer: 'Daniel Dennett' },
         { q: 'Wer gilt mit seinem Buch "Animal Liberation" als Wegbereiter der modernen Tierrechtsbewegung?', options: ['Peter Singer', 'Martha Nussbaum', 'Slavoj Žižek', 'Judith Butler'], answer: 'Peter Singer' },
         { q: 'Welcher zeitgenössische Philosoph verbindet Hegelianismus und Lacansche Psychoanalyse oft anhand von Popkultur?', options: ['Slavoj Žižek', 'Byung-Chul Han', 'Daniel Dennett', 'Peter Singer'], answer: 'Slavoj Žižek' }
       ],
     },
   };
+  // Universal Mix aus allen Fragen aller Epochen
+  const allMixedQuestions = [];
+  Object.keys(questionBanks).forEach(key => {
+    if (questionBanks[key] && Array.isArray(questionBanks[key].questions)) {
+      allMixedQuestions.push(...questionBanks[key].questions);
+    }
+  });
+
+  questionBanks.mix = {
+    title: 'Epochen-Mix (Alle Epochen)',
+    questions: allMixedQuestions
+  };
+
 
   const shuffle = (items) => {
     const result = [...items];
@@ -284,67 +297,282 @@
   };
 
   const normalizeEra = (value) => {
-    const normalized = (value || '').toLocaleLowerCase('de-DE');
+    const normalized = (value || '').toLocaleLowerCase('de-DE').trim();
+    if (normalized.includes('mix') || normalized.includes('alle') || normalized.includes('universal')) return 'mix';
     if (normalized.includes('antike')) return 'antike';
     if (normalized.includes('indien')) return 'indien';
     if (normalized.includes('china')) return 'china';
     if (normalized.includes('japan')) return 'japan';
     if (normalized.includes('islam')) return 'islam';
     if (normalized.includes('mittelalter')) return 'mittelalter';
-    if (normalized.includes('frühe neuzeit') || normalized.includes('fruehe neuzeit')) return 'neuzeit';
-    if (normalized.includes('klassische moderne')) return 'moderne';
-    if (normalized.includes('20. jahrhundert')) return '20jh';
+    if (normalized.includes('frühe neuzeit') || normalized.includes('fruehe neuzeit') || normalized.includes('neuzeit')) return 'neuzeit';
+    if (normalized.includes('klassische moderne') || normalized.includes('moderne')) return 'moderne';
+    if (normalized.includes('20. jahrhundert') || normalized.includes('20jh') || normalized.includes('20.')) return '20jh';
     if (normalized.includes('gegenwart')) return 'gegenwart';
     return null;
   };
 
   const prepareQuestion = (question) => {
     const options = shuffle(question.options);
-    return { q: question.q, options, a: options.indexOf(question.answer) };
+    return { 
+      q: question.q, 
+      options, 
+      a: options.indexOf(question.answer),
+      answer: question.answer,
+      explanation: question.explanation 
+    };
+  };
+
+  const getQuestionExplanation = (question) => {
+    if (question.explanation) return question.explanation;
+
+    const answer = question.answer;
+    const qText = question.q;
+
+    // Check if any philosopher matches the answer or question
+    if (typeof PHILOSOPHERS !== 'undefined') {
+      const match = PHILOSOPHERS.find(p => 
+        (p.name && (p.name.includes(answer) || answer.includes(p.name))) ||
+        (p.shortName && (p.shortName.includes(answer) || answer.includes(p.shortName)))
+      );
+      if (match) {
+        return `${match.name} (${match.years}) lehrte: «${match.thesis}»`;
+      }
+    }
+
+    // Concept dictionary for key philosophical ideas in the quiz
+    const conceptDict = {
+      'Siddhartha Gautama': 'Buddha erkannte, dass Anhaftung die Ursache des Leids ist und formulierte die Vier Edlen Wahrheiten sowie den Achtfachen Pfad zur Befreiung.',
+      'Dass Dinge keine unabhängige Eigennatur haben': 'Nagarjunas Madhyamaka-Lehre (Śūnyatā) besagt, dass alle Phänomene nur in wechselseitiger Abhängigkeit (Pratītyasamutpāda) existieren.',
+      'Nicht-Dualität (Brahman und Atman sind eins)': 'Im Advaita Vedanta lehrt Shankara, dass die scheinbare Vielheit der Welt eine Illusion (Maya) ist und der Wesenskern Atman mit Brahman identisch ist.',
+      'Für frühe politische Philosophie und Realpolitik': 'Chanakyas Arthashastra ist ein klassisches Werk über Staatskunst, Diplomatie und strategische Herrschaft im Maurya-Reich.',
+      'Sri Aurobindo': 'Sri Aurobindo entwickelte den Integralen Yoga, der spirituelle Erkenntnis mit der aktiven Evolution des menschlichen Bewusstseins verbindet.',
+      'Rabindranath Tagore': 'Tagore verband indische Spiritualität mit universellem Humanismus und lehnte verengten Nationalismus entschieden ab.',
+      'Ren': 'Ren (Menschlichkeit oder Güte) ist die zentrale Tugend bei Konfuzius – das Wohlwollen und der Respekt gegenüber anderen.',
+      'Laozi': 'Laozi gilt als Verfasser des Daodejing, dem Grundtext über das Dao (den Weg) und die Tugend der Natürlichkeit.',
+      'Nicht-Handeln (im Einklang mit dem Dao)': 'Wu Wei meint kein passives Nichtstun, sondern ein Handeln ohne künstliche Anstrengung und im Einklang mit der Naturordnung.',
+      'Mozi': 'Mozi lehrte Jian’ai (allumfassende Nächstenliebe) und lehnte Angriffskriege sowie verschwenderische Rituale strikt ab.',
+      'Mencius': 'Mencius argumentierte, dass der Mensch von Natur aus Keime des Guten in sich trägt, die wie Pflanzen gepflegt werden müssen.',
+      'Zhuangzi': 'Zhuangzi lehrte mit meisterhafter Ironie und Gleichnissen (wie dem Schmetterlingstraum) die Relativität aller festen Urteile.',
+      'Zhu Xi': 'Zhu Xi schuf die Synthese des Neokonfuzianismus, indem er die Ordnungsprinzipien (Li) und die Vitalkraft (Qi) verband.',
+      'Dōgen': 'Dōgen brachte Soto-Zen nach Japan und lehrte Shikantaza (Nur-Sitzen), wobei Übung und Erleuchtung als Einheit verstanden werden.',
+      'Nishida Kitarō': 'Nishida begründete die Kyoto-Schule und verband westliche Phänomenologie mit buddhistischer Philosophie im Konzept des "Absoluten Nichts".',
+      'Den Zusammenhang von Klima und Kultur (Ethik)': 'In "Fūdo" zeigt Watsuji Tetsurō, dass der Mensch nicht nur in der Zeit, sondern wesentlich im geografischen und klimatischen Raum existiert.',
+      'Den leeren, aber wirkungsvollen Zwischenraum': 'Ma bezeichnet in der japanischen Kultur das gestaltende Nichts, die Pause und den Raum zwischen den Dingen.',
+      'Al-Farabi': 'Al-Farabi wurde als "Zweiter Lehrer" nach Aristoteles geehrt, weil er Logik, Metaphysik und politische Philosophie meisterhaft systematisierte.',
+      'Avicenna (Ibn Sina)': 'Avicenna schuf das medizinische Standardwerk "Kanon der Medizin" und prägte die Unterscheidung von Wesen (Essenz) und Existenz.',
+      'Averroes (Ibn Rushd)': 'Averroes verteidigte die rationale Philosophie gegen theologische Vorbehalte und verfasste grundlegende Aristoteles-Kommentare.',
+      'Die Inkohärenz der Philosophen': 'Al-Ghazali kritisierte in "Tahafut al-Falasifa" die Überheblichkeit rein rationalistischer Philosophen und wandte sich der mystischen Erkenntnis (Sufismus) zu.',
+      'Ibn Khaldun': 'Ibn Khaldun entwickelte in der Muqaddima die erste systematische Soziologie und Geschichtsphilosophie auf Basis sozialer Kohäsion (Asabiyya).',
+      'Platon': 'Platon begründete die Akademie und lehrte, dass die sinnlich wahrnehmbare Welt nur ein unvollkommenes Abbild ewiger, unvergänglicher Ideen ist.',
+      'Für rationale Erklärungen der Welt': 'Der Übergang vom Mythos zum Logos markiert den Beginn der Philosophie – Phänomene wurden durch Vernunft statt durch Göttermythen erklärt.',
+      'Zenon von Kition': 'Zenon begründete die Stoa um 300 v. Chr. in der Athener Stoa Poikile (bemalte Säulenhalle).',
+      'Dialogische Prüfung': 'Sokrates nutzte die Hebammenkunst (Maieutik) im sokratischen Dialog, um Gesprächspartner durch gezieltes Fragen zur Selbsterkenntnis zu führen.',
+      'Eudaimonia': 'Für Aristoteles ist Eudaimonia (Glückseligkeit / gelingendes Leben) das höchste Gut und Ziel allen menschlichen Handelns.',
+      'Heraklit': 'Heraklit erkannte den stetigen Fluss und den Streit der Gegensätze als Grundgesetz des Seins ("Panta rhei").',
+      'Wasser': 'Thales von Milet gilt als erster Philosoph des Abendlandes und sah Wasser als den Urstoff (Arche) aller Dinge.',
+      'Parmenides': 'Parmenides argumentierte rein deduktiv: Das Sein ist ungeworden, unvergänglich und unbewegt; Werden und Vergehen sind blosser Schein.',
+      'Thomas von Aquin': 'Thomas vereinte Aristotelismus und christliche Theologie in der Scholastik zu einem monumentalen Gedankengebäude.',
+      'Das Verhältnis von Glaube und Vernunft': 'Die Scholastik suchte nachzuweisen, dass Vernunfterkenntnis und geoffenbarter Glaube sich nicht widersprechen, sondern ergänzen.',
+      'Augustinus': 'In "De civitate Dei" stellte Augustinus den irdischen Machtstaat (civitas terrena) dem ewigen Gottesstaat (civitas Dei) gegenüber.',
+      'Trost der Philosophie': 'Boethius verfasste dieses einflussreiche Werk im Gefängnis als Dialog mit der personifizierten Philosophia.',
+      'René Descartes': 'Mit dem methodischen Zweifel fand Descartes den unerschütterlichen Punkt: Wer zweifelt, muss denken – und wer denkt, muss existieren.',
+      'Thomas Hobbes': 'Hobbes begründete die moderne Vertragstheorie: Ohne Staat herrsche der Krieg aller gegen alle (Homo homini lupus).',
+      'John Locke': 'Locke begründete den modernen Liberalismus mit unveräusserlichen Rechten auf Leben, Freiheit und Eigentum sowie der Gewaltenteilung.',
+      'Gott oder Natur als eine Substanz': 'Spinozas Pantheismus ("Deus sive Natura") begreift die gesamte Realität als eine einzige, unendliche Substanz.',
+      'David Hume': 'Hume zeigte empiristisch auf, dass wir Kausalität nicht logisch zwingend beweisen können, sondern sie auf menschlicher Gewohnheit beruht.',
+      'Immanuel Kant': 'Kants kategorischer Imperativ fordert: Handle nur nach derjenigen Maxime, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.',
+      'Karl Marx': 'Marx stellte die Philosophie vom Kopf auf die Füsse: Das gesellschaftliche Sein und die materiellen Produktionsverhältnisse bestimmen das Bewusstsein.',
+      'Arthur Schopenhauer': 'Schopenhauer verstand die Welt als Vorstellung unseres Geistes, getrieben von einem rastlosen, blinden Weltwillen.',
+      'John Stuart Mill': 'Der Utilitarismus beurteilt Handlungen nach ihren Folgen – das grösstmögliche Glück für die grösstmögliche Zahl unter Berücksichtigung geistiger Qualität.',
+      'Friedrich Nietzsche': 'Nietzsche forderte die Überwindung des Nihilismus, kritisierte die herkömmliche Sklavenmoral und verkündete den Willen zur Macht.',
+      'Ludwig Wittgenstein': 'Wittgenstein zeigte, dass philosophische Probleme oft Scheinprobleme aus Missverständnissen unserer Sprache und Sprachspiele sind.',
+      'Martin Heidegger': 'In "Sein und Zeit" analysierte Heidegger das menschliche Dasein als In-der-Welt-sein, das von Sorge, Zeitlichkeit und Endlichkeit geprägt ist.',
+      'Jean-Paul Sartre': 'Im Existenzialismus ist der Mensch nicht vorbestimmt; er muss sich durch seine freien Entscheidungen erst selbst entwerfen ("Zur Freiheit verurteilt").',
+      'Albert Camus': 'Camus sah das Leben angesichts der Sinnlosigkeit als absurd an, forderte aber Revolte, Freiheit und Leidenschaft: "Wir müssen uns Sisyphos als glücklichen Menschen vorstellen."',
+      'Hannah Arendt': 'Arendt analysierte in "Vita activa" Handeln, Herstellen und Arbeiten sowie die unheilvolle Gedankenlosigkeit bei der "Banalität des Bösen".',
+      'Michel Foucault': 'Foucault deckte auf, wie Wissen, Sprache und Institutionen (Gefängnisse, Kliniken) subtile Macht- und Überwachungsstrukturen hervorbringen.',
+      'Simone de Beauvoir': 'Mit "Das andere Geschlecht" schuf sie das Fundament moderner Geschlechterforschung: Weiblichkeit ist kein biologisches Schicksal, sondern ein soziales Konstrukt.',
+      'Jürgen Habermas': 'Habermas verlegt Vernunft in den herrschaftsfreien Diskurs und die intersubjektive Verständigung.',
+      'Daniel Dennett': 'Dennett erklärt das menschliche Gehirn und Bewusstsein aus evolutionärer und informationstheoretischer Perspektive ohne mystischen Dualismus.',
+      'Martha Nussbaum': 'Der Fähigkeitenansatz misst den Wohlstand einer Gesellschaft daran, welche realen Potenziale und Freiheiten sie ihren Bürgern eröffnet.',
+      'Judith Butler': 'In "Das Unbehagen der Geschlechter" beschreibt Butler Gender als performativen Akt – etwas, das durch ständige gesellschaftliche Wiederholung erzeugt wird.',
+      'Byung-Chul Han': 'Han analysiert das 21. Jahrhundert als Zeitalter der Selbstausbeutung und Erschöpfung in der modernen Leistungs- und Transparenzgesellschaft.'
+    };
+
+    if (conceptDict[answer]) {
+      return conceptDict[answer];
+    }
+
+    for (const [key, expl] of Object.entries(conceptDict)) {
+      if (qText.includes(key) || answer.includes(key)) {
+        return expl;
+      }
+    }
+
+    return `Die richtige Antwort lautet «${answer}», da dies die zentrale historische und philosophische Lehre darstellt.`;
   };
 
   const params = new URLSearchParams(window.location.search);
-  const bank = questionBanks[normalizeEra(params.get('era'))];
   const qBlock = document.getElementById('questionBlock');
   const aBlock = document.getElementById('answersBlock');
   const nextBtn = document.getElementById('nextBtn');
   const resultBlock = document.getElementById('resultBlock');
   const titleEl = document.getElementById('quizTitle');
+  const explanationBlock = document.getElementById('quizExplanationBlock');
+  const progressStepEl = document.getElementById('quizProgressStep');
+  const progressScoreEl = document.getElementById('quizProgressScore');
+  const progressFillEl = document.getElementById('quizProgressFill');
+  const startScreen = document.getElementById('quizStartScreen');
+  const quizContent = document.getElementById('quizContent');
+  const eraSelectScreen = document.getElementById('quizEraSelectScreen');
+  const startScreenTitle = document.getElementById('startScreenTitle');
+  const startScreenSubtitle = document.getElementById('startScreenSubtitle');
 
-  if (!bank) {
-    titleEl.textContent = 'Quiz – Epoche fehlt';
-    document.getElementById('quizStartScreen').classList.add('hidden');
-    document.getElementById('quizContent').classList.remove('hidden');
-    qBlock.textContent = 'Bitte starte das Quiz über eine Epoche der Timeline.';
-    nextBtn.classList.add('hidden');
-    return;
-  }
-
+  let currentBank = null;
+  let currentEraKey = null;
   let questions = [];
   let current = 0;
   let score = 0;
   let questionsPerQuiz = 7;
 
+  const selectEra = (eraKey, updateUrl = true) => {
+    const targetKey = normalizeEra(eraKey) || eraKey;
+    const targetBank = questionBanks[targetKey];
+    if (!targetBank) return;
+
+    currentEraKey = targetKey;
+    currentBank = targetBank;
+
+    if (eraSelectScreen) eraSelectScreen.classList.add('hidden');
+    if (startScreen) startScreen.classList.remove('hidden');
+    if (quizContent) quizContent.classList.add('hidden');
+
+    titleEl.textContent = `Quiz – ${targetBank.title}`;
+    if (startScreenTitle) {
+      startScreenTitle.textContent = `${targetBank.title}: Schwierigkeitsgrad`;
+    }
+    if (startScreenSubtitle) {
+      startScreenSubtitle.textContent = targetKey === 'mix'
+        ? `Universal-Quiz: Fragen quer durch alle Epochen (${targetBank.questions.length} Fragen im Pool).`
+        : `Epochen-Quiz mit ${targetBank.questions.length} kuratierten Fragen.`;
+    }
+
+    const cheatBtn = document.getElementById('btnCheatGallery');
+    if (cheatBtn) {
+      if (targetKey === 'mix') {
+        cheatBtn.textContent = 'Direkt zur Galerie aller Denker';
+        cheatBtn.onclick = () => { window.location.href = 'galerie.html'; };
+      } else {
+        cheatBtn.textContent = 'Abkürzung: Epochen-Galerie';
+        cheatBtn.onclick = initSlideshow;
+      }
+    }
+
+    if (updateUrl) {
+      try {
+        const newUrl = targetKey === 'mix'
+          ? window.location.pathname + '?era=mix'
+          : window.location.pathname + `?era=${encodeURIComponent(targetKey)}`;
+        window.history.pushState({ era: targetKey }, '', newUrl);
+      } catch (e) {
+        // Fallback for file://
+      }
+    }
+  };
+
+  const showEraSelection = (updateUrl = true) => {
+    currentEraKey = null;
+    currentBank = null;
+
+    if (eraSelectScreen) eraSelectScreen.classList.remove('hidden');
+    if (startScreen) startScreen.classList.add('hidden');
+    if (quizContent) quizContent.classList.add('hidden');
+
+    titleEl.textContent = 'Philosophie-Quiz';
+
+    if (updateUrl) {
+      try {
+        window.history.pushState({}, '', window.location.pathname);
+      } catch (e) {
+        // Fallback for file://
+      }
+    }
+  };
+
   const startQuiz = (numQuestions) => {
+    if (!currentBank) return;
     questionsPerQuiz = numQuestions;
-    questions = shuffle(bank.questions).slice(0, questionsPerQuiz).map(prepareQuestion);
+    questions = shuffle(currentBank.questions).slice(0, questionsPerQuiz).map(prepareQuestion);
     current = 0;
     score = 0;
-    
-    document.getElementById('quizStartScreen').classList.add('hidden');
-    document.getElementById('quizContent').classList.remove('hidden');
-    
+
+    if (startScreen) startScreen.classList.add('hidden');
+    if (eraSelectScreen) eraSelectScreen.classList.add('hidden');
+    if (quizContent) quizContent.classList.remove('hidden');
+
     renderQuestion();
   };
 
   document.getElementById('btnEasy')?.addEventListener('click', () => startQuiz(3));
   document.getElementById('btnAdvanced')?.addEventListener('click', () => startQuiz(7));
+  document.getElementById('btnMaster')?.addEventListener('click', () => startQuiz(10));
+  document.getElementById('btnBackToEras')?.addEventListener('click', () => showEraSelection(true));
+
+  document.getElementById('btnEraMix')?.addEventListener('click', () => selectEra('mix', true));
+  document.getElementById('btnEraMix')?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      selectEra('mix', true);
+    }
+  });
+
+  document.querySelectorAll('.quiz-era-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const era = card.getAttribute('data-era');
+      if (era) selectEra(era, true);
+    });
+  });
+
+  window.addEventListener('popstate', () => {
+    const currentParams = new URLSearchParams(window.location.search);
+    const era = normalizeEra(currentParams.get('era'));
+    if (era && questionBanks[era]) {
+      selectEra(era, false);
+    } else {
+      showEraSelection(false);
+    }
+  });
+
+  // Initial routing
+  const initialEra = normalizeEra(params.get('era'));
+  if (initialEra && questionBanks[initialEra]) {
+    selectEra(initialEra, false);
+  } else {
+    showEraSelection(false);
+  }
 
   const renderQuestion = () => {
     const question = questions[current];
-    titleEl.textContent = `Quiz – ${bank.title}`;
+    titleEl.textContent = `Quiz – ${currentBank.title}`;
     qBlock.textContent = question.q;
     aBlock.innerHTML = '';
+
+    if (explanationBlock) {
+      explanationBlock.classList.add('hidden');
+      explanationBlock.innerHTML = '';
+    }
+
+    if (progressStepEl) {
+      progressStepEl.textContent = `Frage ${current + 1} von ${questions.length}`;
+    }
+    if (progressScoreEl) {
+      progressScoreEl.textContent = `Punkte: ${score}`;
+    }
+    if (progressFillEl) {
+      progressFillEl.style.width = `${((current) / questions.length) * 100}%`;
+    }
+
     question.options.forEach((option, index) => {
       const button = document.createElement('button');
       button.textContent = option;
@@ -355,18 +583,49 @@
   };
 
   const handleAnswer = (selectedIndex, button) => {
-    const correctIndex = questions[current].a;
+    const question = questions[current];
+    const correctIndex = question.a;
     const buttons = aBlock.querySelectorAll('button');
-    if (selectedIndex === correctIndex) {
+    const isCorrect = (selectedIndex === correctIndex);
+
+    if (isCorrect) {
       score++;
       button.classList.add('answer-correct');
     } else {
       button.classList.add('answer-wrong');
       buttons[correctIndex].classList.add('answer-correct');
     }
+
     buttons.forEach(answerButton => {
       answerButton.disabled = true;
     });
+
+    if (progressScoreEl) {
+      progressScoreEl.textContent = `Punkte: ${score}`;
+    }
+    if (progressFillEl) {
+      progressFillEl.style.width = `${((current + 1) / questions.length) * 100}%`;
+    }
+
+    const expl = getQuestionExplanation(question);
+    if (explanationBlock) {
+      if (isCorrect) {
+        explanationBlock.className = 'quiz-feedback-box correct';
+        explanationBlock.innerHTML = `
+          <div class="feedback-header"><span class="feedback-icon">✓</span> <strong>Hervorragend! Richtig.</strong></div>
+          <p class="feedback-detail">${expl}</p>
+        `;
+      } else {
+        explanationBlock.className = 'quiz-feedback-box wrong';
+        explanationBlock.innerHTML = `
+          <div class="feedback-header"><span class="feedback-icon">✕</span> <strong>Nicht ganz richtig</strong></div>
+          <p class="feedback-detail">Die richtige Antwort lautet: <strong>${question.answer}</strong>.<br><br>${expl}</p>
+        `;
+      }
+      explanationBlock.classList.remove('hidden');
+    }
+
+    nextBtn.textContent = (current + 1 === questions.length) ? 'Ergebnis anzeigen 🏆' : 'Nächste Frage →';
     nextBtn.classList.remove('hidden');
   };
 
@@ -378,38 +637,94 @@
     }
     qBlock.textContent = '';
     aBlock.innerHTML = '';
+    if (explanationBlock) explanationBlock.classList.add('hidden');
     nextBtn.classList.add('hidden');
-    
-    if (score === questionsPerQuiz && typeof PHILOSOPHERS !== 'undefined') {
-      if (questionsPerQuiz === 7) {
-        resultBlock.innerHTML = `
-          <div style="font-size: 1.2rem; margin-bottom: 10px;">Meisterhaft! Du hast alle ${score} Fragen richtig beantwortet! 🏆</div>
-          <button id="rewardBtn" class="reward-btn">Große Belohnung: Galerie der Epoche</button>
-        `;
-        document.getElementById('rewardBtn').addEventListener('click', initSlideshow);
-      } else if (questionsPerQuiz === 3) {
-        const normalized = normalizeEra(params.get('era'));
-        const epochPhilosophers = PHILOSOPHERS.filter(p => p.eraLink && p.eraLink.includes(normalized));
-        let quoteHtml = '';
-        
-        if (epochPhilosophers.length > 0) {
-          const randomPhil = epochPhilosophers[Math.floor(Math.random() * epochPhilosophers.length)];
-          quoteHtml = `
-            <div style="margin-top: 15px; padding: 15px; background: var(--bg-tertiary); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); font-style: italic; text-align: left;">
-              " ${randomPhil.thesis} "
-              <strong style="font-style: normal; display: block; margin-top: 8px; color: var(--text);">— ${randomPhil.name}</strong>
+    if (progressFillEl) progressFillEl.style.width = '100%';
+    if (progressStepEl) progressStepEl.textContent = `Abgeschlossen (${questions.length}/${questions.length})`;
+
+    const attachResultListeners = () => {
+      document.getElementById('btnQuizRestart')?.addEventListener('click', () => startQuiz(questionsPerQuiz));
+      document.getElementById('btnQuizChangeEra')?.addEventListener('click', () => showEraSelection(true));
+    };
+
+    if (score === questionsPerQuiz) {
+      if (questionsPerQuiz >= 7) {
+        if (currentEraKey === 'mix') {
+          let quoteHtml = '';
+          if (typeof PHILOSOPHERS !== 'undefined' && PHILOSOPHERS.length > 0) {
+            const randomPhil = PHILOSOPHERS[Math.floor(Math.random() * PHILOSOPHERS.length)];
+            quoteHtml = `
+              <div style="margin: 15px 0; padding: 15px; background: var(--bg-tertiary); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); font-style: italic; text-align: left;">
+                «${randomPhil.thesis}»
+                <strong style="font-style: normal; display: block; margin-top: 8px; color: var(--text);">— ${randomPhil.name}</strong>
+              </div>
+            `;
+          }
+          resultBlock.innerHTML = `
+            <div style="font-size: 1.3rem; margin-bottom: 10px; font-weight: 700; color: var(--accent);">Meisterhaft! Alle ${score} von ${questions.length} Fragen im Epochen-Mix richtig beantwortet! 🏆</div>
+            <p style="color: var(--text-light); margin-bottom: 15px;">Du besitzt ein herausragendes Gesamtverständnis für 2500 Jahre Philosophiegeschichte.</p>
+            ${quoteHtml}
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px;">
+              <a href="galerie.html" class="btn btn-primary">Zur Galerie aller 81 Denker 🖼️</a>
+              <button id="btnQuizRestart" class="btn btn-outline" type="button">Quiz wiederholen ↺</button>
+              <button id="btnQuizChangeEra" class="btn btn-outline" type="button">Andere Epoche wählen 📚</button>
             </div>
           `;
+          attachResultListeners();
+        } else {
+          resultBlock.innerHTML = `
+            <div style="font-size: 1.3rem; margin-bottom: 10px; font-weight: 700;">Meisterhaft! Du hast alle ${score} von ${questions.length} Fragen richtig beantwortet! 🏆</div>
+            <p style="color: var(--text-light); margin-bottom: 20px;">Du hast tiefes Verständnis für diese Epoche bewiesen.</p>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+              <button id="rewardBtn" class="reward-btn" type="button">Grosse Belohnung: Galerie der Epoche</button>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 10px;">
+                <button id="btnQuizRestart" class="btn btn-outline" type="button">Quiz wiederholen ↺</button>
+                <button id="btnQuizChangeEra" class="btn btn-outline" type="button">Andere Epoche wählen 📚</button>
+              </div>
+            </div>
+          `;
+          document.getElementById('rewardBtn')?.addEventListener('click', initSlideshow);
+          attachResultListeners();
         }
-        
+      } else {
+        let quoteHtml = '';
+        if (typeof PHILOSOPHERS !== 'undefined') {
+          const list = currentEraKey === 'mix'
+            ? PHILOSOPHERS
+            : PHILOSOPHERS.filter(p => p.eraLink && p.eraLink.includes(currentEraKey));
+          if (list.length > 0) {
+            const randomPhil = list[Math.floor(Math.random() * list.length)];
+            quoteHtml = `
+              <div style="margin-top: 15px; padding: 15px; background: var(--bg-tertiary); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); font-style: italic; text-align: left;">
+                «${randomPhil.thesis}»
+                <strong style="font-style: normal; display: block; margin-top: 8px; color: var(--text);">— ${randomPhil.name}</strong>
+              </div>
+            `;
+          }
+        }
         resultBlock.innerHTML = `
-          <div style="font-size: 1.2rem; margin-bottom: 10px;">Klasse! Du hast alle ${score} Fragen richtig beantwortet! ⭐</div>
-          <div style="font-size: 0.95rem; color: var(--text-light);">Hier ist ein kleiner Funke Weisheit für dich:</div>
+          <div style="font-size: 1.3rem; margin-bottom: 10px; font-weight: 700;">Klasse! Alle ${score} Fragen richtig beantwortet! ⭐</div>
+          <div style="font-size: 0.95rem; color: var(--text-light);">Hier ist ein Funke Weisheit für dich:</div>
           ${quoteHtml}
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px;">
+            <button id="btnQuizRestart" class="btn btn-outline" type="button">Quiz wiederholen ↺</button>
+            <button id="btnQuizChangeEra" class="btn btn-outline" type="button">Andere Epoche wählen 📚</button>
+          </div>
         `;
+        attachResultListeners();
       }
     } else {
-      resultBlock.textContent = `Du hast ${score} von ${questions.length} richtig beantwortet.`;
+      resultBlock.innerHTML = `
+        <div style="font-size: 1.2rem; margin-bottom: 10px; font-weight: 700;">Ergebnis: ${score} von ${questions.length} richtig</div>
+        <p style="color: var(--text-light); margin-bottom: 20px;">
+          ${score >= Math.ceil(questions.length / 2) ? 'Gut gemacht! Du bist auf dem besten Weg zum Weisen.' : 'Übung macht den Meister! Probiere es gleich noch einmal.'}
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+          <button id="btnQuizRestart" class="btn btn-primary" type="button">Nochmal versuchen ↺</button>
+          <button id="btnQuizChangeEra" class="btn btn-outline" type="button">Andere Epoche wählen 📚</button>
+        </div>
+      `;
+      attachResultListeners();
     }
   });
 
@@ -418,9 +733,13 @@
   let epochPhilosophers = [];
 
   const initSlideshow = () => {
-    const normalized = normalizeEra(params.get('era'));
+    const eraKey = currentEraKey || normalizeEra(params.get('era'));
+    if (!eraKey || eraKey === 'mix') {
+      window.location.href = 'galerie.html';
+      return;
+    }
     epochPhilosophers = PHILOSOPHERS.filter(p => 
-      p.eraLink && p.eraLink.includes(normalized) && p.portrait
+      p.eraLink && p.eraLink.includes(eraKey) && p.portrait
     );
 
     if (epochPhilosophers.length === 0) {
@@ -435,7 +754,7 @@
       <div class="slide ${idx === 0 ? 'active' : ''}">
         <img src="${p.portrait.replace('../', '')}" alt="${p.name}" class="slide-img">
         <div class="slide-name">${p.name}</div>
-        <div class="slide-quote">"${p.thesis}"</div>
+        <div class="slide-quote">«${p.thesis}»</div>
       </div>
     `).join('');
 
@@ -460,5 +779,4 @@
   document.getElementById('closeModalBtn')?.addEventListener('click', () => {
     document.getElementById('slideshowModal').classList.add('hidden');
   });
-  document.getElementById('btnCheatGallery')?.addEventListener('click', initSlideshow);
 })();

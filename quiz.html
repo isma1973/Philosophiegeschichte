@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -29,27 +29,188 @@
             </label>
         </header>
 
-        <div id="quizStartScreen" class="quiz-start-screen">
-            <h2>Wähle deinen Schwierigkeitsgrad</h2>
-            <p>Bist du bereit, dein Wissen auf die Probe zu stellen?</p>
+        <!-- Epochen-Auswahl Screen (Standard ohne URL-Parameter) -->
+        <div id="quizEraSelectScreen" class="quiz-era-select-screen">
+            <div class="quiz-select-intro">
+                <h2>Wähle eine Epoche</h2>
+                <p>Vertiefe dein Wissen über eine bestimmte Denktradition oder wage den grossen Epochen-Mix.</p>
+            </div>
+
+            <!-- Featured: Grosser Epochen-Mix -->
+            <div class="quiz-era-mix-banner" id="btnEraMix" role="button" tabindex="0">
+                <div class="quiz-era-mix-icon">🎲</div>
+                <div class="quiz-era-mix-info">
+                    <div class="quiz-era-mix-badge">★ Universal-Quiz</div>
+                    <h3>Grosser Epochen-Mix (Alle Epochen)</h3>
+                    <p>Ein Querschnitt durch 2500 Jahre Philosophiegeschichte aus allen Kulturen und Epochen.</p>
+                </div>
+                <div class="quiz-era-mix-action">
+                    <span class="quiz-era-count">200+ Fragen</span>
+                    <span class="quiz-era-btn-label">Starten →</span>
+                </div>
+            </div>
+
+            <!-- 10 Epochen-Karten -->
+            <div class="quiz-era-grid" id="quizEraGrid">
+                <button type="button" class="quiz-era-card" data-era="antike">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">🏛️</span>
+                        <div class="quiz-era-header-text">
+                            <h4>Antike</h4>
+                            <span class="quiz-era-period">6. Jh. v. Chr. – 4. Jh.</span>
+                        </div>
+                        <span class="quiz-era-badge">24 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Vorsokratiker, Sokrates, Platon, Aristoteles, Stoa & Kynismus</p>
+                </button>
+
+                <button type="button" class="quiz-era-card" data-era="indien">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">🪷</span>
+                        <div class="quiz-era-header-text">
+                            <h4>Indien</h4>
+                            <span class="quiz-era-period">1500 v. Chr. – Heute</span>
+                        </div>
+                        <span class="quiz-era-badge">20 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Veden, Buddha, Nagarjuna, Shankara, Yoga & Advaita Vedanta</p>
+                </button>
+
+                <button type="button" class="quiz-era-card" data-era="china">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">🐉</span>
+                        <div class="quiz-era-header-text">
+                            <h4>China</h4>
+                            <span class="quiz-era-period">6. Jh. v. Chr. – Heute</span>
+                        </div>
+                        <span class="quiz-era-badge">20 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Konfuzianismus, Daoismus, Mozi, Mencius & Wu Wei</p>
+                </button>
+
+                <button type="button" class="quiz-era-card" data-era="mittelalter">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">✝️</span>
+                        <div class="quiz-era-header-text">
+                            <h4>Mittelalter</h4>
+                            <span class="quiz-era-period">4. – 15. Jh.</span>
+                        </div>
+                        <span class="quiz-era-badge">21 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Augustinus, Boethius, Thomas von Aquin, Mystik & Scholastik</p>
+                </button>
+
+                <button type="button" class="quiz-era-card" data-era="islam">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">🌙</span>
+                        <div class="quiz-era-header-text">
+                            <h4>Islamische Welt</h4>
+                            <span class="quiz-era-period">8. – 14. Jh.</span>
+                        </div>
+                        <span class="quiz-era-badge">20 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Haus der Weisheit, Avicenna, Averroes, Al-Ghazali & Soziologie</p>
+                </button>
+
+                <button type="button" class="quiz-era-card" data-era="japan">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">🗻</span>
+                        <div class="quiz-era-header-text">
+                            <h4>Japan</h4>
+                            <span class="quiz-era-period">12. Jh. – Heute</span>
+                        </div>
+                        <span class="quiz-era-badge">20 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Dōgen, Zen-Buddhismus, Kyoto-Schule & Watsujis Fūdo</p>
+                </button>
+
+                <button type="button" class="quiz-era-card" data-era="neuzeit">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">🌅</span>
+                        <div class="quiz-era-header-text">
+                            <h4>Frühe Neuzeit</h4>
+                            <span class="quiz-era-period">15. – 18. Jh.</span>
+                        </div>
+                        <span class="quiz-era-badge">23 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Descartes, Hobbes, Spinoza, Locke, Hume, Leibniz & Aufklärung</p>
+                </button>
+
+                <button type="button" class="quiz-era-card" data-era="moderne">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">⚙️</span>
+                        <div class="quiz-era-header-text">
+                            <h4>Klassische Moderne</h4>
+                            <span class="quiz-era-period">18. – 19. Jh.</span>
+                        </div>
+                        <span class="quiz-era-badge">21 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Kant, Hegel, Schopenhauer, Marx, Kierkegaard & Nietzsche</p>
+                </button>
+
+                <button type="button" class="quiz-era-card" data-era="20jh">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">🧩</span>
+                        <div class="quiz-era-header-text">
+                            <h4>20. Jahrhundert</h4>
+                            <span class="quiz-era-period">1900 – 2000</span>
+                        </div>
+                        <span class="quiz-era-badge">27 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Wittgenstein, Heidegger, Sartre, Camus, Arendt & Foucault</p>
+                </button>
+
+                <button type="button" class="quiz-era-card" data-era="gegenwart">
+                    <div class="quiz-era-card-header">
+                        <span class="quiz-era-icon">🚀</span>
+                        <div class="quiz-era-header-text">
+                            <h4>Gegenwart & Zukunft</h4>
+                            <span class="quiz-era-period">20. – 21. Jh.</span>
+                        </div>
+                        <span class="quiz-era-badge">22 Fragen</span>
+                    </div>
+                    <p class="quiz-era-desc">Dennett, Nussbaum, Butler, Han, KI-Ethik & Geist</p>
+                </button>
+            </div>
+        </div>
+
+        <!-- Schwierigkeitsgrad Screen (nach Epochenwahl oder Direktaufruf) -->
+        <div id="quizStartScreen" class="quiz-start-screen hidden">
+            <button id="btnBackToEras" class="quiz-back-btn" type="button">« Andere Epoche wählen</button>
+            <h2 id="startScreenTitle">Wähle deinen Schwierigkeitsgrad</h2>
+            <p id="startScreenSubtitle">Bist du bereit, dein Wissen auf die Probe zu stellen?</p>
             <div class="difficulty-buttons">
-                <button id="btnEasy" class="difficulty-btn easy-btn">
+                <button id="btnEasy" class="difficulty-btn easy-btn" type="button">
                     <strong>Einfach</strong>
                     <span>3 Fragen</span>
                 </button>
-                <button id="btnAdvanced" class="difficulty-btn advanced-btn">
+                <button id="btnAdvanced" class="difficulty-btn advanced-btn" type="button">
                     <strong>Fortgeschritten</strong>
                     <span>7 Fragen</span>
                 </button>
+                <button id="btnMaster" class="difficulty-btn master-btn" type="button">
+                    <strong>Meister</strong>
+                    <span>10 Fragen</span>
+                </button>
             </div>
             <div class="quiz-cheat-container">
-                <button id="btnCheatGallery" class="quiz-cheat-btn">Abkürzung: Direkt zur Galerie</button>
+                <button id="btnCheatGallery" class="quiz-cheat-btn" type="button">Abkürzung: Direkt zur Galerie</button>
             </div>
         </div>
 
         <div id="quizContent" class="hidden">
+            <div class="quiz-progress-bar-container">
+                <div class="quiz-progress-meta">
+                    <span id="quizProgressStep">Frage 1 von 7</span>
+                    <span id="quizProgressScore">Punkte: 0</span>
+                </div>
+                <div class="quiz-progress-track">
+                    <div class="quiz-progress-fill" id="quizProgressFill"></div>
+                </div>
+            </div>
             <div id="questionBlock" class="question"></div>
             <div class="answers" id="answersBlock"></div>
+            <div id="quizExplanationBlock" class="quiz-feedback-box hidden"></div>
             <button id="nextBtn" class="btn btn-primary hidden">Nächste Frage</button>
             <div class="result" id="resultBlock"></div>
         </div>
@@ -68,6 +229,7 @@
     </div>
 
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/favorites.js"></script>
     <script src="assets/js/philosopher-profile.js"></script>
     <script src="assets/js/quiz.js"></script>
 </body>

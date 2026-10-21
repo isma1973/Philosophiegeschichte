@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philosophiegeschichte – Überblick</title>
-    <meta name="description" content="Interaktive Timeline zur Geschichte der Philosophie von der Antike bis zur Gegenwart. Entdecken Sie wichtige Denker, Epochen und zentrale Ideen.">
+    <meta name="description"
+        content="Interaktive Timeline zur Geschichte der Philosophie von der Antike bis zur Gegenwart. Entdecken Sie wichtige Denker, Epochen und zentrale Ideen.">
     <meta property="og:title" content="Philosophiegeschichte – Überblick">
-    <meta property="og:description" content="Interaktive Timeline zur Geschichte der Philosophie von der Antike bis zur Gegenwart.">
+    <meta property="og:description"
+        content="Interaktive Timeline zur Geschichte der Philosophie von der Antike bis zur Gegenwart.">
     <meta property="og:image" content="assets/img/antike.webp">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.svg">
@@ -23,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/layout.css">
 
 </head>
+
 <body class="dark-mode">
     <!-- MAIN CONTENT -->
     <main class="main">
@@ -33,41 +37,76 @@
                     <span class="topbar-title-main">Philosophiegeschichte</span>
                     <span class="topbar-title-sub">Überblick</span>
                 </h1>
+                <nav class="topbar-nav" aria-label="Hauptnavigation">
+                    <a href="#visual-timeline" class="topbar-nav-link active">Timeline</a>
+                    <a href="galerie.html" class="topbar-nav-link">Entdecken</a>
+                    <a href="quiz.html" class="topbar-nav-link">Quiz</a>
+                    <button type="button" class="topbar-nav-link" id="btnRandomPhilosopher"
+                        title="Zufälligen Denker entdecken">🎲 Zufälliger Denker</button>
+                </nav>
             </div>
-            <label class="ios-switch topbar-switch" for="themeToggle">
-                <span class="sr-only">Dark Mode umschalten</span>
-                <input type="checkbox" id="themeToggle" checked>
-                <span class="slider"></span>
-            </label>
+
+            <div class="topbar-center">
+                <div class="spotlight-search-wrapper" id="spotlightSearchWrapper">
+                    <div class="spotlight-search-box">
+                        <span class="spotlight-search-icon" aria-hidden="true">🔍</span>
+                        <input type="text" id="spotlightSearchInput" class="spotlight-search-input"
+                            placeholder="Denker suchen..." autocomplete="off" spellcheck="false"
+                            aria-label="Echtzeit-Suche über alle 81 Denker">
+                        <span class="spotlight-kbd-badge" title="Tastaturkürzel">Strg + K</span>
+                        <button type="button" id="spotlightClearBtn" class="spotlight-clear-btn hidden"
+                            aria-label="Suche zurücksetzen">✕</button>
+                    </div>
+                    <div id="spotlightResults" class="spotlight-results-panel hidden" role="region" aria-live="polite">
+                    </div>
+                </div>
+            </div>
+
+            <div class="topbar-right">
+                <label class="ios-switch topbar-switch" for="themeToggle">
+                    <span class="sr-only">Dark Mode umschalten</span>
+                    <input type="checkbox" id="themeToggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
         </header>
 
         <!-- INTRO -->
-        <div class="hero hero-premium">
+        <div class="hero hero-premium hero-compact">
             <div class="hero-premium-bg"></div>
             <div class="hero-premium-content">
-                <h1 class="hero-premium-title">Der große Faden der Philosophie</h1>
+                <h1 class="hero-premium-title">Der grosse Faden der Philosophie</h1>
                 <p class="hero-premium-subtitle">Warum diese Geschichte auch deine ist.</p>
                 <p class="hero-premium-text">
-                    Was den Menschen seit Jahrtausenden beschäftigt – wie wir vorwärtsgekommen sind und wo wir heute stehen. Entdecke die universellen Fragen, die uns ausmachen.
+                    Was den Menschen seit Jahrtausenden beschäftigt – wie wir vorwärtsgekommen sind und wo wir heute
+                    stehen. Entdecke die universellen Fragen, die uns ausmachen.
                 </p>
-                <a href="galerie.html" class="btn btn-primary hero-gallery-btn">🔍 Galerie: Denker entdecken</a>
             </div>
         </div>
-        <div class="filter-bar">
-          <label for="themeFilter">Thema filtern:</label>
-          <select id="themeFilter" onchange="filterPhilosophy()">
-            <option value="">Alle</option>
-            <option value="Ontologie">Ontologie</option>
-            <option value="Epistemologie">Epistemologie</option>
-            <option value="Ethik">Ethik</option>
-            <option value="Ästhetik">Ästhetik</option>
-            <option value="Logik">Logik</option>
-            <option value="Metaphysik">Metaphysik</option>
-            <option value="Sprache">Sprache</option>
-            <option value="Macht">Macht</option>
-            <option value="Geist">Geist</option>
-            <option value="Sein">Sein</option>
-          </select>
+        <div class="filter-container">
+            <div class="filter-header">
+                <span class="filter-title">🧭 Thema erkunden</span>
+                <span class="filter-count" id="filterCount">Alle 10 Epochen</span>
+            </div>
+            <div class="filter-chips" id="themeChips" role="toolbar" aria-label="Philosophische Themen filtern">
+                <button type="button" class="filter-chip active" data-theme="">
+                    <span class="chip-dot"></span> Alle
+                </button>
+                <button type="button" class="filter-chip filter-chip-fav" id="filterFavChip" data-theme="__favorites__"
+                    title="Nur gemerkte Denker anzeigen">
+                    <span class="chip-star">⭐</span> Gemerkt (<span id="favFilterCount">0</span>)
+                </button>
+                <button type="button" class="filter-chip" data-theme="Ontologie">Ontologie</button>
+                <button type="button" class="filter-chip" data-theme="Epistemologie">Epistemologie</button>
+                <button type="button" class="filter-chip" data-theme="Ethik">Ethik</button>
+                <button type="button" class="filter-chip" data-theme="Ästhetik">Ästhetik</button>
+                <button type="button" class="filter-chip" data-theme="Logik">Logik</button>
+                <button type="button" class="filter-chip" data-theme="Metaphysik">Metaphysik</button>
+                <button type="button" class="filter-chip" data-theme="Sprache">Sprache</button>
+                <button type="button" class="filter-chip" data-theme="Macht">Macht</button>
+                <button type="button" class="filter-chip" data-theme="Geist">Geist</button>
+                <button type="button" class="filter-chip" data-theme="Sein">Sein</button>
+            </div>
         </div>
 
         <!-- VISUAL TIMELINE -->
@@ -95,23 +134,83 @@
 
     <!-- Framework JS -->
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/favorites.js"></script>
+    <script src="assets/js/philosopher-profile.js"></script>
     <script src="assets/js/timeline.js"></script>
+    <script src="assets/js/quickfinder.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-    // Filter function for philosophy cards
-    window.filterPhilosophy = function() {
-        const filter = document.getElementById('themeFilter').value.toLowerCase();
-        const cards = document.querySelectorAll('.timeline-v-item');
-        cards.forEach(card => {
-            const tags = (card.dataset.themes || '').toLowerCase();
-            if (!filter || tags.includes(filter)) {
-                card.style.display = '';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    };
- 
+            // Filter function for philosophy cards
+            window.filterPhilosophy = function (selectedTheme = '') {
+                const cards = document.querySelectorAll('.timeline-v-item');
+                let matchCount = 0;
+
+                if (selectedTheme === '__favorites__') {
+                    const favs = window.PhilosophieFavorites ? window.PhilosophieFavorites.getAll() : [];
+                    cards.forEach(card => {
+                        const badges = card.querySelectorAll('.thinker-badge');
+                        let hasFav = false;
+                        badges.forEach(b => {
+                            const href = b.getAttribute('href') || '';
+                            const slugMatch = href.match(/([a-z0-9-]+)\.html$/i);
+                            const slug = slugMatch ? slugMatch[1] : '';
+                            if (favs.includes(slug)) {
+                                hasFav = true;
+                                b.classList.add('is-fav');
+                            }
+                        });
+
+                        if (hasFav) {
+                            card.style.display = '';
+                            matchCount++;
+                            // Auto open accordion if closed
+                            const trigger = card.querySelector('.timeline-v-trigger');
+                            if (trigger && trigger.getAttribute('aria-expanded') !== 'true') {
+                                trigger.click();
+                            }
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    const countEl = document.getElementById('filterCount');
+                    if (countEl) {
+                        countEl.textContent = favs.length === 0
+                            ? 'Noch keine Denker gemerkt'
+                            : `${favs.length} gemerkt in ${matchCount} Epochen`;
+                    }
+                    return;
+                }
+
+                const filter = selectedTheme.toLowerCase();
+                cards.forEach(card => {
+                    const tags = (card.dataset.themes || '').toLowerCase();
+                    if (!filter || tags.includes(filter)) {
+                        card.style.display = '';
+                        matchCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                const countEl = document.getElementById('filterCount');
+                if (countEl) {
+                    countEl.textContent = !filter
+                        ? `Alle ${cards.length} Epochen`
+                        : `${matchCount} von ${cards.length} Epochen`;
+                }
+            };
+
+            // Setup Filter Chip clicks
+            const chips = document.querySelectorAll('.filter-chip');
+            chips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    chips.forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+                    filterPhilosophy(chip.dataset.theme || '');
+                });
+            });
+
             // Timeline Daten – alle 6 Epochen
             const philosophyData = [
                 {
@@ -149,7 +248,7 @@
                     title: "✝️ Mittelalter",
                     summary: "Synthese von Glauben und Vernunft.",
                     thinkers: "Augustinus, Boethius, Thomas von Aquin, Meister Eckhart, Wilhelm von Ockham",
-                    description: "Philosophie wird in den Dienst der Theologie gestellt. Augustinus verbindet platonische Motive mit christlicher Theologie. Thomas von Aquin formuliert die große Synthese.",
+                    description: "Philosophie wird in den Dienst der Theologie gestellt. Augustinus verbindet platonische Motive mit christlicher Theologie. Thomas von Aquin formuliert die grosse Synthese.",
                     image: "assets/img/mittelalter.webp",
                     link: "philosophen/mittelalter.html",
                     themes: "Ontologie,Metaphysik,Geist,Sein"
@@ -220,4 +319,5 @@
         });
     </script>
 </body>
+
 </html>

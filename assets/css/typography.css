@@ -1,3 +1,7 @@
+/* ---------------------------------------------------
+   TYPOGRAPHY.CSS – Modern Clean Typography (Inter)
+--------------------------------------------------- */
+
 /* Inter – UI Font */
 @font-face {
   font-family: "Inter";
@@ -53,8 +57,10 @@
 
 /* Font Variables */
 :root {
-  --font-ui: "Inter", system-ui, sans-serif;
+  --font-ui: "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Inter", system-ui, -apple-system, sans-serif;
+  --font-quote: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 /* Global Typography */
@@ -62,15 +68,28 @@ body {
   font-family: var(--font-ui);
   font-size: 16px;
   line-height: 1.6;
-  color: #1e1e1e;
-  background-color: #fff;
+  color: var(--text, #1e1e1e);
+  background-color: var(--bg, #fff);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-ui);
+h1, h2, h3, h4, h5, h6,
+.topbar-brand,
+.hero-premium-title,
+.epoch-title,
+.galerie-title {
+  font-family: var(--font-display);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
   margin: 0 0 0.5em;
+}
+
+blockquote,
+.profile-thesis,
+.card-quote,
+.slide-quote,
+.footer-premium-text {
+  font-family: var(--font-quote);
 }
 
 code, pre {

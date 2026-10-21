@@ -15,7 +15,7 @@ const PHILOSOPHERS = [
       "Atman (Das wahre Selbst)",
       "Karma und Samsara (Wiedergeburtszyklus)"
     ],
-    "significance": "Sie legten den absoluten Grundstein für das gesamte spätere indische Denken. Bevor es greifbare historische Individuen wie Buddha gab, etablierten sie die großen metaphysischen Fragen.",
+    "significance": "Sie legten den absoluten Grundstein für das gesamte spätere indische Denken. Bevor es greifbare historische Individuen wie Buddha gab, etablierten sie die grossen metaphysischen Fragen.",
     "works": "Die Veden (z. B. Rigveda), Die Upanishaden (z. B. Brihadaranyaka)",
     "context": "Eine Zeit des Übergangs von reiner Natur- und Ritualreligion (Veden) zur tiefgründigen philosophischen Verinnerlichung (Upanishaden) im alten Indien.",
     "links": [
@@ -47,7 +47,7 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Denken revolutionierte die asiatische Philosophie und bildet die Grundlage des Buddhismus. Radikale Abkehr von substanzialistischem Denken.",
     "works": "Palikanon (mündlich überliefert, später verschriftlicht)",
-    "context": "Wirkte in Nordindien während einer Zeit großer spiritueller Umbrüche und Kritik an der vedischen Orthodoxie.",
+    "context": "Wirkte in Nordindien während einer Zeit grosser spiritueller Umbrüche und Kritik an der vedischen Orthodoxie.",
     "links": [
       {
         "title": "Wikipedia Artikel",
@@ -77,7 +77,7 @@ const PHILOSOPHERS = [
     ],
     "significance": "Oft als 'indischer Machiavelli' bezeichnet, obwohl er Jahrtausende früher lebte. Ein Pionier der systematischen Politikwissenschaft.",
     "works": "Arthashastra",
-    "context": "War maßgeblich an der Gründung des Maurya-Reiches unter Chandragupta beteiligt.",
+    "context": "War massgeblich an der Gründung des Maurya-Reiches unter Chandragupta beteiligt.",
     "links": [
       {
         "title": "Wikipedia Artikel",
@@ -135,7 +135,7 @@ const PHILOSOPHERS = [
       "Maya (kosmische Illusion)",
       "Befreiung durch Erkenntnis (Jnana)"
     ],
-    "significance": "Prägte den Hinduismus maßgeblich und schuf das systematischste Fundament für die vedantische Philosophie.",
+    "significance": "Prägte den Hinduismus massgeblich und schuf das systematischste Fundament für die vedantische Philosophie.",
     "works": "Brahmasutra-Bhashya, Vivekachudamani",
     "context": "Reiste durch Indien, um durch philosophische Debatten die Autorität der Veden gegen buddhistische und jainistische Strömungen zu verteidigen.",
     "links": [
@@ -225,7 +225,7 @@ const PHILOSOPHERS = [
       "Wu Wei (Nicht-Handeln)",
       "Relativität von Gegensätzen"
     ],
-    "significance": "Der Gegenpol zum strengen Konfuzianismus. Beeinflusste die chinesische Kunst, Medizin und den Zen-Buddhismus maßgeblich.",
+    "significance": "Der Gegenpol zum strengen Konfuzianismus. Beeinflusste die chinesische Kunst, Medizin und den Zen-Buddhismus massgeblich.",
     "works": "Daodejing",
     "context": "Seine Historizität ist umstritten. Das Daodejing entstand in einer Zeit der Streitenden Reiche als friedvolle, mystische Alternative.",
     "links": [
@@ -278,8 +278,8 @@ const PHILOSOPHERS = [
     "era": "China",
     "eraLink": "china.html",
     "field": "Ethik, Logik",
-    "thesis": "Universalismus: Wir müssen alle Menschen gleichermaßen lieben, um den Nutzen der Welt zu maximieren.",
-    "intro": "Mozi war der große Gegenspieler von Konfuzius. Er vertrat einen strengen Utilitarismus, Pazifismus und eine allgemeine Menschenliebe jenseits von Familienbanden.",
+    "thesis": "Universalismus: Wir müssen alle Menschen gleichermassen lieben, um den Nutzen der Welt zu maximieren.",
+    "intro": "Mozi war der grosse Gegenspieler von Konfuzius. Er vertrat einen strengen Utilitarismus, Pazifismus und eine allgemeine Menschenliebe jenseits von Familienbanden.",
     "ideas": [
       "Jian'ai (Universale Liebe)",
       "Konsequentialismus",
@@ -308,7 +308,7 @@ const PHILOSOPHERS = [
     "era": "China",
     "eraLink": "china.html",
     "field": "Ethik, Politische Philosophie",
-    "thesis": "Die menschliche Natur ist von Grund auf gut, so wie Wasser von Natur aus nach unten fließt.",
+    "thesis": "Die menschliche Natur ist von Grund auf gut, so wie Wasser von Natur aus nach unten fliesst.",
     "intro": "Mencius baute die Lehren des Konfuzius aus und gab ihnen eine optimistische anthropologische Basis und eine gerechte Staatstheorie.",
     "ideas": [
       "Gute Natur des Menschen",
@@ -369,7 +369,7 @@ const PHILOSOPHERS = [
     "eraLink": "china.html",
     "field": "Neo-Konfuzianismus",
     "thesis": "Alles Sein besteht aus kosmischem Prinzip (Li) und materieller Kraft (Qi).",
-    "intro": "Zhu Xi war der große Synthetiker. Er verband konfuzianische Ethik mit buddhistischer Metaphysik und daoistischer Kosmologie.",
+    "intro": "Zhu Xi war der grosse Synthetiker. Er verband konfuzianische Ethik mit buddhistischer Metaphysik und daoistischer Kosmologie.",
     "ideas": [
       "Li (Prinzip) und Qi (Materie/Kraft)",
       "Das höchste Letzte (Taiji)",
@@ -399,7 +399,7 @@ const PHILOSOPHERS = [
     "field": "Naturphilosophie",
     "thesis": "Die Natur lässt sich aus natürlichen Ursachen erklären.",
     "portrait": "../assets/img/philosophers/thales.webp",
-    "intro": "Thales gilt in der europäischen Überlieferung als einer der ersten Denker, der Naturphänomene nicht ausschließlich mythisch, sondern durch ein einheitliches Prinzip zu erklären versuchte.",
+    "intro": "Thales gilt in der europäischen Überlieferung als einer der ersten Denker, der Naturphänomene nicht ausschliesslich mythisch, sondern durch ein einheitliches Prinzip zu erklären versuchte.",
     "ideas": [
       "Wasser als Ursprung und Grundstoff aller Dinge",
       "Suche nach natürlichen statt rein mythischen Erklärungen",
@@ -458,12 +458,12 @@ const PHILOSOPHERS = [
     "era": "Antike",
     "eraLink": "antike.html",
     "field": "Kosmologie, Logoslehre",
-    "thesis": "Alles fließt; die Welt ist ein Prozess ständiger Veränderung.",
+    "thesis": "Alles fliesst; die Welt ist ein Prozess ständiger Veränderung.",
     "intro": "Heraklit betonte Wandel und Gegensätze als Grundlage der Wirklichkeit. Er prägte das Bild des Logos als ordnendes Prinzip.",
     "ideas": [
       "Wandel als Grundstruktur der Welt",
       "Einheit der Gegensätze",
-      "Logos als Maß und Ordnung"
+      "Logos als Mass und Ordnung"
     ],
     "significance": "Sein Denken setzte Akzente gegen statische Ontologien und beeinflusste spätere Dialektik. Viele Fragmente bleiben hermeneutisch herausfordernd.",
     "works": "Fragmente überliefert in antiken Kommentaren",
@@ -587,7 +587,7 @@ const PHILOSOPHERS = [
     ],
     "significance": "Er prägte das Ideal des autarken Weisen, das später von der Stoa stark aufgenommen wurde.",
     "works": "Keine Schriften erhalten; wirkte durch seine provokante Lebensführung (Anekdoten).",
-    "context": "Lebte zur Zeit Platons und Alexanders des Großen; kritisierte die athenische Hochkultur scharf.",
+    "context": "Lebte zur Zeit Platons und Alexanders des Grossen; kritisierte die athenische Hochkultur scharf.",
     "links": [
       {
         "title": "Wikipedia Artikel",
@@ -641,7 +641,7 @@ const PHILOSOPHERS = [
     "thesis": "Glück besteht in einfacher, schmerzfreier Lebensführung und seelischer Ruhe (ataraxia).",
     "intro": "Epikur betonte Genussvernunft, Angstfreiheit vor Göttern und Tod. Seine Schule (Der Garten) war praxisorientiert und materialistisch.",
     "ideas": [
-      "Hedonistische Ethik mit Maß",
+      "Hedonistische Ethik mit Mass",
       "Atomistische Naturlehre",
       "Befreiung von Todes- und Götterängsten"
     ],
@@ -668,12 +668,12 @@ const PHILOSOPHERS = [
     "era": "Antike",
     "eraLink": "antike.html",
     "field": "Ethik, Stoa",
-    "thesis": "Tugend ist das einzige Gute; seelische Unerschütterlichkeit entsteht durch Leben gemäß der Natur und Vernunft.",
+    "thesis": "Tugend ist das einzige Gute; seelische Unerschütterlichkeit entsteht durch Leben gemäss der Natur und Vernunft.",
     "intro": "Zenon begründete die Stoa und betonte Rationalität und Selbstbeherrschung. Sein Programm verband Ethik mit einer kosmisch-rationalen Weltordnung.",
     "ideas": [
       "Tugendethik und innere Gelassenheit",
       "Kosmischer Logos",
-      "Apathie gegenüber äußeren Gütern"
+      "Apathie gegenüber äusseren Gütern"
     ],
     "significance": "Stoa wurde eine langlebige Lebens- und Ethikschule, einflussreich bis in römische Philosophie und später. Zenons Lehre wurde oft adaptiert und systematisiert.",
     "works": "Überliefert fragmentarisch durch Nachfolger",
@@ -797,7 +797,7 @@ const PHILOSOPHERS = [
     ],
     "significance": "Schlüsselgestalt für die Vermittlung Aristoteles' und Platons in Mittelalter. Seine Texte waren bis in die Renaissance einflussreich.",
     "works": "De consolatione philosophiae; Übersetzungen und Kommentare zu Aristoteles",
-    "context": "Wirkte in oströmisch-italienischem Machtgefüge; politisch verstrickt und schließlich hingerichtet. Seine Schriften wurden zu mittelalterlichen Lehrtexten.",
+    "context": "Wirkte in oströmisch-italienischem Machtgefüge; politisch verstrickt und schliesslich hingerichtet. Seine Schriften wurden zu mittelalterlichen Lehrtexten.",
     "links": [
       {
         "title": "Wikipedia Artikel",
@@ -818,7 +818,7 @@ const PHILOSOPHERS = [
     "era": "Mittelalter",
     "eraLink": "mittelalter.html",
     "field": "Scholastik, Theologie",
-    "thesis": "Glaube und Vernunft sind kompatibel; natürliche Theologie kann Grundwahrheiten über Gott erschließen.",
+    "thesis": "Glaube und Vernunft sind kompatibel; natürliche Theologie kann Grundwahrheiten über Gott erschliessen.",
     "intro": "Thomas integrierte aristotelische Philosophie in christliche Theologie. Seine Summa-Theologie ist ein systematisches Lehrwerk der Scholastik.",
     "ideas": [
       "Fünf Wege Gottesbeweis",
@@ -1178,7 +1178,7 @@ const PHILOSOPHERS = [
     "era": "Frühe Neuzeit",
     "eraLink": "neuzeit.html",
     "field": "Humanismus, Skeptizismus",
-    "thesis": "Was weiß ich? Die Erforschung der menschlichen Natur muss beim eigenen, unvollkommenen Ich beginnen.",
+    "thesis": "Was weiss ich? Die Erforschung der menschlichen Natur muss beim eigenen, unvollkommenen Ich beginnen.",
     "intro": "Montaigne erfand den Essay. Er zog sich auf sein Landgut zurück, um in entspannter, undogmatischer Form über sich selbst, den Tod, Gewohnheiten und die Grenzen des menschlichen Wissens zu schreiben.",
     "ideas": [
       "Radikaler Skeptizismus",
@@ -1487,7 +1487,7 @@ const PHILOSOPHERS = [
     ],
     "significance": "Begründer der kritischen Philosophie mit immensen Folgen für Metaphysik, Ethik und Ästhetik. Kant prägte die moderne Philosophie Europas grundlegend.",
     "works": "Kritik der reinen Vernunft, Kritik der praktischen Vernunft, Kritik der Urteilskraft",
-    "context": "Wirkung in preußischer Aufklärung und akademischem Leben; reagierte auf Rationalismus und Empirismus. Kants System versucht ein programmatisches Ende metaphysischer Zweifel.",
+    "context": "Wirkung in preussischer Aufklärung und akademischem Leben; reagierte auf Rationalismus und Empirismus. Kants System versucht ein programmatisches Ende metaphysischer Zweifel.",
     "links": [
       {
         "title": "Wikipedia Artikel",
@@ -1517,7 +1517,7 @@ const PHILOSOPHERS = [
     ],
     "significance": "Schlüsselfigur des deutschen Idealismus; beeinflusste politische und philosophische Debatten um Autonomie und Nation. Seine Betonung des Subjekts prägte nachfolgende Denker.",
     "works": "Wissenschaftslehre (verschiedene Fassungen)",
-    "context": "Wirkte in der Umbruchszeit um Französische Revolution und Preußische Reformen. Fichtes Arbeit ist stark normativ-pädagogisch ausgerichtet.",
+    "context": "Wirkte in der Umbruchszeit um Französische Revolution und Preussische Reformen. Fichtes Arbeit ist stark normativ-pädagogisch ausgerichtet.",
     "links": [
       {
         "title": "Wikipedia Artikel",
@@ -1637,7 +1637,7 @@ const PHILOSOPHERS = [
     ],
     "significance": "Wichtiger Theoretiker des Liberalismus und der Moderne; beeinflusste Menschenrechte und politische Reformen. Seine Kombination aus Nutzen- und Freiheitsprinzipien blieb einflussreich.",
     "works": "Utilitarianism, On Liberty, The Subjection of Women",
-    "context": "Industrielle Revolution und politische Reformbewegungen in Großbritannien prägten seine Anliegen. Mill war sowohl Philosoph als auch politischer Aktivist.",
+    "context": "Industrielle Revolution und politische Reformbewegungen in Grossbritannien prägten seine Anliegen. Mill war sowohl Philosoph als auch politischer Aktivist.",
     "links": [
       {
         "title": "Wikipedia Artikel",
@@ -1815,7 +1815,7 @@ const PHILOSOPHERS = [
       "Theorie der Kennzeichnungen",
       "Pazifismus und Religionskritik"
     ],
-    "significance": "Prägte die angelsächsische Philosophie des 20. Jahrhunderts maßgeblich und war ein weltweit gelesener, öffentlicher Intellektueller (Nobelpreisträger für Literatur).",
+    "significance": "Prägte die angelsächsische Philosophie des 20. Jahrhunderts massgeblich und war ein weltweit gelesener, öffentlicher Intellektueller (Nobelpreisträger für Literatur).",
     "works": "Principia Mathematica (mit Whitehead), Probleme der Philosophie",
     "context": "Wirkte in Cambridge; seine politische Haltung führte während des Ersten Weltkriegs zu seiner Inhaftierung.",
     "links": [
@@ -1930,7 +1930,7 @@ const PHILOSOPHERS = [
     "eraLink": "20jh.html",
     "field": "Wissenschaftstheorie, Politik",
     "thesis": "Wissenschaftlicher Fortschritt geschieht durch Falsifikation; eine Theorie muss prinzipiell widerlegbar sein.",
-    "intro": "Popper begründete den Kritischen Rationalismus. Er zeigte, dass wir niemals absolute Wahrheit beweisen, sondern nur Irrtümer ausschließen können, und verteidigte konsequent die offene Gesellschaft.",
+    "intro": "Popper begründete den Kritischen Rationalismus. Er zeigte, dass wir niemals absolute Wahrheit beweisen, sondern nur Irrtümer ausschliessen können, und verteidigte konsequent die offene Gesellschaft.",
     "ideas": [
       "Falsifikationsprinzip",
       "Kritik des Historizismus",
@@ -2109,10 +2109,10 @@ const PHILOSOPHERS = [
     "era": "20. Jahrhundert",
     "eraLink": "20jh.html",
     "field": "Politische Philosophie",
-    "thesis": "Gerechtigkeit ist Fairneß; soziale Ungleichheiten sind nur legitim, wenn sie den Schwächsten der Gesellschaft den größtmöglichen Vorteil bringen.",
+    "thesis": "Gerechtigkeit ist Fairness; soziale Ungleichheiten sind nur legitim, wenn sie den Schwächsten der Gesellschaft den grösstmöglichen Vorteil bringen.",
     "intro": "John Rawls revitalisierte die politische Philosophie nach dem Zweiten Weltkrieg. Sein Gedankenexperiment des 'Schleiers des Nichtwissens' ist heute ein Standardmodell der Gerechtigkeitstheorie.",
     "ideas": [
-      "Gerechtigkeit als Fairneß",
+      "Gerechtigkeit als Fairness",
       "Schleier des Nichtwissens",
       "Das Differenzprinzip"
     ],
@@ -2206,7 +2206,7 @@ const PHILOSOPHERS = [
       "Diskursethik und Öffentlichkeit",
       "Kritik der instrumentellen Vernunft"
     ],
-    "significance": "Einflussreiche Stimme in kritischer Theorie und Demokratieforschung; seine Theorie bietet normative Maßstäbe für öffentliche Rationalität. Weitreichende Interdisziplinarität.",
+    "significance": "Einflussreiche Stimme in kritischer Theorie und Demokratieforschung; seine Theorie bietet normative Massstäbe für öffentliche Rationalität. Weitreichende Interdisziplinarität.",
     "works": "Theorie des kommunikativen Handelns, Strukturwandel der Öffentlichkeit",
     "context": "Aufgewachsen in Deutschland des 20. Jahrhunderts; Rekonstruktion demokratischer Diskurse nach NS-Vergangenheit prägt sein Anliegen. Aktiv in politischen Debatten.",
     "links": [
@@ -2229,7 +2229,7 @@ const PHILOSOPHERS = [
     "era": "20. Jahrhundert",
     "eraLink": "20jh.html",
     "field": "Poststrukturalismus",
-    "thesis": "Es gibt kein Außerhalb des Textes; jede Bedeutung ist instabil und verschiebt sich endlos.",
+    "thesis": "Es gibt kein Ausserhalb des Textes; jede Bedeutung ist instabil und verschiebt sich endlos.",
     "intro": "Derrida ist der Vater der Dekonstruktion. Er zeigte auf brillante, oft kryptische Weise, dass unsere scheinbar klaren westlichen Begriffspaare (wie Vernunft/Gefühl, Sprache/Schrift) voller Widersprüche stecken.",
     "ideas": [
       "Dekonstruktion",
@@ -2298,7 +2298,7 @@ const PHILOSOPHERS = [
     ],
     "significance": "Sein Buch 'Animal Liberation' war die philosophische Initialzündung der modernen Tierrechts- und Veganismus-Bewegung.",
     "works": "Animal Liberation, Praktische Ethik",
-    "context": "Lehrt in Princeton; seine logisch-kühlen Analysen zu Lebensrecht und Sterbehilfe rufen regelmäßig starke gesellschaftliche Proteste hervor.",
+    "context": "Lehrt in Princeton; seine logisch-kühlen Analysen zu Lebensrecht und Sterbehilfe rufen regelmässig starke gesellschaftliche Proteste hervor.",
     "links": [
       {
         "title": "Wikipedia Artikel",
@@ -2356,7 +2356,7 @@ const PHILOSOPHERS = [
       "Psychoanalytische Subjekttheorie",
       "Kritik an liberaler Toleranz und 'Wokeness'"
     ],
-    "significance": "Er brachte radikalen Marxismus und Psychoanalyse als popkulturelles und theoretisches Großereignis zurück in den globalen Diskurs.",
+    "significance": "Er brachte radikalen Marxismus und Psychoanalyse als popkulturelles und theoretisches Grossereignis zurück in den globalen Diskurs.",
     "works": "Das erhabene Objekt der Ideologie",
     "context": "Stammt aus dem kommunistischen Jugoslawien (Slowenien); seine mediale Präsenz (Bücher, Dokus, Debatten) ist beispiellos für einen lebenden Philosophen.",
     "links": [
@@ -2463,13 +2463,32 @@ function renderPhilosopherProfile() {
       eraBackLink.textContent = `← ${philosopher.era}`;
     }
 
+    let isFav = false;
+    try {
+        const raw = localStorage.getItem('philo_favorites_v1');
+        const favs = raw ? JSON.parse(raw) : [];
+        isFav = favs.includes(philosopher.slug);
+    } catch(e) {}
+
     root.innerHTML = `
         <header class="profile-hero">
             <div>
                 <p class="profile-kicker">${philosopher.era} · ${philosopher.field}</p>
                 <h1 class="epoch-title">${philosopher.name}</h1>
                 <p class="profile-years">${philosopher.years}</p>
-                <p class="profile-thesis">${philosopher.thesis}</p>
+                <blockquote class="profile-quote-card" cite="${philosopher.name}">
+                    <p class="profile-thesis">«${philosopher.thesis}»</p>
+                    <div class="quote-actions">
+                        <button type="button" class="btn-copy-quote" id="btnCopyQuote" title="Zitat kopieren" aria-label="Zitat in die Zwischenablage kopieren">
+                            <span class="copy-icon" aria-hidden="true">📋</span>
+                            <span class="copy-text">Zitat kopieren</span>
+                        </button>
+                        <button type="button" class="btn-fav-quote ${isFav ? 'is-favorite' : ''}" id="btnFavQuote" title="${isFav ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}" aria-label="Diesen Denker favorisieren">
+                            <span class="fav-icon" aria-hidden="true">${isFav ? '★' : '☆'}</span>
+                            <span class="fav-text">${isFav ? 'Gemerkt' : 'Merken'}</span>
+                        </button>
+                    </div>
+                </blockquote>
             </div>
             <img class="profile-image" src="${portrait}" alt="Illustration zur Epoche ${philosopher.era}">
         </header>
@@ -2513,6 +2532,90 @@ function renderPhilosopherProfile() {
         </nav>
     `;
 
+    // Quote Copy Interaction
+    const copyBtn = document.getElementById("btnCopyQuote");
+    if (copyBtn) {
+        copyBtn.addEventListener("click", async () => {
+            const quoteText = `«${philosopher.thesis}» – ${philosopher.name} (${philosopher.years})`;
+            let success = false;
+            try {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    await navigator.clipboard.writeText(quoteText);
+                    success = true;
+                }
+            } catch (err) {
+                // Fallback below
+            }
+
+            if (!success) {
+                const ta = document.createElement("textarea");
+                ta.value = quoteText;
+                ta.style.position = "fixed";
+                ta.style.opacity = "0";
+                document.body.appendChild(ta);
+                ta.select();
+                try {
+                    document.execCommand("copy");
+                    success = true;
+                } catch (e) {}
+                document.body.removeChild(ta);
+            }
+
+            if (success) {
+                copyBtn.classList.add("copied");
+                const icon = copyBtn.querySelector(".copy-icon");
+                const text = copyBtn.querySelector(".copy-text");
+                if (icon) icon.textContent = "✓";
+                if (text) text.textContent = "Kopiert!";
+
+                if (window.Toast && typeof window.Toast.show === "function") {
+                    window.Toast.show("Zitat in Zwischenablage kopiert!", "success");
+                }
+
+                setTimeout(() => {
+                    copyBtn.classList.remove("copied");
+                    if (icon) icon.textContent = "📋";
+                    if (text) text.textContent = "Zitat kopieren";
+                }, 2200);
+            }
+        });
+    }
+
+    // Favorite Toggle Interaction
+    const favBtn = document.getElementById("btnFavQuote");
+    if (favBtn) {
+        favBtn.addEventListener("click", () => {
+            const key = 'philo_favorites_v1';
+            let favs = [];
+            try { favs = JSON.parse(localStorage.getItem(key)) || []; } catch(e){}
+            let isNowFav = false;
+            if (favs.includes(philosopher.slug)) {
+                favs = favs.filter(s => s !== philosopher.slug);
+                isNowFav = false;
+            } else {
+                favs.push(philosopher.slug);
+                isNowFav = true;
+            }
+            try { localStorage.setItem(key, JSON.stringify(favs)); } catch(e){}
+
+            favBtn.classList.toggle("is-favorite", isNowFav);
+            const favIcon = favBtn.querySelector(".fav-icon");
+            const favText = favBtn.querySelector(".fav-text");
+            if (favIcon) favIcon.textContent = isNowFav ? "★" : "☆";
+            if (favText) favText.textContent = isNowFav ? "Gemerkt" : "Merken";
+            favBtn.title = isNowFav ? "Aus Favoriten entfernen" : "Zu Favoriten hinzufügen";
+
+            // Dispatch global event
+            window.dispatchEvent(new CustomEvent('philosophy:favorites-changed', {
+                detail: { slug: philosopher.slug, isFavorite: isNowFav, count: favs.length, favorites: favs }
+            }));
+
+            if (window.Toast && typeof window.Toast.show === "function") {
+                window.Toast.show(isNowFav ? "Denker zu Favoriten hinzugefügt! ⭐" : "Aus Favoriten entfernt.", "info");
+            }
+        });
+    }
+
     // Keyboard and Swipe Navigation
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft' && previous) {
@@ -2538,6 +2641,37 @@ function renderPhilosopherProfile() {
             window.location.href = `${previous.slug}.html`; // Swipe right -> Prev
         }
     }, {passive: true});
+}
+
+if (typeof window.PhilosophieFavorites === 'undefined') {
+    window.PhilosophieFavorites = {
+        getAll: () => {
+            try { return JSON.parse(localStorage.getItem('philo_favorites_v1')) || []; } catch(e) { return []; }
+        },
+        has: (slug) => {
+            try { const favs = JSON.parse(localStorage.getItem('philo_favorites_v1')) || []; return favs.includes(slug); } catch(e) { return false; }
+        },
+        toggle: (slug) => {
+            try {
+                let favs = JSON.parse(localStorage.getItem('philo_favorites_v1')) || [];
+                let added = false;
+                if (favs.includes(slug)) {
+                    favs = favs.filter(s => s !== slug);
+                } else {
+                    favs.push(slug);
+                    added = true;
+                }
+                localStorage.setItem('philo_favorites_v1', JSON.stringify(favs));
+                window.dispatchEvent(new CustomEvent('philosophy:favorites-changed', {
+                    detail: { slug, isFavorite: added, count: favs.length, favorites: favs }
+                }));
+                return added;
+            } catch(e) { return false; }
+        },
+        getCount: () => {
+            try { return (JSON.parse(localStorage.getItem('philo_favorites_v1')) || []).length; } catch(e) { return 0; }
+        }
+    };
 }
 
 document.addEventListener("DOMContentLoaded", renderPhilosopherProfile);

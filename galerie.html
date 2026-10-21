@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 
 <head>
     <meta charset="UTF-8">
@@ -192,6 +192,53 @@
             color: #fff;
         }
 
+        .btn-undo {
+            background: var(--bg-tertiary);
+            color: var(--accent);
+            width: 52px;
+            height: 52px;
+            font-size: 24px;
+        }
+
+        .btn-undo:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            transform: none !important;
+            box-shadow: none;
+        }
+
+        .btn-fav {
+            background: var(--bg-tertiary);
+            color: var(--text-muted);
+            width: 52px;
+            height: 52px;
+            font-size: 24px;
+        }
+
+        .btn-fav.is-favorite {
+            color: #f59e0b;
+            background: rgba(245, 158, 11, 0.15);
+            border: 2px solid #f59e0b;
+        }
+
+        .galerie-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .gallery-counter {
+            font-size: 0.75rem;
+            color: var(--accent);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 2px 10px;
+            border-radius: 999px;
+        }
+
         .empty-state {
             text-align: center;
             color: var(--text-light);
@@ -240,7 +287,10 @@
 <body class="dark-mode">
     <header class="topbar-gallery">
         <a href="index.html" class="galerie-back-link">← Zurück</a>
-        <h1 class="galerie-title">Entdecken</h1>
+        <div class="galerie-center">
+            <h1 class="galerie-title">Entdecken</h1>
+            <div class="gallery-counter" id="galleryCounter" aria-live="polite">1 / 81</div>
+        </div>
         <div class="galerie-spacer"><!-- Spacer for flex --></div>
     </header>
 
@@ -254,8 +304,10 @@
 
     <!-- Action buttons sit BELOW the card stack in the normal document flow -->
     <div class="gallery-actions">
-        <button class="action-btn btn-nope" id="btnNope" aria-label="Nächster">✕</button>
-        <button class="action-btn btn-love" id="btnLove" aria-label="Zum Profil">📖</button>
+        <button class="action-btn btn-undo" id="btnUndo" aria-label="Letzten Denker zurückholen" title="Zurückholen (Undo)" disabled>↺</button>
+        <button class="action-btn btn-nope" id="btnNope" aria-label="Nächster Denker" title="Weiter (✕)">✕</button>
+        <button class="action-btn btn-fav" id="btnGalleryFav" aria-label="Als Favorit merken" title="Als Favorit merken (⭐)">⭐</button>
+        <button class="action-btn btn-love" id="btnLove" aria-label="Zum Profil" title="Profil öffnen (📖)">📖</button>
     </div>
 
     <!-- The ios switch is fixed in css, we add it here just to keep the dark mode functionality -->
@@ -265,6 +317,7 @@
     </label>
 
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/favorites.js"></script>
     <script src="assets/js/philosopher-profile.js"></script>
     <script src="assets/js/galerie.js"></script>
 </body>
