@@ -2359,6 +2359,14 @@ h1.topbar-brand.index-topbar-title {
     outline-offset: 2px;
 }
 
+.nav-text-full {
+    display: inline;
+}
+
+.nav-text-short {
+    display: none;
+}
+
 .topbar-center {
     flex: 1;
     max-width: 380px;
@@ -2418,18 +2426,180 @@ h1.topbar-brand.index-topbar-title {
 
 @media (max-width: 768px) {
     .topbar {
-        flex-wrap: wrap;
-        gap: 8px;
-        padding: 8px 12px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "brand switch"
+            "nav nav"
+            "search search";
+        gap: 6px 8px;
+        padding: 6px 12px 8px;
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
+        margin-bottom: var(--space-3);
     }
+
+    .topbar-left {
+        display: contents;
+    }
+
+    .topbar-left .topbar-brand {
+        grid-area: brand;
+        align-self: center;
+        max-width: calc(100vw - 70px);
+    }
+
+    .topbar-title-main {
+        font-size: 1.15rem;
+    }
+
+    .topbar-title-sub {
+        font-size: 0.68rem;
+    }
+
+    .topbar-right {
+        grid-area: switch;
+        align-self: center;
+        justify-self: end;
+    }
+
+    .topbar-right .topbar-switch {
+        width: 44px;
+        height: 28px;
+    }
+
+    .topbar-right .topbar-switch .slider {
+        border-radius: 999px;
+        padding: 0;
+    }
+
+    .topbar-right .topbar-switch .slider::before {
+        content: "🌙";
+        font-size: 0.9rem;
+    }
+
+    .topbar-right .topbar-switch input:checked + .slider::before {
+        content: "☀️";
+        font-size: 0.9rem;
+    }
+
     .topbar-nav {
+        grid-area: nav;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 1px 0;
+        padding: 0;
+        gap: 6px;
+    }
+
+    .topbar-nav-link {
+        flex: 1;
+        padding: 5px 4px;
+        font-size: 0.82rem;
+        font-weight: 500;
+        justify-content: center;
+        text-align: center;
+        background: var(--bg-tertiary);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        white-space: nowrap;
+    }
+
+    .topbar-nav .topbar-nav-link.active,
+    .topbar-nav a.topbar-nav-link.active {
+        background: var(--accent) !important;
+        color: #ffffff !important;
+        border-color: var(--accent) !important;
+    }
+
+    .nav-text-full {
         display: none;
     }
+
+    .nav-text-short {
+        display: inline;
+    }
+
     .topbar-center {
-        order: 3;
+        grid-area: search;
         width: 100%;
         max-width: 100%;
-        margin: 4px 0 0;
+        margin: 2px 0 0;
+        min-width: 0;
+    }
+
+    .topbar-center .spotlight-search-box {
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        height: 34px;
+        box-sizing: border-box;
+    }
+
+    .topbar-center .spotlight-search-input {
+        font-size: 0.85rem;
+        padding: 0 0 0 6px;
+        height: 100%;
+        line-height: normal;
+    }
+
+    .topbar-center .spotlight-kbd-badge {
+        display: none;
+    }
+}
+
+/* ── Compact Mobile Layout (<= 640px) ───────────────── */
+@media (max-width: 640px) {
+    .hero.hero-premium.hero-compact {
+        padding: var(--space-4) var(--space-3);
+        margin-bottom: var(--space-3);
+    }
+
+    .hero-title-gradient {
+        font-size: 1.35rem;
+        margin-bottom: 4px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.88rem;
+        margin-bottom: 4px;
+    }
+
+    .hero-lead {
+        font-size: 0.82rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+
+    .filter-container {
+        padding: 10px 12px;
+        margin: var(--space-2) 0 var(--space-3);
+    }
+
+    .filter-header {
+        margin-bottom: 8px;
+    }
+
+    .filter-chips {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+        gap: 6px;
+    }
+
+    .filter-chips::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-chip {
+        flex-shrink: 0;
+        white-space: nowrap;
+        padding: 4px 11px;
+        font-size: 0.8rem;
     }
 }
 
